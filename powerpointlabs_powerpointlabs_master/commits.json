@@ -1,27 +1,27 @@
 {
   "authorWeeklyIntervalContributions": {
-    "chesterSng": [],
-    "bryanLew": [],
-    "henryYuPei": []
+    "ChesterSng": [],
+    "blewjy": [],
+    "YuPeiHenry": []
   },
   "authorDailyIntervalContributions": {
-    "chesterSng": [],
-    "bryanLew": [],
-    "henryYuPei": []
+    "ChesterSng": [],
+    "blewjy": [],
+    "YuPeiHenry": []
   },
   "authorFinalContributionMap": {
-    "chesterSng": 0,
-    "bryanLew": 0,
-    "henryYuPei": 0
+    "ChesterSng": 0,
+    "blewjy": 0,
+    "YuPeiHenry": 0
   },
   "authorContributionVariance": {
-    "chesterSng": 0.0,
-    "bryanLew": 0.0,
-    "henryYuPei": 0.0
+    "ChesterSng": 0.0,
+    "blewjy": 0.0,
+    "YuPeiHenry": 0.0
   },
   "authorDisplayNameMap": {
-    "chesterSng": "CHESTER",
-    "bryanLew": "BRYAN",
-    "henryYuPei": "HENRY"
+    "ChesterSng": "CHESTER",
+    "blewjy": "BRYAN",
+    "YuPeiHenry": "HENRY"
   }
 }
