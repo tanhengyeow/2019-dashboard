@@ -1,0 +1,62 @@
+{
+  "authorWeeklyIntervalContributions": {
+    "amrutPrabhu": [],
+    "jeremyChoo": [],
+    "monikaHengki": [],
+    "wangJunming": [],
+    "jiangChunhui": [],
+    "liPengcheng": [],
+    "ronakLakhotia": [],
+    "rahulRajesh": [],
+    "chattorajAyush": [],
+    "tanHengYeow": []
+  },
+  "authorDailyIntervalContributions": {
+    "amrutPrabhu": [],
+    "jeremyChoo": [],
+    "monikaHengki": [],
+    "wangJunming": [],
+    "jiangChunhui": [],
+    "liPengcheng": [],
+    "ronakLakhotia": [],
+    "rahulRajesh": [],
+    "chattorajAyush": [],
+    "tanHengYeow": []
+  },
+  "authorFinalContributionMap": {
+    "amrutPrabhu": 0,
+    "jeremyChoo": 0,
+    "monikaHengki": 0,
+    "wangJunming": 0,
+    "jiangChunhui": 0,
+    "liPengcheng": 0,
+    "ronakLakhotia": 0,
+    "rahulRajesh": 0,
+    "chattorajAyush": 0,
+    "tanHengYeow": 0
+  },
+  "authorContributionVariance": {
+    "amrutPrabhu": 0.0,
+    "jeremyChoo": 0.0,
+    "monikaHengki": 0.0,
+    "wangJunming": 0.0,
+    "jiangChunhui": 0.0,
+    "liPengcheng": 0.0,
+    "ronakLakhotia": 0.0,
+    "rahulRajesh": 0.0,
+    "chattorajAyush": 0.0,
+    "tanHengYeow": 0.0
+  },
+  "authorDisplayNameMap": {
+    "amrutPrabhu": "AMRUT",
+    "jeremyChoo": "JEREMY",
+    "monikaHengki": "MONIKA",
+    "wangJunming": "JUNMING",
+    "jiangChunhui": "CHUNHUI",
+    "liPengcheng": "JACOB",
+    "ronakLakhotia": "RONAK",
+    "rahulRajesh": "RAHUL",
+    "chattorajAyush": "AYUSH",
+    "tanHengYeow": "HENG YEOW"
+  }
+}
