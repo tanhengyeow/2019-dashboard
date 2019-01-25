@@ -1,0 +1,14 @@
+{
+  "dashboardGeneratedTime": "Fri Jan 25 19:03:05 SGT 2019",
+  "repos": [
+    {
+      "location": {
+        "location": "https://github.com/reposense/RepoSense.git",
+        "repoName": "RepoSense",
+        "organization": "reposense"
+      },
+      "branch": "master",
+      "displayName": "reposense_RepoSense_master"
+    }
+  ]
+}
