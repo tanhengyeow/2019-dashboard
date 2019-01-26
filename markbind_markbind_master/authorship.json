@@ -4082,7 +4082,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "data | `Array` || The local data source for suggestions. Expected to be a primitive array."
+        "content": "data | `Array` || The local data source for suggestions. Expected to be a primitive array. To use MarkBind\u0027s search functionality, set this value to `\"searchData\"`."
       },
       {
         "lineNumber": 38,
@@ -4096,7 +4096,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "on-hit | `Function` || A callback function when you click or hit return on an item."
+        "content": "on-hit | `Function` || A callback function when you click or hit return on an item. To use MarkBind\u0027s search functionality, set this value to `\"searchCallback\"`."
       },
       {
         "lineNumber": 40,
@@ -4117,10 +4117,59 @@
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cbox type\u003d\"warning\"\u003e"
       },
       {
         "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Note: If you are using MarkBind\u0027s search functionality, then `enableSearch` **must be set to `true` in `site.json`**."
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "See: [User Guide: Site Configuration → enableSearch]({{ baseUrl }}/userGuide/siteConfiguration.html#enable-search)."
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/box\u003e"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
@@ -4129,7 +4178,7 @@
     ],
     "authorContributionMap": {
       "Xenonym": 3,
-      "-": 40
+      "-": 47
     }
   },
   {
