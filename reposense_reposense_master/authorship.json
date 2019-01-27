@@ -1871,14 +1871,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "* [FAQ](#faq)"
+        "content": "* [Using Travis-CI to automate publishing of the report to GitHub Pages](#using-travis-ci-to-automate-publishing-of-the-report-to-github-pages)"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* [FAQ](#faq)"
       },
       {
         "lineNumber": 19,
@@ -1892,154 +1892,154 @@
         "author": {
           "gitId": "-"
         },
-        "content": "## Getting Started"
+        "content": ""
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "## Getting Started"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
-        "content": "First, ensure that you have the necessary prerequisites:"
+        "content": ""
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
-        "content": "* **JDK `1.8.0_60`** or later"
+        "content": "First, ensure that you have the necessary prerequisites:"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
-        "content": "* **git `2.14`** or later on the command line (run `git --version` in your OS terminal to confirm)"
+        "content": "* **JDK `1.8.0_60`** or later"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* **git `2.14`** or later on the command line (run `git --version` in your OS terminal to confirm)"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "-"
         },
-        "content": "Next, download the latest executable Jar from our [releases](https://github.com/reposense/RepoSense/releases/latest)."
+        "content": ""
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Next, download the latest executable Jar from our [releases](https://github.com/reposense/RepoSense/releases/latest)."
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "The simplest use case for RepoSense is to generate a report for the entire history of a repo. Here are the steps:"
+        "content": ""
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
-        "content": "1. Generate the report for the repo by executing the following command in a terminal:\u003cbr/\u003e"
+        "content": "The simplest use case for RepoSense is to generate a report for the entire history of a repo. Here are the steps:"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "-"
         },
-        "content": "   Format : `java -jar RepoSense.jar -repo FULL_REPO_URL` (note the `.git` at the end)\u003cbr\u003e"
+        "content": "1. Generate the report for the repo by executing the following command in a terminal:\u003cbr/\u003e"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
-        "content": "   Example: `java -jar RepoSense.jar -repo https://github.com/reposense/RepoSense.git`"
+        "content": "   Format : `java -jar RepoSense.jar -repo FULL_REPO_URL` (note the `.git` at the end)\u003cbr\u003e"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
-        "content": "1. The previous step analyzes the default branch of the repo and creates the report in a directory named `reposense-report`. Run the following command to view the report (it will open up in your default Browser):\u003cbr/\u003e"
+        "content": "   Example: `java -jar RepoSense.jar -repo https://github.com/reposense/RepoSense.git`"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "-"
         },
-        "content": "   `java -jar RepoSense.jar -view reposense-report`"
+        "content": "1. The previous step analyzes the default branch of the repo and creates the report in a directory named `reposense-report`. Run the following command to view the report (it will open up in your default Browser):\u003cbr/\u003e"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "   `java -jar RepoSense.jar -view reposense-report`"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "-"
         },
-        "content": "Alternatively, you can combine the 2 steps by running the following command to generate the report and automatically open it afterwards:\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "-"
         },
-        "content": "    `java -jar RepoSense.jar -repo FULL_REPO_URL -view`"
+        "content": "Alternatively, you can combine the 2 steps by running the following command to generate the report and automatically open it afterwards:\u003cbr\u003e"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    `java -jar RepoSense.jar -repo FULL_REPO_URL -view`"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003chr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003chr\u003e"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": "## Interpreting the Report"
+        "content": ""
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "## Interpreting the Report"
       },
       {
         "lineNumber": 42,
@@ -2053,42 +2053,42 @@
         "author": {
           "gitId": "-"
         },
-        "content": "As the report consist of static pages, it can be viewed using a Web Browser, and can be deployed on most Web hosting platforms (such as [GitHub Pages](https://pages.github.com/)). Assuming the report has been generated already, here are the two options to load the report onto a Browser:"
+        "content": ""
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
-        "content": "* Run RepoSense with the `-view` option:\u003cbr\u003e"
+        "content": "As the report consist of static pages, it can be viewed using a Web Browser, and can be deployed on most Web hosting platforms (such as [GitHub Pages](https://pages.github.com/)). Assuming the report has been generated already, here are the two options to load the report onto a Browser:"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
-        "content": "  Format: `java -jar RepoSense.jar -view REPORT_FOLDER`\u003cbr\u003e"
+        "content": "* Run RepoSense with the `-view` option:\u003cbr\u003e"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
-        "content": "  Example: `java -jar RepoSense.jar -view ./myReport/reposense-report`"
+        "content": "  Format: `java -jar RepoSense.jar -view REPORT_FOLDER`\u003cbr\u003e"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
-        "content": "* Open the `index.html` (in the report directory) using a Browser and if the report was not loaded automatically, upload the `archive.zip` (in the same directory) manually."
+        "content": "  Example: `java -jar RepoSense.jar -view ./myReport/reposense-report`"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* Open the `index.html` (in the report directory) using a Browser and if the report was not loaded automatically, upload the `archive.zip` (in the same directory) manually."
       },
       {
         "lineNumber": 49,
@@ -2102,42 +2102,42 @@
         "author": {
           "gitId": "-"
         },
-        "content": "Here is an example of how the report looks like:"
+        "content": ""
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Here is an example of how the report looks like:"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": "![report](images/report.png)"
+        "content": ""
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "![report](images/report.png)"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": "It consists of three main parts: the [_Chart Panel_](#chart-panel), the [_Code Panel_](#code-panel), and the [_Tool Bar_](#tool-bar),  each of which is explained in the sections below."
+        "content": ""
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "It consists of three main parts: the [_Chart Panel_](#chart-panel), the [_Code Panel_](#code-panel), and the [_Tool Bar_](#tool-bar),  each of which is explained in the sections below."
       },
       {
         "lineNumber": 56,
@@ -2151,154 +2151,154 @@
         "author": {
           "gitId": "-"
         },
-        "content": "### Chart Panel"
+        "content": ""
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "### Chart Panel"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
-        "content": "![Ramp Charts](images/rampchart.png)\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "![Ramp Charts](images/rampchart.png)\u003cbr\u003e"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
-        "content": "The `Chart Panel` (an example is shown above) contains _Ramp Charts_ and _Contribution Bars_."
+        "content": ""
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The `Chart Panel` (an example is shown above) contains _Ramp Charts_ and _Contribution Bars_."
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
-        "content": "**Ramp Chart**: This is a visualization of frequency and quantity of contributions of an author for a specific repository."
+        "content": ""
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**Ramp Chart**: This is a visualization of frequency and quantity of contributions of an author for a specific repository."
       },
       {
         "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 66,
         "author": {
           "gitId": "fzdy1914"
         },
         "content": "* **Title**: Each title consists of the **index**, the **name** of the author, a button to view author\u0027s **code** and a button to view author\u0027s **repo**."
       },
       {
-        "lineNumber": 66,
+        "lineNumber": 67,
         "author": {
           "gitId": "-"
         },
         "content": "* **Rows**: Each _row_ (i.e., light blue rectangle) represents the contribution timeline of an author for a specific repository."
       },
       {
-        "lineNumber": 67,
+        "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
         "content": "* **Ramp**: Each row contains **ramps** -- the pointy saw-tooth shapes you see in the screenshot above. A ramp represents the contributions of an author possibly aggregated over a period (e.g., a day or a week)."
       },
       {
-        "lineNumber": 68,
+        "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
         "content": "  * The area of the ramp is proportional to the amount of contribution the author did at that time period."
       },
       {
-        "lineNumber": 69,
+        "lineNumber": 70,
         "author": {
           "gitId": "-"
         },
         "content": "  * The position of the right edge of the ramp (perpendicular to the blue bar) represents the period (the day or the week) in which the contribution was made."
       },
       {
-        "lineNumber": 70,
+        "lineNumber": 71,
         "author": {
           "gitId": "-"
         },
         "content": "  * Hover the pointer over a ramp to see the total number of lines represented by that ramp."
       },
       {
-        "lineNumber": 71,
+        "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
         "content": "  * Click on the ramp to see on GitHub the list of commits represented by that ramp."
       },
       {
-        "lineNumber": 72,
+        "lineNumber": 73,
         "author": {
           "gitId": "-"
         },
         "content": "* To make comparison between two authors easier, the color of the ramps that represent different authors\u0027 contributions at the same time period are the same."
       },
       {
-        "lineNumber": 73,
+        "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
         "content": "* Ramps representing big contributions can overlap with earlier time periods. This represents the possibility that if the work committed during a specific period is big, it could have started in an earlier time period."
       },
       {
-        "lineNumber": 74,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
         "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
-        "content": "**Contribution Bar**: The total amount of code contributed by an author during the _total analysis period_ is represented by the length of the **red bars** (called _contribution bars_) that appear at the bottom of the row."
+        "content": ""
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": "* Hover over a contribution bar to see the exact amount of the contribution."
+        "content": "**Contribution Bar**: The total amount of code contributed by an author during the _total analysis period_ is represented by the length of the **red bars** (called _contribution bars_) that appear at the bottom of the row."
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": "* If an author contributed significantly higher than other authors, the contribution bar can span multiple lines (see the 4th author in the screenshot for an example)."
+        "content": "* Hover over a contribution bar to see the exact amount of the contribution."
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* If an author contributed significantly higher than other authors, the contribution bar can span multiple lines (see the 4th author in the screenshot for an example)."
       },
       {
         "lineNumber": 79,
@@ -2312,77 +2312,77 @@
         "author": {
           "gitId": "-"
         },
-        "content": "### Code Panel"
+        "content": ""
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "### Code Panel"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": "The `Code Panel` allows users to see the code attributed to a specific author. Click on the name of the author in the `Chart Panel` to display the `Code Panel` on the right."
+        "content": ""
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": "* The Code Panel shows the files that contain author\u0027s contributions, sorted by the number of lines written."
+        "content": "The `Code Panel` allows users to see the code attributed to a specific author. Click on the name of the author in the `Chart Panel` to display the `Code Panel` on the right."
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": "* Select the checkboxes to include files of preferred file extensions."
+        "content": "* The Code Panel shows the files that contain author\u0027s contributions, sorted by the number of lines written."
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": "* Clicking the file title toggles the file content."
+        "content": "* Select the checkboxes to include files of preferred file extensions."
       },
       {
         "lineNumber": 86,
         "author": {
-          "gitId": "fzdy1914"
+          "gitId": "-"
         },
-        "content": "* Clicking the first icon beside the file title opens the history view of the file on github."
+        "content": "* Clicking the file title toggles the file content."
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "fzdy1914"
         },
-        "content": "* Clicking the second icon beside the file title opens the blame view of the file on github."
+        "content": "* Clicking the first icon beside the file title opens the history view of the file on github."
       },
       {
         "lineNumber": 88,
         "author": {
-          "gitId": "-"
+          "gitId": "fzdy1914"
         },
-        "content": "* Code attributed to the author is highlighted in green."
+        "content": "* Clicking the second icon beside the file title opens the blame view of the file on github."
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": "* Non-trivial code segments that are not written by the selected author are hidden by default, but you can toggle them by clicking on the `...` icon."
+        "content": "* Code attributed to the author is highlighted in green."
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* Non-trivial code segments that are not written by the selected author are hidden by default, but you can toggle them by clicking on the `...` icon."
       },
       {
         "lineNumber": 91,
@@ -2396,931 +2396,931 @@
         "author": {
           "gitId": "-"
         },
-        "content": "### Tool Bar"
+        "content": ""
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
-        "content": "The `Tool Bar` at the top provides a set of configuration options that control the Chart Panel."
+        "content": "### Tool Bar"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "-"
         },
-        "content": "* `Search` : filters the author and repository by keywords."
+        "content": "The `Tool Bar` at the top provides a set of configuration options that control the Chart Panel."
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
-        "content": "  * Multiple keywords/terms can be used, separated by spaces."
+        "content": "* `Search` : filters the author and repository by keywords."
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": "  * Entries that contain _any_ (not necessarily _all_) of the search terms will be displayed."
+        "content": "  * Multiple keywords/terms can be used, separated by spaces."
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "  * The keywords used to filter author and repository are case-insensitive."
+        "content": "  * Entries that contain _any_ (not necessarily _all_) of the search terms will be displayed."
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": "* `Sort by` : sorting criteria for the Chart Panel"
+        "content": "  * The keywords used to filter author and repository are case-insensitive."
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "  * `Total Contribution` : the amount of lines, written by the author, in the repository."
+        "content": "* `Sort by` : sorting criteria for the Chart Panel"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
-        "content": "  * `Variance` : the [variance](https://en.wikipedia.org/wiki/Variance) of the number of lines that the author has contributed to the repository daily, sorted from low to high."
+        "content": "  * `Total Contribution` : the amount of lines, written by the author, in the repository."
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": "  * `Author Name` : the author\u0027s display name."
+        "content": "  * `Variance` : the [variance](https://en.wikipedia.org/wiki/Variance) of the number of lines that the author has contributed to the repository daily, sorted from low to high."
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
-        "content": "  * `Repo/Branch Name` : see note [1] below."
+        "content": "  * `Author Name` : the author\u0027s display name."
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": "* `Granularity` : the period of time for which commits are aggregated in the Ramp Chart."
+        "content": "  * `Repo/Branch Name` : see note [1] below."
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
-        "content": "    * `Day`: commits within a day (commits made within 00:00 to 23:59 in **GMT+8**) are shown as one ramp"
+        "content": "* `Granularity` : the period of time for which commits are aggregated in the Ramp Chart."
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": "    * `Week`:  commits within a week are shown as one ramp"
+        "content": "    * `Day`: commits within a day (commits made within 00:00 to 23:59 in **GMT+8**) are shown as one ramp"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
-        "content": "* `Since`, `Until` : the date range for the Ramp Chart (not applied to the Contribution Bars)."
+        "content": "    * `Week`:  commits within a week are shown as one ramp"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": "* `Reverse` : if checked, the sorting will be done in the reverse order of the default sorting order"
+        "content": "* `Since`, `Until` : the date range for the Ramp Chart (not applied to the Contribution Bars)."
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": "* `Group` : if checked, authors from the same repo/branch\u003csup\u003e[1]\u003c/sup\u003e will be grouped together. This has precedence over the `sort by` feature; the `sort by` feature will only change display order of the authors under the same repo/branch\u003csup\u003e[1]\u003c/sup\u003e."
+        "content": "* `Reverse` : if checked, the sorting will be done in the reverse order of the default sorting order"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* `Group` : if checked, authors from the same repo/branch\u003csup\u003e[1]\u003c/sup\u003e will be grouped together. This has precedence over the `sort by` feature; the `sort by` feature will only change display order of the authors under the same repo/branch\u003csup\u003e[1]\u003c/sup\u003e."
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "-"
         },
-        "content": "Notes:\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "-"
         },
-        "content": "[1] **`Repo/Branch`**: the repo/branch name is constructed as `ORGANIZATION_REPOSITORY_BRANCH` e.g., `resposense_reposense_master`"
+        "content": "Notes:\u003cbr\u003e"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "[1] **`Repo/Branch`**: the repo/branch name is constructed as `ORGANIZATION_REPOSITORY_BRANCH` e.g., `resposense_reposense_master`"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
-        "content": "**Bookmarking a specific toolbar setting**: The URL changes according to the toolbar configuration. You can save a specific configuration of the report by bookmarking the url (using browser functionality)."
+        "content": ""
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**Bookmarking a specific toolbar setting**: The URL changes according to the toolbar configuration. You can save a specific configuration of the report by bookmarking the url (using browser functionality)."
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003chr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003chr\u003e"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "-"
         },
-        "content": "## Configuring a Repo to Provide Additional Data to RepoSense"
+        "content": ""
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "## Configuring a Repo to Provide Additional Data to RepoSense"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
-        "content": "When a repo is being analyzed by RepoSense, there are **two ways repo owners can provide additional details to RepoSense**: using a config file, or annotating code using `@@author` tags. The two approaches are explained in the sections below."
+        "content": ""
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "When a repo is being analyzed by RepoSense, there are **two ways repo owners can provide additional details to RepoSense**: using a config file, or annotating code using `@@author` tags. The two approaches are explained in the sections below."
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
-        "content": "### Provide Data Using a json Config File"
+        "content": ""
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "### Provide Data Using a json Config File"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "-"
         },
-        "content": "Repo owners can provide the following additional information to RepoSense using a config file that we call the **_standalone config file_**:"
+        "content": ""
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "-"
         },
-        "content": "* which files/authors/commits to analyze/omit"
+        "content": "Repo owners can provide the following additional information to RepoSense using a config file that we call the **_standalone config file_**:"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "-"
         },
-        "content": "* which git and GitHub usernames belong to which authors"
+        "content": "* which files/authors/commits to analyze/omit"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "-"
         },
-        "content": "* the display of an author"
+        "content": "* which git and GitHub usernames belong to which authors"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* the display of an author"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "-"
         },
-        "content": "To use this feature, add a `_reposense/config.json`  to the root of your repo using the format in the example below ([another example](../_reposense/config.json)) and **commit it** (reason: RepoSense can see committed code only):"
+        "content": ""
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "-"
         },
-        "content": "```json"
+        "content": "To use this feature, add a `_reposense/config.json`  to the root of your repo using the format in the example below ([another example](../_reposense/config.json)) and **commit it** (reason: RepoSense can see committed code only):"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
-        "content": "{"
+        "content": "```json"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "-"
         },
-        "content": "  \"ignoreGlobList\": [\"about-us/**\", \"**index.html\"],"
+        "content": "{"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "-"
         },
-        "content": "  \"formats\": [\"html\", \"css\"],"
+        "content": "  \"ignoreGlobList\": [\"about-us/**\", \"**index.html\"],"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "-"
         },
-        "content": "  \"ignoreCommitList\": [\"90018e49f129ce7e0abdc8b18e91c9813588c601\", \"67890def\"],"
+        "content": "  \"formats\": [\"html\", \"css\"],"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "-"
         },
-        "content": "  \"authors\":"
+        "content": "  \"ignoreCommitList\": [\"90018e49f129ce7e0abdc8b18e91c9813588c601\", \"67890def\"],"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "-"
         },
-        "content": "  ["
+        "content": "  \"authors\":"
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "-"
         },
-        "content": "    {"
+        "content": "  ["
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"githubId\": \"alice\","
+        "content": "    {"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"emails\": [\"alice@example.com\", \"alicet@example.com\"],"
+        "content": "      \"githubId\": \"alice\","
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"displayName\": \"Alice T.\","
+        "content": "      \"emails\": [\"alice@example.com\", \"alicet@example.com\"],"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"authorNames\": [\"AT\", \"A\"],"
+        "content": "      \"displayName\": \"Alice T.\","
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"ignoreGlobList\": [\"**.css\"]"
+        "content": "      \"authorNames\": [\"AT\", \"A\"],"
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "      \"ignoreGlobList\": [\"**.css\"]"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "-"
         },
-        "content": "    {"
+        "content": "    },"
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"githubId\": \"bob\""
+        "content": "    {"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "      \"githubId\": \"bob\""
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "-"
         },
-        "content": "  ]"
+        "content": "    }"
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "-"
         },
-        "content": "}"
+        "content": "  ]"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "-"
         },
-        "content": "```"
+        "content": "}"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "-"
         },
-        "content": "Note: all fields are optional unless specified otherwise."
+        "content": "```"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Note: all fields are optional unless specified otherwise."
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "-"
         },
-        "content": "**Fields to provide _repository-level_ info**:"
+        "content": ""
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**Fields to provide _repository-level_ info**:"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "-"
         },
-        "content": "* `ignoreGlobList`: Folders/files to ignore, specified using the [_glob format_](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob)."
+        "content": ""
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "-"
         },
-        "content": "* `formats`: File formats to analyze. Default: `adoc cs css fxml gradle html java js json jsp md py tag txt xml`"
+        "content": "* `ignoreGlobList`: Folders/files to ignore, specified using the [_glob format_](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob)."
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "-"
         },
-        "content": "* `ignoreCommitList`: The list of commits to ignore during analysis. For accurate results, the commits should be provided with their full hash."
+        "content": "* `formats`: File formats to analyze. Default: `adoc cs css fxml gradle html java js json jsp md py tag txt xml`"
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* `ignoreCommitList`: The list of commits to ignore during analysis. For accurate results, the commits should be provided with their full hash."
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "-"
         },
-        "content": "**Fields to provide _author-level_ info**:\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "-"
         },
-        "content": "Note: `authors` field should contain _all_ authors that should be captured in the analysis."
+        "content": "**Fields to provide _author-level_ info**:\u003cbr\u003e"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "-"
         },
-        "content": "* `githubId`: GitHub username of the author. :exclamation: Mandatory field."
+        "content": "Note: `authors` field should contain _all_ authors that should be captured in the analysis."
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "-"
         },
-        "content": "* `emails`: Associated GitHub emails of the author. This can be found in your [GitHub settings](https://github.com/settings/emails)."
+        "content": "* `githubId`: GitHub username of the author. :exclamation: Mandatory field."
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "-"
         },
-        "content": "* `displayName`: Name to display on the report for this author."
+        "content": "* `emails`: Associated GitHub emails of the author. This can be found in your [GitHub settings](https://github.com/settings/emails)."
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "-"
         },
-        "content": "* `authorNames`: Git Author Name(s) used in the author\u0027s commits. By default RepoSense assumes an author would use her GitHub username as the Git username too. The meaning of _Git Author Name_ is explained in [_A Note About Git Author Name_](#a-note-about-git-author-name)."
+        "content": "* `displayName`: Name to display on the report for this author."
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "-"
         },
-        "content": "* `ignoreGlobList`: _Additional_ (i.e. on top of the repo-level `ignoreGlobList`) folders/files to ignore for a specific author . In the example above, the actual `ignoreGlobList` for `alice` would be `[\"about-us/**\", \"**index.html\", \"**.css\"]`"
+        "content": "* `authorNames`: Git Author Name(s) used in the author\u0027s commits. By default RepoSense assumes an author would use her GitHub username as the Git username too. The meaning of _Git Author Name_ is explained in [_A Note About Git Author Name_](#a-note-about-git-author-name)."
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* `ignoreGlobList`: _Additional_ (i.e. on top of the repo-level `ignoreGlobList`) folders/files to ignore for a specific author . In the example above, the actual `ignoreGlobList` for `alice` would be `[\"about-us/**\", \"**index.html\", \"**.css\"]`"
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "-"
         },
-        "content": "To verify your standalone configuration is as intended, add the `_reposense/config.json` to your local copy of repo and run RepoSense against it as follows:\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "-"
         },
-        "content": "* Format : `java -jar RepoSense.jar -repo LOCAL_REPO_LOCATION` \u003cbr\u003e"
+        "content": "To verify your standalone configuration is as intended, add the `_reposense/config.json` to your local copy of repo and run RepoSense against it as follows:\u003cbr\u003e"
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "-"
         },
-        "content": "* Example: `java -jar RepoSense.jar -repo c:/myRepose/foo/bar`\u003cbr\u003e"
+        "content": "* Format : `java -jar RepoSense.jar -repo LOCAL_REPO_LOCATION` \u003cbr\u003e"
       },
       {
         "lineNumber": 168,
         "author": {
           "gitId": "-"
         },
-        "content": "After that, view the report to see if the configuration you specified in the config file is being reflected correctly in the report."
+        "content": "* Example: `java -jar RepoSense.jar -repo c:/myRepose/foo/bar`\u003cbr\u003e"
       },
       {
         "lineNumber": 169,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "After that, view the report to see if the configuration you specified in the config file is being reflected correctly in the report."
       },
       {
         "lineNumber": 170,
         "author": {
           "gitId": "-"
         },
-        "content": "##### **A Note About Git Author Name**"
+        "content": ""
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "##### **A Note About Git Author Name**"
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "-"
         },
-        "content": "`Git Author Name` refers to the customizable author\u0027s display name set in the local `.gitconfig` file. For example, in the Git Log\u0027s display:"
+        "content": ""
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "-"
         },
-        "content": "```"
+        "content": "`Git Author Name` refers to the customizable author\u0027s display name set in the local `.gitconfig` file. For example, in the Git Log\u0027s display:"
       },
       {
         "lineNumber": 174,
         "author": {
           "gitId": "-"
         },
-        "content": "..."
+        "content": "```"
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "-"
         },
-        "content": "commit cd7f610e0becbdf331d5231887d8010a689f87c7"
+        "content": "..."
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "-"
         },
-        "content": "Author: ConfiguredAuthorName \u003cauthor@example.com\u003e"
+        "content": "commit cd7f610e0becbdf331d5231887d8010a689f87c7"
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "-"
         },
-        "content": "Date:   Fri Feb 9 19:14:41 2018 +0800"
+        "content": "Author: ConfiguredAuthorName \u003cauthor@example.com\u003e"
       },
       {
         "lineNumber": 178,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Date:   Fri Feb 9 19:14:41 2018 +0800"
       },
       {
         "lineNumber": 179,
         "author": {
           "gitId": "-"
         },
-        "content": "    Make some changes to show my new author\u0027s name"
+        "content": ""
       },
       {
         "lineNumber": 180,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    Make some changes to show my new author\u0027s name"
       },
       {
         "lineNumber": 181,
         "author": {
           "gitId": "-"
         },
-        "content": "commit e3f699fd4ef128eebce98d5b4e5b3bb06a512f49"
+        "content": ""
       },
       {
         "lineNumber": 182,
         "author": {
           "gitId": "-"
         },
-        "content": "Author: ActualGitHubId \u003cauthor@example.com\u003e"
+        "content": "commit e3f699fd4ef128eebce98d5b4e5b3bb06a512f49"
       },
       {
         "lineNumber": 183,
         "author": {
           "gitId": "-"
         },
-        "content": "Date:   Fri Feb 9 19:13:13 2018 +0800"
+        "content": "Author: ActualGitHubId \u003cauthor@example.com\u003e"
       },
       {
         "lineNumber": 184,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Date:   Fri Feb 9 19:13:13 2018 +0800"
       },
       {
         "lineNumber": 185,
         "author": {
           "gitId": "-"
         },
-        "content": "    Initial commit"
+        "content": ""
       },
       {
         "lineNumber": 186,
         "author": {
           "gitId": "-"
         },
-        "content": " ..."
+        "content": "    Initial commit"
       },
       {
         "lineNumber": 187,
         "author": {
           "gitId": "-"
         },
-        "content": "```"
+        "content": " ..."
       },
       {
         "lineNumber": 188,
         "author": {
           "gitId": "-"
         },
-        "content": "`ActualGitHubId` and `ConfiguredAuthorName` are both `Git Author Name` of the same author. To set the author name to the value you want (e.g., to set it to your GitHub username), you can use the following command ([more info](https://www.git-tower.com/learn/git/faq/change-author-name-email)):"
+        "content": "```"
       },
       {
         "lineNumber": 189,
         "author": {
           "gitId": "-"
         },
-        "content": "```"
+        "content": "`ActualGitHubId` and `ConfiguredAuthorName` are both `Git Author Name` of the same author. To set the author name to the value you want (e.g., to set it to your GitHub username), you can use the following command ([more info](https://www.git-tower.com/learn/git/faq/change-author-name-email)):"
       },
       {
         "lineNumber": 190,
         "author": {
           "gitId": "-"
         },
-        "content": "git config --global user.name \"YOUR_AUTHOR_NAME”"
+        "content": "```"
       },
       {
         "lineNumber": 191,
         "author": {
           "gitId": "-"
         },
-        "content": "```"
+        "content": "git config --global user.name \"YOUR_AUTHOR_NAME”"
       },
       {
         "lineNumber": 192,
         "author": {
           "gitId": "-"
         },
-        "content": "RepoSense expects the Git Author Name to be the same as author\u0027s GitHub username. If an author\u0027s `Git Author Name` is different from her `GitHub ID`, the `Git Author Name` needs to be specified in the standalone config file. If the author has more than one `Git Author Name`, multiple values can be entered too."
+        "content": "```"
       },
       {
         "lineNumber": 193,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "RepoSense expects the Git Author Name to be the same as author\u0027s GitHub username. If an author\u0027s `Git Author Name` is different from her `GitHub ID`, the `Git Author Name` needs to be specified in the standalone config file. If the author has more than one `Git Author Name`, multiple values can be entered too."
       },
       {
         "lineNumber": 194,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003e Note: Symbols such as `\"`, `!`, `/` etc. in your author name will be omitted, which may reduce the accuracy of the analysis if 2 names in the repository are approximately similar."
+        "content": ""
       },
       {
         "lineNumber": 195,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003e Note: Symbols such as `\"`, `!`, `/` etc. in your author name will be omitted, which may reduce the accuracy of the analysis if 2 names in the repository are approximately similar."
       },
       {
         "lineNumber": 196,
         "author": {
           "gitId": "-"
         },
-        "content": "### Provide Data Using `@@author` Tags"
+        "content": ""
       },
       {
         "lineNumber": 197,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "### Provide Data Using `@@author` Tags"
       },
       {
         "lineNumber": 198,
         "author": {
           "gitId": "-"
         },
-        "content": "If you want to override the code authorships deduced by RepoSense (which is based on Git blame/log data), you can use `@@author` tags to specify certain code segments should be credited to a certain author irrespective of git history. An example scenario where this is useful is when a method was originally written by one author but a second author did some minor refactoring to it; in this case RepoSense might attribute the code to the second author while you may want to attribute the code to the first author."
+        "content": ""
       },
       {
         "lineNumber": 199,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "If you want to override the code authorships deduced by RepoSense (which is based on Git blame/log data), you can use `@@author` tags to specify certain code segments should be credited to a certain author irrespective of git history. An example scenario where this is useful is when a method was originally written by one author but a second author did some minor refactoring to it; in this case RepoSense might attribute the code to the second author while you may want to attribute the code to the first author."
       },
       {
         "lineNumber": 200,
         "author": {
           "gitId": "-"
         },
-        "content": "There are 2 types of `@@author` tags:"
+        "content": ""
       },
       {
         "lineNumber": 201,
         "author": {
           "gitId": "-"
         },
-        "content": "- Start Tags (format: `@@author AUTHOR_GITHUB_ID`): A start tag indicates the start of a code segment written by the author identified by the `AUTHOR_GITHUB_ID`."
+        "content": "There are 2 types of `@@author` tags:"
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "-"
         },
-        "content": "- End Tags (format: `@@author`): Optional. If not provided, the code till the next start tag (or the end of the file) will be attributed to the author specified in the start tag above. Use only when necessary to minimize polluting your code with these extra tags."
+        "content": "- Start Tags (format: `@@author AUTHOR_GITHUB_ID`): A start tag indicates the start of a code segment written by the author identified by the `AUTHOR_GITHUB_ID`."
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "- End Tags (format: `@@author`): Optional. If not provided, the code till the next start tag (or the end of the file) will be attributed to the author specified in the start tag above. Use only when necessary to minimize polluting your code with these extra tags."
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "-"
         },
-        "content": "The `@@author` tags should be enclosed within a comment, using the comment syntax of the file in concern. Below are some examples:"
+        "content": ""
       },
       {
         "lineNumber": 205,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The `@@author` tags should be enclosed within a comment, using the comment syntax of the file in concern. Below are some examples:"
       },
       {
         "lineNumber": 206,
         "author": {
           "gitId": "-"
         },
-        "content": "![author tags](images/add-author-tags.png)"
+        "content": ""
       },
       {
         "lineNumber": 207,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "![author tags](images/add-author-tags.png)"
       },
       {
         "lineNumber": 208,
         "author": {
           "gitId": "-"
         },
-        "content": "Special thanks to [Collate](https://github.com/se-edu/collate) for providing the inspiration for this functionality."
+        "content": ""
       },
       {
         "lineNumber": 209,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Special thanks to [Collate](https://github.com/se-edu/collate) for providing the inspiration for this functionality."
       },
       {
         "lineNumber": 210,
         "author": {
           "gitId": "-"
         },
-        "content": "Note: Remember to **commit** the files after the changes. (reason: RepoSense can see committed code only)"
+        "content": ""
       },
       {
         "lineNumber": 211,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003chr\u003e"
+        "content": "Note: Remember to **commit** the files after the changes. (reason: RepoSense can see committed code only)"
       },
       {
         "lineNumber": 212,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003chr\u003e"
       },
       {
         "lineNumber": 213,
         "author": {
           "gitId": "-"
         },
-        "content": "## Customizing the Analysis"
+        "content": ""
       },
       {
         "lineNumber": 214,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "## Customizing the Analysis"
       },
       {
         "lineNumber": 215,
         "author": {
           "gitId": "-"
         },
-        "content": "The analysis can be customized using additional command line parameters or using config files. The two approaches are explained in the sections below."
+        "content": ""
       },
       {
         "lineNumber": 216,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The analysis can be customized using additional command line parameters or using config files. The two approaches are explained in the sections below."
       },
       {
         "lineNumber": 217,
         "author": {
           "gitId": "-"
         },
-        "content": "### Customize Using Command Line Parameters"
+        "content": ""
       },
       {
         "lineNumber": 218,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "### Customize Using Command Line Parameters"
       },
       {
         "lineNumber": 219,
         "author": {
           "gitId": "-"
         },
-        "content": "As you know, `java -jar RepoSense.jar` takes the following parameter:"
+        "content": ""
       },
       {
         "lineNumber": 220,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "As you know, `java -jar RepoSense.jar` takes the following parameter:"
       },
       {
         "lineNumber": 221,
         "author": {
           "gitId": "-"
         },
-        "content": "* **`-repo REPO_LOCATION`**: The URL or the disk location of the git repositories to analyze.\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 222,
         "author": {
           "gitId": "-"
         },
-        "content": "  Example using URL: `-repo https://github.com/reposense/RepoSense.git`\u003cbr\u003e"
+        "content": "* **`-repo REPO_LOCATION`**: The URL or the disk location of the git repositories to analyze.\u003cbr\u003e"
       },
       {
         "lineNumber": 223,
         "author": {
           "gitId": "-"
         },
-        "content": "  Example using disk location: `-repo C:\\Users\\user\\Desktop\\GitHub\\RepoSense`"
+        "content": "  Example using URL: `-repo https://github.com/reposense/RepoSense.git`\u003cbr\u003e"
       },
       {
         "lineNumber": 224,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  Example using disk location: `-repo C:\\Users\\user\\Desktop\\GitHub\\RepoSense`"
       },
       {
         "lineNumber": 225,
@@ -3334,602 +3334,602 @@
         "author": {
           "gitId": "-"
         },
-        "content": "In addition, there are some _optional_ extra parameters you can use to customize the analysis further:"
+        "content": ""
       },
       {
         "lineNumber": 227,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "In addition, there are some _optional_ extra parameters you can use to customize the analysis further:"
       },
       {
         "lineNumber": 228,
         "author": {
           "gitId": "-"
         },
-        "content": "* **`-output OUTPUT_DIRECTORY`**: Indicates where to save the report generated. Default: current directory.\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 229,
         "author": {
           "gitId": "-"
         },
-        "content": "  Example: `-output ./foo` (in this case, the report will be in the `./foo/reposense-report` folder)"
+        "content": "* **`-output OUTPUT_DIRECTORY`**: Indicates where to save the report generated. Default: current directory.\u003cbr\u003e"
       },
       {
         "lineNumber": 230,
         "author": {
           "gitId": "-"
         },
-        "content": "* **`-since START_DATE`**: The start date of analysis. Format: `DD/MM/YYYY`\u003cbr\u003e"
+        "content": "  Example: `-output ./foo` (in this case, the report will be in the `./foo/reposense-report` folder)"
       },
       {
         "lineNumber": 231,
         "author": {
           "gitId": "-"
         },
-        "content": "  Example:`-since 21/10/2017`"
+        "content": "* **`-since START_DATE`**: The start date of analysis. Format: `DD/MM/YYYY`\u003cbr\u003e"
       },
       {
         "lineNumber": 232,
         "author": {
           "gitId": "-"
         },
-        "content": "* **`-until END_DATE`**: The end date of analysis. The analysis excludes the end date. Format: `DD/MM/YYYY`\u003cbr\u003e"
+        "content": "  Example:`-since 21/10/2017`"
       },
       {
         "lineNumber": 233,
         "author": {
           "gitId": "-"
         },
-        "content": "  Example:`-until 21/10/2017`"
+        "content": "* **`-until END_DATE`**: The end date of analysis. The analysis excludes the end date. Format: `DD/MM/YYYY`\u003cbr\u003e"
       },
       {
         "lineNumber": 234,
         "author": {
           "gitId": "-"
         },
-        "content": "* **`-formats LIST_OF_FORMATS`**: A space-separated list of file extensions that should be included in the analysis. Default: `adoc cs css fxml gradle html java js json jsp md py tag txt xml`\u003cbr\u003e"
+        "content": "  Example:`-until 21/10/2017`"
       },
       {
         "lineNumber": 235,
         "author": {
           "gitId": "-"
         },
-        "content": "  Example:`-formats css fxml gradle`"
+        "content": "* **`-formats LIST_OF_FORMATS`**: A space-separated list of file extensions that should be included in the analysis. Default: `adoc cs css fxml gradle html java js json jsp md py tag txt xml`\u003cbr\u003e"
       },
       {
         "lineNumber": 236,
         "author": {
-          "gitId": "fzdy1914"
+          "gitId": "-"
         },
-        "content": "* **`-isac, --ignore-standalone-config`**: A flag to ignore the standalone config file in the repo (`-isac` as alias). This flag will not overwrite the `Ignore standalone config` field in the csv config file. Default: the standalone config file is not ignored.\u003cbr\u003e"
+        "content": "  Example:`-formats css fxml gradle`"
       },
       {
         "lineNumber": 237,
         "author": {
           "gitId": "fzdy1914"
         },
-        "content": "  Example:`--ignore-standalone-config` or `-isac`"
+        "content": "* **`-isac, --ignore-standalone-config`**: A flag to ignore the standalone config file in the repo (`-isac` as alias). This flag will not overwrite the `Ignore standalone config` field in the csv config file. Default: the standalone config file is not ignored.\u003cbr\u003e"
       },
       {
         "lineNumber": 238,
         "author": {
-          "gitId": "-"
+          "gitId": "fzdy1914"
         },
-        "content": "* **`-view [REPORT_FOLDER]`**: A flag to launch the report automatically after processing. Note that if the `REPORT_FOLDER` argument is given, no analysis will be performed and the report specified by the argument will be opened.\u003cbr\u003e"
+        "content": "  Example:`--ignore-standalone-config` or `-isac`"
       },
       {
         "lineNumber": 239,
         "author": {
           "gitId": "-"
         },
-        "content": "Example:`-view`"
+        "content": "* **`-view [REPORT_FOLDER]`**: A flag to launch the report automatically after processing. Note that if the `REPORT_FOLDER` argument is given, no analysis will be performed and the report specified by the argument will be opened.\u003cbr\u003e"
       },
       {
         "lineNumber": 240,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Example:`-view`"
       },
       {
         "lineNumber": 241,
         "author": {
           "gitId": "-"
         },
-        "content": "Here\u0027s an example of a command using all parameters:\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 242,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Here\u0027s an example of a command using all parameters:\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 243,
         "author": {
           "gitId": "fzdy1914"
         },
         "content": "`java -jar RepoSense.jar -repo https://github.com/reposense/RepoSense.git -output ./report_folder -since 21/10/2017 -until 21/11/2017 -formats java adoc js -view -isac`"
       },
       {
-        "lineNumber": 243,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
         "lineNumber": 244,
         "author": {
           "gitId": "-"
         },
-        "content": "### Customize Using csv Config Files"
+        "content": ""
       },
       {
         "lineNumber": 245,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "### Customize Using csv Config Files"
       },
       {
         "lineNumber": 246,
         "author": {
           "gitId": "-"
         },
-        "content": "Another, more powerful, way to customize the analysis is by using dedicated config files. In this case you need to use the `-config` parameter instead of the `-repo` parameter when running RepoSense, as follows:"
+        "content": ""
       },
       {
         "lineNumber": 247,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Another, more powerful, way to customize the analysis is by using dedicated config files. In this case you need to use the `-config` parameter instead of the `-repo` parameter when running RepoSense, as follows:"
       },
       {
         "lineNumber": 248,
         "author": {
           "gitId": "-"
         },
-        "content": "* **`-config CONFIG_DIRECTORY`**: The directory in which you have the config files.\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 249,
         "author": {
           "gitId": "-"
         },
-        "content": "  Example:`java -jar RepoSense.jar -config  ./my_configs`"
+        "content": "* **`-config CONFIG_DIRECTORY`**: The directory in which you have the config files.\u003cbr\u003e"
       },
       {
         "lineNumber": 250,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  Example:`java -jar RepoSense.jar -config  ./my_configs`"
       },
       {
         "lineNumber": 251,
         "author": {
           "gitId": "-"
         },
-        "content": "The directory used with the `-config` parameter should contain a `repo-config.csv` file and, optionally, an `author-config.csv` file, both of which are described in the sections below."
+        "content": ""
       },
       {
         "lineNumber": 252,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The directory used with the `-config` parameter should contain a `repo-config.csv` file and, optionally, an `author-config.csv` file, both of which are described in the sections below."
       },
       {
         "lineNumber": 253,
         "author": {
           "gitId": "-"
         },
-        "content": "#### `repo-config.csv`"
+        "content": ""
       },
       {
         "lineNumber": 254,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "#### `repo-config.csv`"
       },
       {
         "lineNumber": 255,
         "author": {
           "gitId": "-"
         },
-        "content": "`repo-config.csv` file contains repo-level config data as follows:"
+        "content": ""
       },
       {
         "lineNumber": 256,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "`repo-config.csv` file contains repo-level config data as follows:"
       },
       {
         "lineNumber": 257,
         "author": {
           "gitId": "-"
         },
-        "content": "* First row: column headings, ignored by RepoSense"
+        "content": ""
       },
       {
         "lineNumber": 258,
         "author": {
           "gitId": "-"
         },
-        "content": "* Second row: repo data"
+        "content": "* First row: column headings, ignored by RepoSense"
       },
       {
         "lineNumber": 259,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* Second row: repo data"
       },
       {
         "lineNumber": 260,
         "author": {
           "gitId": "-"
         },
-        "content": "Here is an example:"
+        "content": ""
       },
       {
         "lineNumber": 261,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Here is an example:"
       },
       {
         "lineNumber": 262,
         "author": {
           "gitId": "-"
         },
-        "content": "Repository\u0027s Location|Branch|File formats|Ignore Glob List|Ignore standalone config|Ignore Commits List"
+        "content": ""
       },
       {
         "lineNumber": 263,
         "author": {
           "gitId": "-"
         },
-        "content": "---------------------|------|------------|----------------|------------------------|-------------------"
+        "content": "Repository\u0027s Location|Branch|File formats|Ignore Glob List|Ignore standalone config|Ignore Commits List"
       },
       {
         "lineNumber": 264,
         "author": {
           "gitId": "-"
         },
-        "content": "`https://github.com/foo/bar.git`|`master`|`java;css`|`test/**`|`yes`|`2fb6b9b2dd9fa40bf0f9815da2cb0ae8731436c7;c5a6dc774e22099cd9ddeb0faff1e75f9cf4f151`"
+        "content": "---------------------|------|------------|----------------|------------------------|-------------------"
       },
       {
         "lineNumber": 265,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "`https://github.com/foo/bar.git`|`master`|`java;css`|`test/**`|`yes`|`2fb6b9b2dd9fa40bf0f9815da2cb0ae8731436c7;c5a6dc774e22099cd9ddeb0faff1e75f9cf4f151`"
       },
       {
         "lineNumber": 266,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 267,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cbr\u003e"
       },
       {
         "lineNumber": 268,
         "author": {
           "gitId": "-"
         },
-        "content": "Column Name | Explanation"
+        "content": ""
       },
       {
         "lineNumber": 269,
         "author": {
           "gitId": "-"
         },
-        "content": "----------- | -----------"
+        "content": "Column Name | Explanation"
       },
       {
         "lineNumber": 270,
         "author": {
           "gitId": "-"
         },
-        "content": "Repository\u0027s Location | The `GitHub URL` or `Disk Path` to the git repository e.g., `https://github.com/foo/bar.git` or `C:\\Users\\user\\Desktop\\GitHub\\foo\\bar`"
+        "content": "----------- | -----------"
       },
       {
         "lineNumber": 271,
         "author": {
           "gitId": "-"
         },
-        "content": "[Optional] Branch | The branch to analyze in the target repository e.g., `master`. Default: the default branch of the repo"
+        "content": "Repository\u0027s Location | The `GitHub URL` or `Disk Path` to the git repository e.g., `https://github.com/foo/bar.git` or `C:\\Users\\user\\Desktop\\GitHub\\foo\\bar`"
       },
       {
         "lineNumber": 272,
         "author": {
           "gitId": "-"
         },
-        "content": "[Optional] File formats\u003csup\u003e*\u003c/sup\u003e | The file extensions to analyze. Default: `adoc;cs;css;fxml;gradle;html;java;js;json;jsp;md;py;tag;txt;xml`"
+        "content": "[Optional] Branch | The branch to analyze in the target repository e.g., `master`. Default: the default branch of the repo"
       },
       {
         "lineNumber": 273,
         "author": {
           "gitId": "-"
         },
-        "content": "[Optional] Ignore Glob List\u003csup\u003e*\u003c/sup\u003e | The list of file path globs to ignore during analysis for each author. e.g., `test/**;temp/**`"
+        "content": "[Optional] File formats\u003csup\u003e*\u003c/sup\u003e | The file extensions to analyze. Default: `adoc;cs;css;fxml;gradle;html;java;js;json;jsp;md;py;tag;txt;xml`"
       },
       {
         "lineNumber": 274,
         "author": {
           "gitId": "-"
         },
-        "content": "[Optional] Ignore standalone config | To ignore the standalone config file (if any) in target repository, enter **`yes`**. If the cell is empty, the standalone config file in the repo (if any) will take precedence over configurations provided in the csv files."
+        "content": "[Optional] Ignore Glob List\u003csup\u003e*\u003c/sup\u003e | The list of file path globs to ignore during analysis for each author. e.g., `test/**;temp/**`"
       },
       {
         "lineNumber": 275,
         "author": {
           "gitId": "-"
         },
-        "content": "[Optional] Ignore Commit List\u003csup\u003e*\u003c/sup\u003e | The list of commits to ignore during analysis. For accurate results, the commits should be provided with their full hash."
+        "content": "[Optional] Ignore standalone config | To ignore the standalone config file (if any) in target repository, enter **`yes`**. If the cell is empty, the standalone config file in the repo (if any) will take precedence over configurations provided in the csv files."
       },
       {
         "lineNumber": 276,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "[Optional] Ignore Commit List\u003csup\u003e*\u003c/sup\u003e | The list of commits to ignore during analysis. For accurate results, the commits should be provided with their full hash."
       },
       {
         "lineNumber": 277,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003csup\u003e* **Multi-value column**: multiple values can be entered in this column using a semicolon `;` as the separator.\u003c/sup\u003e"
+        "content": ""
       },
       {
         "lineNumber": 278,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003csup\u003e* **Multi-value column**: multiple values can be entered in this column using a semicolon `;` as the separator.\u003c/sup\u003e"
       },
       {
         "lineNumber": 279,
         "author": {
           "gitId": "-"
         },
-        "content": "#### `author-config.csv`"
+        "content": ""
       },
       {
         "lineNumber": 280,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "#### `author-config.csv`"
       },
       {
         "lineNumber": 281,
         "author": {
           "gitId": "-"
         },
-        "content": "Optionally, you can use a `author-config.csv` (which should be in the same directory as `repo-config.csv` file) to provide more details about the authors to analyze ([example](author-config.csv)). It should contain the following columns:"
+        "content": ""
       },
       {
         "lineNumber": 282,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Optionally, you can use a `author-config.csv` (which should be in the same directory as `repo-config.csv` file) to provide more details about the authors to analyze ([example](author-config.csv)). It should contain the following columns:"
       },
       {
         "lineNumber": 283,
         "author": {
           "gitId": "-"
         },
-        "content": "Column Name | Explanation"
+        "content": ""
       },
       {
         "lineNumber": 284,
         "author": {
           "gitId": "-"
         },
-        "content": "----------- | -----------"
+        "content": "Column Name | Explanation"
       },
       {
         "lineNumber": 285,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "----------- | -----------"
+      },
+      {
+        "lineNumber": 286,
         "author": {
           "gitId": "fzdy1914"
         },
         "content": "[Optional] Repository\u0027s Location | Same as `repo-config.csv`. Default: all the repos in `repo-config.csv`"
       },
       {
-        "lineNumber": 286,
+        "lineNumber": 287,
         "author": {
           "gitId": "-"
         },
         "content": "[Optional] Branch | The branch to analyze for this author e.g., `master`. Default: the default branch of the repo"
       },
       {
-        "lineNumber": 287,
+        "lineNumber": 288,
         "author": {
           "gitId": "-"
         },
         "content": "Author\u0027s GitHub ID | GitHub username of the target author e.g., `JohnDoe`"
       },
       {
-        "lineNumber": 288,
+        "lineNumber": 289,
         "author": {
           "gitId": "-"
         },
         "content": "[Optional] Author\u0027s Emails\u003csup\u003e*\u003c/sup\u003e | Associated Github emails of the author. This can be found in your [GitHub settings](https://github.com/settings/emails)."
       },
       {
-        "lineNumber": 289,
+        "lineNumber": 290,
         "author": {
           "gitId": "-"
         },
         "content": "[Optional] Author\u0027s Display Name | The name to display for the author. Default: author\u0027s GitHub username."
       },
       {
-        "lineNumber": 290,
+        "lineNumber": 291,
         "author": {
           "gitId": "-"
         },
         "content": "[Optional] Author\u0027s Git Author Name\u003csup\u003e*\u003c/sup\u003e | The meaning of _Git Author Name_ is explained in [_A Note About Git Author Name_](#a-note-about-git-author-name)."
       },
       {
-        "lineNumber": 291,
+        "lineNumber": 292,
         "author": {
           "gitId": "-"
         },
         "content": "[Optional] Ignore Glob List\u003csup\u003e*\u003c/sup\u003e | Files to ignore for this author, in addition to files ignored by the patterns specified in `repo-config.csv`"
       },
       {
-        "lineNumber": 292,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
         "lineNumber": 293,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003csup\u003e* **Multi-value column**: multiple values can be entered in this column using a semicolon `;` as the separator.\u003c/sup\u003e"
+        "content": ""
       },
       {
         "lineNumber": 294,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003csup\u003e* **Multi-value column**: multiple values can be entered in this column using a semicolon `;` as the separator.\u003c/sup\u003e"
       },
       {
         "lineNumber": 295,
         "author": {
           "gitId": "-"
         },
-        "content": "If `author-config.csv` is not given and the repo has not provide author details in a standalone config file, all the authors of the repositories within the date range specified (if any) will be analyzed."
+        "content": ""
       },
       {
         "lineNumber": 296,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "If `author-config.csv` is not given and the repo has not provide author details in a standalone config file, all the authors of the repositories within the date range specified (if any) will be analyzed."
       },
       {
         "lineNumber": 297,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003chr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 298,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003chr\u003e"
       },
       {
         "lineNumber": 299,
         "author": {
           "gitId": "-"
         },
-        "content": "## Analyzing Multiple Repos"
+        "content": ""
       },
       {
         "lineNumber": 300,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "## Analyzing Multiple Repos"
       },
       {
         "lineNumber": 301,
         "author": {
           "gitId": "-"
         },
-        "content": "This section assumes that you have read the earlier sections of the user guide."
+        "content": ""
       },
       {
         "lineNumber": 302,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "This section assumes that you have read the earlier sections of the user guide."
       },
       {
         "lineNumber": 303,
         "author": {
           "gitId": "-"
         },
-        "content": "The simplest way to analyze multiple repos in one go is to use the `-repos` parameter in place of the `-repo` parameter when running RepoSense."
+        "content": ""
       },
       {
         "lineNumber": 304,
         "author": {
           "gitId": "-"
         },
-        "content": "* Format : `java -jar RepoSense.jar -repos REPO_LIST` \u003cbr\u003e"
+        "content": "The simplest way to analyze multiple repos in one go is to use the `-repos` parameter in place of the `-repo` parameter when running RepoSense."
       },
       {
         "lineNumber": 305,
         "author": {
           "gitId": "-"
         },
-        "content": "* Example: `java -jar RepoSense.jar -repos https://github.com/reposense/RepoSense.git c:/myRepose/foo/bar` analyzes the two specified repos (one remote, one local) and generates one report containing details of both."
+        "content": "* Format : `java -jar RepoSense.jar -repos REPO_LIST` \u003cbr\u003e"
       },
       {
         "lineNumber": 306,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* Example: `java -jar RepoSense.jar -repos https://github.com/reposense/RepoSense.git c:/myRepose/foo/bar` analyzes the two specified repos (one remote, one local) and generates one report containing details of both."
       },
       {
         "lineNumber": 307,
         "author": {
           "gitId": "-"
         },
-        "content": "Alternatively, you can use csv config files to customize the analysis as before while specifying multiple repos to analyze."
+        "content": ""
       },
       {
         "lineNumber": 308,
         "author": {
           "gitId": "-"
         },
-        "content": "* `repo-config.csv`: Add additional rows for the extra repos ([example](repo-config.csv))"
+        "content": "Alternatively, you can use csv config files to customize the analysis as before while specifying multiple repos to analyze."
       },
       {
         "lineNumber": 309,
         "author": {
           "gitId": "-"
         },
-        "content": "* `author-config.csv`: Add one row for each author in each repo you want to analyze"
+        "content": "* `repo-config.csv`: Add additional rows for the extra repos ([example](repo-config.csv))"
       },
       {
         "lineNumber": 310,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* `author-config.csv`: Add one row for each author in each repo you want to analyze"
       },
       {
         "lineNumber": 311,
         "author": {
           "gitId": "-"
         },
-        "content": "## FAQ"
+        "content": ""
       },
       {
         "lineNumber": 312,
@@ -3943,21 +3943,21 @@
         "author": {
           "gitId": "-"
         },
-        "content": "#### Q: Does RepoSense work on private repositories?"
+        "content": "## Using Travis-CI to automate publishing of the report to GitHub Pages"
       },
       {
         "lineNumber": 314,
         "author": {
           "gitId": "-"
         },
-        "content": "**A:** *RepoSense* will first clone the git repository to be analyzed, thus if you do not have access to the repository, we are unable to run the analysis.\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 315,
         "author": {
           "gitId": "-"
         },
-        "content": "To enable *RepoSense* to work on private repositories, ensure that you have enabled access to your private repository in your git terminal first, before running the analysis."
+        "content": "Follow this [guide](PublishingGuide.md) to automate publishing of your report to GitHub Pages."
       },
       {
         "lineNumber": 316,
@@ -3971,150 +3971,192 @@
         "author": {
           "gitId": "-"
         },
-        "content": "#### Q: How does formats work?"
+        "content": "## FAQ"
       },
       {
         "lineNumber": 318,
         "author": {
           "gitId": "-"
         },
-        "content": "**A:** **Formats** are the [file extensions](https://techterms.com/definition/fileextension), which is the **suffix** at the end of a filename that indicates what type of file it is.\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 319,
         "author": {
           "gitId": "-"
         },
-        "content": "The formats/file extensions to be analyzed by *RepoSense* can be specified through the [standalone config file](#provide-data-using-a-json-config-file), [repo-config file](#repo-configcsv) and [command line](#customize-using-command-line-parameters)."
+        "content": "#### Q: Does RepoSense work on private repositories?"
       },
       {
         "lineNumber": 320,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**A:** *RepoSense* will first clone the git repository to be analyzed, thus if you do not have access to the repository, we are unable to run the analysis.\u003cbr\u003e"
       },
       {
         "lineNumber": 321,
         "author": {
           "gitId": "-"
         },
-        "content": "#### Q: How does ignore glob list work?"
+        "content": "To enable *RepoSense* to work on private repositories, ensure that you have enabled access to your private repository in your git terminal first, before running the analysis."
       },
       {
         "lineNumber": 322,
         "author": {
           "gitId": "-"
         },
-        "content": "**A:** [Glob](https://en.wikipedia.org/wiki/Glob_(programming)) is the pattern to specify a set of filenames with [wildcard characters](https://www.computerhope.com/jargon/w/wildcard.htm). **Ignore glob list** is the list of patterns to specify all the files in the repository which should be ignored from analysis.\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 323,
         "author": {
           "gitId": "-"
         },
-        "content": "The ignore glob list can be specified through the [standalone config file](#provide-data-using-a-json-config-file), [repo-config file](#repo-configcsv) and [author-config file](#author-configcsv)."
+        "content": "#### Q: How does formats work?"
       },
       {
         "lineNumber": 324,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**A:** **Formats** are the [file extensions](https://techterms.com/definition/fileextension), which is the **suffix** at the end of a filename that indicates what type of file it is.\u003cbr\u003e"
       },
       {
         "lineNumber": 325,
         "author": {
           "gitId": "-"
         },
-        "content": "#### Q: My commit contributions does not appear in the ramp chart (despite appearing in the contribution bar and code panel)?"
+        "content": "The formats/file extensions to be analyzed by *RepoSense* can be specified through the [standalone config file](#provide-data-using-a-json-config-file), [repo-config file](#repo-configcsv) and [command line](#customize-using-command-line-parameters)."
       },
       {
         "lineNumber": 326,
         "author": {
           "gitId": "-"
         },
-        "content": "**A:** This is probably a case of giving an incorrect author name alias (or github ID) in your [author-config file](#author-configcsv).\u003cbr\u003e"
+        "content": ""
       },
       {
         "lineNumber": 327,
         "author": {
           "gitId": "-"
         },
-        "content": "Please refer to [A Note About Git Author Name](#a-note-about-git-author-name) above on how to find out the correct author name you are using, and how to change it.\u003cbr\u003e"
+        "content": "#### Q: How does ignore glob list work?"
       },
       {
         "lineNumber": 328,
         "author": {
           "gitId": "-"
         },
-        "content": "Also ensure that you have added all author name aliases that you may be using (if you are using multiple computers or have previously changed your author name)."
+        "content": "**A:** [Glob](https://en.wikipedia.org/wiki/Glob_(programming)) is the pattern to specify a set of filenames with [wildcard characters](https://www.computerhope.com/jargon/w/wildcard.htm). **Ignore glob list** is the list of patterns to specify all the files in the repository which should be ignored from analysis.\u003cbr\u003e"
       },
       {
         "lineNumber": 329,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The ignore glob list can be specified through the [standalone config file](#provide-data-using-a-json-config-file), [repo-config file](#repo-configcsv) and [author-config file](#author-configcsv)."
       },
       {
         "lineNumber": 330,
         "author": {
           "gitId": "-"
         },
-        "content": "#### Q: My contribution bar and code panel is empty (despite having lots of commit contributions in the ramp chart)?"
+        "content": ""
       },
       {
         "lineNumber": 331,
         "author": {
           "gitId": "-"
         },
-        "content": "**A:** The contribution bar and code panel records the lines you have authored to the **latest** commit of the repository and branch you are analyzing. As such, it is possible that while you have lots of commit contributions, your final authorship contribution is low if you have only deleted lines, someone else have overwritten your code and taken authorship for it (currently, *RepoSense* does not have functionality to track overwritten lines).\u003cbr\u003e"
+        "content": "#### Q: My commit contributions does not appear in the ramp chart (despite appearing in the contribution bar and code panel)?"
       },
       {
         "lineNumber": 332,
         "author": {
           "gitId": "-"
         },
-        "content": "It is also possible that another user has overriden the authorship of your lines using the [@@author tags](#provide-data-using-author-tags)."
+        "content": "**A:** This is probably a case of giving an incorrect author name alias (or github ID) in your [author-config file](#author-configcsv).\u003cbr\u003e"
       },
       {
         "lineNumber": 333,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Please refer to [A Note About Git Author Name](#a-note-about-git-author-name) above on how to find out the correct author name you are using, and how to change it.\u003cbr\u003e"
       },
       {
         "lineNumber": 334,
         "author": {
           "gitId": "-"
         },
-        "content": "#### Q: I have added/edited the standalone config file in my local repository, but RepoSense is not using it when running the analysis?"
+        "content": "Also ensure that you have added all author name aliases that you may be using (if you are using multiple computers or have previously changed your author name)."
       },
       {
         "lineNumber": 335,
         "author": {
           "gitId": "-"
         },
-        "content": "**A:** Ensure that you have committed the changes to your standalone config file first before running the analysis, as *RepoSense* is unable to detect uncommitted changes to your local repository."
+        "content": ""
       },
       {
         "lineNumber": 336,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "#### Q: My contribution bar and code panel is empty (despite having lots of commit contributions in the ramp chart)?"
       },
       {
         "lineNumber": 337,
         "author": {
           "gitId": "-"
         },
-        "content": "#### Q: I am able to run RepoSense on my repository on a Linux/Mac OS, but it fails on a Windows OS?"
+        "content": "**A:** The contribution bar and code panel records the lines you have authored to the **latest** commit of the repository and branch you are analyzing. As such, it is possible that while you have lots of commit contributions, your final authorship contribution is low if you have only deleted lines, someone else have overwritten your code and taken authorship for it (currently, *RepoSense* does not have functionality to track overwritten lines).\u003cbr\u003e"
       },
       {
         "lineNumber": 338,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "It is also possible that another user has overriden the authorship of your lines using the [@@author tags](#provide-data-using-author-tags)."
+      },
+      {
+        "lineNumber": 339,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 340,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#### Q: I have added/edited the standalone config file in my local repository, but RepoSense is not using it when running the analysis?"
+      },
+      {
+        "lineNumber": 341,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "**A:** Ensure that you have committed the changes to your standalone config file first before running the analysis, as *RepoSense* is unable to detect uncommitted changes to your local repository."
+      },
+      {
+        "lineNumber": 342,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 343,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#### Q: I am able to run RepoSense on my repository on a Linux/Mac OS, but it fails on a Windows OS?"
+      },
+      {
+        "lineNumber": 344,
         "author": {
           "gitId": "-"
         },
@@ -4123,7 +4165,7 @@
     ],
     "authorContributionMap": {
       "fzdy1914": 7,
-      "-": 331
+      "-": 337
     }
   },
   {
