@@ -13790,7 +13790,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  \"version\": \"1.17.0\","
+        "content": "  \"version\": \"1.17.1\","
       },
       {
         "lineNumber": 4,
@@ -74055,7 +74055,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  \"version\": \"1.17.0\","
+        "content": "  \"version\": \"1.17.1\","
       },
       {
         "lineNumber": 4,
@@ -109999,516 +109999,516 @@
         "author": {
           "gitId": "-"
         },
-        "content": "Parser.prototype.getDynamicIncludeSrc \u003d function () {"
+        "content": "/**"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
-        "content": "  return _.clone(this.dynamicIncludeSrc);"
+        "content": " * Extract variables from an include element"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
-        "content": "};"
+        "content": " * @param includeElement include element to extract variables from"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": " * @param contextVariables local variables defined by parent pages"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
-        "content": "Parser.prototype.getStaticIncludeSrc \u003d function () {"
+        "content": " */"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": "  return _.clone(this.staticIncludeSrc);"
+        "content": "function extractVariables(includeElement, contextVariables) {"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "};"
+        "content": "  const includedVariables \u003d { ...contextVariables };"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  if (includeElement.children) {"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "Parser.prototype.getBoilerplateIncludeSrc \u003d function () {"
+        "content": "    includeElement.children.forEach((child) \u003d\u003e {"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
-        "content": "  return _.clone(this.boilerplateIncludeSrc);"
+        "content": "      if (child.name !\u003d\u003d \u0027span\u0027) {"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": "};"
+        "content": "        return;"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      }"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": "Parser.prototype.getMissingIncludeSrc \u003d function () {"
+        "content": "      if (!child.attribs.id) {"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
-        "content": "  return _.clone(this.missingIncludeSrc);"
+        "content": "        // eslint-disable-next-line no-console"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": "};"
+        "content": "        console.warn(`Missing reference in ${includeElement.attribs[ATTRIB_CWF]}\\n`"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                   + `Missing \u0027id\u0027 in variable for ${includeElement.attribs.src} include.`);"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": "Parser.prototype._preprocess \u003d function (node, context, config) {"
+        "content": "        return;"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": "  const element \u003d node;"
+        "content": "      }"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": "  const self \u003d this;"
+        "content": "      if (!includedVariables[child.attribs.id]) {"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "-"
         },
-        "content": "  element.attribs \u003d element.attribs || {};"
+        "content": "        includedVariables[child.attribs.id] \u003d cheerio.html(child.children);"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "-"
         },
-        "content": "  element.attribs[ATTRIB_CWF] \u003d path.resolve(context.cwf);"
+        "content": "      }"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    });"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
-        "content": "  const requiresSrc \u003d [\u0027include\u0027].includes(element.name);"
+        "content": "  }"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (requiresSrc \u0026\u0026 _.isEmpty(element.attribs.src)) {"
+        "content": "  return includedVariables;"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
-        "content": "    const error \u003d new Error(`Empty src attribute in ${element.name} in: ${element.attribs[ATTRIB_CWF]}`);"
+        "content": "}"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
-        "content": "    this._onError(error);"
+        "content": ""
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "-"
         },
-        "content": "    return createErrorNode(element, error);"
+        "content": "Parser.prototype.getDynamicIncludeSrc \u003d function () {"
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "  return _.clone(this.dynamicIncludeSrc);"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "};"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
-        "content": "  const shouldProcessSrc \u003d [\u0027include\u0027, \u0027panel\u0027].includes(element.name);"
+        "content": ""
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
-        "content": "  const hasSrc \u003d _.hasIn(element.attribs, \u0027src\u0027);"
+        "content": "Parser.prototype.getStaticIncludeSrc \u003d function () {"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "-"
         },
-        "content": "  let isUrl;"
+        "content": "  return _.clone(this.staticIncludeSrc);"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "-"
         },
-        "content": "  let includeSrc;"
+        "content": "};"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "-"
         },
-        "content": "  let filePath;"
+        "content": ""
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "-"
         },
-        "content": "  let actualFilePath;"
+        "content": "Parser.prototype.getBoilerplateIncludeSrc \u003d function () {"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (hasSrc \u0026\u0026 shouldProcessSrc) {"
+        "content": "  return _.clone(this.boilerplateIncludeSrc);"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "-"
         },
-        "content": "    isUrl \u003d utils.isUrl(element.attribs.src);"
+        "content": "};"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "-"
         },
-        "content": "    includeSrc \u003d url.parse(element.attribs.src);"
+        "content": ""
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "-"
         },
-        "content": "    filePath \u003d isUrl"
+        "content": "Parser.prototype.getMissingIncludeSrc \u003d function () {"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
-        "content": "      ? element.attribs.src"
+        "content": "  return _.clone(this.missingIncludeSrc);"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "-"
         },
-        "content": "      : path.resolve(path.dirname(context.cwf), decodeURIComponent(includeSrc.path));"
+        "content": "};"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "-"
         },
-        "content": "    actualFilePath \u003d filePath;"
+        "content": ""
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "-"
         },
-        "content": "    const isBoilerplate \u003d _.hasIn(element.attribs, \u0027boilerplate\u0027);"
+        "content": "Parser.prototype._preprocess \u003d function (node, context, config) {"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (isBoilerplate) {"
+        "content": "  const element \u003d node;"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "-"
         },
-        "content": "      element.attribs.boilerplate \u003d element.attribs.boilerplate || path.basename(filePath);"
+        "content": "  const self \u003d this;"
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "-"
         },
-        "content": "      actualFilePath \u003d calculateBoilerplateFilePath(element.attribs.boilerplate, filePath, config);"
+        "content": "  element.attribs \u003d element.attribs || {};"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.boilerplateIncludeSrc.push({ from: context.cwf, to: actualFilePath });"
+        "content": "  element.attribs[ATTRIB_CWF] \u003d path.resolve(context.cwf);"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 139,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "    const isOptional \u003d element.name \u003d\u003d\u003d \u0027include\u0027 \u0026\u0026 _.hasIn(element.attribs, \u0027optional\u0027);"
+        "content": "  const requiresSrc \u003d [\u0027include\u0027].includes(element.name);"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (!utils.fileExists(actualFilePath)) {"
+        "content": "  if (requiresSrc \u0026\u0026 _.isEmpty(element.attribs.src)) {"
       },
       {
         "lineNumber": 141,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "      if (isOptional) {"
+        "content": "    const error \u003d new Error(`Empty src attribute in ${element.name} in: ${element.attribs[ATTRIB_CWF]}`);"
       },
       {
         "lineNumber": 142,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "        return createEmptyNode();"
+        "content": "    this._onError(error);"
       },
       {
         "lineNumber": 143,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "      }"
+        "content": "    return createErrorNode(element, error);"
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.missingIncludeSrc.push({ from: context.cwf, to: actualFilePath });"
+        "content": "  }"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "-"
         },
-        "content": "      const error \u003d new Error("
+        "content": ""
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "-"
         },
-        "content": "        `No such file: ${actualFilePath}\\nMissing reference in ${element.attribs[ATTRIB_CWF]}`,"
+        "content": "  const shouldProcessSrc \u003d [\u0027include\u0027, \u0027panel\u0027].includes(element.name);"
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "-"
         },
-        "content": "      );"
+        "content": "  const hasSrc \u003d _.hasIn(element.attribs, \u0027src\u0027);"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "-"
         },
-        "content": "      this._onError(error);"
+        "content": "  let isUrl;"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "-"
         },
-        "content": "      return createErrorNode(element, error);"
+        "content": "  let includeSrc;"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "  let filePath;"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "  let actualFilePath;"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  if (hasSrc \u0026\u0026 shouldProcessSrc) {"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (element.name \u003d\u003d\u003d \u0027include\u0027) {"
+        "content": "    isUrl \u003d utils.isUrl(element.attribs.src);"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "-"
         },
-        "content": "    const isInline \u003d _.hasIn(element.attribs, \u0027inline\u0027);"
+        "content": "    includeSrc \u003d url.parse(element.attribs.src);"
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "-"
         },
-        "content": "    const isDynamic \u003d _.hasIn(element.attribs, \u0027dynamic\u0027);"
+        "content": "    filePath \u003d isUrl"
       },
       {
         "lineNumber": 156,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "    const isOptional \u003d _.hasIn(element.attribs, \u0027optional\u0027);"
+        "content": "      ? element.attribs.src"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "-"
         },
-        "content": "    const isTrim \u003d _.hasIn(element.attribs, \u0027trim\u0027);"
+        "content": "      : path.resolve(path.dirname(context.cwf), decodeURIComponent(includeSrc.path));"
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "-"
         },
-        "content": "    element.name \u003d isInline ? \u0027span\u0027 : \u0027div\u0027;"
+        "content": "    actualFilePath \u003d filePath;"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "-"
         },
-        "content": "    element.attribs[ATTRIB_INCLUDE_PATH] \u003d filePath;"
+        "content": "    const isBoilerplate \u003d _.hasIn(element.attribs, \u0027boilerplate\u0027);"
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    if (isBoilerplate) {"
       },
       {
         "lineNumber": 161,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "    if (isOptional \u0026\u0026 !includeSrc.hash) {"
+        "content": "      element.attribs.boilerplate \u003d element.attribs.boilerplate || path.basename(filePath);"
       },
       {
         "lineNumber": 162,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "      // optional includes of whole files have been handled, but segments still need to be processed"
+        "content": "      actualFilePath \u003d calculateBoilerplateFilePath(element.attribs.boilerplate, filePath, config);"
       },
       {
         "lineNumber": 163,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "      delete element.attribs.optional;"
+        "content": "      this.boilerplateIncludeSrc.push({ from: context.cwf, to: actualFilePath });"
       },
       {
         "lineNumber": 164,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
         "content": "    }"
       },
@@ -110517,147 +110517,147 @@
         "author": {
           "gitId": "Xenonym"
         },
-        "content": ""
+        "content": "    const isOptional \u003d element.name \u003d\u003d\u003d \u0027include\u0027 \u0026\u0026 _.hasIn(element.attribs, \u0027optional\u0027);"
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (isDynamic) {"
+        "content": "    if (!utils.fileExists(actualFilePath)) {"
       },
       {
         "lineNumber": 167,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "      element.name \u003d \u0027panel\u0027;"
+        "content": "      if (isOptional) {"
       },
       {
         "lineNumber": 168,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "      element.attribs.src \u003d filePath;"
+        "content": "        return createEmptyNode();"
       },
       {
         "lineNumber": 169,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "      element.attribs[\u0027no-close\u0027] \u003d true;"
+        "content": "      }"
       },
       {
         "lineNumber": 170,
         "author": {
           "gitId": "-"
         },
-        "content": "      element.attribs[\u0027no-switch\u0027] \u003d true;"
+        "content": "      this.missingIncludeSrc.push({ from: context.cwf, to: actualFilePath });"
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (includeSrc.hash) {"
+        "content": "      const error \u003d new Error("
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "-"
         },
-        "content": "        element.attribs.fragment \u003d includeSrc.hash.substring(1);"
+        "content": "        `No such file: ${actualFilePath}\\nMissing reference in ${element.attribs[ATTRIB_CWF]}`,"
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "      );"
       },
       {
         "lineNumber": 174,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      this._onError(error);"
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "-"
         },
-        "content": "      element.attribs.header \u003d element.attribs.name || \u0027\u0027;"
+        "content": "      return createErrorNode(element, error);"
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "-"
         },
-        "content": "      delete element.attribs.dynamic;"
+        "content": "    }"
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.dynamicIncludeSrc.push({ from: context.cwf, to: actualFilePath, asIfTo: element.attribs.src });"
+        "content": "  }"
       },
       {
         "lineNumber": 178,
         "author": {
           "gitId": "-"
         },
-        "content": "      return element;"
+        "content": ""
       },
       {
         "lineNumber": 179,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "  if (element.name \u003d\u003d\u003d \u0027include\u0027) {"
       },
       {
         "lineNumber": 180,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    const isInline \u003d _.hasIn(element.attribs, \u0027inline\u0027);"
       },
       {
         "lineNumber": 181,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (isUrl) {"
+        "content": "    const isDynamic \u003d _.hasIn(element.attribs, \u0027dynamic\u0027);"
       },
       {
         "lineNumber": 182,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "      return element; // only keep url path for dynamic"
+        "content": "    const isOptional \u003d _.hasIn(element.attribs, \u0027optional\u0027);"
       },
       {
         "lineNumber": 183,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    const isTrim \u003d _.hasIn(element.attribs, \u0027trim\u0027);"
       },
       {
         "lineNumber": 184,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    element.name \u003d isInline ? \u0027span\u0027 : \u0027div\u0027;"
       },
       {
         "lineNumber": 185,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.staticIncludeSrc.push({ from: context.cwf, to: actualFilePath });"
+        "content": "    element.attribs[ATTRIB_INCLUDE_PATH] \u003d filePath;"
       },
       {
         "lineNumber": 186,
@@ -110669,1262 +110669,1262 @@
       {
         "lineNumber": 187,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "    try {"
+        "content": "    if (isOptional \u0026\u0026 !includeSrc.hash) {"
       },
       {
         "lineNumber": 188,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "      self._fileCache[actualFilePath] \u003d self._fileCache[actualFilePath]"
+        "content": "      // optional includes of whole files have been handled, but segments still need to be processed"
       },
       {
         "lineNumber": 189,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "        ? self._fileCache[actualFilePath] : fs.readFileSync(actualFilePath, \u0027utf8\u0027);"
+        "content": "      delete element.attribs.optional;"
       },
       {
         "lineNumber": 190,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "    } catch (e) {"
+        "content": "    }"
       },
       {
         "lineNumber": 191,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "      // Read file fail"
+        "content": ""
       },
       {
         "lineNumber": 192,
         "author": {
           "gitId": "-"
         },
-        "content": "      const missingReferenceErrorMessage \u003d `Missing reference in: ${element.attribs[ATTRIB_CWF]}`;"
+        "content": "    if (isDynamic) {"
       },
       {
         "lineNumber": 193,
         "author": {
           "gitId": "-"
         },
-        "content": "      e.message +\u003d `\\n${missingReferenceErrorMessage}`;"
+        "content": "      element.name \u003d \u0027panel\u0027;"
       },
       {
         "lineNumber": 194,
         "author": {
           "gitId": "-"
         },
-        "content": "      this._onError(e);"
+        "content": "      element.attribs.src \u003d filePath;"
       },
       {
         "lineNumber": 195,
         "author": {
           "gitId": "-"
         },
-        "content": "      return createErrorNode(element, e);"
+        "content": "      element.attribs[\u0027no-close\u0027] \u003d true;"
       },
       {
         "lineNumber": 196,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "      element.attribs[\u0027no-switch\u0027] \u003d true;"
       },
       {
         "lineNumber": 197,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      if (includeSrc.hash) {"
       },
       {
         "lineNumber": 198,
         "author": {
           "gitId": "-"
         },
-        "content": "    const isIncludeSrcMd \u003d utils.isMarkdownFileExt(utils.getExt(filePath));"
+        "content": "        element.attribs.fragment \u003d includeSrc.hash.substring(1);"
       },
       {
         "lineNumber": 199,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      }"
       },
       {
         "lineNumber": 200,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (isIncludeSrcMd \u0026\u0026 context.source \u003d\u003d\u003d \u0027html\u0027) {"
+        "content": ""
       },
       {
         "lineNumber": 201,
         "author": {
           "gitId": "-"
         },
-        "content": "      // HTML include markdown, use special tag to indicate markdown code."
+        "content": "      element.attribs.header \u003d element.attribs.name || \u0027\u0027;"
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "-"
         },
-        "content": "      element.name \u003d \u0027markdown\u0027;"
+        "content": "      delete element.attribs.dynamic;"
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "      this.dynamicIncludeSrc.push({ from: context.cwf, to: actualFilePath, asIfTo: element.attribs.src });"
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      return element;"
       },
       {
         "lineNumber": 205,
         "author": {
           "gitId": "-"
         },
-        "content": "    let fileContent \u003d self._fileCache[actualFilePath]; // cache the file contents to save some I/O"
+        "content": "    }"
       },
       {
         "lineNumber": 206,
         "author": {
           "gitId": "-"
         },
-        "content": "    const { parent, relative } \u003d calculateNewBaseUrls(filePath, config.rootPath, config.baseUrlMap);"
+        "content": ""
       },
       {
         "lineNumber": 207,
         "author": {
           "gitId": "-"
         },
-        "content": "    const userDefinedVariables \u003d config.userDefinedVariablesMap[path.resolve(parent, relative)];"
+        "content": "    if (isUrl) {"
       },
       {
         "lineNumber": 208,
         "author": {
           "gitId": "-"
         },
-        "content": "    fileContent \u003d nunjucks.renderString(fileContent, userDefinedVariables);"
+        "content": "      return element; // only keep url path for dynamic"
       },
       {
         "lineNumber": 209,
         "author": {
           "gitId": "-"
         },
-        "content": "    delete element.attribs.boilerplate;"
+        "content": "    }"
       },
       {
         "lineNumber": 210,
         "author": {
           "gitId": "-"
         },
-        "content": "    delete element.attribs.src;"
+        "content": ""
       },
       {
         "lineNumber": 211,
         "author": {
           "gitId": "-"
         },
-        "content": "    delete element.attribs.inline;"
+        "content": "    this.staticIncludeSrc.push({ from: context.cwf, to: actualFilePath });"
       },
       {
         "lineNumber": 212,
         "author": {
           "gitId": "-"
         },
-        "content": "    delete element.attribs.trim;"
+        "content": ""
       },
       {
         "lineNumber": 213,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    try {"
       },
       {
         "lineNumber": 214,
         "author": {
           "gitId": "-"
         },
-        "content": "    fileContent \u003d isTrim ? fileContent.trim() : fileContent;"
+        "content": "      self._fileCache[actualFilePath] \u003d self._fileCache[actualFilePath]"
       },
       {
         "lineNumber": 215,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        ? self._fileCache[actualFilePath] : fs.readFileSync(actualFilePath, \u0027utf8\u0027);"
       },
       {
         "lineNumber": 216,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (includeSrc.hash) {"
+        "content": "    } catch (e) {"
       },
       {
         "lineNumber": 217,
         "author": {
           "gitId": "-"
         },
-        "content": "      // directly get segment from the src"
+        "content": "      // Read file fail"
       },
       {
         "lineNumber": 218,
         "author": {
           "gitId": "-"
         },
-        "content": "      const segmentSrc \u003d cheerio.parseHTML(fileContent, true);"
+        "content": "      const missingReferenceErrorMessage \u003d `Missing reference in: ${element.attribs[ATTRIB_CWF]}`;"
       },
       {
         "lineNumber": 219,
         "author": {
           "gitId": "-"
         },
-        "content": "      const $ \u003d cheerio.load(segmentSrc);"
+        "content": "      e.message +\u003d `\\n${missingReferenceErrorMessage}`;"
       },
       {
         "lineNumber": 220,
         "author": {
           "gitId": "-"
         },
-        "content": "      const htmlContent \u003d $(includeSrc.hash).html();"
+        "content": "      this._onError(e);"
       },
       {
         "lineNumber": 221,
         "author": {
           "gitId": "-"
         },
-        "content": "      let actualContent \u003d htmlContent;"
+        "content": "      return createErrorNode(element, e);"
       },
       {
         "lineNumber": 222,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 223,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "      if (actualContent \u003d\u003d\u003d null) {"
+        "content": ""
       },
       {
         "lineNumber": 224,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "        if (isOptional) {"
+        "content": "    const isIncludeSrcMd \u003d utils.isMarkdownFileExt(utils.getExt(filePath));"
       },
       {
         "lineNumber": 225,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "          // set empty content for optional segment include that does not exist"
+        "content": ""
       },
       {
         "lineNumber": 226,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "          actualContent \u003d \u0027\u0027;"
+        "content": "    if (isIncludeSrcMd \u0026\u0026 context.source \u003d\u003d\u003d \u0027html\u0027) {"
       },
       {
         "lineNumber": 227,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "        } else {"
+        "content": "      // HTML include markdown, use special tag to indicate markdown code."
       },
       {
         "lineNumber": 228,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "          const error \u003d new Error("
+        "content": "      element.name \u003d \u0027markdown\u0027;"
       },
       {
         "lineNumber": 229,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "            `No such segment \u0027${includeSrc.hash.substring(1)}\u0027 in file: ${actualFilePath}`"
+        "content": "    }"
       },
       {
         "lineNumber": 230,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "              + `\\nMissing reference in ${element.attribs[ATTRIB_CWF]}`,"
+        "content": ""
       },
       {
         "lineNumber": 231,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "          );"
+        "content": "    let fileContent \u003d self._fileCache[actualFilePath]; // cache the file contents to save some I/O"
       },
       {
         "lineNumber": 232,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "          this._onError(error);"
+        "content": "    const { parent, relative } \u003d calculateNewBaseUrls(filePath, config.rootPath, config.baseUrlMap);"
       },
       {
         "lineNumber": 233,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "          return createErrorNode(element, error);"
+        "content": "    const userDefinedVariables \u003d config.userDefinedVariablesMap[path.resolve(parent, relative)];"
       },
       {
         "lineNumber": 234,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 235,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "      }"
+        "content": "    // process variables declared within the include"
       },
       {
         "lineNumber": 236,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": ""
+        "content": "    const includedVariables \u003d extractVariables(element, context.includedVariables);"
       },
       {
         "lineNumber": 237,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "      if (isOptional) {"
+        "content": ""
       },
       {
         "lineNumber": 238,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "        // optional includes of segments have now been handled, so delete the attribute"
+        "content": "    fileContent \u003d nunjucks.renderString(fileContent, { ...includedVariables, ...userDefinedVariables });"
       },
       {
         "lineNumber": 239,
-        "author": {
-          "gitId": "Xenonym"
-        },
-        "content": "        delete element.attribs.optional;"
-      },
-      {
-        "lineNumber": 240,
-        "author": {
-          "gitId": "Xenonym"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 241,
-        "author": {
-          "gitId": "Xenonym"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 242,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      if (isIncludeSrcMd) {"
-      },
-      {
-        "lineNumber": 243,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        if (context.mode \u003d\u003d\u003d \u0027include\u0027) {"
-      },
-      {
-        "lineNumber": 244,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          actualContent \u003d isInline ? actualContent : utils.wrapContent(actualContent, \u0027\\n\\n\u0027, \u0027\\n\u0027);"
-      },
-      {
-        "lineNumber": 245,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        } else {"
-      },
-      {
-        "lineNumber": 246,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          actualContent \u003d md.render(actualContent);"
-      },
-      {
-        "lineNumber": 247,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 248,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        actualContent \u003d self._rebaseReferenceForStaticIncludes(actualContent, element, config);"
-      },
-      {
-        "lineNumber": 249,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 250,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      element.children \u003d cheerio.parseHTML(actualContent, true); // the needed content;"
-      },
-      {
-        "lineNumber": 251,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    } else {"
-      },
-      {
-        "lineNumber": 252,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      let actualContent \u003d fileContent;"
-      },
-      {
-        "lineNumber": 253,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      if (isIncludeSrcMd) {"
-      },
-      {
-        "lineNumber": 254,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        if (context.mode \u003d\u003d\u003d \u0027include\u0027) {"
-      },
-      {
-        "lineNumber": 255,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          actualContent \u003d isInline ? actualContent : utils.wrapContent(actualContent, \u0027\\n\\n\u0027, \u0027\\n\u0027);"
-      },
-      {
-        "lineNumber": 256,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        } else {"
-      },
-      {
-        "lineNumber": 257,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          actualContent \u003d md.render(actualContent);"
-      },
-      {
-        "lineNumber": 258,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 259,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 260,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      element.children \u003d cheerio.parseHTML(actualContent, true);"
-      },
-      {
-        "lineNumber": 261,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 262,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 263,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    // The element\u0027s children are in the new context"
-      },
-      {
-        "lineNumber": 264,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    // Process with new context"
-      },
-      {
-        "lineNumber": 265,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    const childContext \u003d _.cloneDeep(context);"
-      },
-      {
-        "lineNumber": 266,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    childContext.cwf \u003d filePath;"
-      },
-      {
-        "lineNumber": 267,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    childContext.source \u003d isIncludeSrcMd ? \u0027md\u0027 : \u0027html\u0027;"
-      },
-      {
-        "lineNumber": 268,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    if (element.children \u0026\u0026 element.children.length \u003e 0) {"
-      },
-      {
-        "lineNumber": 269,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      element.children \u003d element.children.map(e \u003d\u003e self._preprocess(e, childContext, config));"
-      },
-      {
-        "lineNumber": 270,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 271,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  } else if ((element.name \u003d\u003d\u003d \u0027panel\u0027) \u0026\u0026 hasSrc) {"
-      },
-      {
-        "lineNumber": 272,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    if (!isUrl \u0026\u0026 includeSrc.hash) {"
-      },
-      {
-        "lineNumber": 273,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      element.attribs.fragment \u003d includeSrc.hash.substring(1); // save hash to fragment attribute"
-      },
-      {
-        "lineNumber": 274,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 275,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    element.attribs.src \u003d filePath;"
-      },
-      {
-        "lineNumber": 276,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    this.dynamicIncludeSrc.push({ from: context.cwf, to: actualFilePath, asIfTo: filePath });"
-      },
-      {
-        "lineNumber": 277,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    return element;"
-      },
-      {
-        "lineNumber": 278,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  } else {"
-      },
-      {
-        "lineNumber": 279,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    if (element.name \u003d\u003d\u003d \u0027body\u0027) {"
-      },
-      {
-        "lineNumber": 280,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      // eslint-disable-next-line no-console"
-      },
-      {
-        "lineNumber": 281,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      console.warn(`\u003cbody\u003e tag found in ${element.attribs[ATTRIB_CWF]}. This may cause formatting errors.`);"
-      },
-      {
-        "lineNumber": 282,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 283,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    if (element.children \u0026\u0026 element.children.length \u003e 0) {"
-      },
-      {
-        "lineNumber": 284,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      element.children \u003d element.children.map(e \u003d\u003e self._preprocess(e, context, config));"
-      },
-      {
-        "lineNumber": 285,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 286,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 287,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 288,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  return element;"
-      },
-      {
-        "lineNumber": 289,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "};"
-      },
-      {
-        "lineNumber": 290,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 291,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "Parser.prototype._parse \u003d function (node, context, config) {"
-      },
-      {
-        "lineNumber": 292,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  const element \u003d node;"
-      },
-      {
-        "lineNumber": 293,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  const self \u003d this;"
-      },
-      {
-        "lineNumber": 294,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  if (_.isArray(element)) {"
-      },
-      {
-        "lineNumber": 295,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    return element.map(el \u003d\u003e self._parse(el, context, config));"
-      },
-      {
-        "lineNumber": 296,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 297,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 298,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  if (isText(element)) {"
-      },
-      {
-        "lineNumber": 299,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    return element;"
-      },
-      {
-        "lineNumber": 300,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 301,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  if (element.name) {"
-      },
-      {
-        "lineNumber": 302,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    element.name \u003d element.name.toLowerCase();"
-      },
-      {
-        "lineNumber": 303,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 304,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 305,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  switch (element.name) {"
-      },
-      {
-        "lineNumber": 306,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  case \u0027md\u0027:"
-      },
-      {
-        "lineNumber": 307,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    element.name \u003d \u0027span\u0027;"
-      },
-      {
-        "lineNumber": 308,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    cheerio.prototype.options.xmlMode \u003d false;"
-      },
-      {
-        "lineNumber": 309,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    element.children \u003d cheerio.parseHTML(md.renderInline(cheerio.html(element.children)), true);"
-      },
-      {
-        "lineNumber": 310,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    cheerio.prototype.options.xmlMode \u003d true;"
-      },
-      {
-        "lineNumber": 311,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    break;"
-      },
-      {
-        "lineNumber": 312,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  case \u0027markdown\u0027:"
-      },
-      {
-        "lineNumber": 313,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    element.name \u003d \u0027div\u0027;"
-      },
-      {
-        "lineNumber": 314,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    cheerio.prototype.options.xmlMode \u003d false;"
-      },
-      {
-        "lineNumber": 315,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    element.children \u003d cheerio.parseHTML(md.render(cheerio.html(element.children)), true);"
-      },
-      {
-        "lineNumber": 316,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    cheerio.prototype.options.xmlMode \u003d true;"
-      },
-      {
-        "lineNumber": 317,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    break;"
-      },
-      {
-        "lineNumber": 318,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  case \u0027panel\u0027: {"
-      },
-      {
-        "lineNumber": 319,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    if (!_.hasIn(element.attribs, \u0027src\u0027)) { // dynamic panel"
-      },
-      {
-        "lineNumber": 320,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      break;"
-      },
-      {
-        "lineNumber": 321,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 322,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    const fileExists \u003d utils.fileExists(element.attribs.src)"
-      },
-      {
-        "lineNumber": 323,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                    || utils.fileExists(calculateBoilerplateFilePath(element.attribs.boilerplate,"
-      },
-      {
-        "lineNumber": 324,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                                                                     element.attribs.src, config));"
-      },
-      {
-        "lineNumber": 325,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    if (fileExists) {"
-      },
-      {
-        "lineNumber": 326,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      const { src, fragment } \u003d element.attribs;"
-      },
-      {
-        "lineNumber": 327,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      const resultDir \u003d path.dirname(path.join(\u0027{{hostBaseUrl}}\u0027, path.relative(config.rootPath, src)));"
-      },
-      {
-        "lineNumber": 328,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      const resultPath \u003d path.join(resultDir, utils.setExtension(path.basename(src), \u0027._include_.html\u0027));"
-      },
-      {
-        "lineNumber": 329,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      element.attribs.src \u003d fragment ? `${resultPath}#${fragment}` : resultPath;"
-      },
-      {
-        "lineNumber": 330,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 331,
         "author": {
           "gitId": "-"
         },
         "content": "    delete element.attribs.boilerplate;"
       },
       {
-        "lineNumber": 332,
+        "lineNumber": 240,
         "author": {
           "gitId": "-"
         },
-        "content": "    break;"
+        "content": "    delete element.attribs.src;"
       },
       {
-        "lineNumber": 333,
+        "lineNumber": 241,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    delete element.attribs.inline;"
       },
       {
-        "lineNumber": 334,
+        "lineNumber": 242,
         "author": {
           "gitId": "-"
         },
-        "content": "  default:"
+        "content": "    delete element.attribs.trim;"
       },
       {
-        "lineNumber": 335,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    break;"
-      },
-      {
-        "lineNumber": 336,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 337,
+        "lineNumber": 243,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 338,
+        "lineNumber": 244,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (element.children) {"
+        "content": "    fileContent \u003d isTrim ? fileContent.trim() : fileContent;"
       },
       {
-        "lineNumber": 339,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    element.children.forEach((child) \u003d\u003e {"
-      },
-      {
-        "lineNumber": 340,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      self._parse(child, context, config);"
-      },
-      {
-        "lineNumber": 341,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    });"
-      },
-      {
-        "lineNumber": 342,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 343,
+        "lineNumber": 245,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 344,
+        "lineNumber": 246,
         "author": {
           "gitId": "-"
         },
-        "content": "  return element;"
+        "content": "    if (includeSrc.hash) {"
       },
       {
-        "lineNumber": 345,
+        "lineNumber": 247,
         "author": {
           "gitId": "-"
         },
-        "content": "};"
+        "content": "      // directly get segment from the src"
       },
       {
-        "lineNumber": 346,
+        "lineNumber": 248,
         "author": {
           "gitId": "-"
+        },
+        "content": "      const segmentSrc \u003d cheerio.parseHTML(fileContent, true);"
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      const $ \u003d cheerio.load(segmentSrc);"
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      const htmlContent \u003d $(includeSrc.hash).html();"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      let actualContent \u003d htmlContent;"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "Xenonym"
         },
         "content": ""
       },
       {
-        "lineNumber": 347,
+        "lineNumber": 253,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "      if (actualContent \u003d\u003d\u003d null) {"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "        if (isOptional) {"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "          // set empty content for optional segment include that does not exist"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "          actualContent \u003d \u0027\u0027;"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "          const error \u003d new Error("
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "            `No such segment \u0027${includeSrc.hash.substring(1)}\u0027 in file: ${actualFilePath}`"
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "              + `\\nMissing reference in ${element.attribs[ATTRIB_CWF]}`,"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "          );"
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "          this._onError(error);"
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "          return createErrorNode(element, error);"
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "      if (isOptional) {"
+      },
+      {
+        "lineNumber": 268,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "        // optional includes of segments have now been handled, so delete the attribute"
+      },
+      {
+        "lineNumber": 269,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "        delete element.attribs.optional;"
+      },
+      {
+        "lineNumber": 270,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 271,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 272,
         "author": {
           "gitId": "-"
         },
-        "content": "Parser.prototype._trimNodes \u003d function (node) {"
+        "content": "      if (isIncludeSrcMd) {"
       },
       {
-        "lineNumber": 348,
+        "lineNumber": 273,
         "author": {
           "gitId": "-"
         },
-        "content": "  const self \u003d this;"
+        "content": "        if (context.mode \u003d\u003d\u003d \u0027include\u0027) {"
       },
       {
-        "lineNumber": 349,
+        "lineNumber": 274,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (node.name \u003d\u003d\u003d \u0027pre\u0027 || node.name \u003d\u003d\u003d \u0027code\u0027) {"
+        "content": "          actualContent \u003d isInline ? actualContent : utils.wrapContent(actualContent, \u0027\\n\\n\u0027, \u0027\\n\u0027);"
       },
       {
-        "lineNumber": 350,
+        "lineNumber": 275,
         "author": {
           "gitId": "-"
         },
-        "content": "    return;"
+        "content": "        } else {"
       },
       {
-        "lineNumber": 351,
+        "lineNumber": 276,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "          actualContent \u003d md.render(actualContent);"
       },
       {
-        "lineNumber": 352,
+        "lineNumber": 277,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (node.children) {"
+        "content": "        }"
       },
       {
-        "lineNumber": 353,
+        "lineNumber": 278,
         "author": {
           "gitId": "-"
         },
-        "content": "    /* eslint-disable no-plusplus */"
+        "content": "        actualContent \u003d self._rebaseReferenceForStaticIncludes(actualContent, element, config);"
       },
       {
-        "lineNumber": 354,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    for (let n \u003d 0; n \u003c node.children.length; n++) {"
-      },
-      {
-        "lineNumber": 355,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      const child \u003d node.children[n];"
-      },
-      {
-        "lineNumber": 356,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      if ("
-      },
-      {
-        "lineNumber": 357,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        child.type \u003d\u003d\u003d \u0027comment\u0027"
-      },
-      {
-        "lineNumber": 358,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        || (child.type \u003d\u003d\u003d \u0027text\u0027 \u0026\u0026 n \u003d\u003d\u003d node.children.length - 1 \u0026\u0026 !/\\S/.test(child.data))"
-      },
-      {
-        "lineNumber": 359,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      ) {"
-      },
-      {
-        "lineNumber": 360,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        node.children.splice(n, 1);"
-      },
-      {
-        "lineNumber": 361,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        n--;"
-      },
-      {
-        "lineNumber": 362,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      } else if (child.type \u003d\u003d\u003d \u0027tag\u0027) {"
-      },
-      {
-        "lineNumber": 363,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        self._trimNodes(child);"
-      },
-      {
-        "lineNumber": 364,
+        "lineNumber": 279,
         "author": {
           "gitId": "-"
         },
         "content": "      }"
       },
       {
-        "lineNumber": 365,
+        "lineNumber": 280,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      element.children \u003d cheerio.parseHTML(actualContent, true); // the needed content;"
+      },
+      {
+        "lineNumber": 281,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    } else {"
+      },
+      {
+        "lineNumber": 282,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      let actualContent \u003d fileContent;"
+      },
+      {
+        "lineNumber": 283,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      if (isIncludeSrcMd) {"
+      },
+      {
+        "lineNumber": 284,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (context.mode \u003d\u003d\u003d \u0027include\u0027) {"
+      },
+      {
+        "lineNumber": 285,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          actualContent \u003d isInline ? actualContent : utils.wrapContent(actualContent, \u0027\\n\\n\u0027, \u0027\\n\u0027);"
+      },
+      {
+        "lineNumber": 286,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 287,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          actualContent \u003d md.render(actualContent);"
+      },
+      {
+        "lineNumber": 288,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 289,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 290,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      element.children \u003d cheerio.parseHTML(actualContent, true);"
+      },
+      {
+        "lineNumber": 291,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
+        "lineNumber": 292,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 293,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    // The element\u0027s children are in the new context"
+      },
+      {
+        "lineNumber": 294,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    // Process with new context"
+      },
+      {
+        "lineNumber": 295,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    const childContext \u003d _.cloneDeep(context);"
+      },
+      {
+        "lineNumber": 296,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    childContext.cwf \u003d filePath;"
+      },
+      {
+        "lineNumber": 297,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    childContext.source \u003d isIncludeSrcMd ? \u0027md\u0027 : \u0027html\u0027;"
+      },
+      {
+        "lineNumber": 298,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    childContext.includedVariables \u003d includedVariables;"
+      },
+      {
+        "lineNumber": 299,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    if (element.children \u0026\u0026 element.children.length \u003e 0) {"
+      },
+      {
+        "lineNumber": 300,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      element.children \u003d element.children.map(e \u003d\u003e self._preprocess(e, childContext, config));"
+      },
+      {
+        "lineNumber": 301,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 302,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  } else if ((element.name \u003d\u003d\u003d \u0027panel\u0027) \u0026\u0026 hasSrc) {"
+      },
+      {
+        "lineNumber": 303,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    if (!isUrl \u0026\u0026 includeSrc.hash) {"
+      },
+      {
+        "lineNumber": 304,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      element.attribs.fragment \u003d includeSrc.hash.substring(1); // save hash to fragment attribute"
+      },
+      {
+        "lineNumber": 305,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 306,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    element.attribs.src \u003d filePath;"
+      },
+      {
+        "lineNumber": 307,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    this.dynamicIncludeSrc.push({ from: context.cwf, to: actualFilePath, asIfTo: filePath });"
+      },
+      {
+        "lineNumber": 308,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return element;"
+      },
+      {
+        "lineNumber": 309,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  } else {"
+      },
+      {
+        "lineNumber": 310,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    if (element.name \u003d\u003d\u003d \u0027body\u0027) {"
+      },
+      {
+        "lineNumber": 311,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      // eslint-disable-next-line no-console"
+      },
+      {
+        "lineNumber": 312,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      console.warn(`\u003cbody\u003e tag found in ${element.attribs[ATTRIB_CWF]}. This may cause formatting errors.`);"
+      },
+      {
+        "lineNumber": 313,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 314,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    if (element.children \u0026\u0026 element.children.length \u003e 0) {"
+      },
+      {
+        "lineNumber": 315,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      element.children \u003d element.children.map(e \u003d\u003e self._preprocess(e, context, config));"
+      },
+      {
+        "lineNumber": 316,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 317,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 318,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 319,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  return element;"
+      },
+      {
+        "lineNumber": 320,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "};"
+      },
+      {
+        "lineNumber": 321,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 322,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Parser.prototype._parse \u003d function (node, context, config) {"
+      },
+      {
+        "lineNumber": 323,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  const element \u003d node;"
+      },
+      {
+        "lineNumber": 324,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  const self \u003d this;"
+      },
+      {
+        "lineNumber": 325,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  if (_.isArray(element)) {"
+      },
+      {
+        "lineNumber": 326,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return element.map(el \u003d\u003e self._parse(el, context, config));"
+      },
+      {
+        "lineNumber": 327,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 328,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 329,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  if (isText(element)) {"
+      },
+      {
+        "lineNumber": 330,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return element;"
+      },
+      {
+        "lineNumber": 331,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 332,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  if (element.name) {"
+      },
+      {
+        "lineNumber": 333,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    element.name \u003d element.name.toLowerCase();"
+      },
+      {
+        "lineNumber": 334,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 335,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 336,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  switch (element.name) {"
+      },
+      {
+        "lineNumber": 337,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  case \u0027md\u0027:"
+      },
+      {
+        "lineNumber": 338,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    element.name \u003d \u0027span\u0027;"
+      },
+      {
+        "lineNumber": 339,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    cheerio.prototype.options.xmlMode \u003d false;"
+      },
+      {
+        "lineNumber": 340,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    element.children \u003d cheerio.parseHTML(md.renderInline(cheerio.html(element.children)), true);"
+      },
+      {
+        "lineNumber": 341,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    cheerio.prototype.options.xmlMode \u003d true;"
+      },
+      {
+        "lineNumber": 342,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    break;"
+      },
+      {
+        "lineNumber": 343,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  case \u0027markdown\u0027:"
+      },
+      {
+        "lineNumber": 344,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    element.name \u003d \u0027div\u0027;"
+      },
+      {
+        "lineNumber": 345,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    cheerio.prototype.options.xmlMode \u003d false;"
+      },
+      {
+        "lineNumber": 346,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    element.children \u003d cheerio.parseHTML(md.render(cheerio.html(element.children)), true);"
+      },
+      {
+        "lineNumber": 347,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    cheerio.prototype.options.xmlMode \u003d true;"
+      },
+      {
+        "lineNumber": 348,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    break;"
+      },
+      {
+        "lineNumber": 349,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  case \u0027panel\u0027: {"
+      },
+      {
+        "lineNumber": 350,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    if (!_.hasIn(element.attribs, \u0027src\u0027)) { // dynamic panel"
+      },
+      {
+        "lineNumber": 351,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      break;"
+      },
+      {
+        "lineNumber": 352,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 353,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    const fileExists \u003d utils.fileExists(element.attribs.src)"
+      },
+      {
+        "lineNumber": 354,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    || utils.fileExists(calculateBoilerplateFilePath(element.attribs.boilerplate,"
+      },
+      {
+        "lineNumber": 355,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                                                                     element.attribs.src, config));"
+      },
+      {
+        "lineNumber": 356,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    if (fileExists) {"
+      },
+      {
+        "lineNumber": 357,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      const { src, fragment } \u003d element.attribs;"
+      },
+      {
+        "lineNumber": 358,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      const resultDir \u003d path.dirname(path.join(\u0027{{hostBaseUrl}}\u0027, path.relative(config.rootPath, src)));"
+      },
+      {
+        "lineNumber": 359,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      const resultPath \u003d path.join(resultDir, utils.setExtension(path.basename(src), \u0027._include_.html\u0027));"
+      },
+      {
+        "lineNumber": 360,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      element.attribs.src \u003d fragment ? `${resultPath}#${fragment}` : resultPath;"
+      },
+      {
+        "lineNumber": 361,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 362,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    delete element.attribs.boilerplate;"
+      },
+      {
+        "lineNumber": 363,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    break;"
+      },
+      {
+        "lineNumber": 364,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 365,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  default:"
+      },
+      {
         "lineNumber": 366,
         "author": {
           "gitId": "-"
         },
-        "content": "    /* eslint-enable no-plusplus */"
+        "content": "    break;"
       },
       {
         "lineNumber": 367,
@@ -111938,42 +111938,42 @@
         "author": {
           "gitId": "-"
         },
-        "content": "};"
+        "content": ""
       },
       {
         "lineNumber": 369,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  if (element.children) {"
       },
       {
         "lineNumber": 370,
         "author": {
           "gitId": "-"
         },
-        "content": "Parser.prototype.includeFile \u003d function (file, config) {"
+        "content": "    element.children.forEach((child) \u003d\u003e {"
       },
       {
         "lineNumber": 371,
         "author": {
           "gitId": "-"
         },
-        "content": "  const context \u003d {};"
+        "content": "      self._parse(child, context, config);"
       },
       {
         "lineNumber": 372,
         "author": {
           "gitId": "-"
         },
-        "content": "  context.cwf \u003d config.cwf || file; // current working file"
+        "content": "    });"
       },
       {
         "lineNumber": 373,
         "author": {
           "gitId": "-"
         },
-        "content": "  context.mode \u003d \u0027include\u0027;"
+        "content": "  }"
       },
       {
         "lineNumber": 374,
@@ -111987,588 +111987,588 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  return new Promise((resolve, reject) \u003d\u003e {"
+        "content": "  return element;"
       },
       {
         "lineNumber": 376,
         "author": {
           "gitId": "-"
         },
-        "content": "    const handler \u003d new htmlparser.DomHandler((error, dom) \u003d\u003e {"
+        "content": "};"
       },
       {
         "lineNumber": 377,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (error) {"
+        "content": ""
       },
       {
         "lineNumber": 378,
         "author": {
           "gitId": "-"
         },
-        "content": "        reject(error);"
+        "content": "Parser.prototype._trimNodes \u003d function (node) {"
       },
       {
         "lineNumber": 379,
         "author": {
           "gitId": "-"
         },
-        "content": "        return;"
+        "content": "  const self \u003d this;"
       },
       {
         "lineNumber": 380,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "  if (node.name \u003d\u003d\u003d \u0027pre\u0027 || node.name \u003d\u003d\u003d \u0027code\u0027) {"
       },
       {
         "lineNumber": 381,
         "author": {
           "gitId": "-"
         },
-        "content": "      const nodes \u003d dom.map((d) \u003d\u003e {"
+        "content": "    return;"
       },
       {
         "lineNumber": 382,
         "author": {
           "gitId": "-"
         },
-        "content": "        let processed;"
+        "content": "  }"
       },
       {
         "lineNumber": 383,
         "author": {
           "gitId": "-"
         },
-        "content": "        try {"
+        "content": "  if (node.children) {"
       },
       {
         "lineNumber": 384,
         "author": {
           "gitId": "-"
         },
-        "content": "          processed \u003d this._preprocess(d, context, config);"
+        "content": "    /* eslint-disable no-plusplus */"
       },
       {
         "lineNumber": 385,
         "author": {
           "gitId": "-"
         },
-        "content": "        } catch (err) {"
+        "content": "    for (let n \u003d 0; n \u003c node.children.length; n++) {"
       },
       {
         "lineNumber": 386,
         "author": {
           "gitId": "-"
         },
-        "content": "          err.message +\u003d `\\nError while preprocessing \u0027${file}\u0027`;"
+        "content": "      const child \u003d node.children[n];"
       },
       {
         "lineNumber": 387,
         "author": {
           "gitId": "-"
         },
-        "content": "          this._onError(err);"
+        "content": "      if ("
       },
       {
         "lineNumber": 388,
         "author": {
           "gitId": "-"
         },
-        "content": "          processed \u003d createErrorNode(d, err);"
+        "content": "        child.type \u003d\u003d\u003d \u0027comment\u0027"
       },
       {
         "lineNumber": 389,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        || (child.type \u003d\u003d\u003d \u0027text\u0027 \u0026\u0026 n \u003d\u003d\u003d node.children.length - 1 \u0026\u0026 !/\\S/.test(child.data))"
       },
       {
         "lineNumber": 390,
         "author": {
           "gitId": "-"
         },
-        "content": "        return processed;"
+        "content": "      ) {"
       },
       {
         "lineNumber": 391,
         "author": {
           "gitId": "-"
         },
-        "content": "      });"
+        "content": "        node.children.splice(n, 1);"
       },
       {
         "lineNumber": 392,
         "author": {
           "gitId": "-"
         },
-        "content": "      resolve(cheerio.html(nodes));"
+        "content": "        n--;"
       },
       {
         "lineNumber": 393,
         "author": {
           "gitId": "-"
         },
-        "content": "    });"
+        "content": "      } else if (child.type \u003d\u003d\u003d \u0027tag\u0027) {"
       },
       {
         "lineNumber": 394,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        self._trimNodes(child);"
       },
       {
         "lineNumber": 395,
         "author": {
           "gitId": "-"
         },
-        "content": "    const parser \u003d new htmlparser.Parser(handler, {"
+        "content": "      }"
       },
       {
         "lineNumber": 396,
         "author": {
           "gitId": "-"
         },
-        "content": "      xmlMode: true,"
+        "content": "    }"
       },
       {
         "lineNumber": 397,
         "author": {
           "gitId": "-"
         },
-        "content": "      decodeEntities: true,"
+        "content": "    /* eslint-enable no-plusplus */"
       },
       {
         "lineNumber": 398,
         "author": {
           "gitId": "-"
         },
-        "content": "    });"
+        "content": "  }"
       },
       {
         "lineNumber": 399,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "};"
       },
       {
         "lineNumber": 400,
         "author": {
           "gitId": "-"
         },
-        "content": "    let actualFilePath \u003d file;"
+        "content": ""
       },
       {
         "lineNumber": 401,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (!utils.fileExists(file)) {"
+        "content": "Parser.prototype.includeFile \u003d function (file, config) {"
       },
       {
         "lineNumber": 402,
         "author": {
           "gitId": "-"
         },
-        "content": "      const boilerplateFilePath \u003d calculateBoilerplateFilePath(path.basename(file), file, config);"
+        "content": "  const context \u003d {};"
       },
       {
         "lineNumber": 403,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (utils.fileExists(boilerplateFilePath)) {"
+        "content": "  context.cwf \u003d config.cwf || file; // current working file"
       },
       {
         "lineNumber": 404,
         "author": {
           "gitId": "-"
         },
-        "content": "        actualFilePath \u003d boilerplateFilePath;"
+        "content": "  context.mode \u003d \u0027include\u0027;"
       },
       {
         "lineNumber": 405,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": ""
       },
       {
         "lineNumber": 406,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "  return new Promise((resolve, reject) \u003d\u003e {"
       },
       {
         "lineNumber": 407,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    const handler \u003d new htmlparser.DomHandler((error, dom) \u003d\u003e {"
       },
       {
         "lineNumber": 408,
         "author": {
           "gitId": "-"
         },
-        "content": "    // Read files"
+        "content": "      if (error) {"
       },
       {
         "lineNumber": 409,
         "author": {
           "gitId": "-"
         },
-        "content": "    fs.readFile(actualFilePath, \u0027utf-8\u0027, (err, data) \u003d\u003e {"
+        "content": "        reject(error);"
       },
       {
         "lineNumber": 410,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (err) {"
+        "content": "        return;"
       },
       {
         "lineNumber": 411,
         "author": {
           "gitId": "-"
         },
-        "content": "        reject(err);"
+        "content": "      }"
       },
       {
         "lineNumber": 412,
         "author": {
           "gitId": "-"
         },
-        "content": "        return;"
+        "content": "      const nodes \u003d dom.map((d) \u003d\u003e {"
       },
       {
         "lineNumber": 413,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "        let processed;"
       },
       {
         "lineNumber": 414,
         "author": {
           "gitId": "-"
         },
-        "content": "      const { parent, relative } \u003d calculateNewBaseUrls(file, config.rootPath, config.baseUrlMap);"
+        "content": "        try {"
       },
       {
         "lineNumber": 415,
         "author": {
           "gitId": "-"
         },
-        "content": "      const userDefinedVariables \u003d config.userDefinedVariablesMap[path.resolve(parent, relative)];"
+        "content": "          processed \u003d this._preprocess(d, context, config);"
       },
       {
         "lineNumber": 416,
         "author": {
           "gitId": "-"
         },
-        "content": "      const fileContent \u003d nunjucks.renderString(data, userDefinedVariables);"
+        "content": "        } catch (err) {"
       },
       {
         "lineNumber": 417,
         "author": {
           "gitId": "-"
         },
-        "content": "      const fileExt \u003d utils.getExt(file);"
+        "content": "          err.message +\u003d `\\nError while preprocessing \u0027${file}\u0027`;"
       },
       {
         "lineNumber": 418,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (utils.isMarkdownFileExt(fileExt)) {"
+        "content": "          this._onError(err);"
       },
       {
         "lineNumber": 419,
         "author": {
           "gitId": "-"
         },
-        "content": "        context.source \u003d \u0027md\u0027;"
+        "content": "          processed \u003d createErrorNode(d, err);"
       },
       {
         "lineNumber": 420,
         "author": {
           "gitId": "-"
         },
-        "content": "        parser.parseComplete(fileContent.toString());"
+        "content": "        }"
       },
       {
         "lineNumber": 421,
         "author": {
           "gitId": "-"
         },
-        "content": "      } else if (fileExt \u003d\u003d\u003d \u0027html\u0027) {"
+        "content": "        return processed;"
       },
       {
         "lineNumber": 422,
         "author": {
           "gitId": "-"
         },
-        "content": "        context.source \u003d \u0027html\u0027;"
+        "content": "      });"
       },
       {
         "lineNumber": 423,
         "author": {
           "gitId": "-"
         },
-        "content": "        parser.parseComplete(fileContent);"
+        "content": "      resolve(cheerio.html(nodes));"
       },
       {
         "lineNumber": 424,
         "author": {
           "gitId": "-"
         },
-        "content": "      } else {"
+        "content": "    });"
       },
       {
         "lineNumber": 425,
         "author": {
           "gitId": "-"
         },
-        "content": "        const error \u003d new Error(`Unsupported File Extension: \u0027${fileExt}\u0027`);"
+        "content": ""
       },
       {
         "lineNumber": 426,
         "author": {
           "gitId": "-"
         },
-        "content": "        reject(error);"
+        "content": "    const parser \u003d new htmlparser.Parser(handler, {"
       },
       {
         "lineNumber": 427,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "      xmlMode: true,"
       },
       {
         "lineNumber": 428,
         "author": {
           "gitId": "-"
         },
-        "content": "    });"
+        "content": "      decodeEntities: true,"
       },
       {
         "lineNumber": 429,
         "author": {
           "gitId": "-"
         },
-        "content": "  });"
+        "content": "    });"
       },
       {
         "lineNumber": 430,
         "author": {
           "gitId": "-"
         },
-        "content": "};"
+        "content": ""
       },
       {
         "lineNumber": 431,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    let actualFilePath \u003d file;"
       },
       {
         "lineNumber": 432,
         "author": {
           "gitId": "-"
         },
-        "content": "Parser.prototype.renderFile \u003d function (file, config) {"
+        "content": "    if (!utils.fileExists(file)) {"
       },
       {
         "lineNumber": 433,
         "author": {
           "gitId": "-"
         },
-        "content": "  const context \u003d {};"
+        "content": "      const boilerplateFilePath \u003d calculateBoilerplateFilePath(path.basename(file), file, config);"
       },
       {
         "lineNumber": 434,
         "author": {
           "gitId": "-"
         },
-        "content": "  context.cwf \u003d file; // current working file"
+        "content": "      if (utils.fileExists(boilerplateFilePath)) {"
       },
       {
         "lineNumber": 435,
         "author": {
           "gitId": "-"
         },
-        "content": "  context.mode \u003d \u0027render\u0027;"
+        "content": "        actualFilePath \u003d boilerplateFilePath;"
       },
       {
         "lineNumber": 436,
         "author": {
           "gitId": "-"
         },
-        "content": "  return new Promise((resolve, reject) \u003d\u003e {"
+        "content": "      }"
       },
       {
         "lineNumber": 437,
         "author": {
           "gitId": "-"
         },
-        "content": "    const handler \u003d new htmlparser.DomHandler((error, dom) \u003d\u003e {"
+        "content": "    }"
       },
       {
         "lineNumber": 438,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (error) {"
+        "content": ""
       },
       {
         "lineNumber": 439,
         "author": {
           "gitId": "-"
         },
-        "content": "        reject(error);"
+        "content": "    // Read files"
       },
       {
         "lineNumber": 440,
         "author": {
           "gitId": "-"
         },
-        "content": "        return;"
+        "content": "    fs.readFile(actualFilePath, \u0027utf-8\u0027, (err, data) \u003d\u003e {"
       },
       {
         "lineNumber": 441,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "      if (err) {"
       },
       {
         "lineNumber": 442,
         "author": {
           "gitId": "-"
         },
-        "content": "      const nodes \u003d dom.map((d) \u003d\u003e {"
+        "content": "        reject(err);"
       },
       {
         "lineNumber": 443,
         "author": {
           "gitId": "-"
         },
-        "content": "        let parsed;"
+        "content": "        return;"
       },
       {
         "lineNumber": 444,
         "author": {
           "gitId": "-"
         },
-        "content": "        try {"
+        "content": "      }"
       },
       {
         "lineNumber": 445,
         "author": {
           "gitId": "-"
         },
-        "content": "          parsed \u003d this._parse(d, context, config);"
+        "content": "      const { parent, relative } \u003d calculateNewBaseUrls(file, config.rootPath, config.baseUrlMap);"
       },
       {
         "lineNumber": 446,
         "author": {
           "gitId": "-"
         },
-        "content": "        } catch (err) {"
+        "content": "      const userDefinedVariables \u003d config.userDefinedVariablesMap[path.resolve(parent, relative)];"
       },
       {
         "lineNumber": 447,
         "author": {
           "gitId": "-"
         },
-        "content": "          err.message +\u003d `\\nError while rendering \u0027${file}\u0027`;"
+        "content": "      const fileContent \u003d nunjucks.renderString(data, userDefinedVariables);"
       },
       {
         "lineNumber": 448,
         "author": {
           "gitId": "-"
         },
-        "content": "          this._onError(err);"
+        "content": "      const fileExt \u003d utils.getExt(file);"
       },
       {
         "lineNumber": 449,
         "author": {
           "gitId": "-"
         },
-        "content": "          parsed \u003d createErrorNode(d, err);"
+        "content": "      if (utils.isMarkdownFileExt(fileExt)) {"
       },
       {
         "lineNumber": 450,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        context.source \u003d \u0027md\u0027;"
       },
       {
         "lineNumber": 451,
         "author": {
           "gitId": "-"
         },
-        "content": "        return parsed;"
+        "content": "        parser.parseComplete(fileContent.toString());"
       },
       {
         "lineNumber": 452,
         "author": {
           "gitId": "-"
         },
-        "content": "      });"
+        "content": "      } else if (fileExt \u003d\u003d\u003d \u0027html\u0027) {"
       },
       {
         "lineNumber": 453,
         "author": {
           "gitId": "-"
         },
-        "content": "      nodes.forEach((d) \u003d\u003e {"
+        "content": "        context.source \u003d \u0027html\u0027;"
       },
       {
         "lineNumber": 454,
         "author": {
           "gitId": "-"
         },
-        "content": "        this._trimNodes(d);"
+        "content": "        parser.parseComplete(fileContent);"
       },
       {
         "lineNumber": 455,
         "author": {
           "gitId": "-"
         },
-        "content": "      });"
+        "content": "      } else {"
       },
       {
         "lineNumber": 456,
         "author": {
           "gitId": "-"
         },
-        "content": "      cheerio.prototype.options.xmlMode \u003d false;"
+        "content": "        const error \u003d new Error(`Unsupported File Extension: \u0027${fileExt}\u0027`);"
       },
       {
         "lineNumber": 457,
         "author": {
           "gitId": "-"
         },
-        "content": "      resolve(cheerio.html(nodes));"
+        "content": "        reject(error);"
       },
       {
         "lineNumber": 458,
         "author": {
           "gitId": "-"
         },
-        "content": "      cheerio.prototype.options.xmlMode \u003d true;"
+        "content": "      }"
       },
       {
         "lineNumber": 459,
@@ -112582,1046 +112582,1263 @@
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  });"
       },
       {
         "lineNumber": 461,
         "author": {
           "gitId": "-"
         },
-        "content": "    const parser \u003d new htmlparser.Parser(handler, {"
+        "content": "};"
       },
       {
         "lineNumber": 462,
         "author": {
           "gitId": "-"
         },
-        "content": "      xmlMode: true,"
+        "content": ""
       },
       {
         "lineNumber": 463,
         "author": {
           "gitId": "-"
         },
-        "content": "      decodeEntities: false,"
+        "content": "Parser.prototype.renderFile \u003d function (file, config) {"
       },
       {
         "lineNumber": 464,
         "author": {
           "gitId": "-"
         },
-        "content": "    });"
+        "content": "  const context \u003d {};"
       },
       {
         "lineNumber": 465,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  context.cwf \u003d file; // current working file"
       },
       {
         "lineNumber": 466,
         "author": {
           "gitId": "-"
         },
-        "content": "    // Read files"
+        "content": "  context.mode \u003d \u0027render\u0027;"
       },
       {
         "lineNumber": 467,
         "author": {
           "gitId": "-"
         },
-        "content": "    fs.readFile(file, (err, data) \u003d\u003e {"
+        "content": "  return new Promise((resolve, reject) \u003d\u003e {"
       },
       {
         "lineNumber": 468,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (err) {"
+        "content": "    const handler \u003d new htmlparser.DomHandler((error, dom) \u003d\u003e {"
       },
       {
         "lineNumber": 469,
         "author": {
           "gitId": "-"
         },
-        "content": "        reject(err);"
+        "content": "      if (error) {"
       },
       {
         "lineNumber": 470,
         "author": {
           "gitId": "-"
         },
-        "content": "        return;"
+        "content": "        reject(error);"
       },
       {
         "lineNumber": 471,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "        return;"
       },
       {
         "lineNumber": 472,
         "author": {
           "gitId": "-"
         },
-        "content": "      const fileExt \u003d utils.getExt(file);"
+        "content": "      }"
       },
       {
         "lineNumber": 473,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (utils.isMarkdownFileExt(fileExt)) {"
+        "content": "      const nodes \u003d dom.map((d) \u003d\u003e {"
       },
       {
         "lineNumber": 474,
         "author": {
           "gitId": "-"
         },
-        "content": "        const inputData \u003d md.render(data.toString());"
+        "content": "        let parsed;"
       },
       {
         "lineNumber": 475,
         "author": {
           "gitId": "-"
         },
-        "content": "        context.source \u003d \u0027md\u0027;"
+        "content": "        try {"
       },
       {
         "lineNumber": 476,
         "author": {
           "gitId": "-"
         },
-        "content": "        parser.parseComplete(inputData);"
+        "content": "          parsed \u003d this._parse(d, context, config);"
       },
       {
         "lineNumber": 477,
         "author": {
           "gitId": "-"
         },
-        "content": "      } else if (fileExt \u003d\u003d\u003d \u0027html\u0027) {"
+        "content": "        } catch (err) {"
       },
       {
         "lineNumber": 478,
         "author": {
           "gitId": "-"
         },
-        "content": "        context.source \u003d \u0027html\u0027;"
+        "content": "          err.message +\u003d `\\nError while rendering \u0027${file}\u0027`;"
       },
       {
         "lineNumber": 479,
         "author": {
           "gitId": "-"
         },
-        "content": "        parser.parseComplete(data);"
+        "content": "          this._onError(err);"
       },
       {
         "lineNumber": 480,
         "author": {
           "gitId": "-"
         },
-        "content": "      } else {"
+        "content": "          parsed \u003d createErrorNode(d, err);"
       },
       {
         "lineNumber": 481,
         "author": {
           "gitId": "-"
         },
-        "content": "        const error \u003d new Error(`Unsupported File Extension: \u0027${fileExt}\u0027`);"
+        "content": "        }"
       },
       {
         "lineNumber": 482,
         "author": {
           "gitId": "-"
         },
-        "content": "        reject(error);"
+        "content": "        return parsed;"
       },
       {
         "lineNumber": 483,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "      });"
       },
       {
         "lineNumber": 484,
         "author": {
           "gitId": "-"
         },
-        "content": "    });"
+        "content": "      nodes.forEach((d) \u003d\u003e {"
       },
       {
         "lineNumber": 485,
         "author": {
           "gitId": "-"
         },
-        "content": "  });"
+        "content": "        this._trimNodes(d);"
       },
       {
         "lineNumber": 486,
         "author": {
           "gitId": "-"
         },
-        "content": "};"
+        "content": "      });"
       },
       {
         "lineNumber": 487,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      cheerio.prototype.options.xmlMode \u003d false;"
       },
       {
         "lineNumber": 488,
         "author": {
           "gitId": "-"
         },
-        "content": "Parser.prototype.resolveBaseUrl \u003d function (pageData, config) {"
+        "content": "      resolve(cheerio.html(nodes));"
       },
       {
         "lineNumber": 489,
         "author": {
           "gitId": "-"
         },
-        "content": "  const { baseUrlMap, rootPath, isDynamic } \u003d config;"
+        "content": "      cheerio.prototype.options.xmlMode \u003d true;"
       },
       {
         "lineNumber": 490,
         "author": {
           "gitId": "-"
         },
-        "content": "  this.baseUrlMap \u003d baseUrlMap;"
+        "content": "    });"
       },
       {
         "lineNumber": 491,
         "author": {
           "gitId": "-"
         },
-        "content": "  this.rootPath \u003d rootPath;"
+        "content": ""
       },
       {
         "lineNumber": 492,
         "author": {
           "gitId": "-"
         },
-        "content": "  this.isDynamic \u003d isDynamic || false;"
+        "content": "    const parser \u003d new htmlparser.Parser(handler, {"
       },
       {
         "lineNumber": 493,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (this.isDynamic) {"
+        "content": "      xmlMode: true,"
       },
       {
         "lineNumber": 494,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.dynamicSource \u003d config.dynamicSource;"
+        "content": "      decodeEntities: false,"
       },
       {
         "lineNumber": 495,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    });"
       },
       {
         "lineNumber": 496,
         "author": {
           "gitId": "-"
         },
-        "content": "  return new Promise((resolve, reject) \u003d\u003e {"
+        "content": ""
       },
       {
         "lineNumber": 497,
         "author": {
           "gitId": "-"
         },
-        "content": "    const handler \u003d new htmlparser.DomHandler((error, dom) \u003d\u003e {"
+        "content": "    // Read files"
       },
       {
         "lineNumber": 498,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (error) {"
+        "content": "    fs.readFile(file, (err, data) \u003d\u003e {"
       },
       {
         "lineNumber": 499,
         "author": {
           "gitId": "-"
         },
-        "content": "        reject(error);"
+        "content": "      if (err) {"
       },
       {
         "lineNumber": 500,
         "author": {
           "gitId": "-"
         },
-        "content": "        return;"
+        "content": "        reject(err);"
       },
       {
         "lineNumber": 501,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "        return;"
       },
       {
         "lineNumber": 502,
         "author": {
           "gitId": "-"
         },
-        "content": "      const nodes \u003d dom.map((d) \u003d\u003e {"
+        "content": "      }"
       },
       {
         "lineNumber": 503,
         "author": {
           "gitId": "-"
         },
-        "content": "        const node \u003d d;"
+        "content": "      const fileExt \u003d utils.getExt(file);"
       },
       {
         "lineNumber": 504,
         "author": {
           "gitId": "-"
         },
-        "content": "        const childrenBase \u003d {};"
+        "content": "      if (utils.isMarkdownFileExt(fileExt)) {"
       },
       {
         "lineNumber": 505,
         "author": {
           "gitId": "-"
         },
-        "content": "        if (this.isDynamic) {"
+        "content": "        const inputData \u003d md.render(data.toString());"
       },
       {
         "lineNumber": 506,
         "author": {
           "gitId": "-"
         },
-        "content": "          // Change CWF for each top level element"
+        "content": "        context.source \u003d \u0027md\u0027;"
       },
       {
         "lineNumber": 507,
         "author": {
           "gitId": "-"
         },
-        "content": "          if (node.attribs) {"
+        "content": "        parser.parseComplete(inputData);"
       },
       {
         "lineNumber": 508,
         "author": {
           "gitId": "-"
         },
-        "content": "            node.attribs[ATTRIB_CWF] \u003d this.dynamicSource;"
+        "content": "      } else if (fileExt \u003d\u003d\u003d \u0027html\u0027) {"
       },
       {
         "lineNumber": 509,
         "author": {
           "gitId": "-"
         },
-        "content": "          }"
+        "content": "        context.source \u003d \u0027html\u0027;"
       },
       {
         "lineNumber": 510,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        parser.parseComplete(data);"
       },
       {
         "lineNumber": 511,
         "author": {
           "gitId": "-"
         },
-        "content": "        return this._rebaseReference(node, childrenBase);"
+        "content": "      } else {"
       },
       {
         "lineNumber": 512,
         "author": {
           "gitId": "-"
         },
-        "content": "      });"
+        "content": "        const error \u003d new Error(`Unsupported File Extension: \u0027${fileExt}\u0027`);"
       },
       {
         "lineNumber": 513,
         "author": {
           "gitId": "-"
         },
-        "content": "      cheerio.prototype.options.xmlMode \u003d false;"
+        "content": "        reject(error);"
       },
       {
         "lineNumber": 514,
         "author": {
           "gitId": "-"
         },
-        "content": "      resolve(cheerio.html(nodes));"
+        "content": "      }"
       },
       {
         "lineNumber": 515,
         "author": {
           "gitId": "-"
         },
-        "content": "      cheerio.prototype.options.xmlMode \u003d true;"
+        "content": "    });"
       },
       {
         "lineNumber": 516,
         "author": {
           "gitId": "-"
         },
-        "content": "    });"
+        "content": "  });"
       },
       {
         "lineNumber": 517,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "};"
       },
       {
         "lineNumber": 518,
         "author": {
           "gitId": "-"
         },
-        "content": "    const parser \u003d new htmlparser.Parser(handler, {"
+        "content": ""
       },
       {
         "lineNumber": 519,
         "author": {
           "gitId": "-"
         },
-        "content": "      xmlMode: true,"
+        "content": "Parser.prototype.resolveBaseUrl \u003d function (pageData, config) {"
       },
       {
         "lineNumber": 520,
         "author": {
           "gitId": "-"
         },
-        "content": "      decodeEntities: true,"
+        "content": "  const { baseUrlMap, rootPath, isDynamic } \u003d config;"
       },
       {
         "lineNumber": 521,
         "author": {
           "gitId": "-"
         },
-        "content": "    });"
+        "content": "  this.baseUrlMap \u003d baseUrlMap;"
       },
       {
         "lineNumber": 522,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  this.rootPath \u003d rootPath;"
       },
       {
         "lineNumber": 523,
         "author": {
           "gitId": "-"
         },
-        "content": "    parser.parseComplete(pageData);"
+        "content": "  this.isDynamic \u003d isDynamic || false;"
       },
       {
         "lineNumber": 524,
         "author": {
           "gitId": "-"
         },
-        "content": "  });"
+        "content": "  if (this.isDynamic) {"
       },
       {
         "lineNumber": 525,
         "author": {
           "gitId": "-"
         },
-        "content": "};"
+        "content": "    this.dynamicSource \u003d config.dynamicSource;"
       },
       {
         "lineNumber": 526,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 527,
         "author": {
           "gitId": "-"
         },
-        "content": "Parser.prototype._rebaseReference \u003d function (node, foundBase) {"
+        "content": "  return new Promise((resolve, reject) \u003d\u003e {"
       },
       {
         "lineNumber": 528,
         "author": {
           "gitId": "-"
         },
-        "content": "  const element \u003d node;"
+        "content": "    const handler \u003d new htmlparser.DomHandler((error, dom) \u003d\u003e {"
       },
       {
         "lineNumber": 529,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      if (error) {"
       },
       {
         "lineNumber": 530,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (_.isArray(element)) {"
+        "content": "        reject(error);"
       },
       {
         "lineNumber": 531,
         "author": {
           "gitId": "-"
         },
-        "content": "    return element.map(el \u003d\u003e this._rebaseReference(el, foundBase));"
+        "content": "        return;"
       },
       {
         "lineNumber": 532,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "      }"
       },
       {
         "lineNumber": 533,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      const nodes \u003d dom.map((d) \u003d\u003e {"
       },
       {
         "lineNumber": 534,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (isText(element)) {"
+        "content": "        const node \u003d d;"
       },
       {
         "lineNumber": 535,
         "author": {
           "gitId": "-"
         },
-        "content": "    return element;"
+        "content": "        const childrenBase \u003d {};"
       },
       {
         "lineNumber": 536,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "        if (this.isDynamic) {"
       },
       {
         "lineNumber": 537,
         "author": {
           "gitId": "-"
         },
-        "content": "  // Rebase children element"
+        "content": "          // Change CWF for each top level element"
       },
       {
         "lineNumber": 538,
         "author": {
           "gitId": "-"
         },
-        "content": "  const childrenBase \u003d {};"
+        "content": "          if (node.attribs) {"
       },
       {
         "lineNumber": 539,
         "author": {
           "gitId": "-"
         },
-        "content": "  element.children.forEach((el) \u003d\u003e {"
+        "content": "            node.attribs[ATTRIB_CWF] \u003d this.dynamicSource;"
       },
       {
         "lineNumber": 540,
         "author": {
           "gitId": "-"
         },
-        "content": "    this._rebaseReference(el, childrenBase);"
+        "content": "          }"
       },
       {
         "lineNumber": 541,
         "author": {
           "gitId": "-"
         },
-        "content": "  });"
+        "content": "        }"
       },
       {
         "lineNumber": 542,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        return this._rebaseReference(node, childrenBase);"
       },
       {
         "lineNumber": 543,
         "author": {
           "gitId": "-"
         },
-        "content": "  // rebase current element"
+        "content": "      });"
       },
       {
         "lineNumber": 544,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (element.attribs[ATTRIB_INCLUDE_PATH]) {"
+        "content": "      cheerio.prototype.options.xmlMode \u003d false;"
       },
       {
         "lineNumber": 545,
         "author": {
           "gitId": "-"
         },
-        "content": "    const filePath \u003d element.attribs[ATTRIB_INCLUDE_PATH];"
+        "content": "      resolve(cheerio.html(nodes));"
       },
       {
         "lineNumber": 546,
         "author": {
           "gitId": "-"
         },
-        "content": "    let newBase \u003d calculateNewBaseUrls(filePath, this.rootPath, this.baseUrlMap);"
+        "content": "      cheerio.prototype.options.xmlMode \u003d true;"
       },
       {
         "lineNumber": 547,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (newBase) {"
+        "content": "    });"
       },
       {
         "lineNumber": 548,
         "author": {
           "gitId": "-"
         },
-        "content": "      const { relative, parent } \u003d newBase;"
+        "content": ""
       },
       {
         "lineNumber": 549,
         "author": {
           "gitId": "-"
         },
-        "content": "      // eslint-disable-next-line no-param-reassign"
+        "content": "    const parser \u003d new htmlparser.Parser(handler, {"
       },
       {
         "lineNumber": 550,
         "author": {
           "gitId": "-"
         },
-        "content": "      foundBase[parent] \u003d relative;"
+        "content": "      xmlMode: true,"
       },
       {
         "lineNumber": 551,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "      decodeEntities: true,"
       },
       {
         "lineNumber": 552,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    });"
       },
       {
         "lineNumber": 553,
         "author": {
           "gitId": "-"
         },
-        "content": "    const combinedBases \u003d Object.assign({}, childrenBase, foundBase);"
+        "content": ""
       },
       {
         "lineNumber": 554,
         "author": {
           "gitId": "-"
         },
-        "content": "    const bases \u003d Object.keys(combinedBases);"
+        "content": "    parser.parseComplete(pageData);"
       },
       {
         "lineNumber": 555,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (bases.length !\u003d\u003d 0) {"
+        "content": "  });"
       },
       {
         "lineNumber": 556,
         "author": {
           "gitId": "-"
         },
-        "content": "      // need to rebase"
+        "content": "};"
       },
       {
         "lineNumber": 557,
         "author": {
           "gitId": "-"
         },
-        "content": "      newBase \u003d combinedBases[bases[0]];"
+        "content": ""
       },
       {
         "lineNumber": 558,
         "author": {
           "gitId": "-"
         },
-        "content": "      const { children } \u003d element;"
+        "content": "Parser.prototype._rebaseReference \u003d function (node, foundBase) {"
       },
       {
         "lineNumber": 559,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (children) {"
+        "content": "  const element \u003d node;"
       },
       {
         "lineNumber": 560,
         "author": {
           "gitId": "-"
         },
-        "content": "        const currentBase \u003d calculateNewBaseUrls(element.attribs[ATTRIB_CWF], this.rootPath, this.baseUrlMap);"
+        "content": ""
       },
       {
         "lineNumber": 561,
         "author": {
           "gitId": "-"
         },
-        "content": "        if (currentBase) {"
+        "content": "  if (_.isArray(element)) {"
       },
       {
         "lineNumber": 562,
         "author": {
           "gitId": "-"
         },
-        "content": "          if (currentBase.relative !\u003d\u003d newBase) {"
+        "content": "    return element.map(el \u003d\u003e this._rebaseReference(el, foundBase));"
       },
       {
         "lineNumber": 563,
         "author": {
           "gitId": "-"
         },
-        "content": "            cheerio.prototype.options.xmlMode \u003d false;"
+        "content": "  }"
       },
       {
         "lineNumber": 564,
         "author": {
           "gitId": "-"
         },
-        "content": "            const newBaseUrl \u003d `{{hostBaseUrl}}/${newBase}`;"
+        "content": ""
       },
       {
         "lineNumber": 565,
         "author": {
           "gitId": "-"
         },
-        "content": "            const rendered \u003d nunjucks.renderString(cheerio.html(children), {"
+        "content": "  if (isText(element)) {"
       },
       {
         "lineNumber": 566,
         "author": {
           "gitId": "-"
         },
-        "content": "              // This is to prevent the nunjuck call from converting {{hostBaseUrl}} to an empty string"
+        "content": "    return element;"
       },
       {
         "lineNumber": 567,
         "author": {
           "gitId": "-"
         },
-        "content": "              // and let the hostBaseUrl value be injected later."
+        "content": "  }"
       },
       {
         "lineNumber": 568,
         "author": {
           "gitId": "-"
         },
-        "content": "              hostBaseUrl: \u0027{{hostBaseUrl}}\u0027,"
+        "content": "  // Rebase children element"
       },
       {
         "lineNumber": 569,
         "author": {
           "gitId": "-"
         },
-        "content": "              baseUrl: newBaseUrl,"
+        "content": "  const childrenBase \u003d {};"
       },
       {
         "lineNumber": 570,
         "author": {
           "gitId": "-"
         },
-        "content": "            });"
+        "content": "  element.children.forEach((el) \u003d\u003e {"
       },
       {
         "lineNumber": 571,
         "author": {
           "gitId": "-"
         },
-        "content": "            element.children \u003d cheerio.parseHTML(rendered, true);"
+        "content": "    this._rebaseReference(el, childrenBase);"
       },
       {
         "lineNumber": 572,
         "author": {
           "gitId": "-"
         },
-        "content": "            cheerio.prototype.options.xmlMode \u003d true;"
+        "content": "  });"
       },
       {
         "lineNumber": 573,
         "author": {
           "gitId": "-"
         },
-        "content": "          }"
+        "content": ""
       },
       {
         "lineNumber": 574,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "  // rebase current element"
       },
       {
         "lineNumber": 575,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "  if (element.attribs[ATTRIB_INCLUDE_PATH]) {"
       },
       {
         "lineNumber": 576,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    const filePath \u003d element.attribs[ATTRIB_INCLUDE_PATH];"
       },
       {
         "lineNumber": 577,
         "author": {
           "gitId": "-"
         },
-        "content": "    delete element.attribs[ATTRIB_INCLUDE_PATH];"
+        "content": "    let newBase \u003d calculateNewBaseUrls(filePath, this.rootPath, this.baseUrlMap);"
       },
       {
         "lineNumber": 578,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    if (newBase) {"
       },
       {
         "lineNumber": 579,
         "author": {
           "gitId": "-"
         },
-        "content": "  delete element.attribs[ATTRIB_CWF];"
+        "content": "      const { relative, parent } \u003d newBase;"
       },
       {
         "lineNumber": 580,
         "author": {
           "gitId": "-"
         },
-        "content": "  return element;"
+        "content": "      // eslint-disable-next-line no-param-reassign"
       },
       {
         "lineNumber": 581,
         "author": {
           "gitId": "-"
         },
-        "content": "};"
+        "content": "      foundBase[parent] \u003d relative;"
       },
       {
         "lineNumber": 582,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 583,
         "author": {
           "gitId": "-"
         },
-        "content": "Parser.prototype._rebaseReferenceForStaticIncludes \u003d function (pageData, element, config) {"
+        "content": ""
       },
       {
         "lineNumber": 584,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (!config) {"
+        "content": "    const combinedBases \u003d Object.assign({}, childrenBase, foundBase);"
       },
       {
         "lineNumber": 585,
         "author": {
           "gitId": "-"
         },
-        "content": "    return pageData;"
+        "content": "    const bases \u003d Object.keys(combinedBases);"
       },
       {
         "lineNumber": 586,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    if (bases.length !\u003d\u003d 0) {"
       },
       {
         "lineNumber": 587,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      // need to rebase"
       },
       {
         "lineNumber": 588,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (!pageData.includes(\u0027{{baseUrl}}\u0027)) {"
+        "content": "      newBase \u003d combinedBases[bases[0]];"
       },
       {
         "lineNumber": 589,
         "author": {
           "gitId": "-"
         },
-        "content": "    return pageData;"
+        "content": "      const { children } \u003d element;"
       },
       {
         "lineNumber": 590,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "      if (children) {"
       },
       {
         "lineNumber": 591,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        const currentBase \u003d calculateNewBaseUrls(element.attribs[ATTRIB_CWF], this.rootPath, this.baseUrlMap);"
       },
       {
         "lineNumber": 592,
         "author": {
           "gitId": "-"
         },
-        "content": "  const filePath \u003d element.attribs[ATTRIB_INCLUDE_PATH];"
+        "content": "        if (currentBase) {"
       },
       {
         "lineNumber": 593,
         "author": {
           "gitId": "-"
         },
-        "content": "  const fileBase \u003d calculateNewBaseUrls(filePath, config.rootPath, config.baseUrlMap);"
+        "content": "          if (currentBase.relative !\u003d\u003d newBase) {"
       },
       {
         "lineNumber": 594,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (!fileBase.relative) {"
+        "content": "            cheerio.prototype.options.xmlMode \u003d false;"
       },
       {
         "lineNumber": 595,
         "author": {
           "gitId": "-"
         },
-        "content": "    return pageData;"
+        "content": "            const newBaseUrl \u003d `{{hostBaseUrl}}/${newBase}`;"
       },
       {
         "lineNumber": 596,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "            const rendered \u003d nunjucks.renderString(cheerio.html(children), {"
       },
       {
         "lineNumber": 597,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "              // This is to prevent the nunjuck call from converting {{hostBaseUrl}} to an empty string"
       },
       {
         "lineNumber": 598,
         "author": {
           "gitId": "-"
         },
-        "content": "  const currentPath \u003d element.attribs[ATTRIB_CWF];"
+        "content": "              // and let the hostBaseUrl value be injected later."
       },
       {
         "lineNumber": 599,
         "author": {
           "gitId": "-"
         },
-        "content": "  const currentBase \u003d calculateNewBaseUrls(currentPath, config.rootPath, config.baseUrlMap);"
+        "content": "              hostBaseUrl: \u0027{{hostBaseUrl}}\u0027,"
       },
       {
         "lineNumber": 600,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (currentBase.relative \u003d\u003d\u003d fileBase.relative) {"
+        "content": "              baseUrl: newBaseUrl,"
       },
       {
         "lineNumber": 601,
         "author": {
           "gitId": "-"
         },
-        "content": "    return pageData;"
+        "content": "            });"
       },
       {
         "lineNumber": 602,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "            element.children \u003d cheerio.parseHTML(rendered, true);"
       },
       {
         "lineNumber": 603,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            cheerio.prototype.options.xmlMode \u003d true;"
       },
       {
         "lineNumber": 604,
         "author": {
           "gitId": "-"
         },
-        "content": "  const newBase \u003d fileBase.relative;"
+        "content": "          }"
       },
       {
         "lineNumber": 605,
         "author": {
           "gitId": "-"
         },
-        "content": "  const newBaseUrl \u003d `{{hostBaseUrl}}/${newBase}`;"
+        "content": "        }"
       },
       {
         "lineNumber": 606,
         "author": {
           "gitId": "-"
         },
-        "content": "  return nunjucks.renderString(pageData, { baseUrl: newBaseUrl });"
+        "content": "      }"
       },
       {
         "lineNumber": 607,
         "author": {
           "gitId": "-"
         },
-        "content": "};"
+        "content": "    }"
       },
       {
         "lineNumber": 608,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    delete element.attribs[ATTRIB_INCLUDE_PATH];"
       },
       {
         "lineNumber": 609,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 610,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  delete element.attribs[ATTRIB_CWF];"
+      },
+      {
+        "lineNumber": 611,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  return element;"
+      },
+      {
+        "lineNumber": 612,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "};"
+      },
+      {
+        "lineNumber": 613,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 614,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Parser.prototype._rebaseReferenceForStaticIncludes \u003d function (pageData, element, config) {"
+      },
+      {
+        "lineNumber": 615,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  if (!config) {"
+      },
+      {
+        "lineNumber": 616,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return pageData;"
+      },
+      {
+        "lineNumber": 617,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 618,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 619,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  if (!pageData.includes(\u0027{{baseUrl}}\u0027)) {"
+      },
+      {
+        "lineNumber": 620,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return pageData;"
+      },
+      {
+        "lineNumber": 621,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 622,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 623,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  const filePath \u003d element.attribs[ATTRIB_INCLUDE_PATH];"
+      },
+      {
+        "lineNumber": 624,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  const fileBase \u003d calculateNewBaseUrls(filePath, config.rootPath, config.baseUrlMap);"
+      },
+      {
+        "lineNumber": 625,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  if (!fileBase.relative) {"
+      },
+      {
+        "lineNumber": 626,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return pageData;"
+      },
+      {
+        "lineNumber": 627,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 628,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 629,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  const currentPath \u003d element.attribs[ATTRIB_CWF];"
+      },
+      {
+        "lineNumber": 630,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  const currentBase \u003d calculateNewBaseUrls(currentPath, config.rootPath, config.baseUrlMap);"
+      },
+      {
+        "lineNumber": 631,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  if (currentBase.relative \u003d\u003d\u003d fileBase.relative) {"
+      },
+      {
+        "lineNumber": 632,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return pageData;"
+      },
+      {
+        "lineNumber": 633,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 634,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 635,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  const newBase \u003d fileBase.relative;"
+      },
+      {
+        "lineNumber": 636,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  const newBaseUrl \u003d `{{hostBaseUrl}}/${newBase}`;"
+      },
+      {
+        "lineNumber": 637,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  return nunjucks.renderString(pageData, { baseUrl: newBaseUrl });"
+      },
+      {
+        "lineNumber": 638,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "};"
+      },
+      {
+        "lineNumber": 639,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 640,
         "author": {
           "gitId": "-"
         },
@@ -113630,7 +113847,7 @@
     ],
     "authorContributionMap": {
       "Xenonym": 35,
-      "-": 574
+      "-": 605
     }
   },
   {
@@ -118186,336 +118403,336 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-without-src\": \"Panel without src\","
+        "content": "        \"include-with-custom-variables\": \"Include with custom variables\","
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-with-normal-src\": \"Panel with normal src\","
+        "content": "        \"test-included-variable\": \"Test included variable\","
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-with-src-from-a-page-segment\": \"Panel with src from a page segment\","
+        "content": "        \"test-included-variable-with-markdown\": \"Test included variable with markdown\","
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-with-boilerplate\": \"Panel with boilerplate\","
+        "content": "        \"test-included-variable-as-attribute\": \"Test included variable as attribute\","
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"nested-panel-without-src\": \"Nested panel without src\","
+        "content": "        \"test-included-variable-as-html-element\": \"Test included variable as html element\","
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-with-src-from-another-markbind-site\": \"Panel with src from another Markbind site\","
+        "content": "        \"test-included-variable-overridden-by-variables-md\": \"Test included variable overridden by variables.md\","
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"modal-with-panel-inside\": \"Modal with panel inside\","
+        "content": "        \"test-included-variables-in-included-file\": \"Test included variables in included file\","
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"unexpanded-panel\": \"Unexpanded panel\""
+        "content": "        \"inner-included-variables-should-not-leak-into-other-files\": \"Inner included variables should not leak into other files\","
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": "      },"
+        "content": "        \"test-included-variable-with-global-variable\": \"Test included variable with global variable\","
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"title\": \"Hello World\","
+        "content": "        \"test-included-variable-overridden-by-set\": \"Test included variable overridden by set\","
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"footer\": \"footer.md\","
+        "content": "        \"test-missing-variable-with-default\": \"Test missing variable with default\","
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"siteNav\": \"site-nav.md\","
+        "content": "        \"included-variables-should-not-leak-into-other-files\": \"Included variables should not leak into other files\","
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"pageNav\": \"default\","
+        "content": "        \"panel-without-src\": \"Panel without src\","
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"pageNavTitle\": \"Testing Page Navigation\","
+        "content": "        \"panel-with-normal-src\": \"Panel with normal src\","
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"head\": \"myCustomHead.md, myCustomHead2.md\","
+        "content": "        \"panel-with-src-from-a-page-segment\": \"Panel with src from a page segment\","
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"src\": \"index.md\","
+        "content": "        \"panel-with-boilerplate\": \"Panel with boilerplate\","
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"layout\": \"default\","
+        "content": "        \"nested-panel-without-src\": \"Nested panel without src\","
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"tags\": ["
+        "content": "        \"panel-with-src-from-another-markbind-site\": \"Panel with src from another Markbind site\","
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"tag--shown\","
+        "content": "        \"modal-with-panel-inside\": \"Modal with panel inside\","
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"tag--shown-2\""
+        "content": "        \"unexpanded-panel\": \"Unexpanded panel\""
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
-        "content": "      ]"
+        "content": "      },"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "      \"title\": \"Hello World\","
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "-"
         },
-        "content": "    {"
+        "content": "      \"footer\": \"footer.md\","
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"headings\": {"
+        "content": "      \"siteNav\": \"site-nav.md\","
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"feature-list\": \"Feature list\""
+        "content": "      \"pageNav\": \"default\","
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "      },"
+        "content": "      \"pageNavTitle\": \"Testing Page Navigation\","
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"src\": \"sub_site/index.md\","
+        "content": "      \"head\": \"myCustomHead.md, myCustomHead2.md\","
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"title\": \"\","
+        "content": "      \"src\": \"index.md\","
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"layout\": \"default\""
+        "content": "      \"layout\": \"default\","
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "      \"tags\": ["
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
-        "content": "    {"
+        "content": "        \"tag--shown\","
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"headings\": {"
+        "content": "        \"tag--shown-2\""
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"some-heading\": \"Some heading\""
+        "content": "      ]"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": "      },"
+        "content": "    },"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"src\": \"test_md_fragment.md\","
+        "content": "    {"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"title\": \"\","
+        "content": "      \"headings\": {"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"layout\": \"default\""
+        "content": "        \"feature-list\": \"Feature list\""
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "      },"
       },
       {
         "lineNumber": 110,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "    {"
+        "content": "      \"src\": \"sub_site/index.md\","
       },
       {
         "lineNumber": 111,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "      \"headings\": {},"
+        "content": "      \"title\": \"\","
       },
       {
         "lineNumber": 112,
         "author": {
-          "gitId": "Xenonym"
-        },
-        "content": "      \"src\": \"testEmptyFrontmatter.md\","
-      },
-      {
-        "lineNumber": 113,
-        "author": {
-          "gitId": "Xenonym"
-        },
-        "content": "      \"title\": \"Hello World\","
-      },
-      {
-        "lineNumber": 114,
-        "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
         "content": "      \"layout\": \"default\""
       },
       {
-        "lineNumber": 115,
+        "lineNumber": 113,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 116,
+        "lineNumber": 114,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
         "content": "    {"
       },
       {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \"headings\": {"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \"some-heading\": \"Some heading\""
+      },
+      {
         "lineNumber": 117,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "      \"headings\": {},"
+        "content": "      },"
       },
       {
         "lineNumber": 118,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "      \"src\": \"testExternalScripts.md\","
+        "content": "      \"src\": \"test_md_fragment.md\","
       },
       {
         "lineNumber": 119,
         "author": {
-          "gitId": "Xenonym"
+          "gitId": "-"
         },
-        "content": "      \"title\": \"Hello World\","
+        "content": "      \"title\": \"\","
       },
       {
         "lineNumber": 120,
@@ -118534,313 +118751,397 @@
       {
         "lineNumber": 122,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
         "content": "    {"
       },
       {
         "lineNumber": 123,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "      \"headings\": {"
+        "content": "      \"headings\": {},"
       },
       {
         "lineNumber": 124,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "        \"uses-a-front-matter-layout\": \"Uses a front matter layout\""
+        "content": "      \"src\": \"testEmptyFrontmatter.md\","
       },
       {
         "lineNumber": 125,
         "author": {
-          "gitId": "-"
-        },
-        "content": "      },"
-      },
-      {
-        "lineNumber": 126,
-        "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
         "content": "      \"title\": \"Hello World\","
       },
       {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "      \"layout\": \"default\""
+      },
+      {
         "lineNumber": 127,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "      \"head\": \"overwriteLayoutHead.md\","
+        "content": "    },"
       },
       {
         "lineNumber": 128,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "      \"layout\": \"testLayout\","
+        "content": "    {"
       },
       {
         "lineNumber": 129,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "      \"src\": \"testLayouts.md\","
+        "content": "      \"headings\": {},"
       },
       {
         "lineNumber": 130,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "      \"tags\": ["
+        "content": "      \"src\": \"testExternalScripts.md\","
       },
       {
         "lineNumber": 131,
         "author": {
-          "gitId": "-"
+          "gitId": "Xenonym"
         },
-        "content": "        \"tag--shown\","
+        "content": "      \"title\": \"Hello World\","
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"tag--shown-2\""
+        "content": "      \"layout\": \"default\""
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "-"
         },
-        "content": "      ]"
+        "content": "    },"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "    {"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "-"
         },
-        "content": "    {"
+        "content": "      \"headings\": {"
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"headings\": {"
+        "content": "        \"uses-a-front-matter-layout\": \"Uses a front matter layout\""
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"uses-a-site-json-layout-overriding-front-matter\": \"Uses a site.json layout, overriding front matter\""
+        "content": "      },"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "-"
         },
-        "content": "      },"
+        "content": "      \"title\": \"Hello World\","
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"title\": \"Hello World\","
+        "content": "      \"head\": \"overwriteLayoutHead.md\","
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"head\": \"overwriteLayoutHead.md\","
+        "content": "      \"layout\": \"testLayout\","
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"layout\": \"testLayout\","
+        "content": "      \"src\": \"testLayouts.md\","
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"src\": \"testLayoutsOverride.md\","
+        "content": "      \"tags\": ["
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"tags\": ["
+        "content": "        \"tag--shown\","
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"tag--shown\","
+        "content": "        \"tag--shown-2\""
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"tag--shown-2\""
+        "content": "      ]"
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "-"
         },
-        "content": "      ]"
+        "content": "    },"
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "    {"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "-"
         },
-        "content": "    {"
+        "content": "      \"headings\": {"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"headings\": {"
+        "content": "        \"uses-a-site-json-layout-overriding-front-matter\": \"Uses a site.json layout, overriding front matter\""
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"front-matter-should-be-overridden-by-site-json\": \"Front matter should be overridden by site.json\","
+        "content": "      },"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"div-with-shown-tag\": \"Div with shown tag\","
+        "content": "      \"title\": \"Hello World\","
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"div-with-shown-2-tag\": \"Div with shown-2 tag\","
+        "content": "      \"head\": \"overwriteLayoutHead.md\","
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"div-with-multiple-tags\": \"Div with multiple tags\","
+        "content": "      \"layout\": \"testLayout\","
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"div-with-frontmatter-tag-that-should-be-overriden-by-site-config\": \"Div with frontmatter tag that should be overriden by site config\","
+        "content": "      \"src\": \"testLayoutsOverride.md\","
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"div-with-hidden-tag\": \"Div with hidden tag\""
+        "content": "      \"tags\": ["
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "-"
         },
-        "content": "      },"
+        "content": "        \"tag--shown\","
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"title\": \"Hello World\","
+        "content": "        \"tag--shown-2\""
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"tags\": ["
+        "content": "      ]"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"tag--shown\","
+        "content": "    },"
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"tag--shown-2\""
+        "content": "    {"
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "-"
         },
-        "content": "      ],"
+        "content": "      \"headings\": {"
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"src\": \"testTags.md\","
+        "content": "        \"front-matter-should-be-overridden-by-site-json\": \"Front matter should be overridden by site.json\","
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"layout\": \"default\""
+        "content": "        \"div-with-shown-tag\": \"Div with shown tag\","
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        \"div-with-shown-2-tag\": \"Div with shown-2 tag\","
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "-"
         },
-        "content": "  ]"
+        "content": "        \"div-with-multiple-tags\": \"Div with multiple tags\","
       },
       {
         "lineNumber": 166,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \"div-with-frontmatter-tag-that-should-be-overriden-by-site-config\": \"Div with frontmatter tag that should be overriden by site config\","
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \"div-with-hidden-tag\": \"Div with hidden tag\""
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \"title\": \"Hello World\","
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \"tags\": ["
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \"tag--shown\","
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \"tag--shown-2\""
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      ],"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \"src\": \"testTags.md\","
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \"layout\": \"default\""
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  ]"
+      },
+      {
+        "lineNumber": 178,
         "author": {
           "gitId": "-"
         },
@@ -118849,7 +119150,7 @@
     ],
     "authorContributionMap": {
       "Xenonym": 11,
-      "-": 155
+      "-": 167
     }
   },
   {
