@@ -50,8 +50,8 @@
         "untilDate": "2019-01-26"
       },
       {
-        "insertions": 11,
-        "deletions": 0,
+        "insertions": 84,
+        "deletions": 6,
         "sinceDate": "2019-01-26",
         "untilDate": "2019-02-02"
       }
@@ -582,10 +582,16 @@
         "untilDate": "2019-01-29"
       },
       {
-        "insertions": 11,
-        "deletions": 0,
+        "insertions": 26,
+        "deletions": 4,
         "sinceDate": "2019-01-29",
         "untilDate": "2019-01-30"
+      },
+      {
+        "insertions": 58,
+        "deletions": 2,
+        "sinceDate": "2019-01-30",
+        "untilDate": "2019-01-31"
       }
     ],
     "ongspxm": [
@@ -948,6 +954,12 @@
         "deletions": 0,
         "sinceDate": "2019-01-29",
         "untilDate": "2019-01-30"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-01-30",
+        "untilDate": "2019-01-31"
       }
     ],
     "fzdy1914": [
@@ -1310,6 +1322,12 @@
         "deletions": 0,
         "sinceDate": "2019-01-29",
         "untilDate": "2019-01-30"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-01-30",
+        "untilDate": "2019-01-31"
       }
     ],
     "chelseyong": [
@@ -1672,19 +1690,25 @@
         "deletions": 0,
         "sinceDate": "2019-01-29",
         "untilDate": "2019-01-30"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-01-30",
+        "untilDate": "2019-01-31"
       }
     ]
   },
   "authorFinalContributionMap": {
-    "emer7": 10,
+    "emer7": 82,
     "ongspxm": 0,
-    "fzdy1914": 268,
+    "fzdy1914": 266,
     "chelseyong": 0
   },
   "authorContributionVariance": {
-    "emer7": 1.9830555,
+    "emer7": 71.59365,
     "ongspxm": 0.0,
-    "fzdy1914": 848.2142,
+    "fzdy1914": 834.78815,
     "chelseyong": 0.0
   },
   "authorDisplayNameMap": {

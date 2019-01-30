@@ -74482,14 +74482,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    \"testwin\": \"jest \u0026\u0026 cd test/test_site \u0026\u0026 test.bat\","
+        "content": "    \"testwin\": \"jest \u0026\u0026 cd test/functional \u0026\u0026 test.bat\","
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"test\": \"jest \u0026\u0026 cd test/test_site \u0026\u0026 ./test.sh\","
+        "content": "    \"test\": \"jest \u0026\u0026 cd test/functional \u0026\u0026 ./test.sh\","
       },
       {
         "lineNumber": 66,
@@ -74531,7 +74531,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "      \"test/test_site/\""
+        "content": "      \"test/functional\""
       },
       {
         "lineNumber": 72,
@@ -114330,7 +114330,7 @@
     }
   },
   {
-    "path": "test/test_site/expected/markbind/css/markbind.css",
+    "path": "test/functional/test_site/expected/markbind/css/markbind.css",
     "lines": [
       {
         "lineNumber": 1,
@@ -115459,7 +115459,7 @@
     }
   },
   {
-    "path": "test/test_site/expected/markbind/css/site-nav.css",
+    "path": "test/functional/test_site/expected/markbind/css/site-nav.css",
     "lines": [
       {
         "lineNumber": 1,
@@ -117071,7 +117071,7 @@
     }
   },
   {
-    "path": "test/test_site/expected/markbind/js/setup.js",
+    "path": "test/functional/test_site/expected/markbind/js/setup.js",
     "lines": [
       {
         "lineNumber": 1,
@@ -117899,7 +117899,7 @@
     }
   },
   {
-    "path": "test/test_site/expected/siteData.json",
+    "path": "test/functional/test_site/expected/siteData.json",
     "lines": [
       {
         "lineNumber": 1,
@@ -119154,7 +119154,7 @@
     }
   },
   {
-    "path": "test/test_site/site.json",
+    "path": "test/functional/test_site/site.json",
     "lines": [
       {
         "lineNumber": 1,
@@ -119576,7 +119576,7 @@
     }
   },
   {
-    "path": "test/test_site/testEmptyFrontmatter.md",
+    "path": "test/functional/test_site/testEmptyFrontmatter.md",
     "lines": [
       {
         "lineNumber": 1,
@@ -119605,7 +119605,7 @@
     }
   },
   {
-    "path": "test/test_site/testExternalScripts.md",
+    "path": "test/functional/test_site/testExternalScripts.md",
     "lines": [
       {
         "lineNumber": 1,
