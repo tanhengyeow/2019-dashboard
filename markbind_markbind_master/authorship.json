@@ -54,21 +54,21 @@
       {
         "lineNumber": 8,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "    background: #f8f8f8;"
       },
       {
         "lineNumber": 9,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "    border-radius: 3px;"
       },
       {
         "lineNumber": 10,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "    padding: 0.2em 0.4em;"
       },
@@ -96,28 +96,28 @@
       {
         "lineNumber": 14,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "pre.hljs \u003e code {"
       },
       {
         "lineNumber": 15,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "    background: none;"
       },
       {
         "lineNumber": 16,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "}"
       },
       {
         "lineNumber": 17,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": ""
       },
@@ -1125,315 +1125,774 @@
       {
         "lineNumber": 161,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 162,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "/* Spinner */"
       },
       {
         "lineNumber": 163,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 164,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "#loading-overlay {"
       },
       {
         "lineNumber": 165,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    background: white;"
       },
       {
         "lineNumber": 166,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    bottom: 0;"
       },
       {
         "lineNumber": 167,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    display: none;"
       },
       {
         "lineNumber": 168,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    left: 0;"
       },
       {
         "lineNumber": 169,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    position: fixed;"
       },
       {
         "lineNumber": 170,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    right: 0;"
       },
       {
         "lineNumber": 171,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    top: 0;"
       },
       {
         "lineNumber": 172,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    z-index: 100;"
       },
       {
         "lineNumber": 173,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "}"
       },
       {
         "lineNumber": 174,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 175,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "#spinner-layout {"
       },
       {
         "lineNumber": 176,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    align-items: center;"
       },
       {
         "lineNumber": 177,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    animation: show 1s;"
       },
       {
         "lineNumber": 178,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    animation-fill-mode: forwards;"
       },
       {
         "lineNumber": 179,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    animation-timing-function: step-end;"
       },
       {
         "lineNumber": 180,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    display: flex;"
       },
       {
         "lineNumber": 181,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    height: 100%;"
       },
       {
         "lineNumber": 182,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    justify-content: center;"
       },
       {
         "lineNumber": 183,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    visibility: hidden;"
       },
       {
         "lineNumber": 184,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    width: 100%;"
       },
       {
         "lineNumber": 185,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "}"
       },
       {
         "lineNumber": 186,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 187,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "@keyframes show {"
       },
       {
         "lineNumber": 188,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    0% { visibility: hidden; }"
       },
       {
         "lineNumber": 189,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    100% { visibility: visible; }"
       },
       {
         "lineNumber": 190,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "}"
       },
       {
         "lineNumber": 191,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 192,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "#spinner {"
       },
       {
         "lineNumber": 193,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    animation: spin 1s linear infinite;"
       },
       {
         "lineNumber": 194,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    border: 16px solid lightgray;"
       },
       {
         "lineNumber": 195,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    border-radius: 50%;"
       },
       {
         "lineNumber": 196,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    border-top: 16px solid darkgray;"
       },
       {
         "lineNumber": 197,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    height: 120px;"
       },
       {
         "lineNumber": 198,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    width: 120px;"
       },
       {
         "lineNumber": 199,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "}"
       },
       {
         "lineNumber": 200,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 201,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "@keyframes spin {"
       },
       {
         "lineNumber": 202,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    0% { transform: rotate(0deg); }"
       },
       {
         "lineNumber": 203,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    100% { transform: rotate(360deg); }"
       },
       {
         "lineNumber": 204,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "}"
       }
     ],
     "authorContributionMap": {
       "Xenonym": 15,
-      "-": 189
+      "marvinchin": 44,
+      "-": 138,
+      "luyangkenneth": 7
+    }
+  },
+  {
+    "path": "asset/css/page-nav.css",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/* Page navigation */"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#page-nav {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    border-left: solid 1px lightgrey;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    display: inline-block;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    max-height: 80vh;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    overflow: auto;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    position: fixed;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    right: 0;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    transition: 0.4s;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    width: 300px;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    -webkit-transition: 0.4s;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#page-nav a:link,"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#page-nav a:visited {"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    color: #9b9b9b;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    text-decoration: none;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#page-nav a:hover{"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    color: black;"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#page-nav a.active {"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    background-color: transparent;"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    color: black;"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#page-nav-content-wrapper {"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    margin-right: 300px;"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    transition: 0.4s;"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    -webkit-transition: 0.4s;"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/* Responsive site navigation */"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/* Hides page navigation on screen widths smaller than 1300px */"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "@media screen and (max-width: 1299.98px) {"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    #page-nav {"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": "        border: none;"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        overflow: hidden;"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        padding: 0;"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        width: 0px;"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    #page-nav-content-wrapper {"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        margin-right: 0;"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": "/* Hide page navigation when printing */"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": "@media print {"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": "    #page-nav-content-wrapper {"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": "        margin-right: 0;"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": "    #page-nav {"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": "        border: none;"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": "        display: none;"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "marvinchin"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "marvinchin": 14,
+      "-": 50
     }
   },
   {
@@ -3045,98 +3504,99 @@
       {
         "lineNumber": 230,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 231,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "/* Hide site navigation when printing */"
       },
       {
         "lineNumber": 232,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "@media print {"
       },
       {
         "lineNumber": 233,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 234,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    #page-content {"
       },
       {
         "lineNumber": 235,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "        margin-left: 0;"
       },
       {
         "lineNumber": 236,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    }"
       },
       {
         "lineNumber": 237,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 238,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    #site-nav {"
       },
       {
         "lineNumber": 239,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "        border: none;"
       },
       {
         "lineNumber": 240,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "        display: none;"
       },
       {
         "lineNumber": 241,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    }"
       },
       {
         "lineNumber": 242,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "}"
       }
     ],
     "authorContributionMap": {
       "Xenonym": 16,
-      "-": 226
+      "marvinchin": 13,
+      "-": 213
     }
   },
   {
@@ -3390,21 +3850,21 @@
       {
         "lineNumber": 36,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "function removeLoadingOverlay() {"
       },
       {
         "lineNumber": 37,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "  jQuery(\u0027#loading-overlay\u0027).remove();"
       },
       {
         "lineNumber": 38,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "}"
       },
@@ -3439,7 +3899,7 @@
       {
         "lineNumber": 43,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "  removeLoadingOverlay();"
       },
@@ -3992,7 +4452,8 @@
     ],
     "authorContributionMap": {
       "Xenonym": 4,
-      "-": 117
+      "marvinchin": 4,
+      "-": 113
     }
   },
   {
@@ -4156,6 +4617,856 @@
     "authorContributionMap": {
       "Xenonym": 3,
       "-": 19
+    }
+  },
+  {
+    "path": "docs/userGuide/cliCommands.md",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cfrontmatter\u003e"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  title: \"User Guide: Command Line Interface (CLI)\""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  footer: footer.md"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  siteNav: userGuideSections.md"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/frontmatter\u003e"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cinclude src\u003d\"../common/header.md\" /\u003e"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cdiv class\u003d\"website-content\"\u003e"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "# MarkBind CLI"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "### Overview"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "MarkBind Command Line Interface (CLI) can be run in the following ways:"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `markbind [--version | -v]`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Prints the version number of the MarkBind installation in use.\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  {{ icon_examples }} `markbind --version`, `markbind -v`"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `markbind [--help | -h]`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Prints a summary of MarkBind commands.\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  {{ icon_examples }} `markbind --help`, `markbind -h`"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `markbind \u003ccommand\u003e [--help | -h]`"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Print instructions specific to the given `\u003ccommand\u003e`.\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  {{ icon_examples }} `markbind build -h` %%(prints instructions for the `build` command)%%"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `markbind \u003ccommand\u003e [\u003cargs\u003e]`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Executes the given `\u003ccommand\u003e` with the given arguments. Available commands are described in the sections below."
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003chr\u003e\u003c!-- \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d --\u003e"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "### `build` Command"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "luyangkenneth"
+        },
+        "content": "**Format:** `markbind build [\u003cOPTIONS\u003e]`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "luyangkenneth"
+        },
+        "content": "**Alias:** `markbind b`"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "luyangkenneth"
+        },
+        "content": "**Description:** Generates the site to the directory named `_site` in the current directory."
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "**`OPTIONS`:**"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `\u003coutput\u003e`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Put the generated files in the specified directory\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  {{ icon_example }} `../myOutDir`"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `\u003croot\u003e \u003coutput\u003e`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Read source files from the `\u003croot\u003e` directory and put the generated files in the specified `\u003coutput\u003e` directory\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  {{ icon_example }} `./myWebsite ../myOutDir`"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `--baseUrl \u003cbase\u003e`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Override the `baseUrl` property (read from the `site.json`) with the give `\u003cbase\u003e` value.\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  {{ icon_example }} `--baseUrl staging`"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "**{{ icon_examples }}**"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `markbind build`"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `markbind build ./myWebsite ./myOutDir`"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `markbind build ./stagingDir --baseUrl staging`"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003chr\u003e\u003c!-- \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d --\u003e"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "### `deploy` Command"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "luyangkenneth"
+        },
+        "content": "**Format:** `markbind deploy`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "luyangkenneth"
+        },
+        "content": "**Alias:** `markbind d`"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "luyangkenneth"
+        },
+        "content": "**Description:** Deploys the site to the repo\u0027s Github pages by pushing everything in the generated site (default dir: `_site`) to the `gh-pages` branch of the current git working directory\u0027s remote repo."
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "%%{{ icon_info }} Related: [User Guide: Deploying the Website]({{ baseUrl }}/userGuide/deployingTheSite.html).%%"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003chr\u003e\u003c!-- \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d --\u003e"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "### `init` Command"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "luyangkenneth"
+        },
+        "content": "**Format:** `markbind init [\u003cOPTIONS\u003e]`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "luyangkenneth"
+        },
+        "content": "**Alias:** `markbind i`"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "**Description:** Initializes a directory into a MarkBind site by creating a skeleton structure for the website which includes a `index.md` and a `site.json`."
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "**`OPTIONS`:**"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `\u003croot\u003e`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Root directory. Default is the current directory.\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  {{ icon_example }} `./myWebsite`"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "luyangkenneth"
+        },
+        "content": "{{ icon_examples }}"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `markbind init` : Initializes the site in the current working directory."
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `markbind init ./myWebsite` : Initializes the site in `./myWebsite` directory."
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003chr\u003e\u003c!-- \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d --\u003e"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "### `serve` Command"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "luyangkenneth"
+        },
+        "content": "**Format:** `markbind serve [\u003cOPTIONS\u003e]`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "luyangkenneth"
+        },
+        "content": "**Alias:** `markbind s`"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "**Description:** Does the following steps:"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "1. Builds the site and puts the generated files in a directory named `_site`."
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "1. Starts a web server instance locally and makes the site available at `http://127.0.0.1:8080`."
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "1. Opens a \u003ctrigger trigger\u003d\"click\" for\u003d\"modal:cliCommands-livePreview\"\u003elive preview\u003c/trigger\u003e of the website."
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cmodal large title\u003d\"Live Preview\" id\u003d\"modal:cliCommands-livePreview\"\u003e"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cinclude src\u003d\"glossary.md#live-preview\" inline/\u003e"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/modal\u003e"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "**`OPTIONS`:**"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `\u003croot\u003e`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Root directory. Default is the current directory.\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  {{ icon_example }} `./myWebsite`"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `-f`, `--force-reload`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "   Force live reload to process all files in the site, instead of just the relevant files. This option is useful when you are modifying a file that is not a file type monitored by the \u003ctrigger trigger\u003d\"click\" for\u003d\"modal:cliCommands-livePreview\"\u003elive preview\u003c/trigger\u003e feature."
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "amad-person"
+        },
+        "content": "* `-n`, `--no-open`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "amad-person"
+        },
+        "content": "   Don\u0027t open a live preview in the browser automatically."
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "amad-person"
+        },
+        "content": "* `-o \u003cfile\u003e`, `--one-page \u003cfile\u003e`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "amad-person"
+        },
+        "content": "   Render and serve only a single page from your website.\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "amad-person"
+        },
+        "content": "  {{ icon_example }} `--one-page guide/index.md`"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `-p \u003cport\u003e`, `--port \u003cport\u003e`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    Serve the website in the specified port."
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `-s \u003cfile\u003e`, `--site-config \u003cfile\u003e`\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "   Specify the site config file (default: `site.json`)\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "   {{ icon_example }} `-s otherSite.json`"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "{{ icon_examples }}"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `markbind serve`"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `markbind serve ./myWebsite`"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "* `markbind serve -p 8888 -s otherSite.json`"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/div\u003e"
+      }
+    ],
+    "authorContributionMap": {
+      "-": 104,
+      "luyangkenneth": 11,
+      "amad-person": 5
     }
   },
   {
@@ -4416,7 +5727,7 @@
       {
         "lineNumber": 37,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "data | `Array` || The local data source for suggestions. Expected to be a primitive array. To use MarkBind\u0027s search functionality, set this value to `\"searchData\"`."
       },
@@ -4430,7 +5741,7 @@
       {
         "lineNumber": 39,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "on-hit | `Function` || A callback function when you click or hit return on an item. To use MarkBind\u0027s search functionality, set this value to `\"searchCallback\"`."
       },
@@ -4451,49 +5762,49 @@
       {
         "lineNumber": 42,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "\u003cbox type\u003d\"warning\"\u003e"
       },
       {
         "lineNumber": 43,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 44,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "Note: If you are using MarkBind\u0027s search functionality, then `enableSearch` **must be set to `true` in `site.json`**."
       },
       {
         "lineNumber": 45,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 46,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "See: [User Guide: Site Configuration → enableSearch]({{ baseUrl }}/userGuide/siteConfiguration.html#enable-search)."
       },
       {
         "lineNumber": 47,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 48,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "\u003c/box\u003e"
       },
@@ -4514,7 +5825,8 @@
     ],
     "authorContributionMap": {
       "Xenonym": 3,
-      "-": 47
+      "marvinchin": 9,
+      "-": 38
     }
   },
   {
@@ -4656,14 +5968,14 @@
       {
         "lineNumber": 20,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "## Using Keywords"
       },
       {
         "lineNumber": 21,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
@@ -4957,7 +6269,8 @@
     ],
     "authorContributionMap": {
       "Xenonym": 1,
-      "-": 61
+      "marvinchin": 2,
+      "-": 59
     }
   },
   {
@@ -5946,49 +7259,49 @@
       {
         "lineNumber": 141,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "````"
       },
       {
         "lineNumber": 142,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "```python"
       },
       {
         "lineNumber": 143,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "def say_hello(name):"
       },
       {
         "lineNumber": 144,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "    print(\u0027Hello\u0027, name)\u003cbr\u003e"
       },
       {
         "lineNumber": 145,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "    print(\u0027How are you\u0027, name)\u003cbr\u003e"
       },
       {
         "lineNumber": 146,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "```"
       },
       {
         "lineNumber": 147,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "````"
       },
@@ -8403,7 +9716,8 @@
     ],
     "authorContributionMap": {
       "Xenonym": 16,
-      "-": 475
+      "-": 468,
+      "luyangkenneth": 7
     }
   },
   {
@@ -12686,14 +14000,14 @@
       {
         "lineNumber": 20,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "const ACCEPTED_COMMANDS \u003d [\u0027init\u0027, \u0027build\u0027, \u0027serve\u0027, \u0027deploy\u0027];"
       },
       {
         "lineNumber": 21,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "const ACCEPTED_COMMANDS_ALIAS \u003d [\u0027i\u0027, \u0027b\u0027, \u0027s\u0027, \u0027d\u0027];"
       },
@@ -12847,7 +14161,7 @@
       {
         "lineNumber": 43,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "  .alias(\u0027i\u0027)"
       },
@@ -12959,7 +14273,7 @@
       {
         "lineNumber": 59,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "  .alias(\u0027s\u0027)"
       },
@@ -12980,14 +14294,14 @@
       {
         "lineNumber": 62,
         "author": {
-          "gitId": "-"
+          "gitId": "amad-person"
         },
         "content": "  .option(\u0027-n, --no-open\u0027, \u0027do not automatically open the site in browser\u0027)"
       },
       {
         "lineNumber": 63,
         "author": {
-          "gitId": "-"
+          "gitId": "amad-person"
         },
         "content": "  .option(\u0027-o, --one-page \u003cfile\u003e\u0027, \u0027render and serve only a single page in the site\u0027)"
       },
@@ -13729,7 +15043,7 @@
       {
         "lineNumber": 169,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "  .alias(\u0027d\u0027)"
       },
@@ -13848,7 +15162,7 @@
       {
         "lineNumber": 186,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "  .alias(\u0027b\u0027)"
       },
@@ -14044,14 +15358,14 @@
       {
         "lineNumber": 214,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "if (!program.args.length"
       },
       {
         "lineNumber": 215,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "  || !(ACCEPTED_COMMANDS.concat(ACCEPTED_COMMANDS_ALIAS)).includes(process.argv[2])) {"
       },
@@ -14108,7 +15422,9 @@
     "authorContributionMap": {
       "Xenonym": 8,
       "marvinchin": 15,
-      "-": 199
+      "-": 189,
+      "luyangkenneth": 8,
+      "amad-person": 2
     }
   },
   {
@@ -81505,7 +82821,7 @@
       {
         "lineNumber": 31,
         "author": {
-          "gitId": "-"
+          "gitId": "amad-person"
         },
         "content": "const CONFIG_FOLDER_NAME \u003d \u0027_markbind\u0027;"
       },
@@ -81729,14 +83045,14 @@
       {
         "lineNumber": 63,
         "author": {
-          "gitId": "-"
+          "gitId": "amad-person"
         },
         "content": "    \u0027*.mbd\u0027,"
       },
       {
         "lineNumber": 64,
         "author": {
-          "gitId": "-"
+          "gitId": "amad-person"
         },
         "content": "    \u0027.git/*\u0027,"
       },
@@ -81806,21 +83122,21 @@
       {
         "lineNumber": 74,
         "author": {
-          "gitId": "-"
+          "gitId": "amad-person"
         },
         "content": "    {"
       },
       {
         "lineNumber": 75,
         "author": {
-          "gitId": "-"
+          "gitId": "amad-person"
         },
         "content": "      glob: \u0027**/*.+(md|mbd)\u0027,"
       },
       {
         "lineNumber": 76,
         "author": {
-          "gitId": "-"
+          "gitId": "amad-person"
         },
         "content": "    },"
       },
@@ -84046,7 +85362,7 @@
       {
         "lineNumber": 394,
         "author": {
-          "gitId": "-"
+          "gitId": "amad-person"
         },
         "content": "      ignore: [CONFIG_FOLDER_NAME],"
       },
@@ -87120,7 +88436,8 @@
     "authorContributionMap": {
       "Xenonym": 19,
       "marvinchin": 1,
-      "-": 812
+      "-": 805,
+      "amad-person": 7
     }
   },
   {
@@ -109323,7 +110640,7 @@
       {
         "lineNumber": 15,
         "author": {
-          "gitId": "-"
+          "gitId": "amad-person"
         },
         "content": "    return \u0027\u003cpre\u003e\u003ccode class\u003d\"hljs\"\u003e\u0027 + markdownIt.utils.escapeHtml(str) + \u0027\u003c/code\u003e\u003c/pre\u003e\u0027;"
       },
@@ -109771,7 +111088,8 @@
     ],
     "authorContributionMap": {
       "Xenonym": 20,
-      "-": 58
+      "-": 57,
+      "amad-person": 1
     }
   },
   {
@@ -115007,21 +116325,21 @@
       {
         "lineNumber": 8,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "    background: #f8f8f8;"
       },
       {
         "lineNumber": 9,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "    border-radius: 3px;"
       },
       {
         "lineNumber": 10,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "    padding: 0.2em 0.4em;"
       },
@@ -115049,28 +116367,28 @@
       {
         "lineNumber": 14,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "pre.hljs \u003e code {"
       },
       {
         "lineNumber": 15,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "    background: none;"
       },
       {
         "lineNumber": 16,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": "}"
       },
       {
         "lineNumber": 17,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
         "content": ""
       },
@@ -116078,315 +117396,317 @@
       {
         "lineNumber": 161,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 162,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "/* Spinner */"
       },
       {
         "lineNumber": 163,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 164,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "#loading-overlay {"
       },
       {
         "lineNumber": 165,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    background: white;"
       },
       {
         "lineNumber": 166,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    bottom: 0;"
       },
       {
         "lineNumber": 167,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    display: none;"
       },
       {
         "lineNumber": 168,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    left: 0;"
       },
       {
         "lineNumber": 169,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    position: fixed;"
       },
       {
         "lineNumber": 170,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    right: 0;"
       },
       {
         "lineNumber": 171,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    top: 0;"
       },
       {
         "lineNumber": 172,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    z-index: 100;"
       },
       {
         "lineNumber": 173,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "}"
       },
       {
         "lineNumber": 174,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 175,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "#spinner-layout {"
       },
       {
         "lineNumber": 176,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    align-items: center;"
       },
       {
         "lineNumber": 177,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    animation: show 1s;"
       },
       {
         "lineNumber": 178,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    animation-fill-mode: forwards;"
       },
       {
         "lineNumber": 179,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    animation-timing-function: step-end;"
       },
       {
         "lineNumber": 180,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    display: flex;"
       },
       {
         "lineNumber": 181,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    height: 100%;"
       },
       {
         "lineNumber": 182,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    justify-content: center;"
       },
       {
         "lineNumber": 183,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    visibility: hidden;"
       },
       {
         "lineNumber": 184,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    width: 100%;"
       },
       {
         "lineNumber": 185,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "}"
       },
       {
         "lineNumber": 186,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 187,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "@keyframes show {"
       },
       {
         "lineNumber": 188,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    0% { visibility: hidden; }"
       },
       {
         "lineNumber": 189,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    100% { visibility: visible; }"
       },
       {
         "lineNumber": 190,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "}"
       },
       {
         "lineNumber": 191,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 192,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "#spinner {"
       },
       {
         "lineNumber": 193,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    animation: spin 1s linear infinite;"
       },
       {
         "lineNumber": 194,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    border: 16px solid lightgray;"
       },
       {
         "lineNumber": 195,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    border-radius: 50%;"
       },
       {
         "lineNumber": 196,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    border-top: 16px solid darkgray;"
       },
       {
         "lineNumber": 197,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    height: 120px;"
       },
       {
         "lineNumber": 198,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    width: 120px;"
       },
       {
         "lineNumber": 199,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "}"
       },
       {
         "lineNumber": 200,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": ""
       },
       {
         "lineNumber": 201,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "@keyframes spin {"
       },
       {
         "lineNumber": 202,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    0% { transform: rotate(0deg); }"
       },
       {
         "lineNumber": 203,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "    100% { transform: rotate(360deg); }"
       },
       {
         "lineNumber": 204,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "}"
       }
     ],
     "authorContributionMap": {
       "Xenonym": 15,
-      "-": 189
+      "marvinchin": 44,
+      "-": 138,
+      "luyangkenneth": 7
     }
   },
   {
@@ -118252,21 +119572,21 @@
       {
         "lineNumber": 36,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "function removeLoadingOverlay() {"
       },
       {
         "lineNumber": 37,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "  jQuery(\u0027#loading-overlay\u0027).remove();"
       },
       {
         "lineNumber": 38,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "}"
       },
@@ -118301,7 +119621,7 @@
       {
         "lineNumber": 43,
         "author": {
-          "gitId": "-"
+          "gitId": "marvinchin"
         },
         "content": "  removeLoadingOverlay();"
       },
@@ -118854,7 +120174,8 @@
     ],
     "authorContributionMap": {
       "Xenonym": 4,
-      "-": 117
+      "marvinchin": 4,
+      "-": 113
     }
   },
   {
@@ -123617,6 +124938,708 @@
     "authorContributionMap": {
       "Xenonym": 234,
       "-": 134
+    }
+  },
+  {
+    "path": "test/unit/utils/data.js",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "module.exports.LAYOUT_FILES_DEFAULT \u003d ["
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0027footer.md\u0027,"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0027head.md\u0027,"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0027navigation.md\u0027,"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0027scripts.js\u0027,"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0027styles.css\u0027,"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "];"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "module.exports.PAGE_EJS \u003d \u0027\u003c!DOCTYPE html\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003chtml\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003chead\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003c%- headFileTopContent %\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003cmeta charset\u003d\"utf-8\"\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003cmeta http-equiv\u003d\"X-UA-Compatible\" content\u003d\"IE\u003dedge\"\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003cmeta name\u003d\"viewport\" content\u003d\"width\u003ddevice-width, initial-scale\u003d1\"\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003ctitle\u003e\u003c%\u003d title %\u003e\u003c/title\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003clink rel\u003d\"stylesheet\" href\u003d\"\u003c%- asset.bootstrap %\u003e\"\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003clink rel\u003d\"stylesheet\" href\u003d\"\u003c%- asset.bootstrapVue %\u003e\"\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003clink rel\u003d\"stylesheet\" href\u003d\"\u003c%- asset.fontAwesome %\u003e\" \u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003clink rel\u003d\"stylesheet\" href\u003d\"\u003c%- asset.glyphicons %\u003e\" \u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003clink rel\u003d\"stylesheet\" href\u003d\"\u003c%- asset.highlight %\u003e\"\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003clink rel\u003d\"stylesheet\" href\u003d\"\u003c%- asset.markbind %\u003e\"\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003clink rel\u003d\"stylesheet\" href\u003d\"\u003c%- asset.layoutStyle %\u003e\"\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003c% if (siteNav) { %\u003e\u003clink rel\u003d\"stylesheet\" href\u003d\"\u003c%- asset.siteNavCss %\u003e\"\u003e\u003c% } %\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003c%- headFileBottomContent %\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003c% if (faviconUrl) { %\u003e\u003clink rel\u003d\"icon\" href\u003d\"\u003c%- faviconUrl %\u003e\"\u003e\u003c% } %\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003c/head\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003cbody\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003cdiv id\u003d\"app\"\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003c%- content %\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003c/div\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003c/body\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003cscript src\u003d\"\u003c%- asset.vue %\u003e\"\u003e\u003c/script\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003cscript src\u003d\"\u003c%- asset.vueStrap %\u003e\"\u003e\u003c/script\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003cscript src\u003d\"\u003c%- asset.polyfillJs %\u003e\"\u003e\u003c/script\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003cscript src\u003d\"\u003c%- asset.bootstrapVueJs %\u003e\"\u003e\u003c/script\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003cscript\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    const baseUrl \u003d \\\u0027\u003c%- baseUrl %\u003e\\\u0027\\n\u0027"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003c/script\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003cscript src\u003d\"\u003c%- asset.setup %\u003e\"\u003e\u003c/script\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003cscript src\u003d\"\u003c%- asset.layoutScript %\u003e\"\u003e\u003c/script\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003c/html\u003e\\n\u0027;"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "module.exports.SITE_JSON_DEFAULT \u003d \u0027{\\n\u0027"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  \"baseUrl\": \"\",\\n\u0027"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  \"titlePrefix\": \"\",\\n\u0027"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  \"ignore\": [\\n\u0027"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \"_markbind/layouts/*\",\\n\u0027"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \"_markbind/logs/*\",\\n\u0027"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \"_site/*\",\\n\u0027"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \"site.json\",\\n\u0027"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "amad-person"
+        },
+        "content": "  + \u0027    \"*.md\",\\n\u0027"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "amad-person"
+        },
+        "content": "  + \u0027    \"*.mbd\",\\n\u0027"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "amad-person"
+        },
+        "content": "  + \u0027    \".git/*\"\\n\u0027"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  ],\\n\u0027"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  \"pages\": [\\n\u0027"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    {\\n\u0027"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027      \"src\": \"index.md\",\\n\u0027"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027      \"title\": \"Hello World\"\\n\u0027"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    },\\n\u0027"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    {\\n\u0027"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027      \"glob\" : \"**/index.md\"\\n\u0027"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "amad-person"
+        },
+        "content": "  + \u0027    },\\n\u0027"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "amad-person"
+        },
+        "content": "  + \u0027    {\\n\u0027"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "amad-person"
+        },
+        "content": "  + \u0027      \"glob\" : \"**/*.+(md|mbd)\"\\n\u0027"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    }\\n\u0027"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  ],\\n\u0027"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  \"deploy\": {\\n\u0027"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \"message\": \"Site Update.\"\\n\u0027"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  }\\n\u0027"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027}\\n\u0027;"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "module.exports.FOOTER_MD_DEFAULT \u003d \u0027\u003cfooter\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  \u003cdiv class\u003d\"text-center\"\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    This is a dynamic height footer that supports variables {{glyphicon_tags}} \u0027"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027and markdown \u003cmd\u003e:smile:\u003c/md\u003e!\\n\u0027"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  \u003c/div\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  \u003c!-- Support MarkBind by including a link to us on your landing page! --\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  \u003cdiv class\u003d\"text-center\"\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027    \u003csmall\u003e[Generated by {{MarkBind}} on {{timestamp}}]\u003c/small\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  \u003c/div\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003c/footer\u003e\\n\u0027;"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "module.exports.INDEX_MD_DEFAULT \u003d \u0027\u003cfrontmatter\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  title: \"Hello World\"\\n\u0027"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  footer: footer.md\\n\u0027"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027  siteNav: site-nav.md\\n\u0027"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003c/frontmatter\u003e\\n\\n\u0027"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027# Hello world\\n\u0027"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027Welcome to your page generated with MarkBind.\\n\u0027;"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "module.exports.SITE_NAV_MD_DEFAULT \u003d \u0027\u003cnavigation\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027* [Home {{glyphicon_home}}]({{baseUrl}}/index.html)\\n\u0027"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003c/navigation\u003e\\n\u0027;"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "module.exports.USER_VARIABLES_DEFAULT \u003d \u0027\u003cspan id\u003d\"example\"\u003e\\n\u0027"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027To inject this HTML segment in your markbind files, use {{ example }} where you want to place it.\\n\u0027"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027More generally, surround the segment\\\u0027s id with double curly braces.\\n\u0027"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  + \u0027\u003c/span\u003e\u0027;"
+      }
+    ],
+    "authorContributionMap": {
+      "-": 93,
+      "amad-person": 6
     }
   }
 ]

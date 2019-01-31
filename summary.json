@@ -1,5 +1,5 @@
 {
-  "dashboardGeneratedTime": "Thu Jan 31 18:49:59 SGT 2019",
+  "dashboardGeneratedTime": "Thu Jan 31 19:08:46 SGT 2019",
   "repos": [
     {
       "location": {
@@ -33,12 +33,62 @@
     },
     {
       "location": {
+        "location": "https://github.com/powerpointlabs/PowerPointLabs-Website.git",
+        "repoName": "PowerPointLabs-Website",
+        "organization": "powerpointlabs"
+      },
+      "branch": "master",
+      "displayName": "powerpointlabs_PowerPointLabs-Website_master",
+      "sinceDate": "2018-12-01"
+    },
+    {
+      "location": {
         "location": "https://github.com/reposense/reposense.git",
         "repoName": "reposense",
         "organization": "reposense"
       },
       "branch": "master",
       "displayName": "reposense_reposense_master",
+      "sinceDate": "2018-12-01"
+    },
+    {
+      "location": {
+        "location": "https://github.com/se-edu/addressbook-level1.git",
+        "repoName": "addressbook-level1",
+        "organization": "se-edu"
+      },
+      "branch": "master",
+      "displayName": "se-edu_addressbook-level1_master",
+      "sinceDate": "2018-12-01"
+    },
+    {
+      "location": {
+        "location": "https://github.com/se-edu/addressbook-level2.git",
+        "repoName": "addressbook-level2",
+        "organization": "se-edu"
+      },
+      "branch": "master",
+      "displayName": "se-edu_addressbook-level2_master",
+      "sinceDate": "2018-12-01"
+    },
+    {
+      "location": {
+        "location": "https://github.com/se-edu/addressbook-level3.git",
+        "repoName": "addressbook-level3",
+        "organization": "se-edu"
+      },
+      "branch": "master",
+      "displayName": "se-edu_addressbook-level3_master",
+      "sinceDate": "2018-12-01"
+    },
+    {
+      "location": {
+        "location": "https://github.com/se-edu/addressbook-level4.git",
+        "repoName": "addressbook-level4",
+        "organization": "se-edu"
+      },
+      "branch": "master",
+      "displayName": "se-edu_addressbook-level4_master",
       "sinceDate": "2018-12-01"
     },
     {
