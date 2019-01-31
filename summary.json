@@ -1,5 +1,5 @@
 {
-  "dashboardGeneratedTime": "Thu Jan 31 13:29:55 SGT 2019",
+  "dashboardGeneratedTime": "Thu Jan 31 18:49:59 SGT 2019",
   "repos": [
     {
       "location": {
@@ -9,6 +9,16 @@
       },
       "branch": "master",
       "displayName": "markbind_markbind_master",
+      "sinceDate": "2018-12-01"
+    },
+    {
+      "location": {
+        "location": "https://github.com/markbind/vue-strap.git",
+        "repoName": "vue-strap",
+        "organization": "markbind"
+      },
+      "branch": "master",
+      "displayName": "markbind_vue-strap_master",
       "sinceDate": "2018-12-01"
     },
     {

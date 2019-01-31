@@ -1,50 +1,35 @@
 {
   "authorWeeklyIntervalContributions": {
-    "ChesterSng": [],
     "Xenonym": [],
     "marvinchin": [],
-    "blewjy": [],
-    "YuPeiHenry": [],
     "sijie123": [],
     "luyangkenneth": [],
     "amad-person": []
   },
   "authorDailyIntervalContributions": {
-    "ChesterSng": [],
     "Xenonym": [],
     "marvinchin": [],
-    "blewjy": [],
-    "YuPeiHenry": [],
     "sijie123": [],
     "luyangkenneth": [],
     "amad-person": []
   },
   "authorFinalContributionMap": {
-    "ChesterSng": 0,
     "Xenonym": 0,
     "marvinchin": 0,
-    "blewjy": 0,
-    "YuPeiHenry": 0,
     "sijie123": 0,
     "luyangkenneth": 0,
     "amad-person": 0
   },
   "authorContributionVariance": {
-    "ChesterSng": 0.0,
     "Xenonym": 0.0,
     "marvinchin": 0.0,
-    "blewjy": 0.0,
-    "YuPeiHenry": 0.0,
     "sijie123": 0.0,
     "luyangkenneth": 0.0,
     "amad-person": 0.0
   },
   "authorDisplayNameMap": {
-    "ChesterSng": "CHESTER",
     "Xenonym": "ZHEN YONG",
     "marvinchin": "MARVIN",
-    "blewjy": "BRYAN",
-    "YuPeiHenry": "HENRY",
     "sijie123": "SI JIE",
     "luyangkenneth": "KENNETH",
     "amad-person": "AADYAA"

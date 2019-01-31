@@ -1121,11 +1121,319 @@
           "gitId": "-"
         },
         "content": "}"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/* Spinner */"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#loading-overlay {"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    background: white;"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    bottom: 0;"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    display: none;"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    left: 0;"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    position: fixed;"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    right: 0;"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    top: 0;"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    z-index: 100;"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#spinner-layout {"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    align-items: center;"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    animation: show 1s;"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    animation-fill-mode: forwards;"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    animation-timing-function: step-end;"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    display: flex;"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    height: 100%;"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    justify-content: center;"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    visibility: hidden;"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    width: 100%;"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "@keyframes show {"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    0% { visibility: hidden; }"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    100% { visibility: visible; }"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#spinner {"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    animation: spin 1s linear infinite;"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    border: 16px solid lightgray;"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    border-radius: 50%;"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    border-top: 16px solid darkgray;"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    height: 120px;"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    width: 120px;"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "@keyframes spin {"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    0% { transform: rotate(0deg); }"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    100% { transform: rotate(360deg); }"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
       }
     ],
     "authorContributionMap": {
       "Xenonym": 15,
-      "-": 145
+      "-": 189
     }
   },
   {
@@ -3084,570 +3392,598 @@
         "author": {
           "gitId": "-"
         },
-        "content": "function executeAfterMountedRoutines() {"
+        "content": "function removeLoadingOverlay() {"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": "  flattenModals();"
+        "content": "  jQuery(\u0027#loading-overlay\u0027).remove();"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
-        "content": "  scrollToUrlAnchorHeading();"
+        "content": "}"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
-        "content": "  setupAnchors();"
+        "content": "function executeAfterMountedRoutines() {"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": "}"
+        "content": "  flattenModals();"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  scrollToUrlAnchorHeading();"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
-        "content": "function setupSiteNav() {"
+        "content": "  setupAnchors();"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
-        "content": "  // Add event listener for site-nav-btn to toggle itself and site navigation elements."
+        "content": "  removeLoadingOverlay();"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
-        "content": "  const siteNavBtn \u003d document.getElementById(\u0027site-nav-btn\u0027);"
+        "content": "}"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (siteNavBtn) {"
+        "content": ""
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
-        "content": "    siteNavBtn.addEventListener(\u0027click\u0027, function () {"
+        "content": "function setupSiteNav() {"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.classList.toggle(\u0027shift\u0027);"
+        "content": "  // Add event listener for site-nav-btn to toggle itself and site navigation elements."
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
-        "content": "      document.getElementById(\u0027site-nav\u0027).classList.toggle(\u0027open\u0027);"
+        "content": "  const siteNavBtn \u003d document.getElementById(\u0027site-nav-btn\u0027);"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
-        "content": "      document.getElementById(\u0027site-nav-btn-wrap\u0027).classList.toggle(\u0027open\u0027);"
+        "content": "  if (siteNavBtn) {"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
-        "content": "    });"
+        "content": "    siteNavBtn.addEventListener(\u0027click\u0027, function () {"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "      this.classList.toggle(\u0027shift\u0027);"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": "  // Creates event listener for all dropdown-btns in page."
+        "content": "      document.getElementById(\u0027site-nav\u0027).classList.toggle(\u0027open\u0027);"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
-        "content": "  Array.prototype.forEach.call("
+        "content": "      document.getElementById(\u0027site-nav-btn-wrap\u0027).classList.toggle(\u0027open\u0027);"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": "    document.getElementsByClassName(\u0027dropdown-btn\u0027),"
+        "content": "    });"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": "    dropdownBtn \u003d\u003e dropdownBtn.addEventListener(\u0027click\u0027, function () {"
+        "content": "  }"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.classList.toggle(\u0027dropdown-btn-open\u0027);"
+        "content": "  // Creates event listener for all dropdown-btns in page."
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
-        "content": "      const dropdownContent \u003d this.nextElementSibling;"
+        "content": "  Array.prototype.forEach.call("
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
-        "content": "      const dropdownIcon \u003d this.lastElementChild;"
+        "content": "    document.getElementsByClassName(\u0027dropdown-btn\u0027),"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
-        "content": "      dropdownContent.classList.toggle(\u0027dropdown-container-open\u0027);"
+        "content": "    dropdownBtn \u003d\u003e dropdownBtn.addEventListener(\u0027click\u0027, function () {"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
-        "content": "      dropdownIcon.classList.toggle(\u0027rotate-icon\u0027);"
+        "content": "      this.classList.toggle(\u0027dropdown-btn-open\u0027);"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
-        "content": "    }),"
+        "content": "      const dropdownContent \u003d this.nextElementSibling;"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
-        "content": "  );"
+        "content": "      const dropdownIcon \u003d this.lastElementChild;"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
-        "content": "}"
+        "content": "      dropdownContent.classList.toggle(\u0027dropdown-container-open\u0027);"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      dropdownIcon.classList.toggle(\u0027rotate-icon\u0027);"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "-"
         },
-        "content": "function setupPageNav() {"
+        "content": "    }),"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "-"
         },
-        "content": "  jQuery(window).on(\u0027activate.bs.scrollspy\u0027, (event, obj) \u003d\u003e {"
+        "content": "  );"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "-"
         },
-        "content": "    document.querySelectorAll(`a[href\u003d\u0027${obj.relatedTarget}\u0027]`).item(0).scrollIntoView(false);"
+        "content": "}"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
-        "content": "  });"
+        "content": ""
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
-        "content": "}"
+        "content": "function setupPageNav() {"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  jQuery(window).on(\u0027activate.bs.scrollspy\u0027, (event, obj) \u003d\u003e {"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "-"
         },
-        "content": "function setup() {"
+        "content": "    document.querySelectorAll(`a[href\u003d\u0027${obj.relatedTarget}\u0027]`).item(0).scrollIntoView(false);"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
-        "content": "  // eslint-disable-next-line no-unused-vars"
+        "content": "  });"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "-"
         },
-        "content": "  const vm \u003d new Vue({"
+        "content": "}"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
-        "content": "    el: \u0027#app\u0027,"
+        "content": ""
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
-        "content": "    mounted() {"
+        "content": "function setup() {"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": "      executeAfterMountedRoutines();"
+        "content": "  // eslint-disable-next-line no-unused-vars"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "  const vm \u003d new Vue({"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": "  });"
+        "content": "    el: \u0027#app\u0027,"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
-        "content": "  setupSiteNav();"
+        "content": "    mounted() {"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": "  setupPageNav();"
+        "content": "      executeAfterMountedRoutines();"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": "}"
+        "content": "    },"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  });"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": "function setupWithSearch(siteData) {"
+        "content": "  setupSiteNav();"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (!siteData.enableSearch) {"
+        "content": "  setupPageNav();"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": "    setup();"
+        "content": "}"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": "    return;"
+        "content": ""
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "function setupWithSearch(siteData) {"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
-        "content": "  const { searchbar } \u003d VueStrap.components;"
+        "content": "  if (!siteData.enableSearch) {"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": "  // eslint-disable-next-line no-unused-vars"
+        "content": "    setup();"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
-        "content": "  const vm \u003d new Vue({"
+        "content": "    return;"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
-        "content": "    el: \u0027#app\u0027,"
+        "content": "  }"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
-        "content": "    components: {"
+        "content": "  const { searchbar } \u003d VueStrap.components;"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
-        "content": "      searchbar,"
+        "content": "  // eslint-disable-next-line no-unused-vars"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "  const vm \u003d new Vue({"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
-        "content": "    data() {"
+        "content": "    el: \u0027#app\u0027,"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": "      return {"
+        "content": "    components: {"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "        searchData: siteData.pages,"
+        "content": "      searchbar,"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": "      };"
+        "content": "    },"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "    data() {"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
-        "content": "    methods: {"
+        "content": "      return {"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": "      searchCallback(match) {"
+        "content": "        searchData: siteData.pages,"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
-        "content": "        const page \u003d `${baseUrl}/${match.src.replace(/.(md|mbd)$/, \u0027.html\u0027)}`;"
+        "content": "      };"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": "        const anchor \u003d match.heading ? `#${match.heading.id}` : \u0027\u0027;"
+        "content": "    },"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
-        "content": "        window.location \u003d `${page}${anchor}`;"
+        "content": "    methods: {"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": "      },"
+        "content": "      searchCallback(match) {"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "        const page \u003d `${baseUrl}/${match.src.replace(/.(md|mbd)$/, \u0027.html\u0027)}`;"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": "    mounted() {"
+        "content": "        const anchor \u003d match.heading ? `#${match.heading.id}` : \u0027\u0027;"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": "      executeAfterMountedRoutines();"
+        "content": "        window.location \u003d `${page}${anchor}`;"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "      },"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "-"
         },
-        "content": "  });"
+        "content": "    },"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "-"
         },
-        "content": "  setupSiteNav();"
+        "content": "    mounted() {"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "-"
         },
-        "content": "  setupPageNav();"
+        "content": "      executeAfterMountedRoutines();"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
-        "content": "}"
+        "content": "    },"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  });"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
-        "content": "jQuery.getJSON(`${baseUrl}/siteData.json`)"
+        "content": "  setupSiteNav();"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
-        "content": "  .then(siteData \u003d\u003e setupWithSearch(siteData))"
+        "content": "  setupPageNav();"
       },
       {
         "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "jQuery.getJSON(`${baseUrl}/siteData.json`)"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  .then(siteData \u003d\u003e setupWithSearch(siteData))"
+      },
+      {
+        "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
@@ -3656,7 +3992,7 @@
     ],
     "authorContributionMap": {
       "Xenonym": 4,
-      "-": 113
+      "-": 117
     }
   },
   {
@@ -115738,11 +116074,319 @@
           "gitId": "-"
         },
         "content": "}"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/* Spinner */"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#loading-overlay {"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    background: white;"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    bottom: 0;"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    display: none;"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    left: 0;"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    position: fixed;"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    right: 0;"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    top: 0;"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    z-index: 100;"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#spinner-layout {"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    align-items: center;"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    animation: show 1s;"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    animation-fill-mode: forwards;"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    animation-timing-function: step-end;"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    display: flex;"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    height: 100%;"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    justify-content: center;"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    visibility: hidden;"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    width: 100%;"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "@keyframes show {"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    0% { visibility: hidden; }"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    100% { visibility: visible; }"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#spinner {"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    animation: spin 1s linear infinite;"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    border: 16px solid lightgray;"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    border-radius: 50%;"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    border-top: 16px solid darkgray;"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    height: 120px;"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    width: 120px;"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "@keyframes spin {"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    0% { transform: rotate(0deg); }"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    100% { transform: rotate(360deg); }"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
       }
     ],
     "authorContributionMap": {
       "Xenonym": 15,
-      "-": 145
+      "-": 189
     }
   },
   {
@@ -117610,570 +118254,598 @@
         "author": {
           "gitId": "-"
         },
-        "content": "function executeAfterMountedRoutines() {"
+        "content": "function removeLoadingOverlay() {"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": "  flattenModals();"
+        "content": "  jQuery(\u0027#loading-overlay\u0027).remove();"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
-        "content": "  scrollToUrlAnchorHeading();"
+        "content": "}"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
-        "content": "  setupAnchors();"
+        "content": "function executeAfterMountedRoutines() {"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": "}"
+        "content": "  flattenModals();"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  scrollToUrlAnchorHeading();"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
-        "content": "function setupSiteNav() {"
+        "content": "  setupAnchors();"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
-        "content": "  // Add event listener for site-nav-btn to toggle itself and site navigation elements."
+        "content": "  removeLoadingOverlay();"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
-        "content": "  const siteNavBtn \u003d document.getElementById(\u0027site-nav-btn\u0027);"
+        "content": "}"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (siteNavBtn) {"
+        "content": ""
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
-        "content": "    siteNavBtn.addEventListener(\u0027click\u0027, function () {"
+        "content": "function setupSiteNav() {"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.classList.toggle(\u0027shift\u0027);"
+        "content": "  // Add event listener for site-nav-btn to toggle itself and site navigation elements."
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
-        "content": "      document.getElementById(\u0027site-nav\u0027).classList.toggle(\u0027open\u0027);"
+        "content": "  const siteNavBtn \u003d document.getElementById(\u0027site-nav-btn\u0027);"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
-        "content": "      document.getElementById(\u0027site-nav-btn-wrap\u0027).classList.toggle(\u0027open\u0027);"
+        "content": "  if (siteNavBtn) {"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
-        "content": "    });"
+        "content": "    siteNavBtn.addEventListener(\u0027click\u0027, function () {"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "      this.classList.toggle(\u0027shift\u0027);"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": "  // Creates event listener for all dropdown-btns in page."
+        "content": "      document.getElementById(\u0027site-nav\u0027).classList.toggle(\u0027open\u0027);"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
-        "content": "  Array.prototype.forEach.call("
+        "content": "      document.getElementById(\u0027site-nav-btn-wrap\u0027).classList.toggle(\u0027open\u0027);"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": "    document.getElementsByClassName(\u0027dropdown-btn\u0027),"
+        "content": "    });"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": "    dropdownBtn \u003d\u003e dropdownBtn.addEventListener(\u0027click\u0027, function () {"
+        "content": "  }"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.classList.toggle(\u0027dropdown-btn-open\u0027);"
+        "content": "  // Creates event listener for all dropdown-btns in page."
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
-        "content": "      const dropdownContent \u003d this.nextElementSibling;"
+        "content": "  Array.prototype.forEach.call("
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
-        "content": "      const dropdownIcon \u003d this.lastElementChild;"
+        "content": "    document.getElementsByClassName(\u0027dropdown-btn\u0027),"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
-        "content": "      dropdownContent.classList.toggle(\u0027dropdown-container-open\u0027);"
+        "content": "    dropdownBtn \u003d\u003e dropdownBtn.addEventListener(\u0027click\u0027, function () {"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
-        "content": "      dropdownIcon.classList.toggle(\u0027rotate-icon\u0027);"
+        "content": "      this.classList.toggle(\u0027dropdown-btn-open\u0027);"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
-        "content": "    }),"
+        "content": "      const dropdownContent \u003d this.nextElementSibling;"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
-        "content": "  );"
+        "content": "      const dropdownIcon \u003d this.lastElementChild;"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
-        "content": "}"
+        "content": "      dropdownContent.classList.toggle(\u0027dropdown-container-open\u0027);"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      dropdownIcon.classList.toggle(\u0027rotate-icon\u0027);"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "-"
         },
-        "content": "function setupPageNav() {"
+        "content": "    }),"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "-"
         },
-        "content": "  jQuery(window).on(\u0027activate.bs.scrollspy\u0027, (event, obj) \u003d\u003e {"
+        "content": "  );"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "-"
         },
-        "content": "    document.querySelectorAll(`a[href\u003d\u0027${obj.relatedTarget}\u0027]`).item(0).scrollIntoView(false);"
+        "content": "}"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
-        "content": "  });"
+        "content": ""
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
-        "content": "}"
+        "content": "function setupPageNav() {"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  jQuery(window).on(\u0027activate.bs.scrollspy\u0027, (event, obj) \u003d\u003e {"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "-"
         },
-        "content": "function setup() {"
+        "content": "    document.querySelectorAll(`a[href\u003d\u0027${obj.relatedTarget}\u0027]`).item(0).scrollIntoView(false);"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
-        "content": "  // eslint-disable-next-line no-unused-vars"
+        "content": "  });"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "-"
         },
-        "content": "  const vm \u003d new Vue({"
+        "content": "}"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
-        "content": "    el: \u0027#app\u0027,"
+        "content": ""
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
-        "content": "    mounted() {"
+        "content": "function setup() {"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": "      executeAfterMountedRoutines();"
+        "content": "  // eslint-disable-next-line no-unused-vars"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "  const vm \u003d new Vue({"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": "  });"
+        "content": "    el: \u0027#app\u0027,"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
-        "content": "  setupSiteNav();"
+        "content": "    mounted() {"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": "  setupPageNav();"
+        "content": "      executeAfterMountedRoutines();"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": "}"
+        "content": "    },"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  });"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": "function setupWithSearch(siteData) {"
+        "content": "  setupSiteNav();"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": "  if (!siteData.enableSearch) {"
+        "content": "  setupPageNav();"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": "    setup();"
+        "content": "}"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": "    return;"
+        "content": ""
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "function setupWithSearch(siteData) {"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
-        "content": "  const { searchbar } \u003d VueStrap.components;"
+        "content": "  if (!siteData.enableSearch) {"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": "  // eslint-disable-next-line no-unused-vars"
+        "content": "    setup();"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
-        "content": "  const vm \u003d new Vue({"
+        "content": "    return;"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
-        "content": "    el: \u0027#app\u0027,"
+        "content": "  }"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
-        "content": "    components: {"
+        "content": "  const { searchbar } \u003d VueStrap.components;"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
-        "content": "      searchbar,"
+        "content": "  // eslint-disable-next-line no-unused-vars"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "  const vm \u003d new Vue({"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
-        "content": "    data() {"
+        "content": "    el: \u0027#app\u0027,"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": "      return {"
+        "content": "    components: {"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "        searchData: siteData.pages,"
+        "content": "      searchbar,"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": "      };"
+        "content": "    },"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "    data() {"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
-        "content": "    methods: {"
+        "content": "      return {"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": "      searchCallback(match) {"
+        "content": "        searchData: siteData.pages,"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
-        "content": "        const page \u003d `${baseUrl}/${match.src.replace(/.(md|mbd)$/, \u0027.html\u0027)}`;"
+        "content": "      };"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": "        const anchor \u003d match.heading ? `#${match.heading.id}` : \u0027\u0027;"
+        "content": "    },"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
-        "content": "        window.location \u003d `${page}${anchor}`;"
+        "content": "    methods: {"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": "      },"
+        "content": "      searchCallback(match) {"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "        const page \u003d `${baseUrl}/${match.src.replace(/.(md|mbd)$/, \u0027.html\u0027)}`;"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": "    mounted() {"
+        "content": "        const anchor \u003d match.heading ? `#${match.heading.id}` : \u0027\u0027;"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": "      executeAfterMountedRoutines();"
+        "content": "        window.location \u003d `${page}${anchor}`;"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "      },"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "-"
         },
-        "content": "  });"
+        "content": "    },"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "-"
         },
-        "content": "  setupSiteNav();"
+        "content": "    mounted() {"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "-"
         },
-        "content": "  setupPageNav();"
+        "content": "      executeAfterMountedRoutines();"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
-        "content": "}"
+        "content": "    },"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  });"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
-        "content": "jQuery.getJSON(`${baseUrl}/siteData.json`)"
+        "content": "  setupSiteNav();"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
-        "content": "  .then(siteData \u003d\u003e setupWithSearch(siteData))"
+        "content": "  setupPageNav();"
       },
       {
         "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "jQuery.getJSON(`${baseUrl}/siteData.json`)"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  .then(siteData \u003d\u003e setupWithSearch(siteData))"
+      },
+      {
+        "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
@@ -118182,7 +118854,7 @@
     ],
     "authorContributionMap": {
       "Xenonym": 4,
-      "-": 113
+      "-": 117
     }
   },
   {
