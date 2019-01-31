@@ -1,122 +1,206 @@
 {
   "authorWeeklyIntervalContributions": {
-    "emer7": [],
-    "fzdy1914": [],
-    "marvinchin": [],
-    "amrut-prabhu": [],
-    "YuPeiHenry": [],
-    "AyushChatto": [],
-    "tanhengyeow": [],
-    "sijie123": [],
-    "luyangkenneth": [],
-    "ChooJeremy": [],
-    "Adoby7": [],
-    "ChesterSng": [],
-    "ongspxm": [],
-    "Xenonym": [],
-    "blewjy": [],
-    "monmanuela": [],
-    "rrtheonlyone": [],
-    "RonakLakhotia": [],
-    "chelseyong": [],
-    "junming403": [],
-    "amad-person": [],
-    "jacoblipech": []
+    "Paul Tan": [
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-01",
+        "untilDate": "2018-12-08"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-08",
+        "untilDate": "2018-12-15"
+      }
+    ],
+    "Si Jie": [
+      {
+        "insertions": 4,
+        "deletions": 4,
+        "sinceDate": "2018-12-01",
+        "untilDate": "2018-12-08"
+      },
+      {
+        "insertions": 24,
+        "deletions": 0,
+        "sinceDate": "2018-12-08",
+        "untilDate": "2018-12-15"
+      }
+    ]
   },
   "authorDailyIntervalContributions": {
-    "emer7": [],
-    "fzdy1914": [],
-    "marvinchin": [],
-    "amrut-prabhu": [],
-    "YuPeiHenry": [],
-    "AyushChatto": [],
-    "tanhengyeow": [],
-    "sijie123": [],
-    "luyangkenneth": [],
-    "ChooJeremy": [],
-    "Adoby7": [],
-    "ChesterSng": [],
-    "ongspxm": [],
-    "Xenonym": [],
-    "blewjy": [],
-    "monmanuela": [],
-    "rrtheonlyone": [],
-    "RonakLakhotia": [],
-    "chelseyong": [],
-    "junming403": [],
-    "amad-person": [],
-    "jacoblipech": []
+    "Paul Tan": [
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-01",
+        "untilDate": "2018-12-02"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-02",
+        "untilDate": "2018-12-03"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-03",
+        "untilDate": "2018-12-04"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-04",
+        "untilDate": "2018-12-05"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-05",
+        "untilDate": "2018-12-06"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-06",
+        "untilDate": "2018-12-07"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-07",
+        "untilDate": "2018-12-08"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-08",
+        "untilDate": "2018-12-09"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-09",
+        "untilDate": "2018-12-10"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-10",
+        "untilDate": "2018-12-11"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-11",
+        "untilDate": "2018-12-12"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-12",
+        "untilDate": "2018-12-13"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-13",
+        "untilDate": "2018-12-14"
+      }
+    ],
+    "Si Jie": [
+      {
+        "insertions": 4,
+        "deletions": 4,
+        "sinceDate": "2018-12-01",
+        "untilDate": "2018-12-02"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-02",
+        "untilDate": "2018-12-03"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-03",
+        "untilDate": "2018-12-04"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-04",
+        "untilDate": "2018-12-05"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-05",
+        "untilDate": "2018-12-06"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-06",
+        "untilDate": "2018-12-07"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-07",
+        "untilDate": "2018-12-08"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-08",
+        "untilDate": "2018-12-09"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-09",
+        "untilDate": "2018-12-10"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-10",
+        "untilDate": "2018-12-11"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-11",
+        "untilDate": "2018-12-12"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2018-12-12",
+        "untilDate": "2018-12-13"
+      },
+      {
+        "insertions": 24,
+        "deletions": 0,
+        "sinceDate": "2018-12-13",
+        "untilDate": "2018-12-14"
+      }
+    ]
   },
   "authorFinalContributionMap": {
-    "emer7": 0,
-    "fzdy1914": 0,
-    "marvinchin": 0,
-    "amrut-prabhu": 0,
-    "YuPeiHenry": 0,
-    "AyushChatto": 0,
-    "tanhengyeow": 0,
-    "sijie123": 0,
-    "luyangkenneth": 0,
-    "ChooJeremy": 0,
-    "Adoby7": 0,
-    "ChesterSng": 0,
-    "ongspxm": 0,
-    "Xenonym": 0,
-    "blewjy": 0,
-    "monmanuela": 0,
-    "rrtheonlyone": 0,
-    "RonakLakhotia": 0,
-    "chelseyong": 0,
-    "junming403": 0,
-    "amad-person": 0,
-    "jacoblipech": 0
+    "Paul Tan": 0,
+    "Si Jie": 28
   },
   "authorContributionVariance": {
-    "emer7": 0.0,
-    "fzdy1914": 0.0,
-    "marvinchin": 0.0,
-    "amrut-prabhu": 0.0,
-    "YuPeiHenry": 0.0,
-    "AyushChatto": 0.0,
-    "tanhengyeow": 0.0,
-    "sijie123": 0.0,
-    "luyangkenneth": 0.0,
-    "ChooJeremy": 0.0,
-    "Adoby7": 0.0,
-    "ChesterSng": 0.0,
-    "ongspxm": 0.0,
-    "Xenonym": 0.0,
-    "blewjy": 0.0,
-    "monmanuela": 0.0,
-    "rrtheonlyone": 0.0,
-    "RonakLakhotia": 0.0,
-    "chelseyong": 0.0,
-    "junming403": 0.0,
-    "amad-person": 0.0,
-    "jacoblipech": 0.0
+    "Paul Tan": 0.0,
+    "Si Jie": 43.171597
   },
   "authorDisplayNameMap": {
-    "emer7": "GILBERT",
-    "fzdy1914": "WANG CHAO",
-    "marvinchin": "MARVIN",
-    "amrut-prabhu": "AMRUT",
-    "YuPeiHenry": "HENRY",
-    "AyushChatto": "AYUSH",
-    "tanhengyeow": "HENG YEOW",
-    "sijie123": "SI JIE",
-    "luyangkenneth": "KENNETH",
-    "ChooJeremy": "JEREMY",
-    "Adoby7": "CHUNHUI",
-    "ChesterSng": "CHESTER",
-    "ongspxm": "SHU PENG",
-    "Xenonym": "ZHEN YONG",
-    "blewjy": "BRYAN",
-    "monmanuela": "MONIKA",
-    "rrtheonlyone": "RAHUL",
-    "RonakLakhotia": "RONAK",
-    "chelseyong": "CHELSEY",
-    "junming403": "JUNMING",
-    "amad-person": "AADYAA",
-    "jacoblipech": "JACOB"
+    "Paul Tan": "Paul Tan",
+    "Si Jie": "Si Jie"
   }
 }
