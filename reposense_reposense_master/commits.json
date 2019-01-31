@@ -206,7 +206,7 @@
         "untilDate": "2019-01-12"
       },
       {
-        "insertions": 0,
+        "insertions": 38,
         "deletions": 0,
         "sinceDate": "2019-01-12",
         "untilDate": "2019-01-19"
@@ -218,8 +218,8 @@
         "untilDate": "2019-01-26"
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 4,
+        "deletions": 1,
         "sinceDate": "2019-01-26",
         "untilDate": "2019-02-02"
       }
@@ -1584,7 +1584,7 @@
         "untilDate": "2019-01-12"
       },
       {
-        "insertions": 0,
+        "insertions": 38,
         "deletions": 0,
         "sinceDate": "2019-01-12",
         "untilDate": "2019-01-13"
@@ -1674,8 +1674,8 @@
         "untilDate": "2019-01-27"
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 4,
+        "deletions": 1,
         "sinceDate": "2019-01-27",
         "untilDate": "2019-01-28"
       },
@@ -1703,13 +1703,13 @@
     "emer7": 82,
     "ongspxm": 0,
     "fzdy1914": 266,
-    "chelseyong": 0
+    "chelseyong": 37
   },
   "authorContributionVariance": {
     "emer7": 71.59365,
     "ongspxm": 0.0,
     "fzdy1914": 834.78815,
-    "chelseyong": 0.0
+    "chelseyong": 23.58507
   },
   "authorDisplayNameMap": {
     "emer7": "GILBERT",
