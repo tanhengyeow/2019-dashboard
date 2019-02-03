@@ -64,8 +64,8 @@
         "untilDate": "2018-12-08"
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 97,
+        "deletions": 11,
         "sinceDate": "2018-12-08",
         "untilDate": "2018-12-15"
       },
@@ -100,14 +100,14 @@
         "untilDate": "2019-01-19"
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 4,
+        "deletions": 1,
         "sinceDate": "2019-01-19",
         "untilDate": "2019-01-26"
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 76,
+        "deletions": 84,
         "sinceDate": "2019-01-26",
         "untilDate": "2019-02-02"
       }
@@ -650,8 +650,8 @@
         "untilDate": "2018-12-10"
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 1,
+        "deletions": 1,
         "sinceDate": "2018-12-10",
         "untilDate": "2018-12-11"
       },
@@ -674,8 +674,8 @@
         "untilDate": "2018-12-14"
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 96,
+        "deletions": 10,
         "sinceDate": "2018-12-14",
         "untilDate": "2018-12-15"
       },
@@ -908,8 +908,8 @@
         "untilDate": "2019-01-22"
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 4,
+        "deletions": 1,
         "sinceDate": "2019-01-22",
         "untilDate": "2019-01-23"
       },
@@ -956,8 +956,8 @@
         "untilDate": "2019-01-30"
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 76,
+        "deletions": 84,
         "sinceDate": "2019-01-30",
         "untilDate": "2019-01-31"
       }
@@ -1701,19 +1701,19 @@
   },
   "authorFinalContributionMap": {
     "emer7": 132,
-    "ongspxm": 0,
+    "ongspxm": 146,
     "fzdy1914": 308,
     "chelseyong": 60
   },
   "authorContributionVariance": {
     "emer7": 173.3405,
-    "ongspxm": 0.0,
+    "ongspxm": 584.315,
     "fzdy1914": 865.74335,
     "chelseyong": 93.31259
   },
   "authorDisplayNameMap": {
     "emer7": "GILBERT",
-    "ongspxm": "SHU PENG",
+    "ongspxm": "SHUPENG",
     "fzdy1914": "WANG CHAO",
     "chelseyong": "CHELSEY"
   }
