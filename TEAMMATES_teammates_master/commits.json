@@ -106,7 +106,7 @@
         "untilDate": "2019-01-26"
       },
       {
-        "insertions": 61,
+        "insertions": 76,
         "deletions": 11,
         "sinceDate": "2019-01-26",
         "untilDate": "2019-02-02"
@@ -1304,7 +1304,7 @@
         "untilDate": "2019-01-31"
       },
       {
-        "insertions": 55,
+        "insertions": 70,
         "deletions": 4,
         "sinceDate": "2019-01-31",
         "untilDate": "2019-02-01"
@@ -4305,7 +4305,7 @@
   },
   "authorFinalContributionMap": {
     "amrut-prabhu": 0,
-    "monmanuela": 101,
+    "monmanuela": 116,
     "rrtheonlyone": 0,
     "RonakLakhotia": 0,
     "junming403": 0,
@@ -4317,7 +4317,7 @@
   },
   "authorContributionVariance": {
     "amrut-prabhu": 0.0,
-    "monmanuela": 139.35313,
+    "monmanuela": 170.34024,
     "rrtheonlyone": 0.0,
     "RonakLakhotia": 0.0,
     "junming403": 0.0,
