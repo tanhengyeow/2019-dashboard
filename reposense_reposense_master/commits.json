@@ -54,6 +54,12 @@
         "deletions": 9,
         "sinceDate": "2019-01-26",
         "untilDate": "2019-02-02"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-02",
+        "untilDate": "2019-02-09"
       }
     ],
     "ongspxm": [
@@ -110,6 +116,12 @@
         "deletions": 84,
         "sinceDate": "2019-01-26",
         "untilDate": "2019-02-02"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-02",
+        "untilDate": "2019-02-09"
       }
     ],
     "fzdy1914": [
@@ -166,6 +178,12 @@
         "deletions": 0,
         "sinceDate": "2019-01-26",
         "untilDate": "2019-02-02"
+      },
+      {
+        "insertions": 2,
+        "deletions": 2,
+        "sinceDate": "2019-02-02",
+        "untilDate": "2019-02-09"
       }
     ],
     "chelseyong": [
@@ -222,6 +240,12 @@
         "deletions": 1,
         "sinceDate": "2019-01-26",
         "untilDate": "2019-02-02"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-02",
+        "untilDate": "2019-02-09"
       }
     ]
   },
@@ -592,6 +616,36 @@
         "deletions": 5,
         "sinceDate": "2019-01-30",
         "untilDate": "2019-01-31"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-01-31",
+        "untilDate": "2019-02-01"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-01",
+        "untilDate": "2019-02-02"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-02",
+        "untilDate": "2019-02-03"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-03",
+        "untilDate": "2019-02-04"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-04",
+        "untilDate": "2019-02-05"
       }
     ],
     "ongspxm": [
@@ -960,6 +1014,36 @@
         "deletions": 84,
         "sinceDate": "2019-01-30",
         "untilDate": "2019-01-31"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-01-31",
+        "untilDate": "2019-02-01"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-01",
+        "untilDate": "2019-02-02"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-02",
+        "untilDate": "2019-02-03"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-03",
+        "untilDate": "2019-02-04"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-04",
+        "untilDate": "2019-02-05"
       }
     ],
     "fzdy1914": [
@@ -1328,6 +1412,36 @@
         "deletions": 0,
         "sinceDate": "2019-01-30",
         "untilDate": "2019-01-31"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-01-31",
+        "untilDate": "2019-02-01"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-01",
+        "untilDate": "2019-02-02"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-02",
+        "untilDate": "2019-02-03"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-03",
+        "untilDate": "2019-02-04"
+      },
+      {
+        "insertions": 2,
+        "deletions": 2,
+        "sinceDate": "2019-02-04",
+        "untilDate": "2019-02-05"
       }
     ],
     "chelseyong": [
@@ -1696,20 +1810,50 @@
         "deletions": 0,
         "sinceDate": "2019-01-30",
         "untilDate": "2019-01-31"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-01-31",
+        "untilDate": "2019-02-01"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-01",
+        "untilDate": "2019-02-02"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-02",
+        "untilDate": "2019-02-03"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-03",
+        "untilDate": "2019-02-04"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-04",
+        "untilDate": "2019-02-05"
       }
     ]
   },
   "authorFinalContributionMap": {
     "emer7": 132,
     "ongspxm": 146,
-    "fzdy1914": 308,
+    "fzdy1914": 307,
     "chelseyong": 60
   },
   "authorContributionVariance": {
-    "emer7": 173.3405,
-    "ongspxm": 584.315,
-    "fzdy1914": 865.74335,
-    "chelseyong": 93.31259
+    "emer7": 160.59343,
+    "ongspxm": 541.451,
+    "fzdy1914": 802.5284,
+    "chelseyong": 86.37307
   },
   "authorDisplayNameMap": {
     "emer7": "GILBERT",
