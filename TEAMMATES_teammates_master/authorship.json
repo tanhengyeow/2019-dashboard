@@ -478,7 +478,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "     * A Builder class for {@link AccountAttributes}."
+        "content": "     * Gets a deep copy of this object."
       },
       {
         "lineNumber": 50,
@@ -492,147 +492,147 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    public static class Builder {"
+        "content": "    public AccountAttributes getCopy() {"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": "        private AccountAttributes accountAttributes;"
+        "content": "        return AccountAttributes.builder()"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                .withGoogleId(googleId)"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": "        public Builder() {"
+        "content": "                .withName(name)"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": "            accountAttributes \u003d new AccountAttributes();"
+        "content": "                .withEmail(email)"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "                .withInstitute(institute)"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                .withIsInstructor(isInstructor)"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
-        "content": "        public Builder withCreatedAt(Instant createdAt) {"
+        "content": "                .build();"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
-        "content": "            accountAttributes.createdAt \u003d createdAt;"
+        "content": "    }"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
-        "content": "            return this;"
+        "content": ""
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "    public boolean isInstructor() {"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        return isInstructor;"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
-        "content": "        public Builder withGoogleId(String googleId) {"
+        "content": "    }"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "-"
         },
-        "content": "            accountAttributes.googleId \u003d googleId;"
+        "content": ""
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "-"
         },
-        "content": "            return this;"
+        "content": "    public String getGoogleId() {"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        return googleId;"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
-        "content": "        public Builder withName(String name) {"
+        "content": ""
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
-        "content": "            accountAttributes.name \u003d name;"
+        "content": "    public String getName() {"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "-"
         },
-        "content": "            return this;"
+        "content": "        return name;"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "    }"
       },
       {
         "lineNumber": 72,
@@ -646,140 +646,140 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        public Builder withIsInstructor(boolean isInstructor) {"
+        "content": "    public String getEmail() {"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
-        "content": "            accountAttributes.isInstructor \u003d isInstructor;"
+        "content": "        return email;"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
-        "content": "            return this;"
+        "content": "    }"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    public String getTruncatedGoogleId() {"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": "        public Builder withEmail(String email) {"
+        "content": "        return StringHelper.truncateLongId(googleId);"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
-        "content": "            accountAttributes.email \u003d email;"
+        "content": "    }"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": "            return this;"
+        "content": ""
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "    public String getInstitute() {"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        return institute;"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": "        public Builder withInstitute(String institute) {"
+        "content": "    }"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": "            accountAttributes.institute \u003d institute;"
+        "content": ""
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": "            return this;"
+        "content": "    @Override"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "    public List\u003cString\u003e getInvalidityInfo() {"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        FieldValidator validator \u003d new FieldValidator();"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
-        "content": "        public AccountAttributes build() {"
+        "content": "        List\u003cString\u003e errors \u003d new ArrayList\u003c\u003e();"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": "            accountAttributes.googleId \u003d SanitizationHelper.sanitizeGoogleId(accountAttributes.googleId);"
+        "content": ""
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
-        "content": "            accountAttributes.name \u003d SanitizationHelper.sanitizeName(accountAttributes.name);"
+        "content": "        addNonEmptyError(validator.getInvalidityInfoForPersonName(name), errors);"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
-        "content": "            accountAttributes.email \u003d SanitizationHelper.sanitizeEmail(accountAttributes.email);"
+        "content": ""
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
-        "content": "            accountAttributes.institute \u003d SanitizationHelper.sanitizeTitle(accountAttributes.institute);"
+        "content": "        addNonEmptyError(validator.getInvalidityInfoForGoogleId(googleId), errors);"
       },
       {
         "lineNumber": 93,
@@ -793,224 +793,224 @@
         "author": {
           "gitId": "-"
         },
-        "content": "            return accountAttributes;"
+        "content": "        addNonEmptyError(validator.getInvalidityInfoForEmail(email), errors);"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": ""
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        addNonEmptyError(validator.getInvalidityInfoForInstituteName(institute), errors);"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        // No validation for isInstructor and createdAt fields."
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "    /**"
+        "content": ""
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
-        "content": "     * Gets a deep copy of this object."
+        "content": "        return errors;"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": "     */"
+        "content": "    }"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
-        "content": "    public AccountAttributes getCopy() {"
+        "content": ""
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": "        return AccountAttributes.builder()"
+        "content": "    @Override"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
-        "content": "                .withGoogleId(googleId)"
+        "content": "    public Account toEntity() {"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": "                .withName(name)"
+        "content": "        return new Account(googleId, name, isInstructor, email, institute);"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
-        "content": "                .withEmail(email)"
+        "content": "    }"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": "                .withInstitute(institute)"
+        "content": ""
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": "                .withIsInstructor(isInstructor)"
+        "content": "    @Override"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": "                .build();"
+        "content": "    public String toString() {"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        return JsonUtils.toJson(this, AccountAttributes.class);"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "-"
         },
-        "content": "    public boolean isInstructor() {"
+        "content": ""
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
-        "content": "        return isInstructor;"
+        "content": "    @Override"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    public String getIdentificationString() {"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        return this.googleId;"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
-        "content": "    public String getGoogleId() {"
+        "content": "    }"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "-"
         },
-        "content": "        return googleId;"
+        "content": ""
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    @Override"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    public String getEntityTypeAsString() {"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
-        "content": "    public String getName() {"
+        "content": "        return ATTRIBUTE_NAME;"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
-        "content": "        return name;"
+        "content": "    }"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    @Override"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "-"
         },
-        "content": "    public String getEmail() {"
+        "content": "    public String getBackupIdentifier() {"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "-"
         },
-        "content": "        return email;"
+        "content": "        return ACCOUNT_BACKUP_LOG_MSG + getGoogleId();"
       },
       {
         "lineNumber": 126,
@@ -1031,84 +1031,84 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    public String getTruncatedGoogleId() {"
+        "content": "    @Override"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "-"
         },
-        "content": "        return StringHelper.truncateLongId(googleId);"
+        "content": "    public String getJsonString() {"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        return JsonUtils.toJson(this, AccountAttributes.class);"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "-"
         },
-        "content": "    public String getInstitute() {"
+        "content": ""
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "-"
         },
-        "content": "        return institute;"
+        "content": "    @Override"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    public void sanitizeForSaving() {"
       },
       {
         "lineNumber": 135,
         "author": {
-          "gitId": "-"
+          "gitId": "ChooJeremy"
         },
-        "content": ""
+        "content": "        this.googleId \u003d SanitizationHelper.sanitizeGoogleId(googleId);"
       },
       {
         "lineNumber": 136,
         "author": {
-          "gitId": "-"
+          "gitId": "ChooJeremy"
         },
-        "content": "    @Override"
+        "content": "        this.name \u003d SanitizationHelper.sanitizeName(name);"
       },
       {
         "lineNumber": 137,
         "author": {
-          "gitId": "-"
+          "gitId": "ChooJeremy"
         },
-        "content": "    public List\u003cString\u003e getInvalidityInfo() {"
+        "content": "        this.email \u003d SanitizationHelper.sanitizeEmail(email);"
       },
       {
         "lineNumber": 138,
         "author": {
-          "gitId": "-"
+          "gitId": "ChooJeremy"
         },
-        "content": "        FieldValidator validator \u003d new FieldValidator();"
+        "content": "        this.institute \u003d SanitizationHelper.sanitizeTitle(institute);"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
-        "content": "        List\u003cString\u003e errors \u003d new ArrayList\u003c\u003e();"
+        "content": "    }"
       },
       {
         "lineNumber": 140,
@@ -1122,21 +1122,21 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        addNonEmptyError(validator.getInvalidityInfoForPersonName(name), errors);"
+        "content": "    public boolean isUserRegistered() {"
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        return googleId !\u003d null \u0026\u0026 !googleId.isEmpty();"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "-"
         },
-        "content": "        addNonEmptyError(validator.getInvalidityInfoForGoogleId(googleId), errors);"
+        "content": "    }"
       },
       {
         "lineNumber": 144,
@@ -1150,35 +1150,35 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        addNonEmptyError(validator.getInvalidityInfoForEmail(email), errors);"
+        "content": "    /**"
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "     * A Builder class for {@link AccountAttributes}."
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "-"
         },
-        "content": "        addNonEmptyError(validator.getInvalidityInfoForInstituteName(institute), errors);"
+        "content": "     */"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    public static class Builder {"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "-"
         },
-        "content": "        // No validation for isInstructor and createdAt fields."
+        "content": "        private AccountAttributes accountAttributes;"
       },
       {
         "lineNumber": 150,
@@ -1192,301 +1192,301 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        return errors;"
+        "content": "        public Builder() {"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "            accountAttributes \u003d new AccountAttributes();"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Override"
+        "content": ""
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "-"
         },
-        "content": "    public Account toEntity() {"
+        "content": "        public Builder withCreatedAt(Instant createdAt) {"
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "-"
         },
-        "content": "        return new Account(googleId, name, isInstructor, email, institute);"
+        "content": "            accountAttributes.createdAt \u003d createdAt;"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "            return this;"
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Override"
+        "content": ""
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "-"
         },
-        "content": "    public String toString() {"
+        "content": "        public Builder withGoogleId(String googleId) {"
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "-"
         },
-        "content": "        return JsonUtils.toJson(this, AccountAttributes.class);"
+        "content": "            accountAttributes.googleId \u003d googleId;"
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "            return this;"
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Override"
+        "content": ""
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "-"
         },
-        "content": "    public String getIdentificationString() {"
+        "content": "        public Builder withName(String name) {"
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "-"
         },
-        "content": "        return this.googleId;"
+        "content": "            accountAttributes.name \u003d name;"
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "            return this;"
       },
       {
         "lineNumber": 168,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 169,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Override"
+        "content": ""
       },
       {
         "lineNumber": 170,
         "author": {
           "gitId": "-"
         },
-        "content": "    public String getEntityTypeAsString() {"
+        "content": "        public Builder withIsInstructor(boolean isInstructor) {"
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "-"
         },
-        "content": "        return ATTRIBUTE_NAME;"
+        "content": "            accountAttributes.isInstructor \u003d isInstructor;"
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "            return this;"
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 174,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Override"
+        "content": ""
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "-"
         },
-        "content": "    public String getBackupIdentifier() {"
+        "content": "        public Builder withEmail(String email) {"
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "-"
         },
-        "content": "        return ACCOUNT_BACKUP_LOG_MSG + getGoogleId();"
+        "content": "            accountAttributes.email \u003d email;"
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "            return this;"
       },
       {
         "lineNumber": 178,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 179,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Override"
+        "content": ""
       },
       {
         "lineNumber": 180,
         "author": {
           "gitId": "-"
         },
-        "content": "    public String getJsonString() {"
+        "content": "        public Builder withInstitute(String institute) {"
       },
       {
         "lineNumber": 181,
         "author": {
           "gitId": "-"
         },
-        "content": "        return JsonUtils.toJson(this, AccountAttributes.class);"
+        "content": "            accountAttributes.institute \u003d institute;"
       },
       {
         "lineNumber": 182,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "            return this;"
       },
       {
         "lineNumber": 183,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 184,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Override"
+        "content": ""
       },
       {
         "lineNumber": 185,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void sanitizeForSaving() {"
+        "content": "        public AccountAttributes build() {"
       },
       {
         "lineNumber": 186,
         "author": {
-          "gitId": "ChooJeremy"
+          "gitId": "-"
         },
-        "content": "        this.googleId \u003d SanitizationHelper.sanitizeGoogleId(googleId);"
+        "content": "            accountAttributes.googleId \u003d SanitizationHelper.sanitizeGoogleId(accountAttributes.googleId);"
       },
       {
         "lineNumber": 187,
         "author": {
-          "gitId": "ChooJeremy"
+          "gitId": "-"
         },
-        "content": "        this.name \u003d SanitizationHelper.sanitizeName(name);"
+        "content": "            accountAttributes.name \u003d SanitizationHelper.sanitizeName(accountAttributes.name);"
       },
       {
         "lineNumber": 188,
         "author": {
-          "gitId": "ChooJeremy"
+          "gitId": "-"
         },
-        "content": "        this.email \u003d SanitizationHelper.sanitizeEmail(email);"
+        "content": "            accountAttributes.email \u003d SanitizationHelper.sanitizeEmail(accountAttributes.email);"
       },
       {
         "lineNumber": 189,
         "author": {
-          "gitId": "ChooJeremy"
+          "gitId": "-"
         },
-        "content": "        this.institute \u003d SanitizationHelper.sanitizeTitle(institute);"
+        "content": "            accountAttributes.institute \u003d SanitizationHelper.sanitizeTitle(accountAttributes.institute);"
       },
       {
         "lineNumber": 190,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 191,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            return accountAttributes;"
       },
       {
         "lineNumber": 192,
         "author": {
           "gitId": "-"
         },
-        "content": "    public boolean isUserRegistered() {"
+        "content": "        }"
       },
       {
         "lineNumber": 193,
         "author": {
           "gitId": "-"
         },
-        "content": "        return googleId !\u003d null \u0026\u0026 !googleId.isEmpty();"
+        "content": ""
       },
       {
         "lineNumber": 194,

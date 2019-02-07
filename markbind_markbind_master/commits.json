@@ -56,8 +56,8 @@
         "untilDate": "2019-02-02"
       },
       {
-        "insertions": 1,
-        "deletions": 1,
+        "insertions": 192,
+        "deletions": 4,
         "sinceDate": "2019-02-02",
         "untilDate": "2019-02-09"
       }
@@ -708,6 +708,24 @@
         "deletions": 0,
         "sinceDate": "2019-02-04",
         "untilDate": "2019-02-05"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-05",
+        "untilDate": "2019-02-06"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-06",
+        "untilDate": "2019-02-07"
+      },
+      {
+        "insertions": 191,
+        "deletions": 3,
+        "sinceDate": "2019-02-07",
+        "untilDate": "2019-02-08"
       }
     ],
     "marvinchin": [
@@ -1106,6 +1124,24 @@
         "deletions": 18,
         "sinceDate": "2019-02-04",
         "untilDate": "2019-02-05"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-05",
+        "untilDate": "2019-02-06"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-06",
+        "untilDate": "2019-02-07"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-07",
+        "untilDate": "2019-02-08"
       }
     ],
     "sijie123": [
@@ -1504,6 +1540,24 @@
         "deletions": 0,
         "sinceDate": "2019-02-04",
         "untilDate": "2019-02-05"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-05",
+        "untilDate": "2019-02-06"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-06",
+        "untilDate": "2019-02-07"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-07",
+        "untilDate": "2019-02-08"
       }
     ],
     "luyangkenneth": [
@@ -1902,6 +1956,24 @@
         "deletions": 0,
         "sinceDate": "2019-02-04",
         "untilDate": "2019-02-05"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-05",
+        "untilDate": "2019-02-06"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-06",
+        "untilDate": "2019-02-07"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-07",
+        "untilDate": "2019-02-08"
       }
     ],
     "amad-person": [
@@ -2300,22 +2372,40 @@
         "deletions": 0,
         "sinceDate": "2019-02-04",
         "untilDate": "2019-02-05"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-05",
+        "untilDate": "2019-02-06"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-06",
+        "untilDate": "2019-02-07"
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "sinceDate": "2019-02-07",
+        "untilDate": "2019-02-08"
       }
     ]
   },
   "authorFinalContributionMap": {
-    "Xenonym": 676,
+    "Xenonym": 862,
     "marvinchin": 273,
     "sijie123": 0,
     "luyangkenneth": 41,
     "amad-person": 21
   },
   "authorContributionVariance": {
-    "Xenonym": 1225.9226,
-    "marvinchin": 357.76312,
+    "Xenonym": 1647.0758,
+    "marvinchin": 343.06744,
     "sijie123": 0.0,
-    "luyangkenneth": 24.255505,
-    "amad-person": 91.31316
+    "luyangkenneth": 23.238808,
+    "amad-person": 87.458534
   },
   "authorDisplayNameMap": {
     "Xenonym": "ZHEN YONG",
