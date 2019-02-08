@@ -1,1 +1,3175 @@
-[]
+[
+  {
+    "path": "src/Panel.vue",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003ctemplate\u003e"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cspan :class\u003d\"[\u0027card-container\u0027, addClass]\" ref\u003d\"cardContainer\"\u003e"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003cdiv class\u003d\"morph\" v-show\u003d\"localMinimized\"\u003e"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            \u003cbutton :class\u003d\"[\u0027morph-display-wrapper\u0027, \u0027btn\u0027, btnType, \u0027card-title\u0027]\" @click\u003d\"open()\"\u003e"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003ctemplate v-if\u003d\"altContent\"\u003e"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003cdiv v-html\u003d\"altContent\"\u003e\u003c/div\u003e"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003c/template\u003e"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003ctemplate v-else\u003e"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003cslot name\u003d\"header\"\u003e"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        \u003cdiv v-html\u003d\"altContent\"\u003e\u003c/div\u003e"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003c/slot\u003e"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003c/template\u003e"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            \u003c/button\u003e"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003cdiv :class\u003d\"[\u0027card\u0027, {\u0027expandable-card\u0027: isExpandableCard}, borderType]\" v-show\u003d\"!localMinimized\"\u003e"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            \u003cdiv :class\u003d\"[\u0027card-header\u0027,{\u0027header-toggle\u0027:isExpandableCard}, cardType, borderType]\""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                 @click.prevent.stop\u003d\"isExpandableCard \u0026\u0026 toggle()\""
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                 @mouseover\u003d\"onHeaderHover \u003d true\" @mouseleave\u003d\"onHeaderHover \u003d false\"\u003e"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003cdiv class\u003d\"caret-wrapper\"\u003e"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003cspan :class\u003d\"[\u0027glyphicon\u0027, localExpanded ? \u0027glyphicon-chevron-down\u0027 : \u0027glyphicon-chevron-right\u0027]\" v-if\u003d\"showCaret\"\u003e\u003c/span\u003e"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003cdiv class\u003d\"header-wrapper\" ref\u003d\"headerWrapper\"\u003e"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003cslot name\u003d\"header\"\u003e"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        \u003cdiv :class\u003d\"[\u0027card-title\u0027, cardType, {\u0027text-white\u0027:!isLightBg}]\" v-html\u003d\"headerContent\"\u003e\u003c/div\u003e"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003c/slot\u003e"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003cdiv class\u003d\"button-wrapper\"\u003e"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003cslot name\u003d\"button\"\u003e"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        \u003cpanel-switch v-show\u003d\"isExpandableCard \u0026\u0026 !noSwitchBool \u0026\u0026 !showCaret\" :is-open\u003d\"localExpanded\""
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                                      @click.native.stop.prevent\u003d\"expand()\""
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                                      @is-open-event\u003d\"retrieveOnOpen\" :is-light-bg\u003d\"isLightBg\"\u003e\u003c/panel-switch\u003e"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        \u003cbutton type\u003d\"button\" :class\u003d\"[\u0027close-button\u0027, \u0027btn\u0027, isLightBg ? \u0027btn-outline-secondary\u0027 : \u0027btn-outline-light\u0027]\""
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                                v-show\u003d\"isSeamless ? onHeaderHover : (!noCloseBool)\""
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                                @click.stop\u003d\"close()\"\u003e"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                            \u003cspan class\u003d\"glyphicon glyphicon-remove\" aria-hidden\u003d\"true\"\u003e\u003c/span\u003e"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        \u003c/button\u003e"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        \u003cbutton type\u003d\"button\" :class\u003d\"[\u0027popup-button\u0027, \u0027btn\u0027, isLightBg ? \u0027btn-outline-secondary\u0027 : \u0027btn-outline-light\u0027]\""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                                v-show\u003d\"((this.popupUrl !\u003d\u003d null) \u0026\u0026 (!isSeamless || onHeaderHover))\""
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                                @click.stop\u003d\"openPopup()\"\u003e"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                            \u003cspan class\u003d\"glyphicon glyphicon-new-window\" aria-hidden\u003d\"true\"\u003e\u003c/span\u003e"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        \u003c/button\u003e"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003c/slot\u003e"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            \u003ctemplate v-if\u003d\"preloadBool\"\u003e"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003cdiv class\u003d\"card-collapse\""
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                     ref\u003d\"panel\""
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                     v-show\u003d\"localExpanded\""
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003e"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003cdiv class\u003d\"card-body\"\u003e"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        \u003cslot\u003e\u003c/slot\u003e"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        \u003cretriever v-if\u003d\"hasSrc\" ref\u003d\"retriever\" :src\u003d\"src\" :fragment\u003d\"fragment\" delay\u003e\u003c/retriever\u003e"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        \u003cpanel-switch v-show\u003d\"isExpandableCard \u0026\u0026 bottomSwitchBool\" :is-open\u003d\"localExpanded\""
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                                      @click.native.stop.prevent\u003d\"collapseThenScrollIntoViewIfNeeded()\""
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                                      @is-open-event\u003d\"retrieveOnOpen\"\u003e\u003c/panel-switch\u003e"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003chr v-show\u003d\"isSeamless\" /\u003e"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            \u003c/template\u003e"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            \u003ctemplate v-else\u003e"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003cdiv class\u003d\"card-collapse\""
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                     ref\u003d\"panel\""
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                     v-if\u003d\"localExpanded\""
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003e"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003cdiv class\u003d\"card-body\"\u003e"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        \u003cslot\u003e\u003c/slot\u003e"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        \u003cretriever v-if\u003d\"hasSrc\" ref\u003d\"retriever\" :src\u003d\"src\" :fragment\u003d\"fragment\" delay\u003e\u003c/retriever\u003e"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        \u003cpanel-switch v-show\u003d\"isExpandableCard \u0026\u0026 bottomSwitchBool\" :is-open\u003d\"localExpanded\""
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                                      @click.native.stop.prevent\u003d\"collapseThenScrollIntoViewIfNeeded()\""
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                                      @is-open-event\u003d\"retrieveOnOpen\"\u003e\u003c/panel-switch\u003e"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    \u003chr v-show\u003d\"isSeamless\" /\u003e"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            \u003c/template\u003e"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003c/span\u003e"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/template\u003e"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cscript\u003e"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  import {getFragmentByHash, toBoolean, toNumber} from \u0027./utils/utils.js\u0027"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  import md from \u0027./utils/markdown.js\u0027"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  import panelSwitch from \u0027./PanelSwitch.vue\u0027"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  import retriever from \u0027./Retriever.vue\u0027"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  const slugify \u003d require(\u0027@sindresorhus/slugify\u0027);"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  "
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  export default {"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    components: {"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      panelSwitch,"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      retriever"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    props: {"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      header: {"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: String,"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        default: \u0027\u0027"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      alt: {"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: String,"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        default: \u0027\u0027"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      type: {"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: String,"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        default: null"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      expandable: {"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: Boolean,"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        default: true"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      isOpen: {"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: Boolean,"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        default: null"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      expanded: {"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: Boolean,"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        default: null"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      minimized: {"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: Boolean,"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        default: false"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      noSwitch: {"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: Boolean,"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        default: false"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      noClose: {"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: Boolean,"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        default: false"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      popupUrl: {"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: String,"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        default: null"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      src: {"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: String"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      bottomSwitch: {"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: Boolean,"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        default: true"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      preload: {"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: Boolean,"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        default: false"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      addClass: {"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        type: String,"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        default: \u0027\u0027"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    computed: {"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      // Vue 2.0 coerce migration"
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      expandableBool () {"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return toBoolean(this.expandable);"
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      isOpenBool () {"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return toBoolean(this.isOpen);"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      expandedBool () {"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return toBoolean(this.expanded);"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      minimizedBool () {"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return toBoolean(this.minimized);"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      noSwitchBool () {"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return toBoolean(this.noSwitch);"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      noCloseBool () {"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return toBoolean(this.noClose);"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      bottomSwitchBool () {"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return toBoolean(this.bottomSwitch);"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      preloadBool () {"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return toBoolean(this.preload);"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      // Vue 2.0 coerce migration end"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      isExpandableCard () {"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return this.expandableBool;"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      showCaret () {"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return this.isSeamless;"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      isSeamless () {"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return this.type \u003d\u003d\u003d \u0027seamless\u0027;"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      btnType () {"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (this.isSeamless || this.type \u003d\u003d\u003d \u0027light\u0027) {"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          return \u0027btn-outline-secondary\u0027;"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return \u0027btn-outline-\u0027 + (this.type || \u0027secondary\u0027);"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      borderType () {"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (this.isSeamless) {"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          return \u0027border-0\u0027;"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        } else if (this.type) {"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          if (this.type \u003d\u003d\u003d \u0027light\u0027) {"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            return \u0027\u0027; // Bootstrap 4.x light border is almost invisible on a white page"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          }"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          return \u0027border-\u0027 + this.type;"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return \u0027\u0027;"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      cardType () {"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (this.isSeamless) {"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          return \u0027bg-white\u0027;"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return \u0027bg-\u0027 + (this.type || \u0027light\u0027);"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      isLightBg () {"
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return this.cardType \u003d\u003d\u003d \u0027bg-light\u0027 || this.cardType \u003d\u003d\u003d \u0027bg-white\u0027 || this.cardType \u003d\u003d\u003d \u0027bg-warning\u0027;"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      headerContent () {"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return md.render(this.header);"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      altContent () {"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return this.alt \u0026\u0026 md.render(this.alt) || md.render(this.header);"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      hasSrc () {"
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return this.src \u0026\u0026 this.src.length \u003e 0;"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      showCloseButton () {"
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (!this.isSeamless) {"
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          return !this.noCloseBool;"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          return onHeaderHover;"
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    data () {"
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        onHeaderHover: false,"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        localExpanded: false,"
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        localMinimized: false"
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    methods: {"
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      toggle() {"
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.localExpanded \u003d !this.localExpanded;"
+      },
+      {
+        "lineNumber": 238,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      expand() {"
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.localExpanded \u003d !this.localExpanded;"
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 242,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      close() {"
+      },
+      {
+        "lineNumber": 243,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.localMinimized \u003d true;"
+      },
+      {
+        "lineNumber": 244,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      open() {"
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.localExpanded \u003d true;"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.localMinimized \u003d false;"
+      },
+      {
+        "lineNumber": 248,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      scrollIntoViewIfNeeded() {"
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        let top \u003d this.$el.getBoundingClientRect().top;"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        let isTopInView \u003d (top \u003e\u003d 0) \u0026\u0026 (top \u003c\u003d window.innerHeight);"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (!isTopInView) {"
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          this.$el.scrollIntoView();"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      collapseThenScrollIntoViewIfNeeded() {"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.$once(\u0027is-open-event\u0027, (el, isOpen) \u003d\u003e {"
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          this.scrollIntoViewIfNeeded();"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        });"
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.expand();"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      openPopup() {"
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        window.open(this.popupUrl);"
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      retrieveOnOpen(el, isOpen) {"
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (isOpen \u0026\u0026 this.hasSrc) {"
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          this.$refs.retriever.fetch()"
+      },
+      {
+        "lineNumber": 268,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 269,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 270,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 271,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    watch: {"
+      },
+      {
+        "lineNumber": 272,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u0027localExpanded\u0027: function (val, oldVal) {"
+      },
+      {
+        "lineNumber": 273,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.$nextTick(function () {"
+      },
+      {
+        "lineNumber": 274,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          this.retrieveOnOpen(this, val);"
+      },
+      {
+        "lineNumber": 275,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        })"
+      },
+      {
+        "lineNumber": 276,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 277,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 278,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    created () {"
+      },
+      {
+        "lineNumber": 279,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      if (this.src) {"
+      },
+      {
+        "lineNumber": 280,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        let hash \u003d getFragmentByHash(this.src);"
+      },
+      {
+        "lineNumber": 281,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (hash) {"
+      },
+      {
+        "lineNumber": 282,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          this.fragment \u003d hash;"
+      },
+      {
+        "lineNumber": 283,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          this.src \u003d this.src.split(\u0027#\u0027)[0];"
+      },
+      {
+        "lineNumber": 284,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 285,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 286,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      // Edge case where user might want non-expandable card that isn\u0027t expanded by default"
+      },
+      {
+        "lineNumber": 287,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      const notExpandableNoExpand \u003d !this.expandableBool \u0026\u0026 this.expanded !\u003d\u003d \u0027false\u0027;"
+      },
+      {
+        "lineNumber": 288,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      // Set local data to computed prop value"
+      },
+      {
+        "lineNumber": 289,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      this.localExpanded \u003d  notExpandableNoExpand || this.expandedBool; // Ensure this expr ordering is maintained"
+      },
+      {
+        "lineNumber": 290,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      this.localMinimized \u003d this.minimizedBool;"
+      },
+      {
+        "lineNumber": 291,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 292,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    mounted() {"
+      },
+      {
+        "lineNumber": 293,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      this.$nextTick(function () {"
+      },
+      {
+        "lineNumber": 294,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (this.hasSrc \u0026\u0026 (this.preloadBool || this.expandedBool)) {"
+      },
+      {
+        "lineNumber": 295,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          this.$refs.retriever.fetch()"
+      },
+      {
+        "lineNumber": 296,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 297,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      });"
+      },
+      {
+        "lineNumber": 298,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 299,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      if (this.headerContent) {"
+      },
+      {
+        "lineNumber": 300,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        const panelHeaderText \u003d jQuery(this.headerContent).wrap(\u0027\u003cdiv\u003e\u003c/div\u003e\u0027).parent().find(\u0027:header\u0027).text();"
+      },
+      {
+        "lineNumber": 301,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (panelHeaderText) {"
+      },
+      {
+        "lineNumber": 302,
+        "author": {
+          "gitId": "Xenonym"
+        },
+        "content": "          this.$refs.cardContainer.setAttribute(\u0027id\u0027, slugify(panelHeaderText, { decamelize: false }));"
+      },
+      {
+        "lineNumber": 303,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 304,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      } else if (this.$refs.headerWrapper.innerHTML) {"
+      },
+      {
+        "lineNumber": 305,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        const header \u003d jQuery(this.$refs.headerWrapper.innerHTML).wrap(\u0027\u003cdiv\u003e\u003c/div\u003e\u0027).parent().find(\u0027:header\u0027);"
+      },
+      {
+        "lineNumber": 306,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (header.length \u003e 0) {"
+      },
+      {
+        "lineNumber": 307,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          this.$refs.cardContainer.setAttribute(\u0027id\u0027, header[0].id);"
+      },
+      {
+        "lineNumber": 308,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 309,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 310,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 311,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 312,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/script\u003e"
+      },
+      {
+        "lineNumber": 313,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 314,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cstyle\u003e"
+      },
+      {
+        "lineNumber": 315,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .card-heading {"
+      },
+      {
+        "lineNumber": 316,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        width: 100%;"
+      },
+      {
+        "lineNumber": 317,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 318,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 319,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .card-title {"
+      },
+      {
+        "lineNumber": 320,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        display: inline-block;"
+      },
+      {
+        "lineNumber": 321,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        font-size: 1em;"
+      },
+      {
+        "lineNumber": 322,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        margin: 0;"
+      },
+      {
+        "lineNumber": 323,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        vertical-align: middle;"
+      },
+      {
+        "lineNumber": 324,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 325,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 326,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .card-title * {"
+      },
+      {
+        "lineNumber": 327,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        margin: 0px !important;"
+      },
+      {
+        "lineNumber": 328,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 329,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 330,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .caret-wrapper {"
+      },
+      {
+        "lineNumber": 331,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        float: left;"
+      },
+      {
+        "lineNumber": 332,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        display: inline-block;"
+      },
+      {
+        "lineNumber": 333,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        width: 32px;"
+      },
+      {
+        "lineNumber": 334,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 335,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 336,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .header-wrapper {"
+      },
+      {
+        "lineNumber": 337,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        display: inline-block;"
+      },
+      {
+        "lineNumber": 338,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        width: calc(100% - 32px - 96px);"
+      },
+      {
+        "lineNumber": 339,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 340,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 341,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .button-wrapper {"
+      },
+      {
+        "lineNumber": 342,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        float: right;"
+      },
+      {
+        "lineNumber": 343,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        display: inline-block;"
+      },
+      {
+        "lineNumber": 344,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        width: 96px;"
+      },
+      {
+        "lineNumber": 345,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 346,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 347,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .header-toggle {"
+      },
+      {
+        "lineNumber": 348,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        cursor: pointer;"
+      },
+      {
+        "lineNumber": 349,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 350,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 351,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .expandable-card {"
+      },
+      {
+        "lineNumber": 352,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        margin-bottom: 0 !important;"
+      },
+      {
+        "lineNumber": 353,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        margin-top: 5px;"
+      },
+      {
+        "lineNumber": 354,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 355,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 356,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .card-group \u003e .card-container \u003e .expandable-card {"
+      },
+      {
+        "lineNumber": 357,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        margin-top: 0!important;"
+      },
+      {
+        "lineNumber": 358,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 359,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 360,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .card-seamless {"
+      },
+      {
+        "lineNumber": 361,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        padding: 0;"
+      },
+      {
+        "lineNumber": 362,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 363,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 364,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .card.card-seamless {"
+      },
+      {
+        "lineNumber": 365,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        box-shadow: none;"
+      },
+      {
+        "lineNumber": 366,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        border: none;"
+      },
+      {
+        "lineNumber": 367,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 368,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 369,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .card-seamless \u003e .card-heading {"
+      },
+      {
+        "lineNumber": 370,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        padding: 0;"
+      },
+      {
+        "lineNumber": 371,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 372,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 373,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .card-seamless \u003e .card-collapse \u003e hr {"
+      },
+      {
+        "lineNumber": 374,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        margin: 0;"
+      },
+      {
+        "lineNumber": 375,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        width: calc(100% - 27px);"
+      },
+      {
+        "lineNumber": 376,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 377,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 378,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .card-seamless \u003e .card-collapse \u003e .card-body {"
+      },
+      {
+        "lineNumber": 379,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        padding: 10px 0;"
+      },
+      {
+        "lineNumber": 380,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 381,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 382,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .card-seamless \u003e .card-collapse \u003e .card-body \u003e .collapse-button {"
+      },
+      {
+        "lineNumber": 383,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        position: relative;"
+      },
+      {
+        "lineNumber": 384,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        top: 22px;"
+      },
+      {
+        "lineNumber": 385,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 386,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 387,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .card-body \u003e .collapse-button {"
+      },
+      {
+        "lineNumber": 388,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        margin-bottom: 13px;"
+      },
+      {
+        "lineNumber": 389,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        margin-top: 5px;"
+      },
+      {
+        "lineNumber": 390,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        opacity: 0.2;"
+      },
+      {
+        "lineNumber": 391,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 392,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 393,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .card-body \u003e .collapse-button:hover {"
+      },
+      {
+        "lineNumber": 394,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        opacity: 1;"
+      },
+      {
+        "lineNumber": 395,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 396,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 397,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .close-button {"
+      },
+      {
+        "lineNumber": 398,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        font-size: 10px !important;"
+      },
+      {
+        "lineNumber": 399,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        float: right;"
+      },
+      {
+        "lineNumber": 400,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        padding: 3px 8px !important;"
+      },
+      {
+        "lineNumber": 401,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        margin-left: 3px;"
+      },
+      {
+        "lineNumber": 402,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        margin-top: 2px;"
+      },
+      {
+        "lineNumber": 403,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 404,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 405,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .popup-button {"
+      },
+      {
+        "lineNumber": 406,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        font-size: 10px !important;"
+      },
+      {
+        "lineNumber": 407,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        float: right;"
+      },
+      {
+        "lineNumber": 408,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        margin-top: 2px;"
+      },
+      {
+        "lineNumber": 409,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        padding: 3px 8px !important;"
+      },
+      {
+        "lineNumber": 410,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 411,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 412,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .morph {"
+      },
+      {
+        "lineNumber": 413,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        display: inline-block;"
+      },
+      {
+        "lineNumber": 414,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 415,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 416,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .morph-display-wrapper {"
+      },
+      {
+        "lineNumber": 417,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        white-space: normal;"
+      },
+      {
+        "lineNumber": 418,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 419,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 420,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /* Bootstrap extra small(xs) responsive breakpoint */"
+      },
+      {
+        "lineNumber": 421,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @media (max-width: 575.98px) {"
+      },
+      {
+        "lineNumber": 422,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 423,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        .caret-wrapper {"
+      },
+      {
+        "lineNumber": 424,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            float: left;"
+      },
+      {
+        "lineNumber": 425,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            display: inline-block;"
+      },
+      {
+        "lineNumber": 426,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            width: 32px;"
+      },
+      {
+        "lineNumber": 427,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 428,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 429,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        .header-wrapper {"
+      },
+      {
+        "lineNumber": 430,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            display: inline-block;"
+      },
+      {
+        "lineNumber": 431,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            width: calc(100% - 32px - 32px);"
+      },
+      {
+        "lineNumber": 432,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 433,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 434,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        .button-wrapper {"
+      },
+      {
+        "lineNumber": 435,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            float: right;"
+      },
+      {
+        "lineNumber": 436,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            display: inline-block;"
+      },
+      {
+        "lineNumber": 437,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            width: 32px;"
+      },
+      {
+        "lineNumber": 438,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 439,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 440,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        .card-body {"
+      },
+      {
+        "lineNumber": 441,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            padding: 0.5rem;"
+      },
+      {
+        "lineNumber": 442,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 443,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 444,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        .card-collapse \u003e hr {"
+      },
+      {
+        "lineNumber": 445,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            margin-top: 1.5rem;"
+      },
+      {
+        "lineNumber": 446,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 447,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 448,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        .card-header {"
+      },
+      {
+        "lineNumber": 449,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            padding: 0.5rem;"
+      },
+      {
+        "lineNumber": 450,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 451,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 452,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/style\u003e"
+      }
+    ],
+    "authorContributionMap": {
+      "Xenonym": 1,
+      "-": 451
+    }
+  }
+]

@@ -1,11 +1,21 @@
 {
-  "authorWeeklyIntervalContributions": {
-    "fzdy1914": [],
-    "sijie123": []
-  },
-  "authorDailyIntervalContributions": {
-    "fzdy1914": [],
-    "sijie123": []
+  "authorDailyContributionsMap": {
+    "fzdy1914": [
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-01",
+        "commitResults": []
+      }
+    ],
+    "sijie123": [
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-01",
+        "commitResults": []
+      }
+    ]
   },
   "authorFinalContributionMap": {
     "fzdy1914": 0,

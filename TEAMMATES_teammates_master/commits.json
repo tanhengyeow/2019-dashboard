@@ -1,4485 +1,3898 @@
 {
-  "authorWeeklyIntervalContributions": {
+  "authorDailyContributionsMap": {
     "amrut-prabhu": [
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-08"
+        "date": "2018-12-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-15"
+        "date": "2018-12-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-22"
+        "date": "2018-12-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-29"
+        "date": "2018-12-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2019-01-05"
+        "date": "2018-12-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-12"
+        "date": "2018-12-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-19"
+        "date": "2018-12-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-26"
+        "date": "2018-12-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-02-02"
+        "date": "2018-12-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-09"
+        "date": "2018-12-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-14",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-15",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-16",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-17",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-18",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-19",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-20",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-21",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-22",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-23",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-24",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-25",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-26",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-27",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-28",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-29",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-30",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-31",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-01",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-14",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-15",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-16",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-17",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-18",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-19",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-20",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-21",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-22",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-23",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-24",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-25",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-26",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-27",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-28",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-29",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-30",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-01-31",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-01",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-02",
+        "commitResults": []
       }
     ],
     "monmanuela": [
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-08"
+        "date": "2018-12-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-15"
+        "date": "2018-12-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-14",
+        "commitResults": []
       },
       {
         "insertions": 45,
         "deletions": 28,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-22"
+        "date": "2018-12-15",
+        "commitResults": [
+          {
+            "hash": "ea2ef33186fee913c3551c1df591e0ee6c2cf043",
+            "message": "[#9207] Sort school names for userMapData.json (#9269)",
+            "insertions": 45,
+            "deletions": 28
+          }
+        ]
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-29"
+        "date": "2018-12-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2019-01-05"
+        "date": "2018-12-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-12"
+        "date": "2018-12-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-19"
+        "date": "2018-12-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-26"
+        "date": "2018-12-20",
+        "commitResults": []
       },
       {
-        "insertions": 76,
-        "deletions": 11,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-02-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-09"
-      }
-    ],
-    "rrtheonlyone": [
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-15"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-22"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-29"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2019-01-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-12"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-19"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-26"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-02-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-09"
-      }
-    ],
-    "RonakLakhotia": [
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-15"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-22"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-29"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2019-01-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-12"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-19"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-26"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-02-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-09"
-      }
-    ],
-    "junming403": [
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-15"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-22"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-29"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2019-01-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-12"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-19"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-26"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-02-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-09"
-      }
-    ],
-    "AyushChatto": [
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-15"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-22"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-29"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2019-01-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-12"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-19"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-26"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-02-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-09"
-      }
-    ],
-    "tanhengyeow": [
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-15"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-22"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-29"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2019-01-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-12"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-19"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-26"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-02-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-09"
-      }
-    ],
-    "ChooJeremy": [
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-15"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-22"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-29"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2019-01-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-12"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-19"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-26"
-      },
-      {
-        "insertions": 16,
-        "deletions": 15,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-02-02"
-      },
-      {
-        "insertions": 1,
-        "deletions": 1,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-09"
-      }
-    ],
-    "Adoby7": [
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-15"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-22"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-29"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2019-01-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-12"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-19"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-26"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-02-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-09"
-      }
-    ],
-    "jacoblipech": [
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-15"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-22"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-29"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2019-01-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-12"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-19"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-26"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-02-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-09"
-      }
-    ]
-  },
-  "authorDailyIntervalContributions": {
-    "amrut-prabhu": [
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-02",
-        "untilDate": "2018-12-03"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-03",
-        "untilDate": "2018-12-04"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-04",
-        "untilDate": "2018-12-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-05",
-        "untilDate": "2018-12-06"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-06",
-        "untilDate": "2018-12-07"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-07",
-        "untilDate": "2018-12-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-09"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-09",
-        "untilDate": "2018-12-10"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-10",
-        "untilDate": "2018-12-11"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-11",
-        "untilDate": "2018-12-12"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-12",
-        "untilDate": "2018-12-13"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-13",
-        "untilDate": "2018-12-14"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-14",
-        "untilDate": "2018-12-15"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-16"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-16",
-        "untilDate": "2018-12-17"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-17",
-        "untilDate": "2018-12-18"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-18",
-        "untilDate": "2018-12-19"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-19",
-        "untilDate": "2018-12-20"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-20",
-        "untilDate": "2018-12-21"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-21",
-        "untilDate": "2018-12-22"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-23"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-23",
-        "untilDate": "2018-12-24"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-24",
-        "untilDate": "2018-12-25"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-25",
-        "untilDate": "2018-12-26"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-26",
-        "untilDate": "2018-12-27"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-27",
-        "untilDate": "2018-12-28"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-28",
-        "untilDate": "2018-12-29"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2018-12-30"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-30",
-        "untilDate": "2018-12-31"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-31",
-        "untilDate": "2019-01-01"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-01",
-        "untilDate": "2019-01-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-02",
-        "untilDate": "2019-01-03"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-03",
-        "untilDate": "2019-01-04"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-04",
-        "untilDate": "2019-01-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-06"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-06",
-        "untilDate": "2019-01-07"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-07",
-        "untilDate": "2019-01-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-08",
-        "untilDate": "2019-01-09"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-09",
-        "untilDate": "2019-01-10"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-10",
-        "untilDate": "2019-01-11"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-11",
-        "untilDate": "2019-01-12"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-13"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-13",
-        "untilDate": "2019-01-14"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-14",
-        "untilDate": "2019-01-15"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-15",
-        "untilDate": "2019-01-16"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-16",
-        "untilDate": "2019-01-17"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-17",
-        "untilDate": "2019-01-18"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-18",
-        "untilDate": "2019-01-19"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-20"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-20",
-        "untilDate": "2019-01-21"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-21",
-        "untilDate": "2019-01-22"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-22",
-        "untilDate": "2019-01-23"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-23",
-        "untilDate": "2019-01-24"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-24",
-        "untilDate": "2019-01-25"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-25",
-        "untilDate": "2019-01-26"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-01-27"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-27",
-        "untilDate": "2019-01-28"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-28",
-        "untilDate": "2019-01-29"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-29",
-        "untilDate": "2019-01-30"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-30",
-        "untilDate": "2019-01-31"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-01-31",
-        "untilDate": "2019-02-01"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-02-01",
-        "untilDate": "2019-02-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-03"
-      }
-    ],
-    "monmanuela": [
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-02",
-        "untilDate": "2018-12-03"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-03",
-        "untilDate": "2018-12-04"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-04",
-        "untilDate": "2018-12-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-05",
-        "untilDate": "2018-12-06"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-06",
-        "untilDate": "2018-12-07"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-07",
-        "untilDate": "2018-12-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-09"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-09",
-        "untilDate": "2018-12-10"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-10",
-        "untilDate": "2018-12-11"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-11",
-        "untilDate": "2018-12-12"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-12",
-        "untilDate": "2018-12-13"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-13",
-        "untilDate": "2018-12-14"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-14",
-        "untilDate": "2018-12-15"
-      },
-      {
-        "insertions": 45,
-        "deletions": 28,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-16"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-16",
-        "untilDate": "2018-12-17"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-17",
-        "untilDate": "2018-12-18"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-18",
-        "untilDate": "2018-12-19"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-19",
-        "untilDate": "2018-12-20"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-20",
-        "untilDate": "2018-12-21"
-      },
-      {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-21",
-        "untilDate": "2018-12-22"
+        "date": "2018-12-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-23"
+        "date": "2018-12-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-23",
-        "untilDate": "2018-12-24"
+        "date": "2018-12-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-24",
-        "untilDate": "2018-12-25"
+        "date": "2018-12-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-25",
-        "untilDate": "2018-12-26"
+        "date": "2018-12-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-26",
-        "untilDate": "2018-12-27"
+        "date": "2018-12-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-27",
-        "untilDate": "2018-12-28"
+        "date": "2018-12-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-28",
-        "untilDate": "2018-12-29"
+        "date": "2018-12-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2018-12-30"
+        "date": "2018-12-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-30",
-        "untilDate": "2018-12-31"
+        "date": "2018-12-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-31",
-        "untilDate": "2019-01-01"
+        "date": "2018-12-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-01",
-        "untilDate": "2019-01-02"
+        "date": "2019-01-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-02",
-        "untilDate": "2019-01-03"
+        "date": "2019-01-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-03",
-        "untilDate": "2019-01-04"
+        "date": "2019-01-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-04",
-        "untilDate": "2019-01-05"
+        "date": "2019-01-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-06"
+        "date": "2019-01-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-06",
-        "untilDate": "2019-01-07"
+        "date": "2019-01-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-07",
-        "untilDate": "2019-01-08"
+        "date": "2019-01-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-08",
-        "untilDate": "2019-01-09"
+        "date": "2019-01-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-09",
-        "untilDate": "2019-01-10"
+        "date": "2019-01-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-10",
-        "untilDate": "2019-01-11"
+        "date": "2019-01-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-11",
-        "untilDate": "2019-01-12"
+        "date": "2019-01-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-13"
+        "date": "2019-01-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-13",
-        "untilDate": "2019-01-14"
+        "date": "2019-01-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-14",
-        "untilDate": "2019-01-15"
+        "date": "2019-01-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-15",
-        "untilDate": "2019-01-16"
+        "date": "2019-01-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-16",
-        "untilDate": "2019-01-17"
+        "date": "2019-01-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-17",
-        "untilDate": "2019-01-18"
+        "date": "2019-01-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-18",
-        "untilDate": "2019-01-19"
+        "date": "2019-01-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-20"
+        "date": "2019-01-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-20",
-        "untilDate": "2019-01-21"
+        "date": "2019-01-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-21",
-        "untilDate": "2019-01-22"
+        "date": "2019-01-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-22",
-        "untilDate": "2019-01-23"
+        "date": "2019-01-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-23",
-        "untilDate": "2019-01-24"
+        "date": "2019-01-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-24",
-        "untilDate": "2019-01-25"
+        "date": "2019-01-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-25",
-        "untilDate": "2019-01-26"
+        "date": "2019-01-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-01-27"
+        "date": "2019-01-26",
+        "commitResults": []
       },
       {
         "insertions": 6,
         "deletions": 7,
-        "sinceDate": "2019-01-27",
-        "untilDate": "2019-01-28"
+        "date": "2019-01-27",
+        "commitResults": [
+          {
+            "hash": "2bd32acc31083747d4fc3a243cfc475e1fd01f05",
+            "message": "[#9369] Update script sort-usermap to remove duplicates in userMapData.json (#9370)",
+            "insertions": 6,
+            "deletions": 7
+          }
+        ]
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-28",
-        "untilDate": "2019-01-29"
+        "date": "2019-01-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-29",
-        "untilDate": "2019-01-30"
+        "date": "2019-01-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-30",
-        "untilDate": "2019-01-31"
+        "date": "2019-01-30",
+        "commitResults": []
       },
       {
         "insertions": 70,
         "deletions": 4,
-        "sinceDate": "2019-01-31",
-        "untilDate": "2019-02-01"
+        "date": "2019-01-31",
+        "commitResults": [
+          {
+            "hash": "cf1aee7f07dc49d4e06b206605ce7cebfe672004",
+            "message": "[#9373] Standardize footer design (#9385)",
+            "insertions": 70,
+            "deletions": 4
+          }
+        ]
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-01",
-        "untilDate": "2019-02-02"
+        "date": "2019-02-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-03"
+        "date": "2019-02-02",
+        "commitResults": []
       }
     ],
     "rrtheonlyone": [
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-02"
+        "date": "2018-12-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-02",
-        "untilDate": "2018-12-03"
+        "date": "2018-12-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-03",
-        "untilDate": "2018-12-04"
+        "date": "2018-12-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-04",
-        "untilDate": "2018-12-05"
+        "date": "2018-12-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-05",
-        "untilDate": "2018-12-06"
+        "date": "2018-12-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-06",
-        "untilDate": "2018-12-07"
+        "date": "2018-12-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-07",
-        "untilDate": "2018-12-08"
+        "date": "2018-12-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-09"
+        "date": "2018-12-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-09",
-        "untilDate": "2018-12-10"
+        "date": "2018-12-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-10",
-        "untilDate": "2018-12-11"
+        "date": "2018-12-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-11",
-        "untilDate": "2018-12-12"
+        "date": "2018-12-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-12",
-        "untilDate": "2018-12-13"
+        "date": "2018-12-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-13",
-        "untilDate": "2018-12-14"
+        "date": "2018-12-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-14",
-        "untilDate": "2018-12-15"
+        "date": "2018-12-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-16"
+        "date": "2018-12-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-16",
-        "untilDate": "2018-12-17"
+        "date": "2018-12-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-17",
-        "untilDate": "2018-12-18"
+        "date": "2018-12-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-18",
-        "untilDate": "2018-12-19"
+        "date": "2018-12-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-19",
-        "untilDate": "2018-12-20"
+        "date": "2018-12-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-20",
-        "untilDate": "2018-12-21"
+        "date": "2018-12-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-21",
-        "untilDate": "2018-12-22"
+        "date": "2018-12-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-23"
+        "date": "2018-12-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-23",
-        "untilDate": "2018-12-24"
+        "date": "2018-12-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-24",
-        "untilDate": "2018-12-25"
+        "date": "2018-12-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-25",
-        "untilDate": "2018-12-26"
+        "date": "2018-12-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-26",
-        "untilDate": "2018-12-27"
+        "date": "2018-12-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-27",
-        "untilDate": "2018-12-28"
+        "date": "2018-12-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-28",
-        "untilDate": "2018-12-29"
+        "date": "2018-12-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2018-12-30"
+        "date": "2018-12-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-30",
-        "untilDate": "2018-12-31"
+        "date": "2018-12-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-31",
-        "untilDate": "2019-01-01"
+        "date": "2018-12-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-01",
-        "untilDate": "2019-01-02"
+        "date": "2019-01-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-02",
-        "untilDate": "2019-01-03"
+        "date": "2019-01-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-03",
-        "untilDate": "2019-01-04"
+        "date": "2019-01-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-04",
-        "untilDate": "2019-01-05"
+        "date": "2019-01-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-06"
+        "date": "2019-01-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-06",
-        "untilDate": "2019-01-07"
+        "date": "2019-01-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-07",
-        "untilDate": "2019-01-08"
+        "date": "2019-01-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-08",
-        "untilDate": "2019-01-09"
+        "date": "2019-01-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-09",
-        "untilDate": "2019-01-10"
+        "date": "2019-01-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-10",
-        "untilDate": "2019-01-11"
+        "date": "2019-01-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-11",
-        "untilDate": "2019-01-12"
+        "date": "2019-01-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-13"
+        "date": "2019-01-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-13",
-        "untilDate": "2019-01-14"
+        "date": "2019-01-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-14",
-        "untilDate": "2019-01-15"
+        "date": "2019-01-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-15",
-        "untilDate": "2019-01-16"
+        "date": "2019-01-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-16",
-        "untilDate": "2019-01-17"
+        "date": "2019-01-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-17",
-        "untilDate": "2019-01-18"
+        "date": "2019-01-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-18",
-        "untilDate": "2019-01-19"
+        "date": "2019-01-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-20"
+        "date": "2019-01-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-20",
-        "untilDate": "2019-01-21"
+        "date": "2019-01-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-21",
-        "untilDate": "2019-01-22"
+        "date": "2019-01-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-22",
-        "untilDate": "2019-01-23"
+        "date": "2019-01-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-23",
-        "untilDate": "2019-01-24"
+        "date": "2019-01-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-24",
-        "untilDate": "2019-01-25"
+        "date": "2019-01-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-25",
-        "untilDate": "2019-01-26"
+        "date": "2019-01-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-01-27"
+        "date": "2019-01-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-27",
-        "untilDate": "2019-01-28"
+        "date": "2019-01-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-28",
-        "untilDate": "2019-01-29"
+        "date": "2019-01-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-29",
-        "untilDate": "2019-01-30"
+        "date": "2019-01-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-30",
-        "untilDate": "2019-01-31"
+        "date": "2019-01-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-31",
-        "untilDate": "2019-02-01"
+        "date": "2019-01-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-01",
-        "untilDate": "2019-02-02"
+        "date": "2019-02-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-03"
+        "date": "2019-02-02",
+        "commitResults": []
       }
     ],
     "RonakLakhotia": [
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-02"
+        "date": "2018-12-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-02",
-        "untilDate": "2018-12-03"
+        "date": "2018-12-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-03",
-        "untilDate": "2018-12-04"
+        "date": "2018-12-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-04",
-        "untilDate": "2018-12-05"
+        "date": "2018-12-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-05",
-        "untilDate": "2018-12-06"
+        "date": "2018-12-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-06",
-        "untilDate": "2018-12-07"
+        "date": "2018-12-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-07",
-        "untilDate": "2018-12-08"
+        "date": "2018-12-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-09"
+        "date": "2018-12-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-09",
-        "untilDate": "2018-12-10"
+        "date": "2018-12-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-10",
-        "untilDate": "2018-12-11"
+        "date": "2018-12-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-11",
-        "untilDate": "2018-12-12"
+        "date": "2018-12-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-12",
-        "untilDate": "2018-12-13"
+        "date": "2018-12-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-13",
-        "untilDate": "2018-12-14"
+        "date": "2018-12-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-14",
-        "untilDate": "2018-12-15"
+        "date": "2018-12-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-16"
+        "date": "2018-12-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-16",
-        "untilDate": "2018-12-17"
+        "date": "2018-12-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-17",
-        "untilDate": "2018-12-18"
+        "date": "2018-12-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-18",
-        "untilDate": "2018-12-19"
+        "date": "2018-12-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-19",
-        "untilDate": "2018-12-20"
+        "date": "2018-12-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-20",
-        "untilDate": "2018-12-21"
+        "date": "2018-12-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-21",
-        "untilDate": "2018-12-22"
+        "date": "2018-12-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-23"
+        "date": "2018-12-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-23",
-        "untilDate": "2018-12-24"
+        "date": "2018-12-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-24",
-        "untilDate": "2018-12-25"
+        "date": "2018-12-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-25",
-        "untilDate": "2018-12-26"
+        "date": "2018-12-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-26",
-        "untilDate": "2018-12-27"
+        "date": "2018-12-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-27",
-        "untilDate": "2018-12-28"
+        "date": "2018-12-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-28",
-        "untilDate": "2018-12-29"
+        "date": "2018-12-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2018-12-30"
+        "date": "2018-12-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-30",
-        "untilDate": "2018-12-31"
+        "date": "2018-12-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-31",
-        "untilDate": "2019-01-01"
+        "date": "2018-12-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-01",
-        "untilDate": "2019-01-02"
+        "date": "2019-01-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-02",
-        "untilDate": "2019-01-03"
+        "date": "2019-01-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-03",
-        "untilDate": "2019-01-04"
+        "date": "2019-01-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-04",
-        "untilDate": "2019-01-05"
+        "date": "2019-01-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-06"
+        "date": "2019-01-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-06",
-        "untilDate": "2019-01-07"
+        "date": "2019-01-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-07",
-        "untilDate": "2019-01-08"
+        "date": "2019-01-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-08",
-        "untilDate": "2019-01-09"
+        "date": "2019-01-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-09",
-        "untilDate": "2019-01-10"
+        "date": "2019-01-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-10",
-        "untilDate": "2019-01-11"
+        "date": "2019-01-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-11",
-        "untilDate": "2019-01-12"
+        "date": "2019-01-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-13"
+        "date": "2019-01-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-13",
-        "untilDate": "2019-01-14"
+        "date": "2019-01-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-14",
-        "untilDate": "2019-01-15"
+        "date": "2019-01-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-15",
-        "untilDate": "2019-01-16"
+        "date": "2019-01-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-16",
-        "untilDate": "2019-01-17"
+        "date": "2019-01-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-17",
-        "untilDate": "2019-01-18"
+        "date": "2019-01-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-18",
-        "untilDate": "2019-01-19"
+        "date": "2019-01-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-20"
+        "date": "2019-01-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-20",
-        "untilDate": "2019-01-21"
+        "date": "2019-01-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-21",
-        "untilDate": "2019-01-22"
+        "date": "2019-01-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-22",
-        "untilDate": "2019-01-23"
+        "date": "2019-01-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-23",
-        "untilDate": "2019-01-24"
+        "date": "2019-01-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-24",
-        "untilDate": "2019-01-25"
+        "date": "2019-01-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-25",
-        "untilDate": "2019-01-26"
+        "date": "2019-01-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-01-27"
+        "date": "2019-01-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-27",
-        "untilDate": "2019-01-28"
+        "date": "2019-01-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-28",
-        "untilDate": "2019-01-29"
+        "date": "2019-01-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-29",
-        "untilDate": "2019-01-30"
+        "date": "2019-01-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-30",
-        "untilDate": "2019-01-31"
+        "date": "2019-01-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-31",
-        "untilDate": "2019-02-01"
+        "date": "2019-01-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-01",
-        "untilDate": "2019-02-02"
+        "date": "2019-02-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-03"
+        "date": "2019-02-02",
+        "commitResults": []
       }
     ],
     "junming403": [
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-02"
+        "date": "2018-12-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-02",
-        "untilDate": "2018-12-03"
+        "date": "2018-12-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-03",
-        "untilDate": "2018-12-04"
+        "date": "2018-12-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-04",
-        "untilDate": "2018-12-05"
+        "date": "2018-12-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-05",
-        "untilDate": "2018-12-06"
+        "date": "2018-12-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-06",
-        "untilDate": "2018-12-07"
+        "date": "2018-12-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-07",
-        "untilDate": "2018-12-08"
+        "date": "2018-12-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-09"
+        "date": "2018-12-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-09",
-        "untilDate": "2018-12-10"
+        "date": "2018-12-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-10",
-        "untilDate": "2018-12-11"
+        "date": "2018-12-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-11",
-        "untilDate": "2018-12-12"
+        "date": "2018-12-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-12",
-        "untilDate": "2018-12-13"
+        "date": "2018-12-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-13",
-        "untilDate": "2018-12-14"
+        "date": "2018-12-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-14",
-        "untilDate": "2018-12-15"
+        "date": "2018-12-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-16"
+        "date": "2018-12-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-16",
-        "untilDate": "2018-12-17"
+        "date": "2018-12-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-17",
-        "untilDate": "2018-12-18"
+        "date": "2018-12-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-18",
-        "untilDate": "2018-12-19"
+        "date": "2018-12-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-19",
-        "untilDate": "2018-12-20"
+        "date": "2018-12-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-20",
-        "untilDate": "2018-12-21"
+        "date": "2018-12-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-21",
-        "untilDate": "2018-12-22"
+        "date": "2018-12-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-23"
+        "date": "2018-12-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-23",
-        "untilDate": "2018-12-24"
+        "date": "2018-12-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-24",
-        "untilDate": "2018-12-25"
+        "date": "2018-12-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-25",
-        "untilDate": "2018-12-26"
+        "date": "2018-12-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-26",
-        "untilDate": "2018-12-27"
+        "date": "2018-12-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-27",
-        "untilDate": "2018-12-28"
+        "date": "2018-12-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-28",
-        "untilDate": "2018-12-29"
+        "date": "2018-12-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2018-12-30"
+        "date": "2018-12-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-30",
-        "untilDate": "2018-12-31"
+        "date": "2018-12-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-31",
-        "untilDate": "2019-01-01"
+        "date": "2018-12-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-01",
-        "untilDate": "2019-01-02"
+        "date": "2019-01-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-02",
-        "untilDate": "2019-01-03"
+        "date": "2019-01-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-03",
-        "untilDate": "2019-01-04"
+        "date": "2019-01-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-04",
-        "untilDate": "2019-01-05"
+        "date": "2019-01-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-06"
+        "date": "2019-01-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-06",
-        "untilDate": "2019-01-07"
+        "date": "2019-01-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-07",
-        "untilDate": "2019-01-08"
+        "date": "2019-01-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-08",
-        "untilDate": "2019-01-09"
+        "date": "2019-01-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-09",
-        "untilDate": "2019-01-10"
+        "date": "2019-01-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-10",
-        "untilDate": "2019-01-11"
+        "date": "2019-01-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-11",
-        "untilDate": "2019-01-12"
+        "date": "2019-01-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-13"
+        "date": "2019-01-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-13",
-        "untilDate": "2019-01-14"
+        "date": "2019-01-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-14",
-        "untilDate": "2019-01-15"
+        "date": "2019-01-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-15",
-        "untilDate": "2019-01-16"
+        "date": "2019-01-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-16",
-        "untilDate": "2019-01-17"
+        "date": "2019-01-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-17",
-        "untilDate": "2019-01-18"
+        "date": "2019-01-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-18",
-        "untilDate": "2019-01-19"
+        "date": "2019-01-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-20"
+        "date": "2019-01-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-20",
-        "untilDate": "2019-01-21"
+        "date": "2019-01-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-21",
-        "untilDate": "2019-01-22"
+        "date": "2019-01-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-22",
-        "untilDate": "2019-01-23"
+        "date": "2019-01-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-23",
-        "untilDate": "2019-01-24"
+        "date": "2019-01-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-24",
-        "untilDate": "2019-01-25"
+        "date": "2019-01-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-25",
-        "untilDate": "2019-01-26"
+        "date": "2019-01-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-01-27"
+        "date": "2019-01-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-27",
-        "untilDate": "2019-01-28"
+        "date": "2019-01-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-28",
-        "untilDate": "2019-01-29"
+        "date": "2019-01-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-29",
-        "untilDate": "2019-01-30"
+        "date": "2019-01-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-30",
-        "untilDate": "2019-01-31"
+        "date": "2019-01-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-31",
-        "untilDate": "2019-02-01"
+        "date": "2019-01-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-01",
-        "untilDate": "2019-02-02"
+        "date": "2019-02-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-03"
+        "date": "2019-02-02",
+        "commitResults": []
       }
     ],
     "AyushChatto": [
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-02"
+        "date": "2018-12-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-02",
-        "untilDate": "2018-12-03"
+        "date": "2018-12-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-03",
-        "untilDate": "2018-12-04"
+        "date": "2018-12-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-04",
-        "untilDate": "2018-12-05"
+        "date": "2018-12-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-05",
-        "untilDate": "2018-12-06"
+        "date": "2018-12-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-06",
-        "untilDate": "2018-12-07"
+        "date": "2018-12-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-07",
-        "untilDate": "2018-12-08"
+        "date": "2018-12-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-09"
+        "date": "2018-12-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-09",
-        "untilDate": "2018-12-10"
+        "date": "2018-12-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-10",
-        "untilDate": "2018-12-11"
+        "date": "2018-12-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-11",
-        "untilDate": "2018-12-12"
+        "date": "2018-12-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-12",
-        "untilDate": "2018-12-13"
+        "date": "2018-12-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-13",
-        "untilDate": "2018-12-14"
+        "date": "2018-12-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-14",
-        "untilDate": "2018-12-15"
+        "date": "2018-12-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-16"
+        "date": "2018-12-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-16",
-        "untilDate": "2018-12-17"
+        "date": "2018-12-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-17",
-        "untilDate": "2018-12-18"
+        "date": "2018-12-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-18",
-        "untilDate": "2018-12-19"
+        "date": "2018-12-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-19",
-        "untilDate": "2018-12-20"
+        "date": "2018-12-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-20",
-        "untilDate": "2018-12-21"
+        "date": "2018-12-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-21",
-        "untilDate": "2018-12-22"
+        "date": "2018-12-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-23"
+        "date": "2018-12-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-23",
-        "untilDate": "2018-12-24"
+        "date": "2018-12-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-24",
-        "untilDate": "2018-12-25"
+        "date": "2018-12-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-25",
-        "untilDate": "2018-12-26"
+        "date": "2018-12-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-26",
-        "untilDate": "2018-12-27"
+        "date": "2018-12-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-27",
-        "untilDate": "2018-12-28"
+        "date": "2018-12-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-28",
-        "untilDate": "2018-12-29"
+        "date": "2018-12-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2018-12-30"
+        "date": "2018-12-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-30",
-        "untilDate": "2018-12-31"
+        "date": "2018-12-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-31",
-        "untilDate": "2019-01-01"
+        "date": "2018-12-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-01",
-        "untilDate": "2019-01-02"
+        "date": "2019-01-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-02",
-        "untilDate": "2019-01-03"
+        "date": "2019-01-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-03",
-        "untilDate": "2019-01-04"
+        "date": "2019-01-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-04",
-        "untilDate": "2019-01-05"
+        "date": "2019-01-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-06"
+        "date": "2019-01-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-06",
-        "untilDate": "2019-01-07"
+        "date": "2019-01-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-07",
-        "untilDate": "2019-01-08"
+        "date": "2019-01-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-08",
-        "untilDate": "2019-01-09"
+        "date": "2019-01-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-09",
-        "untilDate": "2019-01-10"
+        "date": "2019-01-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-10",
-        "untilDate": "2019-01-11"
+        "date": "2019-01-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-11",
-        "untilDate": "2019-01-12"
+        "date": "2019-01-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-13"
+        "date": "2019-01-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-13",
-        "untilDate": "2019-01-14"
+        "date": "2019-01-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-14",
-        "untilDate": "2019-01-15"
+        "date": "2019-01-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-15",
-        "untilDate": "2019-01-16"
+        "date": "2019-01-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-16",
-        "untilDate": "2019-01-17"
+        "date": "2019-01-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-17",
-        "untilDate": "2019-01-18"
+        "date": "2019-01-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-18",
-        "untilDate": "2019-01-19"
+        "date": "2019-01-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-20"
+        "date": "2019-01-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-20",
-        "untilDate": "2019-01-21"
+        "date": "2019-01-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-21",
-        "untilDate": "2019-01-22"
+        "date": "2019-01-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-22",
-        "untilDate": "2019-01-23"
+        "date": "2019-01-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-23",
-        "untilDate": "2019-01-24"
+        "date": "2019-01-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-24",
-        "untilDate": "2019-01-25"
+        "date": "2019-01-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-25",
-        "untilDate": "2019-01-26"
+        "date": "2019-01-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-01-27"
+        "date": "2019-01-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-27",
-        "untilDate": "2019-01-28"
+        "date": "2019-01-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-28",
-        "untilDate": "2019-01-29"
+        "date": "2019-01-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-29",
-        "untilDate": "2019-01-30"
+        "date": "2019-01-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-30",
-        "untilDate": "2019-01-31"
+        "date": "2019-01-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-31",
-        "untilDate": "2019-02-01"
+        "date": "2019-01-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-01",
-        "untilDate": "2019-02-02"
+        "date": "2019-02-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-03"
+        "date": "2019-02-02",
+        "commitResults": []
       }
     ],
     "tanhengyeow": [
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-02"
+        "date": "2018-12-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-02",
-        "untilDate": "2018-12-03"
+        "date": "2018-12-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-03",
-        "untilDate": "2018-12-04"
+        "date": "2018-12-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-04",
-        "untilDate": "2018-12-05"
+        "date": "2018-12-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-05",
-        "untilDate": "2018-12-06"
+        "date": "2018-12-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-06",
-        "untilDate": "2018-12-07"
+        "date": "2018-12-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-07",
-        "untilDate": "2018-12-08"
+        "date": "2018-12-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-09"
+        "date": "2018-12-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-09",
-        "untilDate": "2018-12-10"
+        "date": "2018-12-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-10",
-        "untilDate": "2018-12-11"
+        "date": "2018-12-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-11",
-        "untilDate": "2018-12-12"
+        "date": "2018-12-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-12",
-        "untilDate": "2018-12-13"
+        "date": "2018-12-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-13",
-        "untilDate": "2018-12-14"
+        "date": "2018-12-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-14",
-        "untilDate": "2018-12-15"
+        "date": "2018-12-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-16"
+        "date": "2018-12-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-16",
-        "untilDate": "2018-12-17"
+        "date": "2018-12-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-17",
-        "untilDate": "2018-12-18"
+        "date": "2018-12-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-18",
-        "untilDate": "2018-12-19"
+        "date": "2018-12-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-19",
-        "untilDate": "2018-12-20"
+        "date": "2018-12-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-20",
-        "untilDate": "2018-12-21"
+        "date": "2018-12-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-21",
-        "untilDate": "2018-12-22"
+        "date": "2018-12-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-23"
+        "date": "2018-12-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-23",
-        "untilDate": "2018-12-24"
+        "date": "2018-12-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-24",
-        "untilDate": "2018-12-25"
+        "date": "2018-12-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-25",
-        "untilDate": "2018-12-26"
+        "date": "2018-12-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-26",
-        "untilDate": "2018-12-27"
+        "date": "2018-12-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-27",
-        "untilDate": "2018-12-28"
+        "date": "2018-12-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-28",
-        "untilDate": "2018-12-29"
+        "date": "2018-12-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2018-12-30"
+        "date": "2018-12-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-30",
-        "untilDate": "2018-12-31"
+        "date": "2018-12-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-31",
-        "untilDate": "2019-01-01"
+        "date": "2018-12-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-01",
-        "untilDate": "2019-01-02"
+        "date": "2019-01-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-02",
-        "untilDate": "2019-01-03"
+        "date": "2019-01-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-03",
-        "untilDate": "2019-01-04"
+        "date": "2019-01-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-04",
-        "untilDate": "2019-01-05"
+        "date": "2019-01-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-06"
+        "date": "2019-01-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-06",
-        "untilDate": "2019-01-07"
+        "date": "2019-01-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-07",
-        "untilDate": "2019-01-08"
+        "date": "2019-01-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-08",
-        "untilDate": "2019-01-09"
+        "date": "2019-01-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-09",
-        "untilDate": "2019-01-10"
+        "date": "2019-01-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-10",
-        "untilDate": "2019-01-11"
+        "date": "2019-01-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-11",
-        "untilDate": "2019-01-12"
+        "date": "2019-01-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-13"
+        "date": "2019-01-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-13",
-        "untilDate": "2019-01-14"
+        "date": "2019-01-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-14",
-        "untilDate": "2019-01-15"
+        "date": "2019-01-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-15",
-        "untilDate": "2019-01-16"
+        "date": "2019-01-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-16",
-        "untilDate": "2019-01-17"
+        "date": "2019-01-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-17",
-        "untilDate": "2019-01-18"
+        "date": "2019-01-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-18",
-        "untilDate": "2019-01-19"
+        "date": "2019-01-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-20"
+        "date": "2019-01-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-20",
-        "untilDate": "2019-01-21"
+        "date": "2019-01-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-21",
-        "untilDate": "2019-01-22"
+        "date": "2019-01-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-22",
-        "untilDate": "2019-01-23"
+        "date": "2019-01-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-23",
-        "untilDate": "2019-01-24"
+        "date": "2019-01-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-24",
-        "untilDate": "2019-01-25"
+        "date": "2019-01-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-25",
-        "untilDate": "2019-01-26"
+        "date": "2019-01-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-01-27"
+        "date": "2019-01-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-27",
-        "untilDate": "2019-01-28"
+        "date": "2019-01-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-28",
-        "untilDate": "2019-01-29"
+        "date": "2019-01-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-29",
-        "untilDate": "2019-01-30"
+        "date": "2019-01-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-30",
-        "untilDate": "2019-01-31"
+        "date": "2019-01-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-31",
-        "untilDate": "2019-02-01"
+        "date": "2019-01-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-01",
-        "untilDate": "2019-02-02"
+        "date": "2019-02-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-03"
+        "date": "2019-02-02",
+        "commitResults": []
       }
     ],
     "ChooJeremy": [
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-02"
+        "date": "2018-12-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-02",
-        "untilDate": "2018-12-03"
+        "date": "2018-12-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-03",
-        "untilDate": "2018-12-04"
+        "date": "2018-12-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-04",
-        "untilDate": "2018-12-05"
+        "date": "2018-12-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-05",
-        "untilDate": "2018-12-06"
+        "date": "2018-12-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-06",
-        "untilDate": "2018-12-07"
+        "date": "2018-12-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-07",
-        "untilDate": "2018-12-08"
+        "date": "2018-12-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-09"
+        "date": "2018-12-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-09",
-        "untilDate": "2018-12-10"
+        "date": "2018-12-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-10",
-        "untilDate": "2018-12-11"
+        "date": "2018-12-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-11",
-        "untilDate": "2018-12-12"
+        "date": "2018-12-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-12",
-        "untilDate": "2018-12-13"
+        "date": "2018-12-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-13",
-        "untilDate": "2018-12-14"
+        "date": "2018-12-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-14",
-        "untilDate": "2018-12-15"
+        "date": "2018-12-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-16"
+        "date": "2018-12-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-16",
-        "untilDate": "2018-12-17"
+        "date": "2018-12-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-17",
-        "untilDate": "2018-12-18"
+        "date": "2018-12-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-18",
-        "untilDate": "2018-12-19"
+        "date": "2018-12-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-19",
-        "untilDate": "2018-12-20"
+        "date": "2018-12-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-20",
-        "untilDate": "2018-12-21"
+        "date": "2018-12-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-21",
-        "untilDate": "2018-12-22"
+        "date": "2018-12-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-23"
+        "date": "2018-12-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-23",
-        "untilDate": "2018-12-24"
+        "date": "2018-12-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-24",
-        "untilDate": "2018-12-25"
+        "date": "2018-12-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-25",
-        "untilDate": "2018-12-26"
+        "date": "2018-12-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-26",
-        "untilDate": "2018-12-27"
+        "date": "2018-12-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-27",
-        "untilDate": "2018-12-28"
+        "date": "2018-12-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-28",
-        "untilDate": "2018-12-29"
+        "date": "2018-12-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2018-12-30"
+        "date": "2018-12-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-30",
-        "untilDate": "2018-12-31"
+        "date": "2018-12-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-31",
-        "untilDate": "2019-01-01"
+        "date": "2018-12-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-01",
-        "untilDate": "2019-01-02"
+        "date": "2019-01-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-02",
-        "untilDate": "2019-01-03"
+        "date": "2019-01-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-03",
-        "untilDate": "2019-01-04"
+        "date": "2019-01-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-04",
-        "untilDate": "2019-01-05"
+        "date": "2019-01-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-06"
+        "date": "2019-01-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-06",
-        "untilDate": "2019-01-07"
+        "date": "2019-01-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-07",
-        "untilDate": "2019-01-08"
+        "date": "2019-01-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-08",
-        "untilDate": "2019-01-09"
+        "date": "2019-01-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-09",
-        "untilDate": "2019-01-10"
+        "date": "2019-01-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-10",
-        "untilDate": "2019-01-11"
+        "date": "2019-01-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-11",
-        "untilDate": "2019-01-12"
+        "date": "2019-01-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-13"
+        "date": "2019-01-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-13",
-        "untilDate": "2019-01-14"
+        "date": "2019-01-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-14",
-        "untilDate": "2019-01-15"
+        "date": "2019-01-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-15",
-        "untilDate": "2019-01-16"
+        "date": "2019-01-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-16",
-        "untilDate": "2019-01-17"
+        "date": "2019-01-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-17",
-        "untilDate": "2019-01-18"
+        "date": "2019-01-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-18",
-        "untilDate": "2019-01-19"
+        "date": "2019-01-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-20"
+        "date": "2019-01-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-20",
-        "untilDate": "2019-01-21"
+        "date": "2019-01-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-21",
-        "untilDate": "2019-01-22"
+        "date": "2019-01-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-22",
-        "untilDate": "2019-01-23"
+        "date": "2019-01-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-23",
-        "untilDate": "2019-01-24"
+        "date": "2019-01-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-24",
-        "untilDate": "2019-01-25"
+        "date": "2019-01-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-25",
-        "untilDate": "2019-01-26"
+        "date": "2019-01-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-01-27"
+        "date": "2019-01-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-27",
-        "untilDate": "2019-01-28"
+        "date": "2019-01-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-28",
-        "untilDate": "2019-01-29"
+        "date": "2019-01-28",
+        "commitResults": []
       },
       {
         "insertions": 16,
         "deletions": 15,
-        "sinceDate": "2019-01-29",
-        "untilDate": "2019-01-30"
+        "date": "2019-01-29",
+        "commitResults": [
+          {
+            "hash": "1ba05cc2d048f053fc9e1a27e1ee38205a67e6ad",
+            "message": "[#8779] AccountAttributes: Remove HTML sanitization before saving for googleId, name, institute  (#9368)",
+            "insertions": 16,
+            "deletions": 15
+          }
+        ]
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-30",
-        "untilDate": "2019-01-31"
+        "date": "2019-01-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-31",
-        "untilDate": "2019-02-01"
+        "date": "2019-01-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-01",
-        "untilDate": "2019-02-02"
+        "date": "2019-02-01",
+        "commitResults": []
       },
       {
         "insertions": 1,
         "deletions": 1,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-03"
+        "date": "2019-02-02",
+        "commitResults": [
+          {
+            "hash": "b93dab253761c264797158be2779cb84041da51b",
+            "message": "[#9390] Cannot create an instructor with an email that has a 2 letter domain (#9401)",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ],
     "Adoby7": [
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-02"
+        "date": "2018-12-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-02",
-        "untilDate": "2018-12-03"
+        "date": "2018-12-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-03",
-        "untilDate": "2018-12-04"
+        "date": "2018-12-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-04",
-        "untilDate": "2018-12-05"
+        "date": "2018-12-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-05",
-        "untilDate": "2018-12-06"
+        "date": "2018-12-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-06",
-        "untilDate": "2018-12-07"
+        "date": "2018-12-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-07",
-        "untilDate": "2018-12-08"
+        "date": "2018-12-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-09"
+        "date": "2018-12-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-09",
-        "untilDate": "2018-12-10"
+        "date": "2018-12-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-10",
-        "untilDate": "2018-12-11"
+        "date": "2018-12-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-11",
-        "untilDate": "2018-12-12"
+        "date": "2018-12-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-12",
-        "untilDate": "2018-12-13"
+        "date": "2018-12-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-13",
-        "untilDate": "2018-12-14"
+        "date": "2018-12-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-14",
-        "untilDate": "2018-12-15"
+        "date": "2018-12-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-16"
+        "date": "2018-12-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-16",
-        "untilDate": "2018-12-17"
+        "date": "2018-12-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-17",
-        "untilDate": "2018-12-18"
+        "date": "2018-12-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-18",
-        "untilDate": "2018-12-19"
+        "date": "2018-12-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-19",
-        "untilDate": "2018-12-20"
+        "date": "2018-12-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-20",
-        "untilDate": "2018-12-21"
+        "date": "2018-12-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-21",
-        "untilDate": "2018-12-22"
+        "date": "2018-12-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-23"
+        "date": "2018-12-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-23",
-        "untilDate": "2018-12-24"
+        "date": "2018-12-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-24",
-        "untilDate": "2018-12-25"
+        "date": "2018-12-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-25",
-        "untilDate": "2018-12-26"
+        "date": "2018-12-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-26",
-        "untilDate": "2018-12-27"
+        "date": "2018-12-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-27",
-        "untilDate": "2018-12-28"
+        "date": "2018-12-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-28",
-        "untilDate": "2018-12-29"
+        "date": "2018-12-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2018-12-30"
+        "date": "2018-12-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-30",
-        "untilDate": "2018-12-31"
+        "date": "2018-12-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-31",
-        "untilDate": "2019-01-01"
+        "date": "2018-12-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-01",
-        "untilDate": "2019-01-02"
+        "date": "2019-01-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-02",
-        "untilDate": "2019-01-03"
+        "date": "2019-01-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-03",
-        "untilDate": "2019-01-04"
+        "date": "2019-01-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-04",
-        "untilDate": "2019-01-05"
+        "date": "2019-01-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-06"
+        "date": "2019-01-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-06",
-        "untilDate": "2019-01-07"
+        "date": "2019-01-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-07",
-        "untilDate": "2019-01-08"
+        "date": "2019-01-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-08",
-        "untilDate": "2019-01-09"
+        "date": "2019-01-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-09",
-        "untilDate": "2019-01-10"
+        "date": "2019-01-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-10",
-        "untilDate": "2019-01-11"
+        "date": "2019-01-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-11",
-        "untilDate": "2019-01-12"
+        "date": "2019-01-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-13"
+        "date": "2019-01-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-13",
-        "untilDate": "2019-01-14"
+        "date": "2019-01-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-14",
-        "untilDate": "2019-01-15"
+        "date": "2019-01-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-15",
-        "untilDate": "2019-01-16"
+        "date": "2019-01-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-16",
-        "untilDate": "2019-01-17"
+        "date": "2019-01-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-17",
-        "untilDate": "2019-01-18"
+        "date": "2019-01-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-18",
-        "untilDate": "2019-01-19"
+        "date": "2019-01-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-20"
+        "date": "2019-01-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-20",
-        "untilDate": "2019-01-21"
+        "date": "2019-01-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-21",
-        "untilDate": "2019-01-22"
+        "date": "2019-01-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-22",
-        "untilDate": "2019-01-23"
+        "date": "2019-01-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-23",
-        "untilDate": "2019-01-24"
+        "date": "2019-01-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-24",
-        "untilDate": "2019-01-25"
+        "date": "2019-01-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-25",
-        "untilDate": "2019-01-26"
+        "date": "2019-01-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-01-27"
+        "date": "2019-01-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-27",
-        "untilDate": "2019-01-28"
+        "date": "2019-01-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-28",
-        "untilDate": "2019-01-29"
+        "date": "2019-01-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-29",
-        "untilDate": "2019-01-30"
+        "date": "2019-01-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-30",
-        "untilDate": "2019-01-31"
+        "date": "2019-01-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-31",
-        "untilDate": "2019-02-01"
+        "date": "2019-01-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-01",
-        "untilDate": "2019-02-02"
+        "date": "2019-02-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-03"
+        "date": "2019-02-02",
+        "commitResults": []
       }
     ],
     "jacoblipech": [
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-02"
+        "date": "2018-12-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-02",
-        "untilDate": "2018-12-03"
+        "date": "2018-12-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-03",
-        "untilDate": "2018-12-04"
+        "date": "2018-12-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-04",
-        "untilDate": "2018-12-05"
+        "date": "2018-12-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-05",
-        "untilDate": "2018-12-06"
+        "date": "2018-12-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-06",
-        "untilDate": "2018-12-07"
+        "date": "2018-12-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-07",
-        "untilDate": "2018-12-08"
+        "date": "2018-12-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-09"
+        "date": "2018-12-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-09",
-        "untilDate": "2018-12-10"
+        "date": "2018-12-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-10",
-        "untilDate": "2018-12-11"
+        "date": "2018-12-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-11",
-        "untilDate": "2018-12-12"
+        "date": "2018-12-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-12",
-        "untilDate": "2018-12-13"
+        "date": "2018-12-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-13",
-        "untilDate": "2018-12-14"
+        "date": "2018-12-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-14",
-        "untilDate": "2018-12-15"
+        "date": "2018-12-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-15",
-        "untilDate": "2018-12-16"
+        "date": "2018-12-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-16",
-        "untilDate": "2018-12-17"
+        "date": "2018-12-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-17",
-        "untilDate": "2018-12-18"
+        "date": "2018-12-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-18",
-        "untilDate": "2018-12-19"
+        "date": "2018-12-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-19",
-        "untilDate": "2018-12-20"
+        "date": "2018-12-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-20",
-        "untilDate": "2018-12-21"
+        "date": "2018-12-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-21",
-        "untilDate": "2018-12-22"
+        "date": "2018-12-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-22",
-        "untilDate": "2018-12-23"
+        "date": "2018-12-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-23",
-        "untilDate": "2018-12-24"
+        "date": "2018-12-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-24",
-        "untilDate": "2018-12-25"
+        "date": "2018-12-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-25",
-        "untilDate": "2018-12-26"
+        "date": "2018-12-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-26",
-        "untilDate": "2018-12-27"
+        "date": "2018-12-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-27",
-        "untilDate": "2018-12-28"
+        "date": "2018-12-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-28",
-        "untilDate": "2018-12-29"
+        "date": "2018-12-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-29",
-        "untilDate": "2018-12-30"
+        "date": "2018-12-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-30",
-        "untilDate": "2018-12-31"
+        "date": "2018-12-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-31",
-        "untilDate": "2019-01-01"
+        "date": "2018-12-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-01",
-        "untilDate": "2019-01-02"
+        "date": "2019-01-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-02",
-        "untilDate": "2019-01-03"
+        "date": "2019-01-02",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-03",
-        "untilDate": "2019-01-04"
+        "date": "2019-01-03",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-04",
-        "untilDate": "2019-01-05"
+        "date": "2019-01-04",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-05",
-        "untilDate": "2019-01-06"
+        "date": "2019-01-05",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-06",
-        "untilDate": "2019-01-07"
+        "date": "2019-01-06",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-07",
-        "untilDate": "2019-01-08"
+        "date": "2019-01-07",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-08",
-        "untilDate": "2019-01-09"
+        "date": "2019-01-08",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-09",
-        "untilDate": "2019-01-10"
+        "date": "2019-01-09",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-10",
-        "untilDate": "2019-01-11"
+        "date": "2019-01-10",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-11",
-        "untilDate": "2019-01-12"
+        "date": "2019-01-11",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-12",
-        "untilDate": "2019-01-13"
+        "date": "2019-01-12",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-13",
-        "untilDate": "2019-01-14"
+        "date": "2019-01-13",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-14",
-        "untilDate": "2019-01-15"
+        "date": "2019-01-14",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-15",
-        "untilDate": "2019-01-16"
+        "date": "2019-01-15",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-16",
-        "untilDate": "2019-01-17"
+        "date": "2019-01-16",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-17",
-        "untilDate": "2019-01-18"
+        "date": "2019-01-17",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-18",
-        "untilDate": "2019-01-19"
+        "date": "2019-01-18",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-19",
-        "untilDate": "2019-01-20"
+        "date": "2019-01-19",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-20",
-        "untilDate": "2019-01-21"
+        "date": "2019-01-20",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-21",
-        "untilDate": "2019-01-22"
+        "date": "2019-01-21",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-22",
-        "untilDate": "2019-01-23"
+        "date": "2019-01-22",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-23",
-        "untilDate": "2019-01-24"
+        "date": "2019-01-23",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-24",
-        "untilDate": "2019-01-25"
+        "date": "2019-01-24",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-25",
-        "untilDate": "2019-01-26"
+        "date": "2019-01-25",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-26",
-        "untilDate": "2019-01-27"
+        "date": "2019-01-26",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-27",
-        "untilDate": "2019-01-28"
+        "date": "2019-01-27",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-28",
-        "untilDate": "2019-01-29"
+        "date": "2019-01-28",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-29",
-        "untilDate": "2019-01-30"
+        "date": "2019-01-29",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-30",
-        "untilDate": "2019-01-31"
+        "date": "2019-01-30",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-01-31",
-        "untilDate": "2019-02-01"
+        "date": "2019-01-31",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-01",
-        "untilDate": "2019-02-02"
+        "date": "2019-02-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2019-02-02",
-        "untilDate": "2019-02-03"
+        "date": "2019-02-02",
+        "commitResults": []
       }
     ]
   },

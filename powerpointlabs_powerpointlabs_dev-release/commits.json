@@ -1,269 +1,232 @@
 {
-  "authorWeeklyIntervalContributions": {
+  "authorDailyContributionsMap": {
     "ChesterSng": [
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-08"
+        "date": "2018-12-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-15"
+        "date": "2018-12-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-12",
+        "commitResults": []
       }
     ],
     "blewjy": [
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-08"
+        "date": "2018-12-01",
+        "commitResults": []
       },
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-15"
+        "date": "2018-12-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-12",
+        "commitResults": []
       }
     ],
     "YuPeiHenry": [
       {
         "insertions": 0,
         "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-08"
+        "date": "2018-12-01",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-11",
+        "commitResults": []
       },
       {
         "insertions": 5,
         "deletions": 6,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-15"
-      }
-    ]
-  },
-  "authorDailyIntervalContributions": {
-    "ChesterSng": [
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-02",
-        "untilDate": "2018-12-03"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-03",
-        "untilDate": "2018-12-04"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-04",
-        "untilDate": "2018-12-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-05",
-        "untilDate": "2018-12-06"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-06",
-        "untilDate": "2018-12-07"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-07",
-        "untilDate": "2018-12-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-09"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-09",
-        "untilDate": "2018-12-10"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-10",
-        "untilDate": "2018-12-11"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-11",
-        "untilDate": "2018-12-12"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-12",
-        "untilDate": "2018-12-13"
-      }
-    ],
-    "blewjy": [
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-02",
-        "untilDate": "2018-12-03"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-03",
-        "untilDate": "2018-12-04"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-04",
-        "untilDate": "2018-12-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-05",
-        "untilDate": "2018-12-06"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-06",
-        "untilDate": "2018-12-07"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-07",
-        "untilDate": "2018-12-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-09"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-09",
-        "untilDate": "2018-12-10"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-10",
-        "untilDate": "2018-12-11"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-11",
-        "untilDate": "2018-12-12"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-12",
-        "untilDate": "2018-12-13"
-      }
-    ],
-    "YuPeiHenry": [
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-01",
-        "untilDate": "2018-12-02"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-02",
-        "untilDate": "2018-12-03"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-03",
-        "untilDate": "2018-12-04"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-04",
-        "untilDate": "2018-12-05"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-05",
-        "untilDate": "2018-12-06"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-06",
-        "untilDate": "2018-12-07"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-07",
-        "untilDate": "2018-12-08"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-08",
-        "untilDate": "2018-12-09"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-09",
-        "untilDate": "2018-12-10"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-10",
-        "untilDate": "2018-12-11"
-      },
-      {
-        "insertions": 0,
-        "deletions": 0,
-        "sinceDate": "2018-12-11",
-        "untilDate": "2018-12-12"
-      },
-      {
-        "insertions": 5,
-        "deletions": 6,
-        "sinceDate": "2018-12-12",
-        "untilDate": "2018-12-13"
+        "date": "2018-12-12",
+        "commitResults": [
+          {
+            "hash": "1aba312eb10a36732c223d40c86c73ca602400c4",
+            "message": "Modify SyncLab Panels to use TextBlock and Grids.",
+            "insertions": 5,
+            "deletions": 6
+          }
+        ]
       }
     ]
   },
