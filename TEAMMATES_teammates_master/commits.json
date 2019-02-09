@@ -290,10 +290,17 @@
         "commitResults": []
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 1,
+        "deletions": 1,
         "date": "2019-01-18",
-        "commitResults": []
+        "commitResults": [
+          {
+            "hash": "ee180a63ff8664d364e780b930c195aa10848899",
+            "message": "[#9336] development.md: Fix Firefox E2E setup misinformation (#9338)",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       },
       {
         "insertions": 0,
@@ -384,6 +391,43 @@
         "deletions": 0,
         "date": "2019-02-02",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 1301,
+        "deletions": 1297,
+        "date": "2019-02-07",
+        "commitResults": [
+          {
+            "hash": "b03ac67d935a459ed7f90aad1640f197beb29300",
+            "message": "[#6519] Add more checkstyle rules (#9399)",
+            "insertions": 1301,
+            "deletions": 1297
+          }
+        ]
       }
     ],
     "monmanuela": [
@@ -791,6 +835,36 @@
         "deletions": 0,
         "date": "2019-02-02",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-07",
+        "commitResults": []
       }
     ],
     "rrtheonlyone": [
@@ -1176,6 +1250,36 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-07",
         "commitResults": []
       }
     ],
@@ -1563,6 +1667,36 @@
         "deletions": 0,
         "date": "2019-02-02",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-07",
+        "commitResults": []
       }
     ],
     "junming403": [
@@ -1948,6 +2082,36 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-07",
         "commitResults": []
       }
     ],
@@ -2335,6 +2499,36 @@
         "deletions": 0,
         "date": "2019-02-02",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-07",
+        "commitResults": []
       }
     ],
     "tanhengyeow": [
@@ -2720,6 +2914,36 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-07",
         "commitResults": []
       }
     ],
@@ -3121,6 +3345,36 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-07",
+        "commitResults": []
       }
     ],
     "Adoby7": [
@@ -3506,6 +3760,36 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-07",
         "commitResults": []
       }
     ],
@@ -3893,11 +4177,41 @@
         "deletions": 0,
         "date": "2019-02-02",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-07",
+        "commitResults": []
       }
     ]
   },
   "authorFinalContributionMap": {
-    "amrut-prabhu": 0,
+    "amrut-prabhu": 1157,
     "monmanuela": 116,
     "rrtheonlyone": 0,
     "RonakLakhotia": 0,
@@ -3909,14 +4223,14 @@
     "jacoblipech": 0
   },
   "authorContributionVariance": {
-    "amrut-prabhu": 0.0,
-    "monmanuela": 165.21875,
+    "amrut-prabhu": 96400.54,
+    "monmanuela": 153.66641,
     "rrtheonlyone": 0.0,
     "RonakLakhotia": 0.0,
     "junming403": 0.0,
     "AyushChatto": 0.0,
     "tanhengyeow": 0.0,
-    "ChooJeremy": 14.812256,
+    "ChooJeremy": 13.756778,
     "Adoby7": 0.0,
     "jacoblipech": 0.0
   },
