@@ -428,6 +428,18 @@
             "deletions": 1297
           }
         ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
+        "commitResults": []
       }
     ],
     "monmanuela": [
@@ -865,6 +877,18 @@
         "deletions": 0,
         "date": "2019-02-07",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
+        "commitResults": []
       }
     ],
     "rrtheonlyone": [
@@ -1280,6 +1304,18 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
         "commitResults": []
       }
     ],
@@ -1697,6 +1733,18 @@
         "deletions": 0,
         "date": "2019-02-07",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
+        "commitResults": []
       }
     ],
     "junming403": [
@@ -2112,6 +2160,18 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
         "commitResults": []
       }
     ],
@@ -2529,6 +2589,18 @@
         "deletions": 0,
         "date": "2019-02-07",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
+        "commitResults": []
       }
     ],
     "tanhengyeow": [
@@ -2944,6 +3016,18 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
         "commitResults": []
       }
     ],
@@ -3375,6 +3459,18 @@
         "deletions": 0,
         "date": "2019-02-07",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
+        "commitResults": []
       }
     ],
     "Adoby7": [
@@ -3709,10 +3805,17 @@
         "commitResults": []
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 2,
+        "deletions": 2,
         "date": "2019-01-25",
-        "commitResults": []
+        "commitResults": [
+          {
+            "hash": "e7db0514d1743f72a2a4abaae05ef8ef630e325f",
+            "message": "[#9311] ide-setup.md: improve IntelliJ indentation guideline (#9364)",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
       },
       {
         "insertions": 0,
@@ -3791,6 +3894,25 @@
         "deletions": 0,
         "date": "2019-02-07",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 3263,
+        "deletions": 1054,
+        "date": "2019-02-09",
+        "commitResults": [
+          {
+            "hash": "5bc72dacf3174120be8d005977b9973e3083b62e",
+            "message": "[#9362] Replace responseMetaData with responseDetails in FeedbackResponseAttributes (#9380)",
+            "insertions": 3263,
+            "deletions": 1054
+          }
+        ]
       }
     ],
     "jacoblipech": [
@@ -4207,6 +4329,18 @@
         "deletions": 0,
         "date": "2019-02-07",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
+        "commitResults": []
       }
     ]
   },
@@ -4219,19 +4353,19 @@
     "AyushChatto": 0,
     "tanhengyeow": 0,
     "ChooJeremy": 17,
-    "Adoby7": 0,
+    "Adoby7": 3263,
     "jacoblipech": 0
   },
   "authorContributionVariance": {
-    "amrut-prabhu": 96400.54,
-    "monmanuela": 153.66641,
+    "amrut-prabhu": 93723.9,
+    "monmanuela": 149.48483,
     "rrtheonlyone": 0.0,
     "RonakLakhotia": 0.0,
     "junming403": 0.0,
     "AyushChatto": 0.0,
     "tanhengyeow": 0.0,
-    "ChooJeremy": 13.756778,
-    "Adoby7": 0.0,
+    "ChooJeremy": 13.375518,
+    "Adoby7": 258782.11,
     "jacoblipech": 0.0
   },
   "authorDisplayNameMap": {
