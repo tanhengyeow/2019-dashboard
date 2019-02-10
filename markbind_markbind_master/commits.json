@@ -581,6 +581,25 @@
             "deletions": 8
           }
         ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 11,
+        "deletions": 15,
+        "date": "2019-02-10",
+        "commitResults": [
+          {
+            "hash": "a79c47025429958dd2e4fec35946c20f1906442d",
+            "message": "Exit MarkBind with nonzero exit code on error (#679)",
+            "insertions": 11,
+            "deletions": 15
+          }
+        ]
       }
     ],
     "marvinchin": [
@@ -1045,6 +1064,18 @@
         "deletions": 0,
         "date": "2019-02-08",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-10",
+        "commitResults": []
       }
     ],
     "sijie123": [
@@ -1457,15 +1488,34 @@
         "commitResults": []
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 130,
+        "deletions": 6,
         "date": "2019-02-07",
-        "commitResults": []
+        "commitResults": [
+          {
+            "hash": "a1e9c9ed7f6e9893dcc4d982184657b69f1c606a",
+            "message": "Add informative error for cyclic dependency (#614)",
+            "insertions": 130,
+            "deletions": 6
+          }
+        ]
       },
       {
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-10",
         "commitResults": []
       }
     ],
@@ -1909,6 +1959,18 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-10",
         "commitResults": []
       }
     ],
@@ -2367,22 +2429,34 @@
         "deletions": 0,
         "date": "2019-02-08",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-10",
+        "commitResults": []
       }
     ]
   },
   "authorFinalContributionMap": {
-    "Xenonym": 1048,
-    "marvinchin": 273,
-    "sijie123": 0,
-    "luyangkenneth": 40,
+    "Xenonym": 986,
+    "marvinchin": 260,
+    "sijie123": 130,
+    "luyangkenneth": 33,
     "amad-person": 21
   },
   "authorContributionVariance": {
-    "Xenonym": 2083.398,
-    "marvinchin": 338.43265,
-    "sijie123": 0.0,
-    "luyangkenneth": 22.918585,
-    "amad-person": 86.244835
+    "Xenonym": 2030.8608,
+    "marvinchin": 329.52783,
+    "sijie123": 253.32101,
+    "luyangkenneth": 22.30382,
+    "amad-person": 83.91584
   },
   "authorDisplayNameMap": {
     "Xenonym": "ZHEN YONG",

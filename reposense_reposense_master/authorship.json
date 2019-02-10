@@ -68,26 +68,33 @@
       {
         "lineNumber": 10,
         "author": {
-          "gitId": "ongspxm"
+          "gitId": "-"
         },
-        "content": "            \"MemberExpression\": 2"
+        "content": "            \"MemberExpression\": 2,"
       },
       {
         "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            \"FunctionDeclaration\": { \"body\": 1, \"parameters\": 2 }"
+      },
+      {
+        "lineNumber": 12,
         "author": {
           "gitId": "ongspxm"
         },
         "content": "        }]"
       },
       {
-        "lineNumber": 12,
+        "lineNumber": 13,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 13,
+        "lineNumber": 14,
         "author": {
           "gitId": "-"
         },
@@ -95,8 +102,8 @@
       }
     ],
     "authorContributionMap": {
-      "ongspxm": 5,
-      "-": 8
+      "ongspxm": 4,
+      "-": 10
     }
   },
   {
