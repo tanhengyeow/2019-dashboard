@@ -540,15 +540,15 @@
         "commitResults": []
       },
       {
-        "insertions": 45,
-        "deletions": 28,
+        "insertions": 17,
+        "deletions": 0,
         "date": "2018-12-15",
         "commitResults": [
           {
             "hash": "ea2ef33186fee913c3551c1df591e0ee6c2cf043",
             "message": "[#9207] Sort school names for userMapData.json (#9269)",
-            "insertions": 45,
-            "deletions": 28
+            "insertions": 17,
+            "deletions": 0
           }
         ]
       },
@@ -805,15 +805,15 @@
         "commitResults": []
       },
       {
-        "insertions": 6,
-        "deletions": 7,
+        "insertions": 3,
+        "deletions": 2,
         "date": "2019-01-27",
         "commitResults": [
           {
             "hash": "2bd32acc31083747d4fc3a243cfc475e1fd01f05",
             "message": "[#9369] Update script sort-usermap to remove duplicates in userMapData.json (#9370)",
-            "insertions": 6,
-            "deletions": 7
+            "insertions": 3,
+            "deletions": 2
           }
         ]
       },
@@ -1383,10 +1383,17 @@
         "commitResults": []
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 61,
+        "deletions": 16,
         "date": "2019-02-11",
-        "commitResults": []
+        "commitResults": [
+          {
+            "hash": "6078d96e4ba1e3bfbbe6a5683cefeb45ebe0ecf6",
+            "message": "[#9366] Tidy up UI design for some system messages (#9406)",
+            "insertions": 61,
+            "deletions": 16
+          }
+        ]
       }
     ],
     "RonakLakhotia": [
@@ -4080,28 +4087,28 @@
         "commitResults": []
       },
       {
-        "insertions": 3263,
-        "deletions": 1054,
+        "insertions": 149,
+        "deletions": 66,
         "date": "2019-02-09",
         "commitResults": [
           {
             "hash": "5bc72dacf3174120be8d005977b9973e3083b62e",
             "message": "[#9362] Replace responseMetaData with responseDetails in FeedbackResponseAttributes (#9380)",
-            "insertions": 3263,
-            "deletions": 1054
+            "insertions": 149,
+            "deletions": 66
           }
         ]
       },
       {
         "insertions": 20,
-        "deletions": 623,
+        "deletions": 38,
         "date": "2019-02-10",
         "commitResults": [
           {
             "hash": "b9c32603ecb0c4195908a7c0d893af38ad81c0dd",
             "message": "[#9407] Remove feedbackQuestionType in FeedbackResponseAttributes (#9415)",
             "insertions": 20,
-            "deletions": 623
+            "deletions": 38
           }
         ]
       },
@@ -4555,26 +4562,26 @@
   },
   "authorFinalContributionMap": {
     "amrut-prabhu": 1157,
-    "monmanuela": 1597,
-    "rrtheonlyone": 476,
-    "RonakLakhotia": 162,
+    "monmanuela": 1566,
+    "rrtheonlyone": 528,
+    "RonakLakhotia": 160,
     "junming403": 0,
     "AyushChatto": 618,
     "tanhengyeow": 0,
     "ChooJeremy": 17,
-    "Adoby7": 3269,
+    "Adoby7": 156,
     "jacoblipech": 0
   },
   "authorContributionVariance": {
     "amrut-prabhu": 91191.85,
-    "monmanuela": 28655.424,
-    "rrtheonlyone": 3001.8271,
+    "monmanuela": 28623.178,
+    "rrtheonlyone": 3067.5703,
     "RonakLakhotia": 460.72577,
     "junming403": 0.0,
     "AyushChatto": 4563.185,
     "tanhengyeow": 0.0,
     "ChooJeremy": 13.014823,
-    "Adoby7": 256334.25,
+    "Adoby7": 665.12213,
     "jacoblipech": 0.0
   },
   "authorDisplayNameMap": {
