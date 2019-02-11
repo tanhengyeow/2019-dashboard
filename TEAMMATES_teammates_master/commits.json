@@ -916,7 +916,7 @@
         ]
       },
       {
-        "insertions": 1150,
+        "insertions": 1453,
         "deletions": 2,
         "date": "2019-02-11",
         "commitResults": [
@@ -925,6 +925,12 @@
             "message": "[#9382] Migrate session and question section in instructor help page (#9397)",
             "insertions": 1150,
             "deletions": 2
+          },
+          {
+            "hash": "4a6088c0a93562a729e5bbc8aeb01baab9aa5e9d",
+            "message": "[#9382] Migrate instructor getting started page to Angular (#9398)",
+            "insertions": 303,
+            "deletions": 0
           }
         ]
       }
@@ -4549,7 +4555,7 @@
   },
   "authorFinalContributionMap": {
     "amrut-prabhu": 1157,
-    "monmanuela": 1294,
+    "monmanuela": 1597,
     "rrtheonlyone": 476,
     "RonakLakhotia": 162,
     "junming403": 0,
@@ -4561,7 +4567,7 @@
   },
   "authorContributionVariance": {
     "amrut-prabhu": 91191.85,
-    "monmanuela": 18004.543,
+    "monmanuela": 28655.424,
     "rrtheonlyone": 3001.8271,
     "RonakLakhotia": 460.72577,
     "junming403": 0.0,

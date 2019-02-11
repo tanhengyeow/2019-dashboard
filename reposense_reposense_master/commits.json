@@ -886,15 +886,15 @@
         "commitResults": []
       },
       {
-        "insertions": 14614,
-        "deletions": 3411,
+        "insertions": 162,
+        "deletions": 164,
         "date": "2019-02-08",
         "commitResults": [
           {
             "hash": "0fa163e163f63967545349bf921325915fc4c36e",
             "message": "[#468] Add per-commit granularity to the report (#500)",
-            "insertions": 14614,
-            "deletions": 3411
+            "insertions": 162,
+            "deletions": 164
           }
         ]
       }
@@ -1809,13 +1809,13 @@
   },
   "authorFinalContributionMap": {
     "emer7": 132,
-    "ongspxm": 14029,
+    "ongspxm": 296,
     "fzdy1914": 260,
     "chelseyong": 60
   },
   "authorContributionVariance": {
     "emer7": 151.66954,
-    "ongspxm": 4573634.0,
+    "ongspxm": 1971.6471,
     "fzdy1914": 758.57965,
     "chelseyong": 81.5226
   },
