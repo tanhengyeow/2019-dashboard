@@ -602,7 +602,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  "
+        "content": ""
       },
       {
         "lineNumber": 87,
@@ -1258,9 +1258,9 @@
       {
         "lineNumber": 180,
         "author": {
-          "gitId": "-"
+          "gitId": "luyangkenneth"
         },
-        "content": "        return this.isSeamless;"
+        "content": "        return this.isSeamless \u0026\u0026 this.expandableBool;"
       },
       {
         "lineNumber": 181,
@@ -3169,7 +3169,8 @@
     ],
     "authorContributionMap": {
       "Xenonym": 1,
-      "-": 451
+      "-": 450,
+      "luyangkenneth": 1
     }
   }
 ]

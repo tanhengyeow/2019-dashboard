@@ -446,6 +446,12 @@
         "deletions": 0,
         "date": "2019-02-10",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-11",
+        "commitResults": []
       }
     ],
     "monmanuela": [
@@ -908,6 +914,19 @@
             "deletions": 2
           }
         ]
+      },
+      {
+        "insertions": 1150,
+        "deletions": 2,
+        "date": "2019-02-11",
+        "commitResults": [
+          {
+            "hash": "3dcb88167952247411ed89c9dff30e122e3be121",
+            "message": "[#9382] Migrate session and question section in instructor help page (#9397)",
+            "insertions": 1150,
+            "deletions": 2
+          }
+        ]
       }
     ],
     "rrtheonlyone": [
@@ -1104,10 +1123,17 @@
         "commitResults": []
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 15,
+        "deletions": 11,
         "date": "2019-01-02",
-        "commitResults": []
+        "commitResults": [
+          {
+            "hash": "1b65e6749228648a8d0f8651cb052ce5e90fff41",
+            "message": "[#9119] FeedbackResponseCommentsLogicTest: Fix verification for test (#9280)",
+            "insertions": 15,
+            "deletions": 11
+          }
+        ]
       },
       {
         "insertions": 0,
@@ -1278,10 +1304,17 @@
         "commitResults": []
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 467,
+        "deletions": 4,
         "date": "2019-01-31",
-        "commitResults": []
+        "commitResults": [
+          {
+            "hash": "f9c948dce3d36b823c3564ccb2bd6fc821136b8d",
+            "message": "[#9382] Migrate first part of instructor help page to Angular (#9383)",
+            "insertions": 467,
+            "deletions": 4
+          }
+        ]
       },
       {
         "insertions": 0,
@@ -1341,6 +1374,12 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-11",
         "commitResults": []
       }
     ],
@@ -1803,6 +1842,12 @@
         "deletions": 0,
         "date": "2019-02-10",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-11",
+        "commitResults": []
       }
     ],
     "junming403": [
@@ -2236,6 +2281,12 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-11",
         "commitResults": []
       }
     ],
@@ -2685,6 +2736,19 @@
         "deletions": 0,
         "date": "2019-02-10",
         "commitResults": []
+      },
+      {
+        "insertions": 579,
+        "deletions": 1,
+        "date": "2019-02-11",
+        "commitResults": [
+          {
+            "hash": "1761b111d1b25b7d01326a098033589a57bf640a",
+            "message": "[#9382] Migrate courses section of instructor help page to Angular (#9394)",
+            "insertions": 579,
+            "deletions": 1
+          }
+        ]
       }
     ],
     "tanhengyeow": [
@@ -3118,6 +3182,12 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-11",
         "commitResults": []
       }
     ],
@@ -3566,6 +3636,12 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-11",
         "commitResults": []
       }
     ],
@@ -4022,6 +4098,12 @@
             "deletions": 623
           }
         ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-11",
+        "commitResults": []
       }
     ],
     "jacoblipech": [
@@ -4456,31 +4538,37 @@
         "deletions": 0,
         "date": "2019-02-10",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-11",
+        "commitResults": []
       }
     ]
   },
   "authorFinalContributionMap": {
     "amrut-prabhu": 1157,
-    "monmanuela": 144,
-    "rrtheonlyone": 0,
+    "monmanuela": 1294,
+    "rrtheonlyone": 476,
     "RonakLakhotia": 162,
     "junming403": 0,
-    "AyushChatto": 41,
+    "AyushChatto": 618,
     "tanhengyeow": 0,
     "ChooJeremy": 17,
     "Adoby7": 3269,
     "jacoblipech": 0
   },
   "authorContributionVariance": {
-    "amrut-prabhu": 92440.54,
-    "monmanuela": 158.72658,
-    "rrtheonlyone": 0.0,
-    "RonakLakhotia": 466.99686,
+    "amrut-prabhu": 91191.85,
+    "monmanuela": 18004.543,
+    "rrtheonlyone": 3001.8271,
+    "RonakLakhotia": 460.72577,
     "junming403": 0.0,
-    "AyushChatto": 31.796095,
+    "AyushChatto": 4563.185,
     "tanhengyeow": 0.0,
-    "ChooJeremy": 13.192709,
-    "Adoby7": 259829.39,
+    "ChooJeremy": 13.014823,
+    "Adoby7": 256334.25,
     "jacoblipech": 0.0
   },
   "authorDisplayNameMap": {

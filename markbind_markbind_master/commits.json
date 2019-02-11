@@ -600,6 +600,19 @@
             "deletions": 15
           }
         ]
+      },
+      {
+        "insertions": 2,
+        "deletions": 2,
+        "date": "2019-02-11",
+        "commitResults": [
+          {
+            "hash": "185735ef8d9a5c6e32b81357c5c4bed51cbee30c",
+            "message": "Fix filename capitalization for syntax docs (#685)",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
       }
     ],
     "marvinchin": [
@@ -1076,6 +1089,19 @@
         "deletions": 0,
         "date": "2019-02-10",
         "commitResults": []
+      },
+      {
+        "insertions": 50,
+        "deletions": 82,
+        "date": "2019-02-11",
+        "commitResults": [
+          {
+            "hash": "f9901fe7c8fe5b54e1ae8c59d0caeb1cc48f1daf",
+            "message": "Add temporary styles to prevent FOUC (#664)",
+            "insertions": 50,
+            "deletions": 82
+          }
+        ]
       }
     ],
     "sijie123": [
@@ -1516,6 +1542,12 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-11",
         "commitResults": []
       }
     ],
@@ -1971,6 +2003,12 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-11",
         "commitResults": []
       }
     ],
@@ -2441,22 +2479,28 @@
         "deletions": 0,
         "date": "2019-02-10",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-11",
+        "commitResults": []
       }
     ]
   },
   "authorFinalContributionMap": {
     "Xenonym": 986,
-    "marvinchin": 260,
+    "marvinchin": 228,
     "sijie123": 130,
     "luyangkenneth": 33,
     "amad-person": 21
   },
   "authorContributionVariance": {
-    "Xenonym": 2030.8608,
-    "marvinchin": 329.52783,
-    "sijie123": 253.32101,
-    "luyangkenneth": 22.30382,
-    "amad-person": 83.91584
+    "Xenonym": 2005.5901,
+    "marvinchin": 545.8014,
+    "sijie123": 249.89905,
+    "luyangkenneth": 22.008621,
+    "amad-person": 82.79785
   },
   "authorDisplayNameMap": {
     "Xenonym": "ZHEN YONG",
