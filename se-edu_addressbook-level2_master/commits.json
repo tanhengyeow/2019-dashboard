@@ -1,0 +1,113 @@
+{
+  "authorDailyContributionsMap": {
+    "sijie123": [
+      {
+        "insertions": 4,
+        "deletions": 4,
+        "date": "2018-12-01",
+        "commitResults": [
+          {
+            "hash": "fef211952255091cfd2b6101bc1597479176f6f4",
+            "message": "ParserTest: Fix incorrectly formatted command string",
+            "insertions": 4,
+            "deletions": 4
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-02",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-03",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-04",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-05",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-06",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-07",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-08",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-10",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2018-12-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 24,
+        "deletions": 0,
+        "date": "2018-12-13",
+        "commitResults": [
+          {
+            "hash": "e3eb78478fb08d9767e166ab8c4d09c57aee4b80",
+            "message": "Utils#isAnyNull: Check for null on entire object",
+            "insertions": 3,
+            "deletions": 0
+          },
+          {
+            "hash": "d9fb0a224014a6bb3dc26e05181d9ad5feb0abf1",
+            "message": "UtilsTest: Add test for isAnyNull",
+            "insertions": 21,
+            "deletions": 0
+          }
+        ]
+      }
+    ]
+  },
+  "authorFinalContributionMap": {
+    "sijie123": 28
+  },
+  "authorContributionVariance": {
+    "sijie123": 43.171597
+  },
+  "authorDisplayNameMap": {
+    "sijie123": "SI JIE"
+  }
+}

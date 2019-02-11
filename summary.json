@@ -1,5 +1,5 @@
 {
-  "dashboardGeneratedTime": "Mon Feb 11 17:34:09 SGT 2019",
+  "dashboardGeneratedTime": "Mon Feb 11 17:36:38 SGT 2019",
   "repos": [
     {
       "location": {
@@ -59,6 +59,16 @@
       },
       "branch": "master",
       "displayName": "se-edu_addressbook-level4_master",
+      "sinceDate": "2018-12-01"
+    },
+    {
+      "location": {
+        "location": "https://github.com/se-edu/addressbook-level2.git",
+        "repoName": "addressbook-level2",
+        "organization": "se-edu"
+      },
+      "branch": "master",
+      "displayName": "se-edu_addressbook-level2_master",
       "sinceDate": "2018-12-01"
     },
     {
