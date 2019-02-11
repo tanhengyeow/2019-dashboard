@@ -440,6 +440,12 @@
         "deletions": 0,
         "date": "2019-02-09",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-10",
+        "commitResults": []
       }
     ],
     "monmanuela": [
@@ -889,6 +895,19 @@
         "deletions": 0,
         "date": "2019-02-09",
         "commitResults": []
+      },
+      {
+        "insertions": 29,
+        "deletions": 2,
+        "date": "2019-02-10",
+        "commitResults": [
+          {
+            "hash": "04910f0e5e0aab10ff1d5cfce796ebe5c6e6406e",
+            "message": "[#9405] Show default picture as profile photo for student who is yet to join (#9414)",
+            "insertions": 29,
+            "deletions": 2
+          }
+        ]
       }
     ],
     "rrtheonlyone": [
@@ -1316,6 +1335,12 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-10",
         "commitResults": []
       }
     ],
@@ -1772,6 +1797,12 @@
         "deletions": 0,
         "date": "2019-02-09",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-10",
+        "commitResults": []
       }
     ],
     "junming403": [
@@ -2200,6 +2231,12 @@
         "deletions": 0,
         "date": "2019-02-09",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-10",
+        "commitResults": []
       }
     ],
     "AyushChatto": [
@@ -2306,10 +2343,17 @@
         "commitResults": []
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 31,
+        "deletions": 15,
         "date": "2018-12-18",
-        "commitResults": []
+        "commitResults": [
+          {
+            "hash": "9dd1fbda75bc5c5aa3770badffefc2fd798b4590",
+            "message": "[#9268] Remove isCourseVerified in CoursesLogic and add test for it (#9271)",
+            "insertions": 31,
+            "deletions": 15
+          }
+        ]
       },
       {
         "insertions": 0,
@@ -2588,10 +2632,17 @@
         "commitResults": []
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 11,
+        "deletions": 4,
         "date": "2019-02-03",
-        "commitResults": []
+        "commitResults": [
+          {
+            "hash": "ede259ee227df0eb6c6b48d4b1a59f065ff92c73",
+            "message": "[#9382] Refactor chained boolean values into function (#9395)",
+            "insertions": 11,
+            "deletions": 4
+          }
+        ]
       },
       {
         "insertions": 0,
@@ -2627,6 +2678,12 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-10",
         "commitResults": []
       }
     ],
@@ -3055,6 +3112,12 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-09",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-10",
         "commitResults": []
       }
     ],
@@ -3498,6 +3561,12 @@
         "deletions": 0,
         "date": "2019-02-09",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-10",
+        "commitResults": []
       }
     ],
     "Adoby7": [
@@ -3940,6 +4009,19 @@
             "deletions": 1054
           }
         ]
+      },
+      {
+        "insertions": 20,
+        "deletions": 623,
+        "date": "2019-02-10",
+        "commitResults": [
+          {
+            "hash": "b9c32603ecb0c4195908a7c0d893af38ad81c0dd",
+            "message": "[#9407] Remove feedbackQuestionType in FeedbackResponseAttributes (#9415)",
+            "insertions": 20,
+            "deletions": 623
+          }
+        ]
       }
     ],
     "jacoblipech": [
@@ -4368,31 +4450,37 @@
         "deletions": 0,
         "date": "2019-02-09",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-10",
+        "commitResults": []
       }
     ]
   },
   "authorFinalContributionMap": {
     "amrut-prabhu": 1157,
-    "monmanuela": 116,
+    "monmanuela": 144,
     "rrtheonlyone": 0,
     "RonakLakhotia": 162,
     "junming403": 0,
-    "AyushChatto": 0,
+    "AyushChatto": 41,
     "tanhengyeow": 0,
     "ChooJeremy": 17,
-    "Adoby7": 3263,
+    "Adoby7": 3269,
     "jacoblipech": 0
   },
   "authorContributionVariance": {
-    "amrut-prabhu": 93723.9,
-    "monmanuela": 149.48483,
+    "amrut-prabhu": 92440.54,
+    "monmanuela": 158.72658,
     "rrtheonlyone": 0.0,
-    "RonakLakhotia": 473.441,
+    "RonakLakhotia": 466.99686,
     "junming403": 0.0,
-    "AyushChatto": 0.0,
+    "AyushChatto": 31.796095,
     "tanhengyeow": 0.0,
-    "ChooJeremy": 13.375518,
-    "Adoby7": 258782.11,
+    "ChooJeremy": 13.192709,
+    "Adoby7": 259829.39,
     "jacoblipech": 0.0
   },
   "authorDisplayNameMap": {
