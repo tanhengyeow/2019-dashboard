@@ -1,1 +1,1660 @@
-[]
+[
+  {
+    "path": "README.md",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "# PowerPointLabs\u0027 Website"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "This is the website and documentation for the [PowerPointLabs](http://www.powerpointlabs.info) project.  "
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "[![build-status](https://travis-ci.org/PowerPointLabs/PowerPointLabs-Website.svg?branch\u003dmaster)](https://travis-ci.org/PowerPointLabs/PowerPointLabs-Website)"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "### Contributing To PowerPointLabs-Website"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Interested to contribute? Please take a moment to review the [guidelines for contributing](https://github.com/PowerPointLabs/PowerPointLabs-Website/blob/master/CONTRIBUTING.md)."
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "### Dev Prerequisites"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "1. Install SourceTree (recommended), GitHub for Windows, or at least, Git."
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "2. Install [Vagrant](http://www.vagrantup.com) and [VirtualBox](https://www.virtualbox.org)."
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "3. Install a text editor that supports `using spaces for indentation`, e.g. Sublime Text 2."
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "4. Install a modern web browser, e.g. Chrome."
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "### Setup"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "The website is generated using [Jekyll](http://www.jekyllrb.com). An easy way to get up and running is to just use [Vagrant](http://www.vagrantup.com) (which requires [VirtualBox](https://www.virtualbox.org))."
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "\u003e This README assumes no existing knowledge of how Vagrant (or Jekyll) works. In a nutshell, Vagrant is a nifty wrapper for a virtual machine (the \"guest\", running Ubuntu 14.04.5 LTS in our case) which can be automatically setup with our project\u0027s dependencies, while letting us use our own familiar editors/tools on the \"host\"."
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003e Isn\u0027t it overkill to use Vagrant just for a simple Jekyll site? Maybe. It\u0027s been tricky to get running on Windows in the past, though, so this is perhaps in a strange way easier."
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "[Fork](https://help.github.com/articles/fork-a-repo/) and clone the source codes from this repo."
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "With Vagrant and VirtualBox installed, `cd` into the project\u0027s root directory and run:"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```shell"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "$ vagrant up"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "This starts up the virtual machine, installs Jekyll, and also installs the site\u0027s dependencies. This might take a few minutes to complete."
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "### Development (with local previewing)"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "After the virtual machine has set up and the `vagrant up` command completed without errors, you are ready to work on the site through the virtual machine:"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```shell"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "$ vagrant ssh"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "$ cd /pptlabs-website"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "$ jekyll serve --host 0.0.0.0 --port 4000 --force_polling"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "\u003e `vagrant ssh` gives us an `ssh` session on the guest machine. `/pptlabs-website` is a shared folder which maps to the project root on the host: this lets us modify the website\u0027s files in our editor of choice, and still have them accessible within the guest."
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "The site should now be accessible on `localhost:4000` on the host, and can be modified with any changes automatically propagating to the guest (and visible after a quick refresh of the browser)."
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "\u003e We need `--force_polling` since Jekyll\u0027s normal method of checking for changes doesn\u0027t work with VirtualBox\u0027s shared folders. We also need to specify the host or the site will be served on the _guest_\u0027s localhost instead, and won\u0027t be accessible from the host."
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "### Building for Deployment"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Change the base url in `_config.yml` to `/~pptlabs` for the public release or `/~pptlabs/dev` for the dev release of the website and uncomment the line."
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```yml"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "baseurl: /~pptlabs/dev"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Nothing special here: `jekyll build` will output the site\u0027s files to `_site`. `rake` does two things; inlines JS \u0026 CSS and compresses all images in `_site`. "
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```shell"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "$ vagrant ssh"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "$ cd /pptlabs-website"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "$ jekyll build"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "$ rake"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "If want to run the inline task only, do `rake inline`."
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "## How to..."
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "### Add a new Team Member"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Adding a new team member to the About Us page is fairly simple: save their picture to `img/team`, open `_data/developers.yml`, and add a new object there containing their name, the absolute path to the picture, and an optional URL."
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "### Add a new Shape"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Similar to adding team members, add the shape\u0027s picture and file to `shapes`, open `_data/shapes.yml`, and add a new object containing the shape\u0027s details. An optional license (`licenseTerms`) and submitter (`submitter`) field can be included as well."
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "### Adding User Guide Sections"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "There are two steps to add a new User Guide section."
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#### 1. Add a new section in the right navigation sidebar."
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "This is in `_data/docs.yml` - add a new object containing the title of the new section. The order will affect the sequence of the sections."
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#### 2. Add the new section."
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "We\u0027re (ab)using Jekyll\u0027s blog generation to do this - create a new Markdown file in `_docs/`, and add the following fields to its front-matter at the top (using the Spotlight as an example):"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```yml"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "---"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "layout: docs"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "title: Spotlight"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "sample: \"/samples/spotlight%20sample.pptx\""
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "---"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "| Field | Purpose |"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "| ----- | ------- |"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "| layout| This is just kept as \"docs\" |"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "| title | The name of the new section. This is usually the feature being documented. |"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "| sample | An optional sample file to be linked to in the section\u0027s header. |"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#### 3. Add new subsections in the right navigation sidebar."
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "To add new subsections to the right navigation sidebar, add a new `a` with `class\u003d\"anchor-bookmark\"` and an `id` attribute in the subsection\u0027s heading just before the text. Using the Shortcuts documentation as an example:"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```yml"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "## ![]({{ site.baseurl }}/img/docs/misc-1.png) \u003ca class\u003d\"anchor-bookmark\" id\u003d\"edit-name\"\u003e\u003c/a\u003e Edit Name"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#### 4. Write the doc"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Write the document using Google Docs, and share it with project mentor for document review. When document review is passed, [this script](https://github.com/mangini/gdocs2md) can be used to generate the Markdown from Google Docs document."
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Then use the generated Markdown to construct the web page. Modification of styles and image links may be required."
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#### 5. Add new HTML dependencies utilizing inlining/concatenation of JS \u0026 CSS"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "1. Make sure that the dependencies themselves do not depend on some other dynamic dependency (if dynamic dependency, it is advised to link it with external link)."
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "2. Download local copies of the JS/CSS file and store them anywhere in the project directory."
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "3. Link them in the HTML files as per normal (look at existing dependencies for example)."
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "`rake inline` will automatically find and replace the script or link tag with the respective file contents."
+      }
+    ],
+    "authorContributionMap": {
+      "blewjy": 11,
+      "-": 114
+    }
+  },
+  {
+    "path": "_includes/navbar.html",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cnav class\u003d\"navbar navbar-default navbar-fixed-top\" role\u003d\"navigation\"\u003e"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cdiv class\u003d\"navbar-logo navbar-header pull-left\"\u003e"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003ca class\u003d\"navbar-brand\" href\u003d\"{{ site.baseurl }}/\"\u003e"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003cimg height\u003d\"26\" src\u003d\"{{ site.baseurl }}/img/Logo.png\"\u003e"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003c/a\u003e"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cul class\u003d\"navbar-header\"\u003e"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cli\u003e\u003ca class\u003d\"btn btn-link navbar-btn{% if page.url \u003d\u003d \u0027/download.html\u0027 %} current{% endif %}\" href\u003d\"{{ site.baseurl }}/download.html\"\u003eGetting Started\u003c/a\u003e\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cli\u003e\u003ca class\u003d\"btn btn-link navbar-btn{% if page.url contains \u0027/docs/\u0027 %} current{% endif %}\" href\u003d\"{{ site.baseurl }}/docs/\"\u003eUser Guide\u003c/a\u003e\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cli\u003e\u003ca class\u003d\"btn btn-link navbar-btn{% if page.url \u003d\u003d \u0027/gallery.html\u0027 %} current{% endif %}\" href\u003d\"{{ site.baseurl }}/gallery.html\"\u003eShape Libraries\u003c/a\u003e\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cli\u003e\u003ca class\u003d\"btn btn-link navbar-btn{% if page.url \u003d\u003d \u0027/terms-of-use.html\u0027 %} current{% endif %}\" href\u003d\"{{ site.baseurl }}/terms-of-use.html\"\u003eTerms of Use\u003c/a\u003e\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cli\u003e\u003ca class\u003d\"btn btn-link navbar-btn{% if page.url \u003d\u003d \u0027/review.html\u0027 %} current{% endif %}\" href\u003d\"{{ site.baseurl }}/review.html\"\u003eReviews\u003c/a\u003e\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cli\u003e\u003ca class\u003d\"btn btn-link navbar-btn{% if page.url \u003d\u003d \u0027/contact.html\u0027 %} current{% endif %}\" href\u003d\"{{ site.baseurl }}/contact.html\"\u003eAbout Us\u003c/a\u003e\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "ChesterSng"
+        },
+        "content": "    \u003cli\u003e\u003ca id\u003d\"github-logo\" href\u003d\"https://github.com/PowerPointLabs/PowerPointLabs-Website\" target\u003d\"_blank\"\u003e\u003cimg src\u003d\"{{ site.baseurl }}/img/github-logo.png\" width\u003d\"25px\" height\u003d\"25px\"/\u003e\u003c/a\u003e\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/ul\u003e"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/nav\u003e"
+      }
+    ],
+    "authorContributionMap": {
+      "ChesterSng": 1,
+      "-": 15
+    }
+  },
+  {
+    "path": "review.html",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "---"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "layout: default"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "title: Reviews"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "---"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cdiv class\u003d\"container\"\u003e"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cdiv class\u003d\"row page-header col-xs-12\"\u003e"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003ch1\u003eWhat People Are Saying\u003c/h1\u003e"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cdiv class\u003d\"row col-xs-12\"\u003e"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cblockquote class\u003d\"review\"\u003e"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cp\u003e... if you are an ambitious PowerPoint user who doesn’t have time to fiddle around with learning all the"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "        tricks that experts such as the BrightCarbon staff have figured out, then you will find PowerPointLabs to be"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "        very helpful.\u003c/p\u003e"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003cp class\u003d\"text-right\"\u003e"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        --"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003ca href\u003d\"http://www.brightcarbon.com/about-brightcarbon/our-team/elizabeth-stodolski/\"\u003eElizabeth Stodolski\u003c/a\u003e"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        on"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003ca href\u003d\"http://www.brightcarbon.com/blog/review-of-powerpointlabs-add-on-for-powerpoint/\"\u003eBright Carbon\u003c/a\u003e"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003c/p\u003e"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003c/blockquote\u003e"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cdiv class\u003d\"row col-xs-12\"\u003e"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cblockquote class\u003d\"review\"\u003e"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cp\u003ePowerPoint Labs is a handy add-in for PowerPoint that can help you highlight your text, diagrams, charts \u0026amp;"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "        images.\u003c/p\u003e"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003cp class\u003d\"text-right\"\u003e"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        --"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003ca href\u003d\"https://plus.google.com/u/0/103466011802748020329/posts\"\u003eFarshad Iqbal\u003c/a\u003e"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        on"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "        \u003ca href\u003d\"http://www.free-power-point-templates.com/articles/powerpoint-labs-highlight-slide-content-using-spotlight-animations/\"\u003eFree"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          PowerPoint Templates\u003c/a\u003e"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003c/p\u003e"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003c/blockquote\u003e"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cdiv class\u003d\"row col-xs-12\"\u003e"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003ch2\u003eReviews\u003c/h2\u003e"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cul\u003e"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"https://nutsandboltsspeedtraining.com/best-powerpoint-addins/\"\u003e8 Best PowerPoint Add-ins for"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          Boosting Your Productivity\u003c/a\u003e - nutsandboltsspeedtraining.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"http://blog.indezine.com/2016/06/picture-slides-lab-conversation-with.html\"\u003ePicture Slides Lab:"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          Conversation with Xie Kai\u003c/a\u003e - INDEZINE\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"http://www.alejandraavila.com/powerpoint-labs-el-secreto-mejor-guardado/\"\u003ePowerPoint Labs: el"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          secreto mejor guardado de PowerPoint\u003c/a\u003e - Alejandra Avila\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"http://www.glisser.com/blog/10-of-the-best-powerpoint-alternatives-and-presentation-software-tools-in-2016/\"\u003e10"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          of the best PowerPoint alternatives and presentation software tools in 2016\u003c/a\u003e - Glisser\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"http://www.brightcarbon.com/blog/review-of-powerpointlabs-add-on-for-powerpoint/\"\u003eReview of"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          PowerPointLabs add on for PowerPoint\u003c/a\u003e - BrightCarbon\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"http://blog.indezine.com/2014/01/powerpointlabs-conversation-with-damith.html\"\u003ePowerPointLabs:"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          Conversation with Damith Rajapakse\u003c/a\u003e - INDEZINE\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"http://www.free-power-point-templates.com/articles/powerpoint-labs-highlight-slide-content-using-spotlight-animations/\"\u003ePowerPoint"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          Labs: Highlight Slide Content Using Spotlight \u0026amp; Animations\u003c/a\u003e - free-power-point-templates.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"http://www.smallbusinesscomputing.com/biztools/5-cool-powerpoint-slide-design-tools.html\"\u003e5 Cool"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          PowerPoint Slide Design Tools\u003c/a\u003e - smallbusinesscomputing.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"http://www.ispringsolutions.com/blog/boost-your-powerpoint-7-free-powerpoint-add-ins/\"\u003e7 must-have"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          add-ins and plugins for PowerPoint presentations\u003c/a\u003e - ispringsolutions.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"https://intexpliki.wordpress.com/2016/08/13/powerpointlabs-add-in/\"\u003ePowerPointLabs add-in\u003c/a\u003e -"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "        Cecilia Bernal\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"http://standaloneinstaller.com/blog/10-best-free-presentation-software-109.html\"\u003e10 Best Free"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          Presentation Software\u003c/a\u003e - standaloneinstaller.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"http://powerpointlabs.software.informer.com/\"\u003ePowerPointLabs on Software Informer\u003c/a\u003e -"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "        software.informer.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"https://www.softzsolutions.com/blog/6-cool-powerpoint-slide-design-tools\"\u003e6 Cool PowerPoint Slide"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          Design Tools\u003c/a\u003e - softzsolutions.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"https://www.ronapresentasi.com/add-ins-powerpoint-gratis/\"\u003e3 Add-Ins Powerpoint\u003c/a\u003e -"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "        ronapresentasi.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"https://www.td.org/Publications/Blogs/L-and-D-Blog/2017/03/Best-of-2017-the-Top-7-Powerpoint-Downloads\"\u003eBest"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          of 2017 : The Top 7 Powerpoint Downloads\u003c/a\u003e - td.org\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"http://www.homeppt.com/ru/articles/powerpoint-labs-highlight-slide-content-using-spotlight-animations.html\"\u003ePowerpoint"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          Labs: Highlight slide content using Spotlight animations\u003c/a\u003e - homeppt.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"https://www.presentasi.net/aplikasi-presentasi-powerpoint/\"\u003eFantastic Slides with Free Plugins\u003c/a\u003e -"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "        presentasi.net\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"https://www.myelearningworld.com/11-free-powerpoint-add-ins-and-plugins/\"\u003eEnhance Your"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          PowerPoint-based Course with 11 Free Plugins\u003c/a\u003e - myelearningworld.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"https://templafy.com/blog/7-must-have-microsoft-office-powerpoint-add-ins\"\u003e7 Must Have Microsoft"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          Office PowerPoint Add-ins\u003c/a\u003e - templafy.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"http://www.thepowerpointblog.com/powerpointlabs\"\u003ePowerPointLabs add-in for PowerPoint\u003c/a\u003e -"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "        thepowerpointblog.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"https://www.ethos3.com/2018/04/5-essential-powerpoint-tools/\"\u003e5 Essential PowerPoint Tools\u003c/a\u003e -"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "        ethos3.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"https://www.wecompress.com/en/blog/our-presentation-pick-powerpointlabs\"\u003eOur Presentation Pick:"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          PowerPointLabs\u003c/a\u003e - wecompress.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"https://mike-taylor.org/2015/12/21/12-apps-of-christmas-day-9-powerpoint-labs/\"\u003e12 Apps of Christmas"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          - Day 9 - PowerPoint Labs\u003c/a\u003e - mike-taylor.org\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "      \u003cli\u003e\u003ca href\u003d\"http://muggingsg.com/study-tools/enhance-your-powerpoint-with-powerpointlabs-windows/\"\u003eMake your"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "blewjy"
+        },
+        "content": "          PowerPoint interesting with PowerPointLabs\u003c/a\u003e - muggingsg.com\u003c/li\u003e"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003c/ul\u003e"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/div\u003e"
+      }
+    ],
+    "authorContributionMap": {
+      "blewjy": 55,
+      "-": 37
+    }
+  }
+]
