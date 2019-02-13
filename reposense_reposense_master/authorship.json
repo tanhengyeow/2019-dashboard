@@ -24601,252 +24601,252 @@
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "import java.util.logging.Logger;"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "-"
         },
-        "content": "import net.sourceforge.argparse4j.ArgumentParsers;"
+        "content": ""
       },
       {
         "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import net.sourceforge.argparse4j.ArgumentParsers;"
+      },
+      {
+        "lineNumber": 11,
         "author": {
           "gitId": "fzdy1914"
         },
         "content": "import net.sourceforge.argparse4j.impl.Arguments;"
       },
       {
-        "lineNumber": 11,
+        "lineNumber": 12,
         "author": {
           "gitId": "-"
         },
         "content": "import net.sourceforge.argparse4j.impl.action.HelpArgumentAction;"
       },
       {
-        "lineNumber": 12,
+        "lineNumber": 13,
         "author": {
           "gitId": "-"
         },
         "content": "import net.sourceforge.argparse4j.inf.ArgumentParser;"
       },
       {
-        "lineNumber": 13,
+        "lineNumber": 14,
         "author": {
           "gitId": "-"
         },
         "content": "import net.sourceforge.argparse4j.inf.ArgumentParserException;"
       },
       {
-        "lineNumber": 14,
+        "lineNumber": 15,
         "author": {
           "gitId": "-"
         },
         "content": "import net.sourceforge.argparse4j.inf.MutuallyExclusiveGroup;"
       },
       {
-        "lineNumber": 15,
+        "lineNumber": 16,
         "author": {
           "gitId": "-"
         },
         "content": "import net.sourceforge.argparse4j.inf.Namespace;"
       },
       {
-        "lineNumber": 16,
+        "lineNumber": 17,
         "author": {
           "gitId": "-"
         },
         "content": "import reposense.model.CliArguments;"
       },
       {
-        "lineNumber": 17,
+        "lineNumber": 18,
         "author": {
           "gitId": "-"
         },
         "content": "import reposense.model.ConfigCliArguments;"
       },
       {
-        "lineNumber": 18,
+        "lineNumber": 19,
         "author": {
           "gitId": "-"
         },
         "content": "import reposense.model.Format;"
       },
       {
-        "lineNumber": 19,
+        "lineNumber": 20,
         "author": {
           "gitId": "-"
         },
         "content": "import reposense.model.LocationsCliArguments;"
       },
       {
-        "lineNumber": 20,
+        "lineNumber": 21,
         "author": {
           "gitId": "-"
         },
         "content": "import reposense.model.ViewCliArguments;"
       },
       {
-        "lineNumber": 21,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
         "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
-        "content": "/**"
+        "content": "import reposense.system.LogsManager;"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
-        "content": " * Verifies and parses a string-formatted date to a {@code CliArguments} object."
+        "content": ""
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
-        "content": " */"
+        "content": "/**"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
-        "content": "public class ArgsParser {"
+        "content": " * Verifies and parses a string-formatted date to a {@code CliArguments} object."
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "-"
         },
-        "content": "    public static final String DEFAULT_REPORT_NAME \u003d \"reposense-report\";"
+        "content": " */"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
-        "content": "    private static final String PROGRAM_USAGE \u003d \"java -jar RepoSense.jar\";"
+        "content": "public class ArgsParser {"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "    private static final String PROGRAM_DESCRIPTION \u003d"
+        "content": "    public static final String DEFAULT_REPORT_NAME \u003d \"reposense-report\";"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
-        "content": "            \"RepoSense is a contribution analysis tool for Git repositories.\";"
+        "content": ""
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "-"
         },
-        "content": "    private static final String MESSAGE_SINCE_DATE_LATER_THAN_UNTIL_DATE \u003d"
+        "content": "    private static final Logger logger \u003d LogsManager.getLogger(ArgsParser.class);"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
-        "content": "            \"\\\"Since Date\\\" cannot be later than \\\"Until Date\\\"\";"
+        "content": "    private static final String PROGRAM_USAGE \u003d \"java -jar RepoSense.jar\";"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
-        "content": "    private static final Path EMPTY_PATH \u003d Paths.get(\"\");"
+        "content": "    private static final String PROGRAM_DESCRIPTION \u003d"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            \"RepoSense is a contribution analysis tool for Git repositories.\";"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "-"
         },
-        "content": "    private static ArgumentParser getArgumentParser() {"
+        "content": "    private static final String MESSAGE_SINCE_DATE_LATER_THAN_UNTIL_DATE \u003d"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "-"
         },
-        "content": "        ArgumentParser parser \u003d ArgumentParsers"
+        "content": "            \"\\\"Since Date\\\" cannot be later than \\\"Until Date\\\"\";"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "-"
         },
-        "content": "                .newFor(PROGRAM_USAGE)"
+        "content": "    private static final Path EMPTY_PATH \u003d Paths.get(\"\");"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": "                .addHelp(false)"
+        "content": ""
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
-        "content": "                .build()"
+        "content": "    private static ArgumentParser getArgumentParser() {"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
-        "content": "                .description(PROGRAM_DESCRIPTION);"
+        "content": "        ArgumentParser parser \u003d ArgumentParsers"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                .newFor(PROGRAM_USAGE)"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
-        "content": "        MutuallyExclusiveGroup mutexParser \u003d parser"
+        "content": "                .addHelp(false)"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
-        "content": "                .addMutuallyExclusiveGroup(PROGRAM_USAGE)"
+        "content": "                .build()"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
-        "content": "                .required(false);"
+        "content": "                .description(PROGRAM_DESCRIPTION);"
       },
       {
         "lineNumber": 44,
@@ -24860,21 +24860,21 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        parser.addArgument(\"-h\", \"--help\")"
+        "content": "        MutuallyExclusiveGroup mutexParser \u003d parser"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
-        "content": "                .help(\"Show help message.\")"
+        "content": "                .addMutuallyExclusiveGroup(PROGRAM_USAGE)"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
-        "content": "                .action(new HelpArgumentAction());"
+        "content": "                .required(false);"
       },
       {
         "lineNumber": 48,
@@ -24888,567 +24888,567 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        mutexParser.addArgument(\"-config\")"
+        "content": "        parser.addArgument(\"-h\", \"--help\")"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
-        "content": "                .type(new ConfigFolderArgumentType())"
+        "content": "                .help(\"Show help message.\")"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
-        "content": "                .metavar(\"PATH\")"
+        "content": "                .action(new HelpArgumentAction());"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": "                .setDefault(EMPTY_PATH.toAbsolutePath())"
+        "content": ""
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
-        "content": "                .help(\"The directory containing the config files.\""
+        "content": "        mutexParser.addArgument(\"-config\")"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": "                        + \"If not provided, the config files will be obtained from the current working directory.\");"
+        "content": "                .type(new ConfigFolderArgumentType())"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                .metavar(\"PATH\")"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "        mutexParser.addArgument(\"-repo\", \"-repos\")"
+        "content": "                .setDefault(EMPTY_PATH)"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
-        "content": "                .nargs(\"+\")"
+        "content": "                .help(\"The directory containing the config files.\""
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
-        "content": "                .dest(\"repos\")"
+        "content": "                        + \"If not provided, the config files will be obtained from the current working directory.\");"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
-        "content": "                .metavar(\"LOCATION\")"
+        "content": ""
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
-        "content": "                .help(\"The GitHub URL or disk locations to clone repository.\");"
+        "content": "        mutexParser.addArgument(\"-repo\", \"-repos\")"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                .nargs(\"+\")"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
-        "content": "        parser.addArgument(\"-view\")"
+        "content": "                .dest(\"repos\")"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
-        "content": "                .nargs(\"?\")"
+        "content": "                .metavar(\"LOCATION\")"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "-"
         },
-        "content": "                .metavar(\"PATH\")"
+        "content": "                .help(\"The GitHub URL or disk locations to clone repository.\");"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "-"
         },
-        "content": "                .type(new ReportFolderArgumentType())"
+        "content": ""
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "-"
         },
-        "content": "                .setConst(EMPTY_PATH)"
+        "content": "        parser.addArgument(\"-view\")"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "-"
         },
-        "content": "                .help(\"Starts a server to display the dashboard in the provided directory.\""
+        "content": "                .nargs(\"?\")"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
-        "content": "                        + \"If used as a flag (with no argument), \""
+        "content": "                .metavar(\"PATH\")"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
-        "content": "                        + \"generates a report and automatically displays the dashboard.\");"
+        "content": "                .type(new ReportFolderArgumentType())"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                .setConst(EMPTY_PATH)"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "-"
         },
-        "content": "        parser.addArgument(\"-output\")"
+        "content": "                .help(\"Starts a server to display the dashboard in the provided directory.\""
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
-        "content": "                .metavar(\"PATH\")"
+        "content": "                        + \"If used as a flag (with no argument), \""
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "-"
         },
-        "content": "                .type(new OutputFolderArgumentType())"
+        "content": "                        + \"generates a report and automatically displays the dashboard.\");"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
-        "content": "                .setDefault(Paths.get(ArgsParser.DEFAULT_REPORT_NAME))"
+        "content": ""
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
-        "content": "                .help(\"The directory to output the report folder, reposense-report. \""
+        "content": "        parser.addArgument(\"-output\")"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": "                        + \"If not provided, the report folder will be created in the current working directory.\");"
+        "content": "                .metavar(\"PATH\")"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                .type(new OutputFolderArgumentType())"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": "        parser.addArgument(\"-since\")"
+        "content": "                .setDefault(Paths.get(ArgsParser.DEFAULT_REPORT_NAME))"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
-        "content": "                .metavar(\"dd/MM/yyyy\")"
+        "content": "                .help(\"The directory to output the report folder, reposense-report. \""
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": "                .type(new DateArgumentType())"
+        "content": "                        + \"If not provided, the report folder will be created in the current working directory.\");"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": "                .setDefault(Optional.empty())"
+        "content": ""
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": "                .help(\"The date to start filtering.\");"
+        "content": "        parser.addArgument(\"-since\")"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                .metavar(\"dd/MM/yyyy\")"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": "        parser.addArgument(\"-until\")"
+        "content": "                .type(new DateArgumentType())"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": "                .metavar(\"dd/MM/yyyy\")"
+        "content": "                .setDefault(Optional.empty())"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": "                .type(new DateArgumentType())"
+        "content": "                .help(\"The date to start filtering.\");"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": "                .setDefault(Optional.empty())"
+        "content": ""
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
-        "content": "                .help(\"The date to stop filtering.\");"
+        "content": "        parser.addArgument(\"-until\")"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                .metavar(\"dd/MM/yyyy\")"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
-        "content": "        parser.addArgument(\"-formats\")"
+        "content": "                .type(new DateArgumentType())"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
-        "content": "                .nargs(\"*\")"
+        "content": "                .setDefault(Optional.empty())"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
-        "content": "                .metavar(\"FORMAT\")"
+        "content": "                .help(\"The date to stop filtering.\");"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
-        "content": "                .type(new AlphanumericArgumentType())"
+        "content": ""
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "-"
         },
-        "content": "                .setDefault(Format.DEFAULT_FORMAT_STRINGS)"
+        "content": "        parser.addArgument(\"-formats\")"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
-        "content": "                .help(\"The alphanumeric file formats to process.\\n\""
+        "content": "                .nargs(\"*\")"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": "                        + \"If not provided, default file formats will be used.\\n\""
+        "content": "                .metavar(\"FORMAT\")"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "                        + \"Please refer to userguide for more information.\");"
+        "content": "                .type(new AlphanumericArgumentType())"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                .setDefault(Format.DEFAULT_FORMAT_STRINGS)"
       },
       {
         "lineNumber": 99,
         "author": {
-          "gitId": "fzdy1914"
+          "gitId": "-"
         },
-        "content": "        parser.addArgument(\"--ignore-standalone-config\", \"-isac\")"
+        "content": "                .help(\"The alphanumeric file formats to process.\\n\""
       },
       {
         "lineNumber": 100,
         "author": {
-          "gitId": "fzdy1914"
+          "gitId": "-"
         },
-        "content": "                .action(Arguments.storeTrue())"
+        "content": "                        + \"If not provided, default file formats will be used.\\n\""
       },
       {
         "lineNumber": 101,
         "author": {
-          "gitId": "fzdy1914"
+          "gitId": "-"
         },
-        "content": "                .help(\"A flag to ignore the standalone config file in the repo.\");"
+        "content": "                        + \"Please refer to userguide for more information.\");"
       },
       {
         "lineNumber": 102,
         "author": {
-          "gitId": "fzdy1914"
+          "gitId": "-"
         },
         "content": ""
       },
       {
         "lineNumber": 103,
         "author": {
-          "gitId": "-"
+          "gitId": "fzdy1914"
         },
-        "content": "        return parser;"
+        "content": "        parser.addArgument(\"--ignore-standalone-config\", \"-isac\")"
       },
       {
         "lineNumber": 104,
         "author": {
-          "gitId": "-"
+          "gitId": "fzdy1914"
         },
-        "content": "    }"
+        "content": "                .action(Arguments.storeTrue())"
       },
       {
         "lineNumber": 105,
         "author": {
-          "gitId": "-"
+          "gitId": "fzdy1914"
         },
-        "content": ""
+        "content": "                .help(\"A flag to ignore the standalone config file in the repo.\");"
       },
       {
         "lineNumber": 106,
         "author": {
-          "gitId": "-"
+          "gitId": "fzdy1914"
         },
-        "content": "    /**"
+        "content": ""
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": "     * Parses the given string arguments to a {@code CliArguments} object."
+        "content": "        return parser;"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": "     *"
+        "content": "    }"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": "     * @throws ParseException if the given string arguments fails to parse to a {@code CliArguments} object."
+        "content": ""
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "-"
         },
-        "content": "     */"
+        "content": "    /**"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "-"
         },
-        "content": "    public static CliArguments parse(String[] args) throws ParseException {"
+        "content": "     * Parses the given string arguments to a {@code CliArguments} object."
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "-"
         },
-        "content": "        try {"
+        "content": "     *"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
-        "content": "            ArgumentParser parser \u003d getArgumentParser();"
+        "content": "     * @throws ParseException if the given string arguments fails to parse to a {@code CliArguments} object."
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
-        "content": "            Namespace results \u003d parser.parseArgs(args);"
+        "content": "     */"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    public static CliArguments parse(String[] args) throws ParseException {"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
-        "content": "            Path configFolderPath \u003d results.get(\"config\");"
+        "content": "        try {"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "-"
         },
-        "content": "            Path reportFolderPath \u003d results.get(\"view\");"
+        "content": "            ArgumentParser parser \u003d getArgumentParser();"
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "-"
         },
-        "content": "            Path outputFolderPath \u003d results.get(\"output\");"
+        "content": "            Namespace results \u003d parser.parseArgs(args);"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
-        "content": "            Optional\u003cDate\u003e sinceDate \u003d results.get(\"since\");"
+        "content": ""
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
-        "content": "            Optional\u003cDate\u003e untilDate \u003d results.get(\"until\");"
+        "content": "            Path configFolderPath \u003d results.get(\"config\");"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
-        "content": "            List\u003cString\u003e locations \u003d results.get(\"repos\");"
+        "content": "            Path reportFolderPath \u003d results.get(\"view\");"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "-"
         },
-        "content": "            List\u003cFormat\u003e formats \u003d Format.convertStringsToFormats(results.get(\"formats\"));"
+        "content": "            Path outputFolderPath \u003d results.get(\"output\");"
       },
       {
         "lineNumber": 123,
         "author": {
-          "gitId": "fzdy1914"
+          "gitId": "-"
         },
-        "content": "            boolean isStandaloneConfigIgnored \u003d results.get(\"ignore_standalone_config\");"
+        "content": "            Optional\u003cDate\u003e sinceDate \u003d results.get(\"since\");"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            Optional\u003cDate\u003e untilDate \u003d results.get(\"until\");"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "-"
         },
-        "content": "            verifyDatesRangeIsCorrect(sinceDate, untilDate);"
+        "content": "            List\u003cString\u003e locations \u003d results.get(\"repos\");"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            List\u003cFormat\u003e formats \u003d Format.convertStringsToFormats(results.get(\"formats\"));"
       },
       {
         "lineNumber": 127,
         "author": {
-          "gitId": "-"
+          "gitId": "fzdy1914"
         },
-        "content": "            if (reportFolderPath !\u003d null \u0026\u0026 !reportFolderPath.equals(EMPTY_PATH)) {"
+        "content": "            boolean isStandaloneConfigIgnored \u003d results.get(\"ignore_standalone_config\");"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "-"
         },
-        "content": "                return new ViewCliArguments(reportFolderPath);"
+        "content": ""
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            verifyDatesRangeIsCorrect(sinceDate, untilDate);"
       },
       {
         "lineNumber": 130,
@@ -25462,42 +25462,42 @@
         "author": {
           "gitId": "-"
         },
-        "content": "            boolean isAutomaticallyLaunching \u003d reportFolderPath !\u003d null;"
+        "content": "            if (reportFolderPath !\u003d null \u0026\u0026 !reportFolderPath.equals(EMPTY_PATH) \u0026\u0026 configFolderPath.equals(EMPTY_PATH)"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                \u0026\u0026 locations \u003d\u003d null) {"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (locations !\u003d null) {"
+        "content": "                return new ViewCliArguments(reportFolderPath);"
       },
       {
         "lineNumber": 134,
         "author": {
-          "gitId": "fzdy1914"
+          "gitId": "-"
         },
-        "content": "                return new LocationsCliArguments(locations, outputFolderPath, sinceDate, untilDate, formats,"
+        "content": "            }"
       },
       {
         "lineNumber": 135,
         "author": {
-          "gitId": "fzdy1914"
+          "gitId": "-"
         },
-        "content": "                        isAutomaticallyLaunching, isStandaloneConfigIgnored);"
+        "content": ""
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            boolean isAutomaticallyLaunching \u003d reportFolderPath !\u003d null;"
       },
       {
         "lineNumber": 137,
@@ -25511,129 +25511,192 @@
         "author": {
           "gitId": "-"
         },
-        "content": "            return new ConfigCliArguments("
+        "content": "            if (isAutomaticallyLaunching \u0026\u0026 !reportFolderPath.equals(EMPTY_PATH)) {"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
-        "content": "                    configFolderPath, outputFolderPath, sinceDate, untilDate, formats, isAutomaticallyLaunching);"
+        "content": "                logger.info(String.format(\"Ignoring argument \u0027%s\u0027 for -view.\", reportFolderPath.toString()));"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "-"
         },
-        "content": "        } catch (ArgumentParserException ape) {"
+        "content": "            }"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "-"
         },
-        "content": "            throw new ParseException(getArgumentParser().formatUsage() + ape.getMessage() + \"\\n\");"
+        "content": ""
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "            if (locations !\u003d null) {"
       },
       {
         "lineNumber": 143,
         "author": {
-          "gitId": "-"
+          "gitId": "fzdy1914"
         },
-        "content": "    }"
+        "content": "                return new LocationsCliArguments(locations, outputFolderPath, sinceDate, untilDate, formats,"
       },
       {
         "lineNumber": 144,
         "author": {
-          "gitId": "-"
+          "gitId": "fzdy1914"
         },
-        "content": ""
+        "content": "                        isAutomaticallyLaunching, isStandaloneConfigIgnored);"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "-"
         },
-        "content": "    /**"
+        "content": "            }"
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "-"
         },
-        "content": "     * Verifies that {@code sinceDate} is earlier than {@code untilDate}."
+        "content": ""
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "-"
         },
-        "content": "     *"
+        "content": "            return new ConfigCliArguments("
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "-"
         },
-        "content": "     * @throws ParseException if {@code sinceDate} supplied is later than {@code untilDate}."
+        "content": "                    configFolderPath, outputFolderPath, sinceDate, untilDate, formats, isAutomaticallyLaunching);"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "-"
         },
-        "content": "     */"
+        "content": "        } catch (ArgumentParserException ape) {"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "-"
         },
-        "content": "    private static void verifyDatesRangeIsCorrect(Optional\u003cDate\u003e sinceDate, Optional\u003cDate\u003e untilDate)"
+        "content": "            throw new ParseException(getArgumentParser().formatUsage() + ape.getMessage() + \"\\n\");"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "-"
         },
-        "content": "            throws ParseException {"
+        "content": "        }"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "-"
         },
-        "content": "        if (sinceDate.isPresent() \u0026\u0026 untilDate.isPresent() \u0026\u0026 sinceDate.get().getTime() \u003e untilDate.get().getTime()) {"
+        "content": "    }"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "-"
         },
-        "content": "            throw new ParseException(MESSAGE_SINCE_DATE_LATER_THAN_UNTIL_DATE);"
+        "content": ""
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "    /**"
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "     * Verifies that {@code sinceDate} is earlier than {@code untilDate}."
       },
       {
         "lineNumber": 156,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * @throws ParseException if {@code sinceDate} supplied is later than {@code untilDate}."
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static void verifyDatesRangeIsCorrect(Optional\u003cDate\u003e sinceDate, Optional\u003cDate\u003e untilDate)"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            throws ParseException {"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (sinceDate.isPresent() \u0026\u0026 untilDate.isPresent() \u0026\u0026 sinceDate.get().getTime() \u003e untilDate.get().getTime()) {"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            throw new ParseException(MESSAGE_SINCE_DATE_LATER_THAN_UNTIL_DATE);"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 165,
         "author": {
           "gitId": "-"
         },
@@ -25642,7 +25705,7 @@
     ],
     "authorContributionMap": {
       "fzdy1914": 8,
-      "-": 148
+      "-": 157
     }
   },
   {
@@ -31375,7 +31438,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_configFolderandViewWithouthArgs_returnsConfigCliArguments() throws ParseException, IOException {"
+        "content": "    public void parse_configFolderAndViewWithoutArgs_returnsConfigCliArguments() throws ParseException, IOException {"
       },
       {
         "lineNumber": 204,
@@ -31536,7 +31599,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_configFolderAndViewWithArgs_returnsViewCliArguments() throws ParseException, IOException {"
+        "content": "    public void parse_configFolderAndViewWithArgs_returnsConfigCliArguments() throws ParseException, IOException {"
       },
       {
         "lineNumber": 227,
@@ -31564,7 +31627,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(cliArguments instanceof ViewCliArguments);"
+        "content": "        Assert.assertTrue(cliArguments instanceof ConfigCliArguments);"
       },
       {
         "lineNumber": 231,
@@ -31578,1494 +31641,1522 @@
         "author": {
           "gitId": "-"
         },
-        "content": "                OUTPUT_DIRECTORY_ABSOLUTE, ((ViewCliArguments) cliArguments).getReportDirectoryPath()));"
+        "content": "                REPO_CONFIG_CSV_FILE, ((ConfigCliArguments) cliArguments).getRepoConfigFilePath()));"
       },
       {
         "lineNumber": 233,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        Assert.assertTrue(Files.isSameFile("
       },
       {
         "lineNumber": 234,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                AUTHOR_CONFIG_CSV_FILE, ((ConfigCliArguments) cliArguments).getAuthorConfigFilePath()));"
       },
       {
         "lineNumber": 235,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test"
+        "content": "        Assert.assertTrue(cliArguments.isAutomaticallyLaunching());"
       },
       {
         "lineNumber": 236,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void sinceDate_correctFormat_success() throws ParseException {"
+        "content": "    }"
       },
       {
         "lineNumber": 237,
         "author": {
           "gitId": "-"
         },
-        "content": "        String sinceDate \u003d \"01/07/2017\";"
+        "content": ""
       },
       {
         "lineNumber": 238,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-since %s\", sinceDate);"
+        "content": "    @Test"
       },
       {
         "lineNumber": 239,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": "    public void sinceDate_correctFormat_success() throws ParseException {"
       },
       {
         "lineNumber": 240,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(cliArguments instanceof ConfigCliArguments);"
+        "content": "        String sinceDate \u003d \"01/07/2017\";"
       },
       {
         "lineNumber": 241,
         "author": {
           "gitId": "-"
         },
-        "content": "        Date expectedSinceDate \u003d TestUtil.getDate(2017, Calendar.JULY, 1);"
+        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-since %s\", sinceDate);"
       },
       {
         "lineNumber": 242,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertEquals(expectedSinceDate, cliArguments.getSinceDate().get());"
+        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 243,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        Assert.assertTrue(cliArguments instanceof ConfigCliArguments);"
       },
       {
         "lineNumber": 244,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        Date expectedSinceDate \u003d TestUtil.getDate(2017, Calendar.JULY, 1);"
       },
       {
         "lineNumber": 245,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test"
+        "content": "        Assert.assertEquals(expectedSinceDate, cliArguments.getSinceDate().get());"
       },
       {
         "lineNumber": 246,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void untilDate_correctFormat_success() throws ParseException {"
+        "content": "    }"
       },
       {
         "lineNumber": 247,
         "author": {
           "gitId": "-"
         },
-        "content": "        String untilDate \u003d \"30/11/2017\";"
+        "content": ""
       },
       {
         "lineNumber": 248,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-until %s\", untilDate);"
+        "content": "    @Test"
       },
       {
         "lineNumber": 249,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": "    public void untilDate_correctFormat_success() throws ParseException {"
       },
       {
         "lineNumber": 250,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(cliArguments instanceof ConfigCliArguments);"
+        "content": "        String untilDate \u003d \"30/11/2017\";"
       },
       {
         "lineNumber": 251,
         "author": {
           "gitId": "-"
         },
-        "content": "        Date expectedUntilDate \u003d TestUtil.getDate(2017, Calendar.NOVEMBER, 30);"
+        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-until %s\", untilDate);"
       },
       {
         "lineNumber": 252,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertEquals(expectedUntilDate, cliArguments.getUntilDate().get());"
+        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 253,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        Assert.assertTrue(cliArguments instanceof ConfigCliArguments);"
       },
       {
         "lineNumber": 254,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        Date expectedUntilDate \u003d TestUtil.getDate(2017, Calendar.NOVEMBER, 30);"
       },
       {
         "lineNumber": 255,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test"
+        "content": "        Assert.assertEquals(expectedUntilDate, cliArguments.getUntilDate().get());"
       },
       {
         "lineNumber": 256,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void formats_inAlphanumeric_success() throws ParseException {"
+        "content": "    }"
       },
       {
         "lineNumber": 257,
         "author": {
           "gitId": "-"
         },
-        "content": "        String formats \u003d \"java js css 7z\";"
+        "content": ""
       },
       {
         "lineNumber": 258,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-formats %s\", formats);"
+        "content": "    @Test"
       },
       {
         "lineNumber": 259,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": "    public void formats_inAlphanumeric_success() throws ParseException {"
       },
       {
         "lineNumber": 260,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(cliArguments instanceof ConfigCliArguments);"
+        "content": "        String formats \u003d \"java js css 7z\";"
       },
       {
         "lineNumber": 261,
         "author": {
           "gitId": "-"
         },
-        "content": "        List\u003cFormat\u003e expectedFormats \u003d Format.convertStringsToFormats(Arrays.asList(\"java\", \"js\", \"css\", \"7z\"));"
+        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-formats %s\", formats);"
       },
       {
         "lineNumber": 262,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertEquals(expectedFormats, cliArguments.getFormats());"
+        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 263,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        Assert.assertTrue(cliArguments instanceof ConfigCliArguments);"
       },
       {
         "lineNumber": 264,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        List\u003cFormat\u003e expectedFormats \u003d Format.convertStringsToFormats(Arrays.asList(\"java\", \"js\", \"css\", \"7z\"));"
       },
       {
         "lineNumber": 265,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test"
+        "content": "        Assert.assertEquals(expectedFormats, cliArguments.getFormats());"
       },
       {
         "lineNumber": 266,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_validGitRepoLocations_repoConfigurationListCorrectSize() throws ParseException, IOException {"
+        "content": "    }"
       },
       {
         "lineNumber": 267,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d String.format(\"-repos \\\"%s\\\" %s\", TEST_REPO_REPOSENSE, TEST_REPO_DELTA);"
+        "content": ""
       },
       {
         "lineNumber": 268,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": "    @Test"
       },
       {
         "lineNumber": 269,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(cliArguments instanceof LocationsCliArguments);"
+        "content": "    public void parse_validGitRepoLocations_repoConfigurationListCorrectSize() throws ParseException, IOException {"
       },
       {
         "lineNumber": 270,
         "author": {
           "gitId": "-"
         },
-        "content": "        List\u003cRepoConfiguration\u003e repoConfigs \u003d RepoSense.getRepoConfigurations((LocationsCliArguments) cliArguments);"
+        "content": "        String input \u003d String.format(\"-repos \\\"%s\\\" %s\", TEST_REPO_REPOSENSE, TEST_REPO_DELTA);"
       },
       {
         "lineNumber": 271,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertEquals(2, repoConfigs.size());"
+        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 272,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        Assert.assertTrue(cliArguments instanceof LocationsCliArguments);"
       },
       {
         "lineNumber": 273,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        List\u003cRepoConfiguration\u003e repoConfigs \u003d RepoSense.getRepoConfigurations((LocationsCliArguments) cliArguments);"
       },
       {
         "lineNumber": 274,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test"
+        "content": "        Assert.assertEquals(2, repoConfigs.size());"
       },
       {
         "lineNumber": 275,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_repoLocationsAndView_returnsLocationCliArguments() throws ParseException {"
+        "content": "    }"
       },
       {
         "lineNumber": 276,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d String.format(\"-repos \\\"%s\\\" %s -view\", TEST_REPO_REPOSENSE, TEST_REPO_DELTA);"
+        "content": ""
       },
       {
         "lineNumber": 277,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": "    @Test"
       },
       {
         "lineNumber": 278,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    public void parse_repoLocationsAndView_returnsLocationCliArguments() throws ParseException {"
       },
       {
         "lineNumber": 279,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(cliArguments instanceof LocationsCliArguments);"
+        "content": "        String input \u003d String.format(\"-repos \\\"%s\\\" %s -view\", TEST_REPO_REPOSENSE, TEST_REPO_DELTA);"
       },
       {
         "lineNumber": 280,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(cliArguments.isAutomaticallyLaunching());"
+        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 281,
         "author": {
           "gitId": "-"
         },
-        "content": "        List\u003cString\u003e expectedLocations \u003d Arrays.asList(TEST_REPO_REPOSENSE, TEST_REPO_DELTA);"
+        "content": ""
       },
       {
         "lineNumber": 282,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertEquals(expectedLocations, ((LocationsCliArguments) cliArguments).getLocations());"
+        "content": "        Assert.assertTrue(cliArguments instanceof LocationsCliArguments);"
       },
       {
         "lineNumber": 283,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        Assert.assertTrue(cliArguments.isAutomaticallyLaunching());"
       },
       {
         "lineNumber": 284,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        List\u003cString\u003e expectedLocations \u003d Arrays.asList(TEST_REPO_REPOSENSE, TEST_REPO_DELTA);"
       },
       {
         "lineNumber": 285,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test"
+        "content": "        Assert.assertEquals(expectedLocations, ((LocationsCliArguments) cliArguments).getLocations());"
       },
       {
         "lineNumber": 286,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_repoLocationsOnly_success() throws ParseException {"
+        "content": "    }"
       },
       {
         "lineNumber": 287,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d String.format(\"-repos \\\"%s\\\" %s\", TEST_REPO_REPOSENSE, TEST_REPO_DELTA);"
+        "content": ""
       },
       {
         "lineNumber": 288,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": "    @Test"
       },
       {
         "lineNumber": 289,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    public void parse_repoLocationsOnly_success() throws ParseException {"
       },
       {
         "lineNumber": 290,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(cliArguments instanceof LocationsCliArguments);"
+        "content": "        String input \u003d String.format(\"-repos \\\"%s\\\" %s\", TEST_REPO_REPOSENSE, TEST_REPO_DELTA);"
       },
       {
         "lineNumber": 291,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertFalse(cliArguments.isAutomaticallyLaunching());"
+        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 292,
         "author": {
           "gitId": "-"
         },
-        "content": "        List\u003cString\u003e expectedLocations \u003d Arrays.asList(TEST_REPO_REPOSENSE, TEST_REPO_DELTA);"
+        "content": ""
       },
       {
         "lineNumber": 293,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertEquals(expectedLocations, ((LocationsCliArguments) cliArguments).getLocations());"
+        "content": "        Assert.assertTrue(cliArguments instanceof LocationsCliArguments);"
       },
       {
         "lineNumber": 294,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        Assert.assertFalse(cliArguments.isAutomaticallyLaunching());"
       },
       {
         "lineNumber": 295,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        List\u003cString\u003e expectedLocations \u003d Arrays.asList(TEST_REPO_REPOSENSE, TEST_REPO_DELTA);"
       },
       {
         "lineNumber": 296,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test"
+        "content": "        Assert.assertEquals(expectedLocations, ((LocationsCliArguments) cliArguments).getLocations());"
       },
       {
         "lineNumber": 297,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_repoLocationsAndViewWithArgs_returnsViewCliArguments() throws ParseException, IOException {"
+        "content": "    }"
       },
       {
         "lineNumber": 298,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d String.format(\"-repos \\\"%s\\\" %s -view %s\","
+        "content": ""
       },
       {
         "lineNumber": 299,
         "author": {
           "gitId": "-"
         },
-        "content": "                TEST_REPO_REPOSENSE, TEST_REPO_DELTA, OUTPUT_DIRECTORY_ABSOLUTE);"
+        "content": "    @Test"
       },
       {
         "lineNumber": 300,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": "    public void parse_repoLocationsAndViewWithArgs_returnsLocationsCliArguments() throws ParseException {"
       },
       {
         "lineNumber": 301,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        String input \u003d String.format(\"-repos \\\"%s\\\" %s -view %s\","
       },
       {
         "lineNumber": 302,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(cliArguments instanceof ViewCliArguments);"
+        "content": "                TEST_REPO_REPOSENSE, TEST_REPO_DELTA, OUTPUT_DIRECTORY_ABSOLUTE);"
       },
       {
         "lineNumber": 303,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(Files.isSameFile("
+        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 304,
         "author": {
           "gitId": "-"
         },
-        "content": "                OUTPUT_DIRECTORY_ABSOLUTE, ((ViewCliArguments) cliArguments).getReportDirectoryPath()));"
+        "content": ""
       },
       {
         "lineNumber": 305,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        Assert.assertTrue(cliArguments instanceof LocationsCliArguments);"
       },
       {
         "lineNumber": 306,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        Assert.assertTrue(cliArguments.isAutomaticallyLaunching());"
       },
       {
         "lineNumber": 307,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test"
+        "content": "        List\u003cString\u003e expectedLocations \u003d Arrays.asList(TEST_REPO_REPOSENSE, TEST_REPO_DELTA);"
       },
       {
         "lineNumber": 308,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_repoLocationsAndViewWithArgCwd_returnsViewCliArguments() throws ParseException {"
+        "content": "        Assert.assertEquals(expectedLocations, ((LocationsCliArguments) cliArguments).getLocations());"
       },
       {
         "lineNumber": 309,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d String.format(\"-repos \\\"%s\\\" %s -view .\", TEST_REPO_REPOSENSE, TEST_REPO_DELTA);"
+        "content": "    }"
       },
       {
         "lineNumber": 310,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": ""
       },
       {
         "lineNumber": 311,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    @Test"
       },
       {
         "lineNumber": 312,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(cliArguments instanceof ViewCliArguments);"
+        "content": "    public void parse_viewWithArgCwd_returnsViewCliArguments() throws ParseException {"
       },
       {
         "lineNumber": 313,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        String input \u003d \"-view .\";"
       },
       {
         "lineNumber": 314,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 315,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test"
+        "content": ""
       },
       {
         "lineNumber": 316,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_configOrLocationsSimilar_success() throws ParseException, IOException {"
+        "content": "        Assert.assertTrue(cliArguments instanceof ViewCliArguments);"
       },
       {
         "lineNumber": 317,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d String.format(\"-config %s\", CONFIG_FOLDER_ABSOLUTE);"
+        "content": "    }"
       },
       {
         "lineNumber": 318,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments configCliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": ""
       },
       {
         "lineNumber": 319,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(configCliArguments instanceof ConfigCliArguments);"
+        "content": "    @Test"
       },
       {
         "lineNumber": 320,
         "author": {
           "gitId": "-"
         },
-        "content": "        List\u003cRepoConfiguration\u003e actualRepoConfigs \u003d"
+        "content": "    public void parse_configOrLocationsSimilar_success() throws ParseException, IOException {"
       },
       {
         "lineNumber": 321,
         "author": {
           "gitId": "-"
         },
-        "content": "                RepoSense.getRepoConfigurations((ConfigCliArguments) configCliArguments);"
+        "content": "        String input \u003d String.format(\"-config %s\", CONFIG_FOLDER_ABSOLUTE);"
       },
       {
         "lineNumber": 322,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        CliArguments configCliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 323,
         "author": {
           "gitId": "-"
         },
-        "content": "        input \u003d String.format(\"-repos \\\"%s\\\" %s %s\", TEST_REPO_BETA, TEST_REPO_CHARLIE, TEST_REPO_DELTA);"
+        "content": "        Assert.assertTrue(configCliArguments instanceof ConfigCliArguments);"
       },
       {
         "lineNumber": 324,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments locationCliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": "        List\u003cRepoConfiguration\u003e actualRepoConfigs \u003d"
       },
       {
         "lineNumber": 325,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(locationCliArguments instanceof LocationsCliArguments);"
+        "content": "                RepoSense.getRepoConfigurations((ConfigCliArguments) configCliArguments);"
       },
       {
         "lineNumber": 326,
         "author": {
           "gitId": "-"
         },
-        "content": "        List\u003cRepoConfiguration\u003e expectedRepoConfigs \u003d"
+        "content": ""
       },
       {
         "lineNumber": 327,
         "author": {
           "gitId": "-"
         },
-        "content": "                RepoSense.getRepoConfigurations((LocationsCliArguments) locationCliArguments);"
+        "content": "        input \u003d String.format(\"-repos \\\"%s\\\" %s %s\", TEST_REPO_BETA, TEST_REPO_CHARLIE, TEST_REPO_DELTA);"
       },
       {
         "lineNumber": 328,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        CliArguments locationCliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 329,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertEquals(actualRepoConfigs, expectedRepoConfigs);"
+        "content": "        Assert.assertTrue(locationCliArguments instanceof LocationsCliArguments);"
       },
       {
         "lineNumber": 330,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        List\u003cRepoConfiguration\u003e expectedRepoConfigs \u003d"
       },
       {
         "lineNumber": 331,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                RepoSense.getRepoConfigurations((LocationsCliArguments) locationCliArguments);"
       },
       {
         "lineNumber": 332,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test"
+        "content": ""
       },
       {
         "lineNumber": 333,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void emptyArgs_defaultConfigFolderPath() throws ParseException, IOException {"
+        "content": "        Assert.assertEquals(actualRepoConfigs, expectedRepoConfigs);"
       },
       {
         "lineNumber": 334,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(new String[]{});"
+        "content": "    }"
       },
       {
         "lineNumber": 335,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(cliArguments instanceof ConfigCliArguments);"
+        "content": ""
       },
       {
         "lineNumber": 336,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertEquals(PROJECT_DIRECTORY.toString(), ("
+        "content": "    @Test"
       },
       {
         "lineNumber": 337,
         "author": {
           "gitId": "-"
         },
-        "content": "                (ConfigCliArguments) cliArguments).getConfigFolderPath().toString());"
+        "content": "    public void emptyArgs_defaultConfigFolderPath() throws ParseException, IOException {"
       },
       {
         "lineNumber": 338,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(new String[]{});"
       },
       {
         "lineNumber": 339,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        Assert.assertTrue(cliArguments instanceof ConfigCliArguments);"
       },
       {
         "lineNumber": 340,
         "author": {
-          "gitId": "fzdy1914"
+          "gitId": "-"
         },
-        "content": "    @Test"
+        "content": "        Assert.assertEquals(PROJECT_DIRECTORY.toString(), ("
       },
       {
         "lineNumber": 341,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_repoAliases_sameResult() throws ParseException, IOException {"
+        "content": "                (ConfigCliArguments) cliArguments).getConfigFolderPath().toString());"
       },
       {
         "lineNumber": 342,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d String.format(\"-repos %s\", TEST_REPO_BETA);"
+        "content": "    }"
       },
       {
         "lineNumber": 343,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments repoAliasCliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": ""
       },
       {
         "lineNumber": 344,
         "author": {
-          "gitId": "-"
+          "gitId": "fzdy1914"
         },
-        "content": ""
+        "content": "    @Test"
       },
       {
         "lineNumber": 345,
         "author": {
           "gitId": "-"
         },
-        "content": "        input \u003d String.format(\"-repo %s\", TEST_REPO_BETA);"
+        "content": "    public void parse_repoAliases_sameResult() throws ParseException, IOException {"
       },
       {
         "lineNumber": 346,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments reposAliasCliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": "        String input \u003d String.format(\"-repos %s\", TEST_REPO_BETA);"
       },
       {
         "lineNumber": 347,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        CliArguments repoAliasCliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 348,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertEquals(repoAliasCliArguments, reposAliasCliArguments);"
+        "content": ""
       },
       {
         "lineNumber": 349,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        input \u003d String.format(\"-repo %s\", TEST_REPO_BETA);"
       },
       {
         "lineNumber": 350,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        CliArguments reposAliasCliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 351,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test"
+        "content": ""
       },
       {
         "lineNumber": 352,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_invalidRepoLocation_emptyRepoConfigurationList() throws ParseException, IOException {"
+        "content": "        Assert.assertEquals(repoAliasCliArguments, reposAliasCliArguments);"
       },
       {
         "lineNumber": 353,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d String.format(\"-repos %s\", \"https://githubaaaa.com/asdasdasdasd/RepoSense\");"
+        "content": "    }"
       },
       {
         "lineNumber": 354,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": ""
       },
       {
         "lineNumber": 355,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(cliArguments instanceof LocationsCliArguments);"
+        "content": "    @Test"
       },
       {
         "lineNumber": 356,
         "author": {
           "gitId": "-"
         },
-        "content": "        List\u003cRepoConfiguration\u003e repoConfigs \u003d RepoSense.getRepoConfigurations((LocationsCliArguments) cliArguments);"
+        "content": "    public void parse_invalidRepoLocation_emptyRepoConfigurationList() throws ParseException, IOException {"
       },
       {
         "lineNumber": 357,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(repoConfigs.isEmpty());"
+        "content": "        String input \u003d String.format(\"-repos %s\", \"https://githubaaaa.com/asdasdasdasd/RepoSense\");"
       },
       {
         "lineNumber": 358,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 359,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        Assert.assertTrue(cliArguments instanceof LocationsCliArguments);"
       },
       {
         "lineNumber": 360,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test(expected \u003d ParseException.class)"
+        "content": "        List\u003cRepoConfiguration\u003e repoConfigs \u003d RepoSense.getRepoConfigurations((LocationsCliArguments) cliArguments);"
       },
       {
         "lineNumber": 361,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void absoluteConfigFolder_withoutRequiredConfigFiles_throwsParseException() throws ParseException {"
+        "content": "        Assert.assertTrue(repoConfigs.isEmpty());"
       },
       {
         "lineNumber": 362,
         "author": {
           "gitId": "-"
         },
-        "content": "        String absDirectory \u003d PROJECT_DIRECTORY.getParent().toString();"
+        "content": "    }"
       },
       {
         "lineNumber": 363,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d String.format(\"-config %s\", absDirectory);"
+        "content": ""
       },
       {
         "lineNumber": 364,
         "author": {
           "gitId": "-"
         },
-        "content": "        ArgsParser.parse(translateCommandline(input));"
+        "content": "    @Test(expected \u003d ParseException.class)"
       },
       {
         "lineNumber": 365,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    public void absoluteConfigFolder_withoutRequiredConfigFiles_throwsParseException() throws ParseException {"
       },
       {
         "lineNumber": 366,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        String absDirectory \u003d PROJECT_DIRECTORY.getParent().toString();"
       },
       {
         "lineNumber": 367,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test(expected \u003d ParseException.class)"
+        "content": "        String input \u003d String.format(\"-config %s\", absDirectory);"
       },
       {
         "lineNumber": 368,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void relativeConfigFolder_withoutRequiredConfigFiles_throwsParseException() throws ParseException {"
+        "content": "        ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 369,
         "author": {
           "gitId": "-"
         },
-        "content": "        String relDirectory \u003d PROJECT_DIRECTORY.getParent().toString();"
+        "content": "    }"
       },
       {
         "lineNumber": 370,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d String.format(\"-config %s\", relDirectory);"
+        "content": ""
       },
       {
         "lineNumber": 371,
         "author": {
           "gitId": "-"
         },
-        "content": "        ArgsParser.parse(translateCommandline(input));"
+        "content": "    @Test(expected \u003d ParseException.class)"
       },
       {
         "lineNumber": 372,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    public void relativeConfigFolder_withoutRequiredConfigFiles_throwsParseException() throws ParseException {"
       },
       {
         "lineNumber": 373,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        String relDirectory \u003d PROJECT_DIRECTORY.getParent().toString();"
       },
       {
         "lineNumber": 374,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test(expected \u003d ParseException.class)"
+        "content": "        String input \u003d String.format(\"-config %s\", relDirectory);"
       },
       {
         "lineNumber": 375,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_notExistsConfigFolder_throwsParseException() throws ParseException {"
+        "content": "        ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 376,
         "author": {
           "gitId": "-"
         },
-        "content": "        String absConfigFolder \u003d PROJECT_DIRECTORY.resolve(\"non_existing_random_folder\").toString();"
+        "content": "    }"
       },
       {
         "lineNumber": 377,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d String.format(\"-config %s\", absConfigFolder);"
+        "content": ""
       },
       {
         "lineNumber": 378,
         "author": {
           "gitId": "-"
         },
-        "content": "        ArgsParser.parse(translateCommandline(input));"
+        "content": "    @Test(expected \u003d ParseException.class)"
       },
       {
         "lineNumber": 379,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    public void parse_notExistsConfigFolder_throwsParseException() throws ParseException {"
       },
       {
         "lineNumber": 380,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        String absConfigFolder \u003d PROJECT_DIRECTORY.resolve(\"non_existing_random_folder\").toString();"
       },
       {
         "lineNumber": 381,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test(expected \u003d ParseException.class)"
+        "content": "        String input \u003d String.format(\"-config %s\", absConfigFolder);"
       },
       {
         "lineNumber": 382,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_configCsvFileAsConfigFolder_throwsParseException() throws ParseException {"
+        "content": "        ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 383,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d String.format(\"-config %s\", REPO_CONFIG_CSV_FILE);"
+        "content": "    }"
       },
       {
         "lineNumber": 384,
         "author": {
           "gitId": "-"
         },
-        "content": "        ArgsParser.parse(translateCommandline(input));"
+        "content": ""
       },
       {
         "lineNumber": 385,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    @Test(expected \u003d ParseException.class)"
       },
       {
         "lineNumber": 386,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    public void parse_configCsvFileAsConfigFolder_throwsParseException() throws ParseException {"
       },
       {
         "lineNumber": 387,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test(expected \u003d ParseException.class)"
+        "content": "        String input \u003d String.format(\"-config %s\", REPO_CONFIG_CSV_FILE);"
       },
       {
         "lineNumber": 388,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_missingConfigValue_throwsParseException() throws ParseException {"
+        "content": "        ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 389,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d \"-config\";"
+        "content": "    }"
       },
       {
         "lineNumber": 390,
         "author": {
           "gitId": "-"
         },
-        "content": "        ArgsParser.parse(translateCommandline(input));"
+        "content": ""
       },
       {
         "lineNumber": 391,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    @Test(expected \u003d ParseException.class)"
       },
       {
         "lineNumber": 392,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    public void parse_missingConfigValue_throwsParseException() throws ParseException {"
       },
       {
         "lineNumber": 393,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test"
+        "content": "        String input \u003d \"-config\";"
       },
       {
         "lineNumber": 394,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void outputPath_nonExistentDirectory_success() throws ParseException, IOException {"
+        "content": "        ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 395,
         "author": {
           "gitId": "-"
         },
-        "content": "        String nonExistentDirectory \u003d PROJECT_DIRECTORY.resolve(\"some_non_existent_dir/\").toString();"
+        "content": "    }"
       },
       {
         "lineNumber": 396,
         "author": {
           "gitId": "-"
         },
-        "content": "        Path expectedRelativeOutputDirectoryPath \u003d Paths.get(nonExistentDirectory)"
+        "content": ""
       },
       {
         "lineNumber": 397,
         "author": {
           "gitId": "-"
         },
-        "content": "                .resolve(ArgsParser.DEFAULT_REPORT_NAME);"
+        "content": "    @Test"
       },
       {
         "lineNumber": 398,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-output %s\", nonExistentDirectory);"
+        "content": "    public void outputPath_nonExistentDirectory_success() throws ParseException, IOException {"
       },
       {
         "lineNumber": 399,
         "author": {
           "gitId": "-"
         },
-        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
+        "content": "        String nonExistentDirectory \u003d PROJECT_DIRECTORY.resolve(\"some_non_existent_dir/\").toString();"
       },
       {
         "lineNumber": 400,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(cliArguments instanceof ConfigCliArguments);"
+        "content": "        Path expectedRelativeOutputDirectoryPath \u003d Paths.get(nonExistentDirectory)"
       },
       {
         "lineNumber": 401,
         "author": {
           "gitId": "-"
         },
-        "content": "        Assert.assertTrue(Files.isSameFile("
+        "content": "                .resolve(ArgsParser.DEFAULT_REPORT_NAME);"
       },
       {
         "lineNumber": 402,
         "author": {
           "gitId": "-"
         },
-        "content": "                expectedRelativeOutputDirectoryPath, cliArguments.getOutputFilePath()));"
+        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-output %s\", nonExistentDirectory);"
       },
       {
         "lineNumber": 403,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        CliArguments cliArguments \u003d ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 404,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        Assert.assertTrue(cliArguments instanceof ConfigCliArguments);"
       },
       {
         "lineNumber": 405,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test(expected \u003d ParseException.class)"
+        "content": "        Assert.assertTrue(Files.isSameFile("
       },
       {
         "lineNumber": 406,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void sinceDate_unsupportedFormats_throwsParseException() throws ParseException {"
+        "content": "                expectedRelativeOutputDirectoryPath, cliArguments.getOutputFilePath()));"
       },
       {
         "lineNumber": 407,
         "author": {
           "gitId": "-"
         },
-        "content": "        String sinceDate \u003d \"01 July 17\";"
+        "content": "    }"
       },
       {
         "lineNumber": 408,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-since %s\", sinceDate);"
+        "content": ""
       },
       {
         "lineNumber": 409,
         "author": {
           "gitId": "-"
         },
-        "content": "        ArgsParser.parse(translateCommandline(input));"
+        "content": "    @Test(expected \u003d ParseException.class)"
       },
       {
         "lineNumber": 410,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    public void sinceDate_unsupportedFormats_throwsParseException() throws ParseException {"
       },
       {
         "lineNumber": 411,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        String sinceDate \u003d \"01 July 17\";"
       },
       {
         "lineNumber": 412,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test(expected \u003d ParseException.class)"
+        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-since %s\", sinceDate);"
       },
       {
         "lineNumber": 413,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void untilDate_unsupportedFormats_throwsParseException() throws ParseException {"
+        "content": "        ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 414,
         "author": {
           "gitId": "-"
         },
-        "content": "        String untilDate \u003d \"11/31/2017\";"
+        "content": "    }"
       },
       {
         "lineNumber": 415,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-until %s\", untilDate);"
+        "content": ""
       },
       {
         "lineNumber": 416,
         "author": {
           "gitId": "-"
         },
-        "content": "        ArgsParser.parse(translateCommandline(input));"
+        "content": "    @Test(expected \u003d ParseException.class)"
       },
       {
         "lineNumber": 417,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    public void untilDate_unsupportedFormats_throwsParseException() throws ParseException {"
       },
       {
         "lineNumber": 418,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        String untilDate \u003d \"11/31/2017\";"
       },
       {
         "lineNumber": 419,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test(expected \u003d ParseException.class)"
+        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-until %s\", untilDate);"
       },
       {
         "lineNumber": 420,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void sinceDate_laterThanUntilDate_throwsParseException() throws ParseException {"
+        "content": "        ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 421,
         "author": {
           "gitId": "-"
         },
-        "content": "        String sinceDate \u003d \"01/12/2017\";"
+        "content": "    }"
       },
       {
         "lineNumber": 422,
         "author": {
           "gitId": "-"
         },
-        "content": "        String untilDate \u003d \"30/11/2017\";"
+        "content": ""
       },
       {
         "lineNumber": 423,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-since %s -until %s\", sinceDate, untilDate);"
+        "content": "    @Test(expected \u003d ParseException.class)"
       },
       {
         "lineNumber": 424,
         "author": {
           "gitId": "-"
         },
-        "content": "        ArgsParser.parse(translateCommandline(input));"
+        "content": "    public void sinceDate_laterThanUntilDate_throwsParseException() throws ParseException {"
       },
       {
         "lineNumber": 425,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        String sinceDate \u003d \"01/12/2017\";"
       },
       {
         "lineNumber": 426,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        String untilDate \u003d \"30/11/2017\";"
       },
       {
         "lineNumber": 427,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test(expected \u003d ParseException.class)"
+        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-since %s -until %s\", sinceDate, untilDate);"
       },
       {
         "lineNumber": 428,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void formats_notInAlphanumeric_throwsParseException() throws ParseException {"
+        "content": "        ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 429,
         "author": {
           "gitId": "-"
         },
-        "content": "        String formats \u003d \".java\";"
+        "content": "    }"
       },
       {
         "lineNumber": 430,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-formats %s\", formats);"
+        "content": ""
       },
       {
         "lineNumber": 431,
         "author": {
           "gitId": "-"
         },
-        "content": "        ArgsParser.parse(translateCommandline(input));"
+        "content": "    @Test(expected \u003d ParseException.class)"
       },
       {
         "lineNumber": 432,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    public void formats_notInAlphanumeric_throwsParseException() throws ParseException {"
       },
       {
         "lineNumber": 433,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        String formats \u003d \".java\";"
       },
       {
         "lineNumber": 434,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test(expected \u003d ParseException.class)"
+        "content": "        String input \u003d DEFAULT_MANDATORY_ARGS + String.format(\"-formats %s\", formats);"
       },
       {
         "lineNumber": 435,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void parse_mutuallyExclusiveArgumentsConfigAndReposTogether_throwsParseException() throws ParseException {"
+        "content": "        ArgsParser.parse(translateCommandline(input));"
       },
       {
         "lineNumber": 436,
         "author": {
           "gitId": "-"
         },
-        "content": "        String input \u003d String.format(\"-config %s -repos %s\", CONFIG_FOLDER_ABSOLUTE, TEST_REPO_REPOSENSE);"
+        "content": "    }"
       },
       {
         "lineNumber": 437,
         "author": {
           "gitId": "-"
         },
-        "content": "        ArgsParser.parse(translateCommandline(input));"
+        "content": ""
       },
       {
         "lineNumber": 438,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    @Test(expected \u003d ParseException.class)"
       },
       {
         "lineNumber": 439,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    public void parse_mutuallyExclusiveArgumentsConfigAndReposTogether_throwsParseException() throws ParseException {"
       },
       {
         "lineNumber": 440,
         "author": {
           "gitId": "-"
         },
-        "content": "    @Test(expected \u003d ParseException.class)"
+        "content": "        String input \u003d String.format(\"-config %s -repos %s\", CONFIG_FOLDER_ABSOLUTE, TEST_REPO_REPOSENSE);"
       },
       {
         "lineNumber": 441,
-        "author": {
-          "gitId": "fzdy1914"
-        },
-        "content": "    public void parse_extraArgumentForIgnore_throwsParseException() throws ParseException {"
-      },
-      {
-        "lineNumber": 442,
-        "author": {
-          "gitId": "fzdy1914"
-        },
-        "content": "        String input \u003d String.format(\"-config %s --ignore-standalone-config true\", CONFIG_FOLDER_ABSOLUTE);"
-      },
-      {
-        "lineNumber": 443,
         "author": {
           "gitId": "-"
         },
         "content": "        ArgsParser.parse(translateCommandline(input));"
       },
       {
-        "lineNumber": 444,
+        "lineNumber": 442,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
+        "lineNumber": 443,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 444,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test(expected \u003d ParseException.class)"
+      },
+      {
         "lineNumber": 445,
+        "author": {
+          "gitId": "fzdy1914"
+        },
+        "content": "    public void parse_extraArgumentForIgnore_throwsParseException() throws ParseException {"
+      },
+      {
+        "lineNumber": 446,
+        "author": {
+          "gitId": "fzdy1914"
+        },
+        "content": "        String input \u003d String.format(\"-config %s --ignore-standalone-config true\", CONFIG_FOLDER_ABSOLUTE);"
+      },
+      {
+        "lineNumber": 447,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        ArgsParser.parse(translateCommandline(input));"
+      },
+      {
+        "lineNumber": 448,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 449,
         "author": {
           "gitId": "-"
         },
@@ -33074,7 +33165,7 @@
     ],
     "authorContributionMap": {
       "fzdy1914": 32,
-      "-": 413
+      "-": 417
     }
   },
   {
