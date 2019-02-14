@@ -452,6 +452,31 @@
         "deletions": 0,
         "date": "2019-02-11",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 92,
+        "deletions": 108,
+        "date": "2019-02-14",
+        "commitResults": [
+          {
+            "hash": "a018a980b8b31f08b167752a448c750347bbabdd",
+            "message": "[#7603] Use enum instead of string for gender field in StudentProfileAttributes and related classes (#9418)",
+            "insertions": 92,
+            "deletions": 108
+          }
+        ]
       }
     ],
     "monmanuela": [
@@ -933,6 +958,24 @@
             "deletions": 0
           }
         ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-14",
+        "commitResults": []
       }
     ],
     "rrtheonlyone": [
@@ -1394,6 +1437,24 @@
             "deletions": 16
           }
         ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-14",
+        "commitResults": []
       }
     ],
     "RonakLakhotia": [
@@ -1861,6 +1922,24 @@
         "deletions": 0,
         "date": "2019-02-11",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-14",
+        "commitResults": []
       }
     ],
     "junming403": [
@@ -2300,6 +2379,24 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-14",
         "commitResults": []
       }
     ],
@@ -2762,6 +2859,24 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-14",
+        "commitResults": []
       }
     ],
     "tanhengyeow": [
@@ -3201,6 +3316,24 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-14",
         "commitResults": []
       }
     ],
@@ -3655,6 +3788,24 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-14",
         "commitResults": []
       }
     ],
@@ -4117,6 +4268,24 @@
         "deletions": 0,
         "date": "2019-02-11",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-14",
+        "commitResults": []
       }
     ],
     "jacoblipech": [
@@ -4557,11 +4726,29 @@
         "deletions": 0,
         "date": "2019-02-11",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-14",
+        "commitResults": []
       }
     ]
   },
   "authorFinalContributionMap": {
-    "amrut-prabhu": 1157,
+    "amrut-prabhu": 1249,
     "monmanuela": 1561,
     "rrtheonlyone": 527,
     "RonakLakhotia": 160,
@@ -4573,15 +4760,15 @@
     "jacoblipech": 0
   },
   "authorContributionVariance": {
-    "amrut-prabhu": 91191.85,
-    "monmanuela": 28623.178,
-    "rrtheonlyone": 3067.5703,
-    "RonakLakhotia": 460.72577,
+    "amrut-prabhu": 87979.625,
+    "monmanuela": 27511.121,
+    "rrtheonlyone": 2948.827,
+    "RonakLakhotia": 442.88358,
     "junming403": 0.0,
-    "AyushChatto": 4563.185,
+    "AyushChatto": 4385.9824,
     "tanhengyeow": 0.0,
-    "ChooJeremy": 13.014823,
-    "Adoby7": 665.12213,
+    "ChooJeremy": 12.50883,
+    "Adoby7": 639.4134,
     "jacoblipech": 0.0
   },
   "authorDisplayNameMap": {
