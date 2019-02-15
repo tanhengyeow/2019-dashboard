@@ -465,6 +465,30 @@
             "deletions": 8
           }
         ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-14",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-15",
+        "commitResults": []
       }
     ],
     "ongspxm": [
@@ -939,6 +963,30 @@
         "insertions": 0,
         "deletions": 0,
         "date": "2019-02-11",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-14",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-15",
         "commitResults": []
       }
     ],
@@ -1422,6 +1470,30 @@
         "deletions": 0,
         "date": "2019-02-11",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-14",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-15",
+        "commitResults": []
       }
     ],
     "chelseyong": [
@@ -1883,20 +1955,51 @@
         "deletions": 0,
         "date": "2019-02-11",
         "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-12",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-13",
+        "commitResults": []
+      },
+      {
+        "insertions": 0,
+        "deletions": 0,
+        "date": "2019-02-14",
+        "commitResults": []
+      },
+      {
+        "insertions": 39,
+        "deletions": 23,
+        "date": "2019-02-15",
+        "commitResults": [
+          {
+            "hash": "2c6b44ac323008c3c2b55789fee9c2f014c2f879",
+            "message": "[#521] CodeView: Collapse/Expand All button not updated correctly after hiding all files (#529)",
+            "insertions": 39,
+            "deletions": 23
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "emer7": 143,
-    "ongspxm": 296,
-    "fzdy1914": 260,
-    "chelseyong": 60
+    "ongspxm": 303,
+    "fzdy1914": 259,
+    "chelseyong": 73
   },
   "authorContributionVariance": {
-    "emer7": 150.43233,
-    "ongspxm": 1893.5056,
-    "fzdy1914": 728.6478,
-    "chelseyong": 78.22789
+    "emer7": 142.86623,
+    "ongspxm": 1798.4576,
+    "fzdy1914": 692.2233,
+    "chelseyong": 121.76546
   },
   "authorDisplayNameMap": {
     "emer7": "GILBERT",

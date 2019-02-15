@@ -4548,16 +4548,30 @@
         "commitResults": []
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 2862,
+        "deletions": 566,
         "date": "2019-01-13",
-        "commitResults": []
+        "commitResults": [
+          {
+            "hash": "4bd19a52753c5f6f109fdd04a80e8c57636b4056",
+            "message": "[#8002] InstructorFeedbackResultsPage: add section displaying options for instructors (#8940)",
+            "insertions": 2862,
+            "deletions": 566
+          }
+        ]
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 164,
+        "deletions": 164,
         "date": "2019-01-14",
-        "commitResults": []
+        "commitResults": [
+          {
+            "hash": "4e681e06f95e0c19036d76c00b185e46fa5187f9",
+            "message": "[#8505] Student and Instructor View: Incomplete display of messages in various areas (#8995)",
+            "insertions": 164,
+            "deletions": 164
+          }
+        ]
       },
       {
         "insertions": 0,
@@ -4620,10 +4634,17 @@
         "commitResults": []
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 1248,
+        "deletions": 834,
         "date": "2019-01-25",
-        "commitResults": []
+        "commitResults": [
+          {
+            "hash": "1f670f9cd272af1d8ef58544b5f380ac59f4de24",
+            "message": "[#9255] Migrate Instructor Course Details Page to Angular (#9333)",
+            "insertions": 1248,
+            "deletions": 834
+          }
+        ]
       },
       {
         "insertions": 0,
@@ -4632,10 +4653,17 @@
         "commitResults": []
       },
       {
-        "insertions": 0,
-        "deletions": 0,
+        "insertions": 611,
+        "deletions": 489,
         "date": "2019-01-27",
-        "commitResults": []
+        "commitResults": [
+          {
+            "hash": "13120b1cc973926fb5bb161c8ef64268986efe10",
+            "message": "[#9255] Migrate part of Instructor Home Page to Angular (#9375)",
+            "insertions": 611,
+            "deletions": 489
+          }
+        ]
       },
       {
         "insertions": 0,
@@ -4757,7 +4785,7 @@
     "tanhengyeow": 0,
     "ChooJeremy": 17,
     "Adoby7": 156,
-    "jacoblipech": 0
+    "jacoblipech": 4732
   },
   "authorContributionVariance": {
     "amrut-prabhu": 87979.625,
@@ -4769,7 +4797,7 @@
     "tanhengyeow": 0.0,
     "ChooJeremy": 12.50883,
     "Adoby7": 639.4134,
-    "jacoblipech": 0.0
+    "jacoblipech": 220659.64
   },
   "authorDisplayNameMap": {
     "amrut-prabhu": "AMRUT",
