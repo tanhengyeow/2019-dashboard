@@ -1,5 +1,5 @@
 Repository's Location,Branch,File Formats,Ignore Glob List,Ignore standalone config,Ignore Commit List
-https://github.com/markbind/markbind.git,master,java;js;css;json;md;py,,Yes,
+https://github.com/markbind/markbind.git,master,java;js;css;json;md;mbd;mbdf;njk;py;yml,package-lock.json,Yes,
 https://github.com/markbind/vue-strap.git,master,java;js;css;json;md;py;vue;,,Yes,
 https://github.com/powerpointlabs/powerpointlabs.git,dev-release,html;js;css;cs,,Yes,
 https://github.com/powerpointlabs/PowerPointLabs-Website.git,master,html;js;css;cs;md,,Yes,
